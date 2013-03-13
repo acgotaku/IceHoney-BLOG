@@ -1,0 +1,24 @@
+{% autoescape None %}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ escape(handler.settings["blog_title"]) }}</title>
+  {% if len(articles) > 0 %}
+    <updated>{{ max(e["date"] for e in articles) }}</updated>
+  {% else %}
+    <updated>{{ datetime.datetime.utcnow().strftime(date_format) }}</updated>
+  {% end %}
+  <id>http://blog.icehoney.me/</id>
+  <link rel="alternate" href="http://blog.icehoney.me/" title="{{ escape(handler.settings["blog_title"]) }}" type="text/html"/>
+  <link rel="self" href="http://blog.icehoney.me/feed" title="{{ escape(handler.settings["blog_title"]) }}" type="application/atom+xml"/>
+  <author><name>{{ escape(handler.settings["blog_title"]) }}</name></author>
+  {% for article in articles %}
+    <entry>
+      <title type="text">{{  article["title"] }}</title>
+      <link href="http://blog.icehoney.me/posts/{{ article["name"] }}" rel="alternate" type="text/html"/>
+      <pubDate>{{ article["date"] }}</pubDate>
+      <content type="xhtml" xml:base="http://blog.icehoney.me/">
+        <div xmlns="http://www.w3.org/1999/xhtml">{{ (article["content"]) }}</div>
+      </content>
+    </entry>
+  {% end %}
+</feed>
