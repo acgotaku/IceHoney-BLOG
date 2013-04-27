@@ -48,6 +48,11 @@ a {
 a:active, a:hover {
     color: #ff4b33;
 }
+code{
+    overflow:auto;
+    width: 660px;
+    display: block;
+}
 input[type="text"], textarea {
     background: #FCFCFC;
     border: 1px solid #ddd;
