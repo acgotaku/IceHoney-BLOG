@@ -48,10 +48,14 @@ a {
 a:active, a:hover {
     color: #ff4b33;
 }
-code{
-    overflow:auto;
-    width: 660px;
-    display: block;
+pre {
+background-color: #f8f8f8;
+border: 1px solid #ccc;
+font-size: 13px;
+line-height: 19px;
+overflow: auto;
+padding: 6px 10px;
+border-radius: 3px;
 }
 input[type="text"], textarea {
     background: #FCFCFC;
