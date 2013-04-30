@@ -11,6 +11,20 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     /*background: transparent url(back.gif) repeat fixed;*/
     background: #f1f1f1;
 }
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+::-webkit-scrollbar-thumb {
+height: 50px;
+background-color: #999;
+border-radius: 4px;
+outline-offset: -2px;
+}
+::-webkit-scrollbar-track-piece {
+background-color: #f4f4f4;
+border-radius: 1px;
+}
 blockquote, q
 {
     quotes: none;
@@ -175,6 +189,7 @@ input[type="text"]:focus, textarea:focus {
     -moz-box-shadow: 0 1px 10px #A8B1B9;
     box-shadow: 0 1px 10px #58B1B9;
     text-shadow: 0 1px 1px white;
+    border-radius: 4px;
 }
 
 .article_title {
