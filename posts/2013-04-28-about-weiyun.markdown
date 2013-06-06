@@ -37,7 +37,7 @@ chromium的开发工具非常明确的红色的标注了发生POST请求的链�
 		}
 
 上面的JSON对象里面只有token和url是可变的,其它都是固定值,仔细分析页面上的那三个压缩过的JS便可以得到答案.
-url明显就是网址上问号后面的参数,我就不赘述了.关于token,仔细分析发现 var _token=QQVIP.security.getAntiCSRFToken();
+url明显就是网址上问号后面的参数,我就不赘述了.关于token,仔细分析发现 ``var _token=QQVIP.security.getAntiCSRFToken();``
 了这段代码,也就是说腾讯还专门防止CSRF(跨站点请求伪造),可是... 这个token值我随便填写也能成功返回结果 ==  看来腾讯的程序员偷工减料了(又是临时工的错!)
 只能说这里预留了一个接口,但是没做,仔细查了一下腾讯的那个函数并自己修改了一下
 
@@ -61,7 +61,7 @@ url明显就是网址上问号后面的参数,我就不赘述了.关于token,仔
 			return md5str;
 		}
 
-看来做的还是不错的,用cookies生成token,但是你的"skey"的cookies是空的要闹哪样 == 基本上token就是个定值 "4d3754f563ad04a56fece81bbcc83302"
+看来做的还是不错的,用cookies生成token,但是你的"skey"的cookies是空的要闹哪样 == 基本上token就是个定值 `"4d3754f563ad04a56fece81bbcc83302"`
 接下来看返回回来的json对象
 ![POST返回的JSON对象](https://lh3.googleusercontent.com/-k4YDmt1pE5U/UX3Qm4FtssI/AAAAAAAATUY/yYOPPMky_CU/s2560/2013-04-29-094459_1363x571_scrot.png)
 
@@ -101,7 +101,8 @@ url明显就是网址上问号后面的参数,我就不赘述了.关于token,仔
 
 页面向http://web.weiyun.qq.com/php/downloadCheck.php提交了downloadn=FTN5K&downloadv=8eb5b2ee这个正是cookies的键值对,后面的callback是JQUery回调的参数
 ,无视就可以了,关键是服务器返回的  
-Respose Headers `Set-Cookie:FTN5K=8eb5b2ee; expires=Mon, 29-Apr-2013 11:51:48 GMT; path=/; domain=qq.com`  
+Respose Headers  
+`Set-Cookie:FTN5K=8eb5b2ee; expires=Mon, 29-Apr-2013 11:51:48 GMT; path=/; domain=qq.com`  
 这样就写入了cookies,因为是GET方法提交的请求,这样就可以使用跨域请求.完成cookies的跨越注入.具体使用方法是
 
 		var downloadcookie = "http://web.weiyun.qq.com/php/downloadCheck.php?downloadn=" + json.rsp_body.dl_cookie_name + "&downloadv=" + json.rsp_body.dl_cookie_value;

@@ -8,7 +8,6 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     outline: 0;
     font-size: 100%;
     vertical-align: middle;
-    /*background: transparent url(back.gif) repeat fixed;*/
     background: #f1f1f1;
 }
 ::-webkit-scrollbar {
@@ -62,7 +61,7 @@ a {
 a:active, a:hover {
     color: #ff4b33;
 }
-pre {
+pre,p>code{
 background-color: #f8f8f8;
 border: 1px solid #ccc;
 font-size: 13px;

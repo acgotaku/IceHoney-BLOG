@@ -12,14 +12,14 @@ categories: notes
 
 #安装apache套装
 首先安装lamp
-sudo apt-get install lamp-server^    
+`sudo apt-get install lamp-server^`    
 PHP开发和服务器运行环境首选LAMP组合，即Linux+Apache+Mysql+Php/Perl/Python，能最优化服务器性能
 
 #开启相关模块
 启用 mod_rewrite 模块  
-sudo a2enmod rewrite  
+`sudo a2enmod rewrite`  
 启用 SSL 模块  
-sudo a2enmod ssl  
+`sudo a2enmod ssl`   
 a2xx系列的命令共有a2dismod、a2enmod、a2dissite、a2ensite，作用分别是禁用模块、启用模块、停用站点、启用站点这些命令简单得连--help选项都没有，只能运行看提示。其作用也很简单，就是在/etc/apache2/mods-enabled和/etc/apache2/sites-enabled里面建立或删除相对应的x-available目录里面的模块的链接。
 
 #具体相关配置
@@ -148,16 +148,19 @@ SSL模块就是多了一个证书的设置  其余的基本不变.
 
 #关于SSL证书
 生成 SSl证书命令
-openssl genrsa -des3 -out ssl.key 1024  
+
+	openssl genrsa -des3 -out ssl.key 1024
 然后他会要求你输入这个key文件的密码。不推荐输入。 但是生成时候必须输入密码。你可以输入后 再删掉。 
-mv ssl.key xxx.key  
-openssl rsa -in xxx.key -out ssl.key  
-rm xxx.key  
+	
+	mv ssl.key xxx.key  
+	openssl rsa -in xxx.key -out ssl.key  
+	rm xxx.key  
 然后根据这个key文件生成证书请求文件  
 openssl req -new -key ssl.key -out ssl.csr  
 以上命令生成时候要填很多东西 一个个看着写吧（可以随便，毕竟这是自己生成的证书）
-最后根据这2个文件生成crt证书文件  
-openssl x509 -req -days 365 -in ssl.csr -signkey ssl.key -out ssl.crt  
+最后根据这2个文件生成crt证书文件
+
+	openssl x509 -req -days 365 -in ssl.csr -signkey ssl.key -out ssl.crt  
 这里365是证书有效期 推荐3650哈哈。这个大家随意。最后使用到的文件是key和crt文件。
 
 这里生成的证书是不受信任的...我们可以在[StartSSL(http://www.startssl.com/)上
