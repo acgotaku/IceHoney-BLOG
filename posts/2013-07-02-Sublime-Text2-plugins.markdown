@@ -58,5 +58,7 @@ JS format是Sublime Text 2的一个javascript的格式化插件，使用来自JS
 ##Tag
 当你需要处理标签时，Tag是一个伟大的插件.
 
-##ShowEncoding
-一个可以转换GBK和UTF8的插件.
+#解决中文编码问题
+[ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
+[Codecs26](https://github.com/seanliang/Codecs26)
+同时装这两个插件就可以正常打开GBK文件并且保存.
