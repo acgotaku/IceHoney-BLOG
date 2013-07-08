@@ -1,5 +1,4 @@
-{% autoescape None %}
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>{% autoescape None %}
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ escape(handler.settings["blog_title"]) }}</title>
   {% if len(articles) > 0 %}
