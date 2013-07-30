@@ -46,8 +46,10 @@ touch代表的是是否支持触摸.否则只能用音量键和开机键进行�
 将手机关机进入fastboot模式,应该先解锁, `fastboot oem unlock`   
 然后刷入recovery `fastboot flash recovery recovery-clockwork-touch-6.0.3.3-maguro.img`  
 按下音量键调至recovery，按开机键进入，手机会自动重启进入recovery  
-choose zip from SDcard，然后依次进入，最终选择UPDATE-SuperSU-v1.41.zip，确认安装.   
-安装完成后依次返回.这个步骤不会影响OTA更新,并且OTA更新之后会自动解决ROOT的问题,无需再次ROOT.  
+choose zip from SDcard，然后依次进入，最终选择UPDATE-SuperSU-v1.41.zip，确认安装.  
+注：如果提示是否清除recovery flash，请选No，否则下次推送时无法进行OTA更新.   
+安装完成后依次返回.  
+这个步骤不会影响OTA更新,并且OTA更新之后会自动解决ROOT的问题,无需再次ROOT.  
 
 #ADB小技巧
 刷机之后需要一大堆APK软件安装怎么办 adb 本身只有单个APK安装的功能  
