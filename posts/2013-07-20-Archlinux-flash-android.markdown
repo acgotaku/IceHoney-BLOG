@@ -7,7 +7,7 @@ categories: notes
 ---
 
 安卓本来就是Linux衍生的,所以必然可以用Linux系统进行刷机,而且效果比  
-Win还要好.不需要安装驱动,指需要安装adb和fastboot即可.  
+Win还要好.不需要安装驱动,只需要安装adb和fastboot即可.  
 
 #安装相关依赖
 

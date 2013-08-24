@@ -38,11 +38,12 @@ Package Control 是用来管理 Sublime Text 2 的插件的插件. 也是装完�
 		
 	import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
 
-
 ##ZenCoding
 
 Zen Coding是为了高速HTML编程和编辑开发的插件。这个插件的核心是一个超级强大的缩略词引擎，允许你扩展表达式到HTML代码中，类似于CSS的选择器。
 通过 `Ctrl+,` 进行代码展开
+
+**Zen Coding现在已经被Emmet替代(Zen Coding已经从Sublime Text 2的插件源中移除)，直接在编辑器内输入表达式，按下Tab即可扩展。**
 
 ##jQuery Package for Sublime Text
 这个毫无疑问，没有jQuery我们还能干什么？绝对不错的jQuery开发插件，个人来说非常喜欢.
