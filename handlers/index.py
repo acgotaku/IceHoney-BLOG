@@ -97,7 +97,7 @@ class RSSOutput(BaseHandler):
 		for single_file in file_list:
 			article = SingleFileHandler(single_file)
 			if article: articles.append(article)
-		self.set_header("Content-Type", "application/atom+xml")
+		self.set_header("Content-Type", "application/rss+xml")
 		self.render("feed.xml",articles=articles)
 class NotFounderHandler(BaseHandler):
 	def prepare(self):
