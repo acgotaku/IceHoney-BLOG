@@ -34,7 +34,7 @@ Linux下的wicd本身自带一个创建Ad-Hoc network功能的,但是这个功�
 		ifconfig at0 10.0.0.254 netmask 255.255.255.0
 		route add -net 10.0.0.0 netmask 255.255.255.0 gw 10.0.0.254
 
-#设置iptablse
+#设置iptables
 
 		iptables --flush
 		iptables --table nat --flush
