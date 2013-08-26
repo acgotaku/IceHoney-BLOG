@@ -84,7 +84,7 @@ class PostsHandler(BaseHandler):
 			self.set_status(404)
 			self.render("404.html",title="404 NOT FOUND")
 			return	
-		self.render("article.html", title=site_config['title'], url=site_config["url"], article = article)
+		self.render("article.html", url=site_config["url"], article = article)
 class RSSOutput(BaseHandler):
 	def get(self):
 		articles = []
