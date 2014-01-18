@@ -43,6 +43,7 @@ ROOT的话首先需要刷recovery,我们先下载[recovery](http://www.clockwork
 找到自己型号的recovery进行下载,我的是recovery-clockwork-touch-6.0.3.3-maguro.img  
 touch代表的是是否支持触摸.否则只能用音量键和开机键进行选择和确定.  
 然后下载superSU的ZIP压缩包,目前版本是[1.41](http://download.chainfire.eu/339/SuperSU/UPDATE-SuperSU-v1.41.zip?retrieve_file=1)  ,ZIP格式不要解压.放入SD卡中.  
+`adb push UPDATE-SuperSU-v1.41.zip /sdcard/`  
 将手机关机进入fastboot模式,应该先解锁, `fastboot oem unlock`   
 然后刷入recovery `fastboot flash recovery recovery-clockwork-touch-6.0.3.3-maguro.img`  
 按下音量键调至recovery，按开机键进入，手机会自动重启进入recovery  

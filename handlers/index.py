@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- encoding: utf-8 -*-
 # vim: set et sw=4 ts=4 sts=4 ff=unix fenc=utf8:
 import os
@@ -103,9 +103,25 @@ class NotFounderHandler(BaseHandler):
 	def prepare(self):
 		self.set_status(404)
 		self.render("404.html",title="404 NOT FOUND")
+class LinkHandler(BaseHandler):
+	"""docstring for LinkHandler"""
+	pass
+class AboutHandler(BaseHandler):
+	def get(self):
+		about_path=os.getcwd() + os.sep + 'posts'+os.sep+'.about.markdown'
+		if os.path.exists(about_path):
+			article=SingleFileHandler(about_path)
+		else:
+			self.set_status(404)
+			self.render("404.html",title="404 NOT FOUND")
+			return	
+		self.render("article.html", url=site_config["url"], article = article)
+		
 handlers = [
         (r"/", IndexHandler),
         (r"/posts/(.*)",PostsHandler),
         (r"/feed",RSSOutput),
+        (r"/links",LinkHandler),
+        (r"/about",AboutHandler),
         (r"/.*",NotFounderHandler)
         ]

@@ -24,12 +24,13 @@ mp3格式的,所以需要指定用lame编码器进行编码.当然很多人只�
 
 #给每个音乐文件打TAG
 转换之后的文件只是单纯的音乐文件,每个音乐并没有包含想关的TAG信息,这时候需要用cuetag.sh给每个音乐文件打TAG  
+[cuetag.sh脚本](https://gist.github.com/acgotaku/7279681) 最新版貌似有问题不能使用.  
 `cuetag.sh file.cue *.mp3`  
 命令很简单,在转换好的音乐文件夹下指定cue文件和mp3文件即可自动打TAG,但是需要注意的一点是,这个脚本打的是ID3v1的标签,如果是非英语语言的话,
 会出现乱码问题.详情请戳[Mp3标签乱码问题分析与解决方案](http://linux-wiki.cn/wiki/Mp3%E6%A0%87%E7%AD%BE%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
 所以,之后我们还是要使用[mp3tagiconv](https://code.google.com/p/mp3tagiconv/)
 这个工具来进行标签的转换使得所有的播放器都能够正确识别mp3音乐的标签.  
-`for i in *; do echo "y"| mp3tagiconv "${i}" ;done`  
+`for i in *.mp3; do echo "y"| mp3tagiconv "${i}" ;done`  
 因为mp3tagiconv这个工具每次更新标签都会提示yes or no ,所以我就修改了下执行方式,使得批量自动化修改.  
 flac格式的音乐不存在TAG编码问题.
 

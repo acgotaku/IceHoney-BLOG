@@ -304,3 +304,8 @@ input[type="text"]:focus, textarea:focus {
     padding: 15px;
    
 }
+.article p {
+margin: 0 0 21px 0;
+line-height: 20pt;
+text-indent: 2em;
+}
