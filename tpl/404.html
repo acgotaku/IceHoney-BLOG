@@ -4,7 +4,9 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="refresh" content="5;url=http://blog.icehoney.me">
 	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ static_url("css/style.css") }}" type="text/css" media="screen">
+	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
+	<link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
+	<link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 			<script type="text/javascript">
 
@@ -21,49 +23,7 @@
 </script>
 </head>
 <body>
-	<div id="header">
-		<div id="nav_wrapper">
-			<div id="nav">
-				<div class="inner">
-					<h1 id="title">
-						<a href="http://blog.icehoney.me">IceHoney</a>
-					</h1>
-
-					<ul class="right">
-						<li>
-							<a href="/">Home</a>
-						</li>
-						<li>•</li>
-						<li>
-							<a href="https://plus.google.com/u/0/117337204302188511498">Google+</a>
-						</li>
-						<li>•</li>
-						<li>
-							<a href="https://twitter.com/acgotaku311">Twitter</a>
-						</li>
-						<li>•</li>
-						<li>
-							<a href="/feed">RSS</a>
-						</li>
-						<li>•</li>
-						<li>
-							<a href="#">Linux</a>
-						</li>
-						<li>•</li>
-						<li>
-							<a href="/about">About</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div id="header_inner">
-			<div id="description">
-				Hello World!
-			</div>
-			<div class="sep"></div>
-		</div>
-	</div>
+	{% include "header.html" %}
 	<div id="content">
 		<ul id="article_list">
 			 
@@ -87,11 +47,7 @@
 		</ul>
 	</div>
 	 
-	<footer>
-			<div class="footer_wrapper">
-							Powered by <a href="http://blog.icehoney.me">IceHoeny-BLOG</a>
-			</div>
-		</footer>
+	{% include "footer.html" %}
 
 </body>
 </html>

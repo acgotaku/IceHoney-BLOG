@@ -1,0 +1,11 @@
+#content {
+    width: 800px;
+    margin: 20px auto 10px; auto;
+    min-height: 200px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 10px #58B1B9;
+    padding: 20px;
+}
+.archive_list{
+    line-height: 36px;
+}

@@ -65,7 +65,6 @@ class IndexHandler(BaseHandler):
     		article=SingleFileHandler(single_file)
     		if article:
     			articles.append(article)
-    	
     	if p>2:
     		prev=True
     	else:
@@ -101,11 +100,23 @@ class RSSOutput(BaseHandler):
 		self.render("feed.xml",articles=articles)
 class NotFounderHandler(BaseHandler):
 	def prepare(self):
-		self.set_status(404)
-		self.render("404.html",title="404 NOT FOUND")
-class LinkHandler(BaseHandler):
-	"""docstring for LinkHandler"""
-	pass
+		raise HTTPError(404)
+class ArchivesHandler(BaseHandler):
+	"""docstring for ArchivesHandler"""
+	def get(self,id):
+		articles = []
+		post_dir = site_config["post_dir"]
+		file_list = []
+		files = os.listdir(post_dir)
+		for f in files:
+			if f.startswith(id[0:4]):
+				file_list.append(post_dir + os.sep + f)
+		file_list.sort(reverse=True)
+		for single_file in file_list:
+			article = SingleFileHandler(single_file)
+			if article: articles.append(article)
+		self.render("archives.html",title=site_config['title'], articles = articles)
+
 class AboutHandler(BaseHandler):
 	def get(self):
 		about_path=os.getcwd() + os.sep + 'posts'+os.sep+'.about.markdown'
@@ -121,7 +132,7 @@ handlers = [
         (r"/", IndexHandler),
         (r"/posts/(.*)",PostsHandler),
         (r"/feed",RSSOutput),
-        (r"/links",LinkHandler),
+        (r"/archives/(.*)",ArchivesHandler),
         (r"/about",AboutHandler),
         (r"/.*",NotFounderHandler)
         ]

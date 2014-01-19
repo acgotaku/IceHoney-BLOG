@@ -21,6 +21,13 @@ class BaseHandler(tornado.web.RequestHandler):
         if "options" not in kwargs:
             kwargs["options"] = options
         return super(BaseHandler, self).render_string(template_name, **kwargs)
+    def write_error(self, status_code, **kwargs):
+        if status_code==404:
+            self.set_status(404)
+            self.render("404.html",title="404 NOT FOUND")
+        else:
+            super(BaseHandler,self).write_error(status_code,**kwargs)
+
 
 class BaseWebSocket(tornado.websocket.WebSocketHandler):
     pass

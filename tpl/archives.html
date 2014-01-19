@@ -5,7 +5,7 @@
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
+	<link rel="stylesheet" href="{{ static_url("css/archives.css") }}" type="text/css" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 			<script type="text/javascript">
 
@@ -24,34 +24,14 @@
 <body>
 	{% include "header.html" %}
 	<div id="content">
-		<ul id="article_list">
+		<h1>Archives</h1>
+		<ul>
 			{% for article in articles %}
-			<li class="list_item">
-				<div class="article">
-					<article>
-					<div class="article_title title">
-						<h2><a href="/posts/{{ article["name"] }}">{{ article["title"] }}</a></h2>					
-					</div>
-					<div class="date">
-							<span>Posted on <a><time class="entry-date">{{ article["date"] }}</time></a></span>
-						</div>
-					<div class="text">
-						{{ (article["content"]) }}
-					</div>
-					
-				</article>
-				</div>
-				<div class="sep"></div>
-			</li>
+			<li class="archive_list"><span>Posted on <time class="entry-date">{{ article["date"] }}</time>»</span>
+				<a href="/posts/{{ article["name"] }}">{{ article["title"] }}</a></li>
 			{% end %}
 		</ul>
 	</div>
-	{% if prev %}
-	 <a id="prev" href="/?p={{ prevnum }}" class="v_nav"><span class="icon">Prev</span></a>
-	{% end %}
-	{% if next %}
-	 <a id="next" href="/?p={{ nextnum }}" class="v_nav"><span class="icon">Next</span></a>
-	 {% end %}
 	{% include "footer.html" %}
 
 </body>
