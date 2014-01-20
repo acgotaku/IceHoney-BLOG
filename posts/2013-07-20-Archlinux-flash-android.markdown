@@ -3,7 +3,7 @@ layout: post
 title: "Archlinux下Galaxy Nexus刷机并root"
 date: 2013-07-20 14:12
 comments: true
-categories: notes
+tags: linux android
 ---
 
 安卓本来就是Linux衍生的,所以必然可以用Linux系统进行刷机,而且效果比  

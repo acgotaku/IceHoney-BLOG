@@ -35,7 +35,7 @@ if __name__ == "__main__":
     if options.config:
         tornado.options.parse_config_file(options.config)
     tornado.options.parse_command_line()
-
+    
     http_server = HTTPServer(Application(), xheaders=True)
     http_server.bind(options.port, options.bind)
     http_server.start()

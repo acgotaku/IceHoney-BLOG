@@ -3,7 +3,7 @@ layout: post
 title: "Archlinux下终端进行代理的解决方案"
 date: 2013-07-18 22:05
 comments: true
-categories: notes
+tags: linux proxy
 ---
 
 Linux下软件安装基本都是在终端下进行的....  

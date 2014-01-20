@@ -3,7 +3,7 @@ layout: post
 title: "Ubuntu下apache2的配置记录"
 date: 2013-06-06 21:41
 comments: true
-categories: notes
+tags: linux apache2
 ---
 
 自从2012年四月买VPS...到现在已经算是一年多了吧.在此感谢琴对我的帮助和指导.没有琴的指导我也不会折腾和配置VPS.

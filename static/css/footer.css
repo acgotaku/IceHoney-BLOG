@@ -59,6 +59,12 @@
     width: 300px;
     min-height: 150px;
 }
+#footer .tag {
+    margin: 6px 3px;
+    padding: 2px 3px;
+    height: 20px;
+    font-size: 13px;
+}
 .col ul{
     margin: 0;
     padding: 0;

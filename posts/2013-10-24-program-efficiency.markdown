@@ -3,7 +3,7 @@ layout: post
 title: "关于程序运行效率的一点见解"
 date: 2013-10-24 23:06
 comments: true
-categories: notes
+tags: programming
 ---
 
    最近在看计算机组成原理等4本考研书籍...发现其实回过头来看这些当年没认真学的书的话还是有不少收获的.

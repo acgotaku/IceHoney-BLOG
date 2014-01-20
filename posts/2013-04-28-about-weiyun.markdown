@@ -3,7 +3,7 @@ layout: post
 title: "关于微云下载的那点事"
 date: 2013-04-28 21:31
 comments: true
-categories: notes
+tags: cookies how-to
 ---
 
 貌似腾讯公司出品了一个叫[微云](http://www.weiyun.com/index.html)的东东,说实话,要不是基家上某人告诉我我还真不知道==

@@ -3,7 +3,7 @@ layout: post
 title: "GUI和CLI的使用比较"
 date: 2014-01-18 23:06
 comments: true
-categories: notes
+tags: notes
 ---
 
 GUI和CLI也算是使用软件的两大流派吧,Win下几乎都是GUI程序,Linux下几乎都是CLI程序.因为两者面向的用户不同,

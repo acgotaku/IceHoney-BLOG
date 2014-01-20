@@ -3,7 +3,7 @@ layout: post
 title: "关于CSS解决高度自适应和宽度自适应的问题"
 date: 2013-03-10 19:09
 comments: true
-categories: notes
+tags: CSS
 ---
 
 今天在做一个地图的web应用,这是个大坑...首先开始设计首页,于是开始山寨谷歌地图了 =.=

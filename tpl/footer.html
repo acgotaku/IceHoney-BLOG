@@ -15,24 +15,21 @@
 					</div>
 					<div class="tags col">
 						<h2>Tags</h2>
-						<a class="tag" href="javascript:void(0)">none</a>
-
-						<a class="tag" href="javascript:void(0)">none</a>
-
-						<a class="tag" href="javascript:void(0)">none</a>
-
+						{% for key,value in tags.items() %}
+						<a class="tag" href="/tags/{{ key }}">{{ key+'('+str(value)+')' }}</a>
+						{% end %}
 					</div>
 					<div class="links col">
 						<h2>Links</h2>
 						<ul>
 							<li>
-								<a href="http://plumz.net/">plum's blog</a>
+								<a href="http://plumz.net/" target="_blank">plum's blog</a>
 							</li>
 							<li>
-								<a href="https://www.csslayer.info/wordpress/">CS Slayer</a>
+								<a href="https://www.csslayer.info/wordpress/" target="_blank">CS Slayer</a>
 							</li>
 							<li>
-								<a href="https://github.com/acgotaku">My Github repos</a>
+								<a href="https://github.com/acgotaku" target="_blank">My Github repos</a>
 							</li>
 							
 						</ul>

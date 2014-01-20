@@ -3,7 +3,7 @@ layout: post
 title: "安徽师范大学校园视频下载器2.0版本发布"
 date: 2013-03-15 15:30
 comments: true
-categories: notes
+tags: notes
 ---
 
 安师大的校园视频网是个资源不错但软件坑爹的东西.

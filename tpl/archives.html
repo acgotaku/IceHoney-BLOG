@@ -28,7 +28,7 @@
 		<ul>
 			{% for article in articles %}
 			<li class="archive_list"><span>Posted on <time class="entry-date">{{ article["date"] }}</time>»</span>
-				<a href="/posts/{{ article["name"] }}">{{ article["title"] }}</a></li>
+				<a href="/posts/{{ article["name"] }}" target="_blank">{{ article["title"] }}</a></li>
 			{% end %}
 		</ul>
 	</div>

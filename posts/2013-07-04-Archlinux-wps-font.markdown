@@ -3,7 +3,7 @@ layout: post
 title: "Archlinux下安装过wps之后字体发虚的问题"
 date: 2013-07-04 12:39
 comments: true
-categories: notes
+tags: linux wps font
 ---
 
 Office是Linux永远的痛...微软的Office市场霸主地位是根本无法撼动的...  

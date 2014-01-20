@@ -3,7 +3,7 @@ layout: post
 title: "个人博客的建立"
 date: 2013-02-07 22:07
 comments: true
-categories: notes
+tags: notes
 ---
 
 好吧,我建立个人博客的想法其实已经差不多有一年了吧.一直没去实现...主要原因还是自己太懒...一开始想用WordPress搭建一个....其实我也搭建了

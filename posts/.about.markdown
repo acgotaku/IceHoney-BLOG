@@ -3,7 +3,7 @@ layout: post
 title: "About"
 date: 2014-1-17 16:26
 comments: true
-categories: notes
+tags: notes
 ---
 
 

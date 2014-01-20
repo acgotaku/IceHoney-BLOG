@@ -3,7 +3,7 @@ layout: post
 title: "Archlinux下使用airbase和dhcpd建立虚拟AP"
 date: 2013-08-26 21:29
 comments: true
-categories: notes
+tags: linux airbase
 ---
 
 Linux下的wicd本身自带一个创建Ad-Hoc network功能的,但是这个功能太不实用了,  

@@ -3,7 +3,7 @@ layout: post
 title: "Sublime使用笔记以及插件推荐"
 date: 2013-07-02 22:06
 comments: true
-categories: notes
+tags: sublime
 ---
 
 自从换了Linux就摆脱了笨重的VS这个强大的开发工具,自动提示,自动纠错....  

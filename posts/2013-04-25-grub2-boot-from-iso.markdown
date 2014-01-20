@@ -3,7 +3,7 @@ layout: post
 title: "使用GRUB2引导ISO镜像"
 date: 2013-04-25 21:17
 comments: true
-categories: notes
+tags: linux boot grub2
 ---
 
 首先来说下什么是GRUB,熟悉Linux的同学都应该知道的说.它是一个多重操作系统启动管理器。用来引导不同系统，如windows，linux。
