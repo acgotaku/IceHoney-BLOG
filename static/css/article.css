@@ -57,7 +57,11 @@ border-radius: 3px;
 .article img{
     max-width: 660px;
 }
-
+.tag{
+    color: #AAA;
+    text-transform: lowercase;
+    font-style: italic;
+}
 /* Nav */
 
 .v_nav {

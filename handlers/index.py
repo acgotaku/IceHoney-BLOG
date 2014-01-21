@@ -130,9 +130,10 @@ class TagsHandler(BaseHandler):
 			article = SingleFileHandler(single_file)
 			if article['tags'].find(tag) != -1:
 				articles.append(article)
-		self.render("index.html", title=site_config['title'], articles = articles,prev=False, next=False, tags=tags)
-		
-
+		if articles:
+			self.render("index.html", title=site_config['title'], articles = articles,prev=False, next=False, tags=tags)
+		else:
+			raise HTTPError(404)
 class AboutHandler(BaseHandler):
 	def get(self):
 		about_path=os.getcwd() + os.sep + 'posts'+os.sep+'.about.markdown'

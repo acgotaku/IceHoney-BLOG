@@ -43,7 +43,15 @@
 							</span>
 						</div>
 						<div class="text">{{ (article["content"]) }}</div>
-
+						<div class="tag">
+							<span>
+								tagged:
+								{% for tag in article["tags"].split(' ') %}
+								<a href="/tags/{{ tag }}">
+									{{ tag }}
+								</a>
+								{% end %}
+							</span></div>
 					</article>
 				</div>
 				<div class="sep"></div>

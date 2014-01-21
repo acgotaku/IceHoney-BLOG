@@ -44,7 +44,7 @@ class BaseHandler(tornado.web.RequestHandler):
     def write_error(self, status_code, **kwargs):
         if status_code==404:
             self.set_status(404)
-            self.render("404.html",title="404 NOT FOUND",tags=tags)
+            self.render("404.html",title="404 NOT FOUND",url=site_config['url'],tags=tags)
         else:
             super(BaseHandler,self).write_error(status_code,**kwargs)
 
