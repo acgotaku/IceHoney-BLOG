@@ -11,7 +11,7 @@ from tornado.web import HTTPError
 from tornado.options import options
 site_config = {
     "title" : "IceHoney!",
-    "url" : """http://blog.icehoey.me""",
+    "url" : """http://blog.icehoney.me""",
     "post_dir": os.getcwd() + os.sep + 'posts',
 }
 __ALL__ = ['HTTPError', 'BaseHandler', 'BaseWebSocket', 'BaseUIModule', ]
