@@ -6,14 +6,7 @@ import markdown
 import codecs
 import datetime
 import time
-import linecache
-from collections import Counter
 from .base import *
-site_config = {
-	"title" : "IceHoney!",
-	"url" : """http://blog.icehoey.me""",
-	"post_dir": os.getcwd() + os.sep + 'posts',
-}
 def SingleFileHandler(file_path):
 	f = codecs.open(file_path, mode='r', encoding='utf8')
 	lines = []
@@ -51,19 +44,6 @@ def SingleFileHandler(file_path):
 		ret['content'] = markdown.markdown(content)
 		ret['name'] = file_path.split(os.sep)[-1].split('.')[0]		
 	return ret
-def TagsReader(post_dir):
-	tags=[]
-	files=os.listdir(post_dir)
-	for f in files:
-		if  f.startswith('.'):
-			continue
-		post_path = site_config["post_dir"] + os.sep+f
-		tag=linecache.getline(post_path, 6)[6:-1]
-		for word in tag.split(' '):
-			tags.append(word)
-	tags=dict(Counter(tags).items())
-	return tags
-tags=TagsReader(site_config["post_dir"])
 
 class IndexHandler(BaseHandler):
     def get(self):
