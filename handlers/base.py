@@ -29,7 +29,7 @@ def TagsReader(post_dir):
             tags.append(word)
     tags=dict(Counter(tags).items())
     return tags
-tags=TagsReader(site_config["post_dir"])
+
 def YearsReader(post_dir):
     years=[]
     files=os.listdir(post_dir)
@@ -37,9 +37,10 @@ def YearsReader(post_dir):
         if f.startswith('.'):
             continue
         years.append(f[0:4])
+    years.sort(reverse=True)
     years=list(set(years))
     return years
-years=YearsReader(site_config["post_dir"])
+
 class BaseHandler(tornado.web.RequestHandler):
     application_export = set(())
     def __getattr__(self, key):
@@ -53,6 +54,8 @@ class BaseHandler(tornado.web.RequestHandler):
         return super(BaseHandler, self).render_string(template_name, **kwargs)
 
     def render(self, template_name, **kwargs):
+        tags=TagsReader(site_config["post_dir"])
+        years=YearsReader(site_config["post_dir"])
         kwargs["tags"]=tags
         kwargs["years"]=years
         super(BaseHandler,self).render(template_name, **kwargs)

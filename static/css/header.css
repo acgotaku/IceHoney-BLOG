@@ -1,28 +1,10 @@
-/* eric meyer css reset */
-html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
-{
-    font-family: "Lucida Grande" ,Arial,Helvetica,Verdana,sans-serif, "Hiragino Sans GB" , "微软雅黑" , "宋体";
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: middle;
-    background: transparent;
+
+a {
+    color: #A0410D;
+    text-decoration: none;
 }
-::-webkit-scrollbar {
-width: 8px;
-height: 8px;
-}
-::-webkit-scrollbar-thumb {
-height: 50px;
-background-color: #999;
-border-radius: 4px;
-outline-offset: -2px;
-}
-::-webkit-scrollbar-track-piece {
-background-color: #f4f4f4;
-border-radius: 1px;
+a:active, a:hover {
+    color: #ff4b33;
 }
 /*Effect*/
 *{
@@ -30,43 +12,6 @@ transition: color 0.5s , borde 0.5s , background 0.5s ,  box-shadow 0.5s, text-s
 -moz-transition: color 0.5s , border 0.5s , background 0.5s ,  box-shadow 0.5s, text-shadow 0.5s, width 0.5s, padding 0.5s;
 -webkit-transition: color 0.5s , border 0.5s , background 0.5s ,  box-shadow 0.5s, text-shadow 0.5s, width 0.5s, padding 0.5s;
 -o-transition: color 0.5s , border 0.5s , background 0.5s ,  box-shadow 0.5s, text-shadow 0.5s, width 0.5s, padding 0.5s;
-}
-blockquote, q
-{
-    quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after
-{
-    content: '';
-    content: none;
-}
-/* remember to define focus styles! */
-:focus
-{
-    outline: 0;
-}
-/* remember to highlight inserts somehow! */
-ins
-{
-    text-decoration: none;
-}
-del
-{
-    text-decoration: line-through;
-}
-/* tables still need 'cellspacing="0"' in the markup */
-table
-{
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/* end eric meyer css reset */
-a {
-    color: #A0410D;
-    text-decoration: none;
-}
-a:active, a:hover {
-    color: #ff4b33;
 }
 /* Header */
 #nav{

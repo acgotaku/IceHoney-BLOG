@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>{{ article["title"] }}</title>
+	<link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
+	<link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
@@ -26,7 +28,7 @@
 	<div id="content">
 		<ul id="article_list">
 
-			<li class="list_item">
+			<li class="list_item a-fadein">
 				<div class="article">
 					<article>
 						<div class="article_title title">

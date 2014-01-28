@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>{{ title }}</title>
+	<link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
+	<link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
@@ -26,7 +28,7 @@
 	<div id="content">
 		<ul id="article_list">
 			{% for article in articles %}
-			<li class="list_item">
+			<li class="list_item a-fadein">
 				<div class="article">
 					<article>
 					<div class="article_title title">
@@ -56,10 +58,10 @@
 		</ul>
 	</div>
 	{% if prev %}
-	 <a id="prev" href="/?p={{ prevnum }}" class="v_nav"><span class="icon">Prev</span></a>
+	 <a id="prev" href="/?p={{ prevnum }}" class="v_nav a-fadeinL"><span class="icon">Prev</span></a>
 	{% end %}
 	{% if next %}
-	 <a id="next" href="/?p={{ nextnum }}" class="v_nav"><span class="icon">Next</span></a>
+	 <a id="next" href="/?p={{ nextnum }}" class="v_nav a-fadeinR"><span class="icon">Next</span></a>
 	 {% end %}
 	{% include "footer.html" %}
 
