@@ -133,6 +133,7 @@ border-radius: 3px;
     background-position: 0 -192px;
 }
 #next:active .icon, #prev:active .icon {
+    transition:none;
     background-position: 0 -256px !important; 
     -webkit-animation-name: ani_go_loading; 
     -webkit-animation-duration: 1s; 

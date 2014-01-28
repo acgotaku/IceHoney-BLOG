@@ -9,6 +9,7 @@ import tornado.web
 import tornado.websocket
 from tornado.web import HTTPError
 from tornado.options import options
+from tornado.template import Loader
 site_config = {
     "title" : "IceHoney!",
     "url" : """http://blog.icehoney.me""",
@@ -29,7 +30,16 @@ def TagsReader(post_dir):
     tags=dict(Counter(tags).items())
     return tags
 tags=TagsReader(site_config["post_dir"])
-
+def YearsReader(post_dir):
+    years=[]
+    files=os.listdir(post_dir)
+    for f in files:
+        if f.startswith('.'):
+            continue
+        years.append(f[0:4])
+    years=list(set(years))
+    return years
+years=YearsReader(site_config["post_dir"])
 class BaseHandler(tornado.web.RequestHandler):
     application_export = set(())
     def __getattr__(self, key):
@@ -41,10 +51,16 @@ class BaseHandler(tornado.web.RequestHandler):
         if "options" not in kwargs:
             kwargs["options"] = options
         return super(BaseHandler, self).render_string(template_name, **kwargs)
+
+    def render(self, template_name, **kwargs):
+        kwargs["tags"]=tags
+        kwargs["years"]=years
+        super(BaseHandler,self).render(template_name, **kwargs)
+
     def write_error(self, status_code, **kwargs):
         if status_code==404:
             self.set_status(404)
-            self.render("404.html",title="404 NOT FOUND",url=site_config['url'],tags=tags)
+            self.render("404.html",title="404 NOT FOUND",url=site_config['url'])
         else:
             super(BaseHandler,self).write_error(status_code,**kwargs)
 

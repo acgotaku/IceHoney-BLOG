@@ -74,7 +74,7 @@ class IndexHandler(BaseHandler):
     		next=True
     	else:
     		next=False
-        self.render("index.html", title=site_config['title'], articles = articles,prev=prev, next=next, prevnum=p-3, nextnum=p+3,tags=tags)
+        self.render("index.html", title=site_config['title'], articles = articles,prev=prev, next=next, prevnum=p-3, nextnum=p+3)
 class PostsHandler(BaseHandler):
 	def get(self,id):
 		post_path = site_config["post_dir"] + os.sep + id.replace('.','') + '.markdown'
@@ -83,7 +83,7 @@ class PostsHandler(BaseHandler):
 		else:
 			raise HTTPError(404)
 			return	
-		self.render("article.html", url=site_config["url"], article = article,tags=tags)
+		self.render("article.html", url=site_config["url"], article = article)
 class RSSOutput(BaseHandler):
 	def get(self):
 		articles = []
@@ -115,7 +115,7 @@ class ArchivesHandler(BaseHandler):
 		for single_file in file_list:
 			article = SingleFileHandler(single_file)
 			if article: articles.append(article)
-		self.render("archives.html",title=site_config['title'], articles = articles,tags=tags)
+		self.render("archives.html",title=site_config['title'], articles = articles)
 class TagsHandler(BaseHandler):
 	def get(self,tag):
 		articles = []
@@ -131,7 +131,7 @@ class TagsHandler(BaseHandler):
 			if article['tags'].find(tag) != -1:
 				articles.append(article)
 		if articles:
-			self.render("index.html", title=site_config['title'], articles = articles,prev=False, next=False, tags=tags)
+			self.render("index.html", title=site_config['title'], articles = articles,prev=False, next=False)
 		else:
 			raise HTTPError(404)
 class AboutHandler(BaseHandler):
@@ -142,7 +142,7 @@ class AboutHandler(BaseHandler):
 		else:
 			raise HTTPError(404)
 			return	
-		self.render("article.html", url=site_config["url"], article = article,tags=tags)
+		self.render("article.html", url=site_config["url"], article = article)
 		
 handlers = [
         (r"/", IndexHandler),
