@@ -13,7 +13,8 @@ tags: notes
 的话,也会慢慢忘记,不过还是有印象的,但是就不知道在哪个位置,这就是PDF的缺点了,如果是纸质书的话很容易再去翻阅需要的知识点,
 虽然 Ctrl+F 搜索很好用,但是得到的结果总是不尽如人意,我个人还是喜欢纸质书.
 
-光看书真的很没劲,于是我又开坑了...为了练习python,我想当后端工程师啊!IE一天不死我写前端就不会痛快![新项目](https://github.com/acgotaku/netkuu-API)就这么愉快的开坑了,前端懒的设计就直接用[Bootstrap](http://getbootstrap.com/)了,感觉Bootstrap也就只能用些组件的UI,
+光看书真的很没劲,于是我又开坑了...为了练习python,我想当后端工程师啊!IE一天不死我写前端就不会痛快!
+[新项目](https://github.com/acgotaku/netkuu-API)就这么愉快的开坑了,前端懒的设计就直接用[Bootstrap](http://getbootstrap.com/)了,感觉Bootstrap也就只能用些组件的UI,
 布局神马的还是不符合我的胃口.项目部署的网址是:http://netkuu.icehoney.me/ 目前还是绝赞填坑中~
 前端后端全部自己一个人写,希望能把自己锻炼成full stack developer~ 现在就差数据库练手了,好久没玩数据库了.
 
