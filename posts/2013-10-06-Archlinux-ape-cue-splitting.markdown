@@ -21,6 +21,8 @@ Linux下有个shntool的工具非常实用,可以完美解决无损音乐分轨�
 mp3格式的,所以需要指定用lame编码器进行编码.当然很多人只是想分轨,并不想转换成压缩的mp3格式.  
 `shntool split -f example.cue -t %n_%p_%t  -o  flac example.ape`  
 直接转换成flac格式就好了,因为flac格式是开源的无损音乐格式,播放器对它支持的肯定比较好.
+如果出现  warning: failed to read data from input file using format: [ape]  
+这样的错误可能需要安装[mac](https://www.archlinux.org/packages/community/x86_64/mac/)
 
 #给每个音乐文件打TAG
 转换之后的文件只是单纯的音乐文件,每个音乐并没有包含想关的TAG信息,这时候需要用cuetag.sh给每个音乐文件打TAG  
