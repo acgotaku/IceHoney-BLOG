@@ -6,10 +6,10 @@ comments: true
 tags: sublime
 ---
 
-自从换了Linux就摆脱了笨重的VS这个强大的开发工具,自动提示,自动纠错....  
-VS为我提供了太多功能,已经把我宠坏了...以至于普通的编辑器我都无法习惯...  
+自从换了Linux就摆脱了笨重的VS这个强大的开发工具,自动提示,自动纠错....
+VS为我提供了太多功能,已经把我宠坏了...以至于普通的编辑器我都无法习惯...
 这样可不是什么好习惯,不过Sublime Text 2 是个很好的编辑器,特别是它的插件特别
-丰富提供了很多实用的功能.于是在Linux下前端开发基本就是实用它了.  
+丰富提供了很多实用的功能.于是在Linux下前端开发基本就是实用它了.
 虽说是收费软件,但是个人用户可以无限期的免费试用,只不过经常提示购买罢了...
 
 #基础配置
@@ -33,9 +33,9 @@ VS为我提供了太多功能,已经把我宠坏了...以至于普通的编辑�
 
 ##Package Control
 
-Package Control 是用来管理 Sublime Text 2 的插件的插件. 也是装完后第一个要安装的插件.  
+Package Control 是用来管理 Sublime Text 2 的插件的插件. 也是装完后第一个要安装的插件.
 首先打开 console, 并在打开的 Sublime console 中输入:
-		
+
 	import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
 
 ##ZenCoding
@@ -63,3 +63,13 @@ JS format是Sublime Text 2的一个javascript的格式化插件，使用来自JS
 [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
 [Codecs26](https://github.com/seanliang/Codecs26)
 同时装这两个插件就可以正常打开GBK文件并且保存.
+
+#一些编码规范
+
+有时候会设置保存文件时删除多余的空白字符并且在文件结尾添加空白行
+
+打开Preferences->Settings-Default设置
+
+		"trim_trailing_white_space_on_save": true,
+		"ensure_newline_at_eof_on_save": true,
+
