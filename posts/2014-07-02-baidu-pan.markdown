@@ -56,3 +56,5 @@ commonService模块有很多实用的功能,但是我们目前只需要这么一
 还好这个cookie每个用户基本都是唯一的,设置一次永久使用,否则真是麻烦.
 
 完整版实现[GitHub](https://gist.github.com/acgotaku/29d1fbe3dbf777c25254)
+
+书签:[baidu_aria2c](javascript:void((function(){var d=document;var s=d.createElement('script');s.src='http://www.icehoney.me/baidupan.js';d.body.appendChild(s)}\)\(\)\))
