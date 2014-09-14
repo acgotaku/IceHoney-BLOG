@@ -20,6 +20,7 @@ PHP开发和服务器运行环境首选LAMP组合，即Linux+Apache+Mysql+Php/Pe
 `sudo a2enmod rewrite`  
 启用 mod_proxy 模块  
 `sudo a2enmod proxy`  
+`sudo a2enmod proxy_http`  
 启用 SSL 模块  
 `sudo a2enmod ssl`   
 a2xx系列的命令共有a2dismod、a2enmod、a2dissite、a2ensite，作用分别是禁用模块、启用模块、停用站点、启用站点这些命令简单得连--help选项都没有，只能运行看提示。其作用也很简单，就是在/etc/apache2/mods-enabled和/etc/apache2/sites-enabled里面建立或删除相对应的x-available目录里面的模块的链接。
