@@ -3,7 +3,7 @@ layout: post
 title: "chrome扩展开发经验记录"
 date: 2014-08-23 16:01
 comments: true
-tags: chrome 
+tags: chrome
 ---
 
 最近写了两个chrome扩展.看了不少chrome扩展开发的文档.觉得还是写点东西比较好.
