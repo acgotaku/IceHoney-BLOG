@@ -159,7 +159,7 @@ SSL模块就是多了一个证书的设置  其余的基本不变.
 	openssl rsa -in xxx.key -out ssl.key  
 	rm xxx.key  
 然后根据这个key文件生成证书请求文件  
-openssl req -new -key ssl.key -out ssl.csr  
+`openssl req -new -key ssl.key -out ssl.csr`   
 以上命令生成时候要填很多东西 一个个看着写吧（可以随便，毕竟这是自己生成的证书）
 最后根据这2个文件生成crt证书文件
 
