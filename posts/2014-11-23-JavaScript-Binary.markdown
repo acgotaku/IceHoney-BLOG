@@ -3,7 +3,7 @@ layout: post
 title: "JavaScript处理二进制数据"
 date: 2014-11-23 14:30
 comments: true
-tags: notes
+tags: JavaScript
 ---
 
 最近在开发扩展的时候遇到需要获取MP3数据并且直接交给其它接口处理的问题,但是使用JQuery的AJAX进行
