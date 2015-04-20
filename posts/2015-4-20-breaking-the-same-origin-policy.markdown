@@ -3,7 +3,7 @@ layout: post
 title: "突破同源策略限制的方法"
 date: 2015-4-20 19:54
 comments: true
-tags: javascript
+tags: JavaScript
 ---
 
 # 同源策略基本介绍
