@@ -1,72 +1,75 @@
 {% autoescape None %}<!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/Blog">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta itemprop="name" content="IceHoney Blog">
-	<meta itemprop="description" content="IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~">
-	<meta itemprop="image" content="http://lh6.googleusercontent.com/-nZVyf9jqnXQ/U7O4riN1vBI/AAAAAAAAgSE/8F91TvGxizc/w1253/bg.jpg">
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
-	<link href='//fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
-	<script type="text/javascript">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta itemprop="name" content="IceHoney Blog">
+    <meta itemprop="description" content="IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~">
+    <meta itemprop="image" content="http://lh6.googleusercontent.com/-nZVyf9jqnXQ/U7O4riN1vBI/AAAAAAAAgSE/8F91TvGxizc/w1253/bg.jpg">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
+    <link href='//fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-37774652-3']);
-	  _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37774652-3']);
+      _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-	</script>
+    </script>
 </head>
 <body>
-	{% include "header.html" %}
-	<div id="content">
-		<ul id="article_list">
-			{% for article in articles %}
-			<li class="list_item a-fadein">
-				<div class="article">
-					<article>
-					<div class="article_title title">
-						<h2><a href="/posts/{{ article["name"] }}">{{ article["title"] }}</a></h2>
-					</div>
-					<div class="date">
-							<span>Posted on <a><time class="entry-date">{{ article["date"] }}</time></a></span>
-						</div>
-					<div class="text">
-						{{ (article["content"]) }}
-					</div>
-					<div class="tag">
-							<span>
-								tagged:
-								{% for tag in article["tags"].split(' ') %}
-								<a href="/tags/{{ tag }}">
-									{{ tag }}
-								</a>
-								{% end %}
-							</span>
-					</div>
-				</article>
-				</div>
-				<div class="sep"></div>
-			</li>
-			{% end %}
-		</ul>
-	</div>
-	{% if prev %}
-	 <a id="prev" href="/?p={{ prevnum }}" class="v_nav a-fadeinL"><span class="icon">Prev</span></a>
-	{% end %}
-	{% if next %}
-	 <a id="next" href="/?p={{ nextnum }}" class="v_nav a-fadeinR"><span class="icon">Next</span></a>
-	 {% end %}
-	{% include "footer.html" %}
+    {% include "header.html" %}
+    <div id="content">
+        <ul id="article_list">
+            {% for article in articles %}
+            <li class="list_item a-fadein">
+                <div class="article">
+                    <article>
+                    <div class="article_title title">
+                        <h2><a href="/posts/{{ article["name"] }}">{{ article["title"] }}</a></h2>
+                    </div>
+                    <div class="date">
+                            <span>Posted on <a><time class="entry-date">{{ article["date"] }}</time></a></span>
+                        </div>
+                    <div class="text">
+                        {{ (article["content"]) }}
+                    </div>
+                    <div class="tag">
+                            <span>
+                                tagged:
+                                {% for tag in article["tags"].split(' ') %}
+                                <a href="/tags/{{ tag }}">
+                                    {{ tag }}
+                                </a>
+                                {% end %}
+                            </span>
+                    </div>
+                </article>
+                </div>
+                <div class="sep"></div>
+            </li>
+            {% end %}
+        </ul>
+    </div>
+    {% if prev %}
+     <a id="prev" href="/?p={{ prevnum }}" class="v_nav a-fadeinL"><span class="icon">Prev</span></a>
+    {% end %}
+    {% if next %}
+     <a id="next" href="/?p={{ nextnum }}" class="v_nav a-fadeinR"><span class="icon">Next</span></a>
+     {% end %}
+    {% include "footer.html" %}
 
 </body>
 </html>
