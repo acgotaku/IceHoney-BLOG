@@ -9,12 +9,12 @@
     <meta itemprop="description" content="IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~">
     <meta itemprop="image" content="http://lh6.googleusercontent.com/-nZVyf9jqnXQ/U7O4riN1vBI/AAAAAAAAgSE/8F91TvGxizc/w1253/bg.jpg">
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ static_url("css/highlight.css") }}" type="text/css" media="screen">
     <link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
     <link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
     <link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
     <link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
     <link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
-    <link href='//fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -70,6 +70,6 @@
      <a id="next" href="/?p={{ nextnum }}" class="v_nav a-fadeinR"><span class="icon">Next</span></a>
      {% end %}
     {% include "footer.html" %}
-
+<script data-main="{{ static_url("js/index.js") }}" async="true" src="{{ static_url("js/lib/require.js") }}" defer></script>
 </body>
 </html>

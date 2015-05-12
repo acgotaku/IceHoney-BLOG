@@ -8,7 +8,7 @@ from tornado.options import define, options
 
 define("bind", default="127.0.0.1", help="addrs that debugger bind to")
 define("port", default=8888, help="the port that debugger listen to")
-define("debug", default=False, help="debug mode")
+define("debug", default=True, help="debug mode")
 define("config", default="", help="config file")
 
 class Application(tornado.web.Application):

@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>{{ article["title"] }}</title>
+    <link rel="stylesheet" href="{{ static_url("css/highlight.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
 	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
@@ -85,6 +86,6 @@
 	</div>
 
 	{% include "footer.html" %}
-
+<script data-main="{{ static_url("js/index.js") }}" async="true" src="{{ static_url("js/lib/require.js") }}" defer></script>
 </body>
 </html>
