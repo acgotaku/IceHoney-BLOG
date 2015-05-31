@@ -30,7 +30,7 @@ RPC模式就是启动之后什么也不做,等着通过RPC接口接受下载请�
 		enable-rpc=true
 		#允许所有来源, web界面跨域权限需要
 		rpc-allow-origin-all=true
-		#允许非外部访问
+		#允许外部访问，false的话只监听本地端口
 		rpc-listen-all=true
 		#RPC端口, 仅当默认端口被占用时修改
 		#rpc-listen-port=6800
