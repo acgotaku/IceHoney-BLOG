@@ -48,6 +48,14 @@ h1{
     .nav-wrapper{
         display: inline-block;
     }
+    nav.top-nav a.page-title {
+        line-height: 190px;
+        font-size: 68px;
+    }
+    nav.fixed a.page-title {
+        line-height: 60px;
+        font-size: 68px;
+    }
 }
 @media only screen and (max-width : 992px) {
     .side-nav.fixed {
@@ -56,7 +64,17 @@ h1{
     nav .nav-wrapper {
         text-align: center;
     }
+    nav.top-nav a.page-title {
+        line-height: 190px;
+        font-size: 30px;
+    }
+    main .container{
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
 }
+
 #logo-container{
     height: 200px;
     margin: 10px 0;
@@ -87,14 +105,6 @@ a.button-collapse.top-nav {
 }
 a.button-collapse.top-nav.full {
     line-height: 190px; 
-}
-nav.top-nav a.page-title {
-    line-height: 190px;
-    font-size: 68px;
-}
-nav.fixed a.page-title {
-    line-height: 60px;
-    font-size: 68px;
 }
 .waves-effect.waves-teal .waves-ripple {
     background-color: rgba(129, 145, 241, 0.7); 
