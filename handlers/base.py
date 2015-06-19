@@ -12,7 +12,7 @@ from tornado.options import options
 from tornado.template import Loader
 site_config = {
     "title" : "IceHoney!",
-    "url" : """http://blog.icehoney.me""",
+    "url" : """https://blog.icehoney.me""",
     "post_dir": os.getcwd() + os.sep + 'posts',
 }
 __ALL__ = ['HTTPError', 'BaseHandler', 'BaseWebSocket', 'BaseUIModule', ]

@@ -3,12 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/archives.css") }}" type="text/css" media="screen">
-	<link href='//fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href="{{ static_url("css/prism.css") }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ static_url("css/materialize.css") }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ static_url("css/base.css") }}" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -25,16 +22,36 @@
 </head>
 <body>
 	{% include "header.html" %}
-	<div id="content" class="a-fadein">
-		<h1>Archives</h1>
-		<ul>
-			{% for article in articles %}
-			<li class="archive_list a-fadein"><span>Posted on <time class="entry-date">{{ article["date"] }}</time>»</span>
-				<a href="/posts/{{ article["name"] }}" target="_blank">{{ article["title"] }}</a></li>
-			{% end %}
-		</ul>
-	</div>
-	{% include "footer.html" %}
 
+
+
+<main>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12">
+        <div class="card  archives">
+            <div class="card-content">
+            <h1>Archives</h1>
+			<ul>
+				{% for article in articles %}
+				<li class="archive_list a-fadein"><span>Posted on <time class="entry-date">{{ article["date"] }}</time>»</span>
+					<a href="/posts/{{ article["name"] }}" target="_blank">{{ article["title"] }}</a></li>
+				{% end %}
+			</ul>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+</div>
+
+    </main>
+	{% include "footer.html" %}
+    <script  src="{{ static_url("js/jquery-2.1.1.min.js") }}" ></script>
+    <script  src="{{ static_url("js/materialize.min.js") }}" ></script>
+    <script  src="{{ static_url("js/prism.js") }}" ></script>
+    <script  src="{{ static_url("js/init.js") }}" ></script>
 </body>
 </html>

@@ -4,12 +4,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="refresh" content="5;url={{ url }}">
 	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/animation.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/header.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/footer.css") }}" type="text/css" media="screen">
-	<link rel="stylesheet" href="{{ static_url("css/article.css") }}" type="text/css" media="screen">
-	<link href='//fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href="{{ static_url("css/materialize.css") }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ static_url("css/base.css") }}" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -26,29 +22,25 @@
 </head>
 <body>
 	{% include "header.html" %}
-	<div id="content">
-		<ul id="article_list">
-			 
-			<li class="list_item a-fadein">
-				<div class="article">
-					<article>
-					<div class="article_title title">
-						<h2> Sorry!</h2>					
-					</div>
-					 
-					<div class="text">
-						 Sorry, the page you were looking does not exist.<br/>
+<main>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12">
+        <div class="card  archives">
+            <div class="card-content">
+            <h1>Sorry!</h1>
+			 Sorry, the page you were looking does not exist.<br/>
 						 Redirecting to Homepage...
-					</div>
-					
-				</article>
-				</div>
-				<div class="sep"></div>
-			</li>
-			 
-		</ul>
-	</div>
-	 
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+</div>
+
+    </main>
 	{% include "footer.html" %}
 
 </body>

@@ -83,7 +83,7 @@ class PostsHandler(BaseHandler):
         else:
             raise HTTPError(404)
             return  
-        self.render("article.html", url=site_config["url"], article = article)
+        self.render("article.html", url=site_config["url"], article = article, prev=False, next=False)
 class RSSOutput(BaseHandler):
     def get(self):
         articles = []
@@ -115,7 +115,7 @@ class ArchivesHandler(BaseHandler):
         for single_file in file_list:
             article = SingleFileHandler(single_file)
             if article: articles.append(article)
-        self.render("archives.html",title=site_config['title'], articles = articles)
+        self.render("archives.html",title=site_config['title'], articles = articles, prev=False, next=False)
 class TagsHandler(BaseHandler):
     def get(self,tag):
         articles = []
@@ -142,7 +142,7 @@ class AboutHandler(BaseHandler):
         else:
             raise HTTPError(404)
             return  
-        self.render("article.html", url=site_config["url"], article = article)
+        self.render("article.html", url=site_config["url"], article = article, prev=False, next=False)
         
 handlers = [
         (r"/", IndexHandler),
