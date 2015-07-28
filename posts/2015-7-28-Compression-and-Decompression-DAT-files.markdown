@@ -44,3 +44,5 @@ file_contexts文件是ROM本身提供的.后面的一串数字指的是打包的
 		./rimg2sdat <system_img>
 
 这样就打包好了新的DAT文件,放入刷机ROM.刷机即可~ 以上操作最好在Linux环境下,Win下不保证成功.
+
+参考 [XDA](http://forum.xda-developers.com/android/software-hacking/how-to-conver-lollipop-dat-files-to-t2978952)
