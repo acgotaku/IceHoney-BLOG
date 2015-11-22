@@ -108,9 +108,9 @@ tags: linux
 		    chainloader /EFI/Microsoft/Boot/bootmgfw.efi
 		}
 
-$hints_string的值是命令`# grub-probe --target=fs_uuid /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`的输出.
+$hints_string的值是命令`# grub-probe --target=hints_string /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`的输出.
 
-$fs_uuid的值是命令`grub-probe --target=hints_string /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`的输出.
+$fs_uuid的值是命令`# grub-probe --target=fs_uuid /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`的输出.
 
 替换这俩值,保存并退出即可.到此双系统配置完毕.最后别忘了进BIOS把第一启动项目设置为GRUB.
 
