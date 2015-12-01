@@ -82,7 +82,7 @@ tags: linux
 		  initrd (loop)/arch/boot/x86_64/archiso.img
 		}
 
-这次总算可以引导出arch的安装环境了.接下来就是按照正常的步骤进行安装了.
+这次总算可以引导出arch的安装环境了.接下来就是按照正常的步骤进行安装了. 在Win下直接使用[Rufus](https://github.com/pbatard/rufus)刻录就没那么折腾了.
 
 #安装Archlinux之后配置双系统的GRUB
 
