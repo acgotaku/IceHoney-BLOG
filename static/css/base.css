@@ -13,6 +13,9 @@ h1{
     line-height: 1.804rem;
     margin: 0.82rem 0 0.656rem 0;
 }
+img{
+    width: 100%;
+}
 .title>a{
     color: rgba(0, 0, 0, 0.870588);
 }
