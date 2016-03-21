@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "关于JavaScript跨域请求的相关知识"
-date: 2016-03-31 14:33
+date: 2016-03-21 14:33
 comments: true
 tags: JavaScript
 ---
