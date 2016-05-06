@@ -13,8 +13,15 @@ h1{
     line-height: 1.804rem;
     margin: 0.82rem 0 0.656rem 0;
 }
+h2{
+    font-size: 1.34rem;
+    line-height: 1.504rem;
+    margin: 0.82rem 0 0.656rem 0;
+}
 img{
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 .title>a{
     color: rgba(0, 0, 0, 0.870588);
