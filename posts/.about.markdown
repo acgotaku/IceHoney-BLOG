@@ -5,44 +5,5 @@ date: 2014-1-17 16:26
 comments: true
 tags: notes
 ---
-
-
-雪月秋水君于2010年11月正式接触计算机开始编程生涯.虽然3年多的编程经验很短暂,但还是收获了很多.
-
-雪月秋水君只喜欢两样东西:动漫和编程.
-
-雪月秋水君在大学期间习得以下技能:
-
-#Programming languages
-
-*   C#
-*   HTML
-*   CSS
-*   javascript
-*   Python
-*   SQL
-*   C
-*   C++
-*   Java
-
-#Framework
-*   .NET
-*   jQuery
-*   Bootstrap
-
-#Database
-*   MySQL
-*   SQL Server
-*   Oracle
-
-#OS
-*   Archlinux(now)
-*   Windows
-*   Android
-
-#Tools
-*   vim
-*   Sublime Text
-*   Visual Studio
-
+Please visit :[My resume](http://resume.icehoney.me/)
 
