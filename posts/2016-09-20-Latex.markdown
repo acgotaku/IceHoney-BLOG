@@ -19,7 +19,7 @@ Latex的主要功能是把tex文件编译成pdf文件，所以自带的编辑功
 
 #Latex格式学习
 
-网上有很多Latex的学习资料，不过我们也没必要详细学习，在此介绍一个简单的学习资料。[一份不太简短的LATEX介绍](http://www.mohu.org/info/lshort-cn.pdf)基本上看完这个文档就可以大致明白如何利用Latex书写论文。
+网上有很多Latex的学习资料，不过我们也没必要详细学习，在此介绍一个简单的学习资料。[一份不太简短的LATEX介绍](http://mirror.hust.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf)基本上看完这个文档就可以大致明白如何利用Latex书写论文。
 
 
 #Latex模板
