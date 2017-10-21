@@ -27,3 +27,12 @@ tags: web modal
 
 第二个方案是，网页内容采用`overflow: hidden`来隐藏滚动条。Modal采用`position：fixed`方案进行定位，但是这时候Modal不得不设置`overflow： auto`来进行滚动。
 第二个方案对于网页内容和Modal的位置并没有特殊的要求，比较灵活，而且不需要JS的介入。
+
+
+#浏览器重绘
+
+在一个方案中，由于网页内容被设置成了`position:fixed`，滚动条自然消失。所以滚动位置回到了浏览器的最上面才对。但是有时候遇到打开`Modal`的时候发现Modal打开之后滚动条不在最上方，这时候的原因是因为我们虽然设置了CSS进行了变更，但是浏览器没有进行重新绘制，我们可以使用会导致浏览器重绘的JS API来让浏览器更新滚动条信息，使得打开的Modal处于浏览器的最上方。
+
+参考：
+
+[Force reflow](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
