@@ -5,5 +5,13 @@ date: 2014-1-17 16:26
 comments: true
 tags: notes
 ---
-Please visit :[My resume](http://resume.icehoney.me/)
 
+这里是雪月秋水君的自我简介页面。
+
+经历多次改版，这回再重新写一下吧。雪月秋水君目前在东京从事前端开发工作，至于为什么来东京呢，一方面是因为喜欢动漫，更多的原因应该只是想逃离北上广吧。
+
+# 联系方式
+
+`YWNnb3Rha3UzMTFAZ21haWwuY29t`
+
+欢迎勾搭，也承接网站开发或Chrome扩展开发的兼职工作。单纯的技术交流或动漫交流也大欢迎～
