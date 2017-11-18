@@ -23,7 +23,7 @@ tags: github
 
 协作要用到的Github命令很简单，之后再说说经常用的其他命令。例如，当我们写了半天发现自己在错误的分支上进行了开发，该怎么处理呢？我们可以使用`git stash`命令来把临时修改隐藏起来。
 
-		git stash 
+		git stash
 		git checkout dev-issue20
 		git stash pop
 
@@ -61,3 +61,5 @@ tags: github
 [Stack Overflow](https://stackoverflow.com/questions/6127328/how-can-i-delete-all-git-branches-which-have-been-merged)
 
 [高质量的Git中文教程](https://github.com/geeeeeeeeek/git-recipes)
+
+[Pro Git](https://git-scm.com/book/en/v2)
