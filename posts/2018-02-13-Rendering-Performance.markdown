@@ -3,7 +3,7 @@ layout: post
 title: "浏览器的渲染性能"
 date: 2018-02-13 20:44
 comments: true
-tags:  browser javascript
+tags: browser javascript
 ---
 
 不知不觉，2018年的春节也要来临了。今年只是元旦回家了，春节并不打算回家。回家曾经是一件美好的事情，不知从何时开始，却是那么的揪心。最近也有读很多关于性能优化和底层的前端知识。不想就此停滞，只能不断前进。
