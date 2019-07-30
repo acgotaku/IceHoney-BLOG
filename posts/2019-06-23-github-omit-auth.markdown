@@ -12,9 +12,7 @@ tags: Github
 
 针对 Travis CI，我们一般把认证信息放在环境变量里，所以在执行clone其他repo的时候，可以先设置认证信息。
 
-```
-git config --global url."https://${CI_USER_NAME}:${CI_USER_TOKEN}@github.com/".insteadOf "https://github.com/"'
-```
+    git config --global url."https://${CI_USER_NAME}:${CI_USER_TOKEN}@github.com/".insteadOf "https://github.com/"'
 
 这样设置的话，会自动替换git clone的网址。
 
@@ -22,9 +20,7 @@ git config --global url."https://${CI_USER_NAME}:${CI_USER_TOKEN}@github.com/".i
 
 有时候需要以另外一个身份进行clone repo的时候，会直接在repo的URL前面加上认证信息。
 
-```
-git clone https://${USER_NAME}:${USER_TOKEN}@github.com/{username}/{repo}
-```
+    git clone https://${USER_NAME}:${USER_TOKEN}@github.com/{username}/{repo}
 
 这样可以很方便的clone信息，但是认证信息会存在当前库的git config文件里，有泄漏的风险。
 
@@ -33,11 +29,9 @@ git clone https://${USER_NAME}:${USER_TOKEN}@github.com/{username}/{repo}
 
 netr文件用于存储网站的认证信息，一般位置在`~/.netrc`。格式是：
 
-```
-machine github.com
-login username
-password xxxxxxx
-```
+    machine github.com
+    login username
+    password xxxxxxx
 
 # 总结
 
