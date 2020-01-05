@@ -95,6 +95,8 @@ Docker很强大，但是用起来也没有那么容易。需要不断的尝试�
 
 [Containerizing a Node.js Application for Development With Docker Compose](https://www.digitalocean.com/community/tutorials/containerizing-a-node-js-application-for-development-with-docker-compose)
 
+[How To Build a Node.js Application with Docker](https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker)
+
 [Add a volume to Docker, but exclude a sub-folder](https://stackoverflow.com/questions/29181032/add-a-volume-to-docker-but-exclude-a-sub-folder)
 
 [.dockerignore file](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
