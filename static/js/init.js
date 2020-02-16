@@ -4,8 +4,8 @@
         $("pre, code").addClass("language-javascript");
         $(".page").addClass("hidden");
         $( window ).scroll(function(){
-            if(window.innerWidth >923){
-                if(window.scrollY>100){
+            if(window.innerWidth > 993){
+                if(window.scrollY > 100 && document.documentElement.scrollHeight - window.innerHeight > 130){
                     $("nav.top-nav").addClass("fixed");
                     $("main").addClass("scroll");
                     $(".page").removeClass("hidden");
