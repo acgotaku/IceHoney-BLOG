@@ -1,0 +1,100 @@
+---
+layout: post
+title: 'vue下使用jest进行单元测试'
+date: 2020-03-19 21:56
+comments: true
+tags: frontend vue
+---
+
+在前端开发逐渐复杂的今天，当然也需要对前端进行测试。单元测试主要用于白盒测试，检测程序的最小单位的正确性，通常来说就是验证函数的输入和输出。
+
+# vue 集成 jest
+
+vue-cli 已经提供现成的[插件](https://cli.vuejs.org/core-plugins/unit-jest.html)，我们可以很方便的进行集成。官方文档也有讲述如何 debug。在使用 jest 之前，我们需要知道 jest 的测试代码不是像前端代码一样运行在浏览器环境，而是使用 node 运行，并且浏览器的 DOM 环境使用[jsdom](https://github.com/jsdom/jsdom)来模拟，所以在集成测试的时候需要解决不少问题。
+
+# jest 与 webpack
+
+当今的前端开发都离不开 webpack 进行打包，我们使用各种各样的 loader 来处理代码，所以可以使用例如`import`语法来引用 JS 文件，但是 node 环境目前还不支持原生的 es6 `import`文件。所以在使用 jest 的时候，我们需要用 babel 进行代码转换，好在@vue/cli-plugin-unit-jest 都已经给配置好了，使用预置的 preset 就行。我是基于 TS 开发，所以用的 preset 是 `@vue/cli-plugin-unit-jest/presets/typescript-and-babel`。但是我们在代码里使用的一些 webpack 的特殊语法就不太好对应了，例如我有使用[inline loader](https://webpack.js.org/concepts/loaders/#inline)来打包特殊的 SVG 文件到代码中，但是在测试的时候就会遇到无法 import 的尴尬问题。这时候的解决方案就是使用`moduleNameMapper`:
+
+    moduleNameMapper: {
+        '^!svg-inline-loader!@(.*)$': require.resolve('jest-transform-stub')
+    },
+
+通过把 import 的资源文件映射为空，就能解决 jest 运行出错的问题，毕竟我们在做单元测试的时候不会检测资源文件。
+
+# jest mock vuex store
+
+做单元测试的时候，mock 是非常常见的需求，例如我们在一个文件里引用了 store 的数据，但是要构造这个数据非常复杂，所以我们需要直接 mock 数据。这里需要注意的是，如果是 import 引入的话，我们需要先 mock 再使用动态引用的方式加载测试模块，保证是在 import 之前 mock 数据。
+
+    jest.doMock('@/store', () => ({
+      state: {
+        account: {
+          hello: 'world'
+        }
+      }
+    }));
+    const { default: formatter } = await import('@/utils/formatter');
+
+不过，mock 之后记得 reset：
+
+    beforeEach(() => {
+      jest.resetModules();
+    });
+
+# jest mock navigator
+
+有些测试用例中，我们需要 mock 用户的浏览器是不同语言，这个时候就需要使用`spyOn`来修改属性的返回值。示例代码如下：
+
+    describe('test i18n', () => {
+      let languageGetter: jest.SpyInstance;
+      beforeEach(() => {
+        jest.resetModules();
+        languageGetter = jest.spyOn(window.navigator, 'language', 'get');
+      });
+
+      it('set lang is zh-CN', () => {
+        languageGetter.mockReturnValue('zh-CN');
+        console.log(navigator.language); // zh-CN
+      });
+    });
+
+# jest mock vue router
+
+测试 Vue 组件主要依靠[Vue Test Utils](https://vue-test-utils.vuejs.org/)。官方文档也有介绍如何使用，这个仅给出一个例子来描述用法：
+
+    import { mount, createLocalVue } from '@vue/test-utils';
+    import VueRouter from 'vue-router';
+
+    import App from '@/App.vue';
+    import routes from '@/router/routes';
+    import HelloWorld from '@/views/HelloWorld.vue';
+
+    const localVue = createLocalVue();
+    localVue.use(VueRouter);
+
+    describe('Test index routes', () => {
+      it('should find HelloWorld when router is HelloWorld', async () => {
+        const router = new VueRouter({ routes, mode: 'history' });
+        await router.push('/helloworld');
+
+        const wrapper = mount(App, {
+          localVue,
+          router
+        });
+
+        expect(wrapper.find(HelloWorld).exists()).toBe(true);
+      });
+    });
+
+这里使用 localVue 的原因是项目中只有一个 Vue 实例，直接使用的话会污染原本的 Vue，所以要在测试代码里手动创建`router`。这里要注意的是，如果 find 是某个组件，需要在 Vue 组件里面显示声明`name`，否则在 Lazy Loading 的情况下是无法找到组件的。还有一个指得注意的是`router.push` 是一个 Promise 异步操作，所以如果写成同步的话，会一直找不到组件的。
+
+# 总结
+
+jest 集成了很多测试的工具，只装一个工具便可进行单元测试。但是由于不是运行在浏览器环境，导致`jsdom`不支持的特性都需要自己来处理。所以希望选择一个在浏览器运行单元测试的框架应该会少遇到很多坑吧。
+特别是用了很多浏览器特性的前端项目，测试起来更加折腾。
+
+# 引用
+
+[Using with webpack](https://jestjs.io/docs/en/webpack)
+
+[Test Vue Router](https://lmiller1990.github.io/vue-testing-handbook/vue-router.html)
