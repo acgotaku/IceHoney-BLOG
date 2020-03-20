@@ -1,1 +1,24 @@
-handlers/*.pyc
+.DS_Store
+.config
+node_modules
+.node_repl_history
+.npm
+webpack_bundle_analyzer.html
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

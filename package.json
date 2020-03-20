@@ -1,0 +1,22 @@
+{
+  "name": "icehoney-blog",
+  "version": "1.0.0",
+  "description": "A blog powered by vuepress, designed for myself.",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acgotaku/IceHoney-BLOG.git"
+  },
+  "author": "acgotaku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acgotaku/IceHoney-BLOG/issues"
+  },
+  "homepage": "https://github.com/acgotaku/IceHoney-BLOG#readme",
+  "devDependencies": {
+    "vuepress": "^1.4.0"
+  }
+}
