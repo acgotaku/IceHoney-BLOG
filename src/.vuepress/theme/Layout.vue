@@ -18,10 +18,13 @@
     </div>
   </div>
 </template>
-<script>
-export default {
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Layout extends Vue {
   mounted() {
     console.log(this);
   }
-};
+}
 </script>

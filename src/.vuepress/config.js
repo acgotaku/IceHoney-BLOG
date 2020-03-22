@@ -18,7 +18,7 @@ module.exports = {
           {
             id: 'tag',
             keys: ['tag', 'tags'],
-            path: '/tag/',
+            path: '/tags/',
             layout: 'Tag',
             frontmatter: { title: 'Hello Tag' },
             scopeLayout: 'Layout',
@@ -27,6 +27,14 @@ module.exports = {
             }
           }
         ]
+      }
+    ],
+    [
+      'vuepress-plugin-typescript',
+      {
+        tsLoaderOptions: {
+          // All options of ts-loader
+        }
       }
     ]
   ]

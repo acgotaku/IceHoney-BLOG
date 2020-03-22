@@ -19,6 +19,9 @@
   "homepage": "https://github.com/acgotaku/IceHoney-BLOG#readme",
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.2",
-    "vuepress": "^1.4.0"
+    "typescript": "^3.8.3",
+    "vue-property-decorator": "^8.4.1",
+    "vuepress": "^1.4.0",
+    "vuepress-plugin-typescript": "^0.2.0"
   }
 }
