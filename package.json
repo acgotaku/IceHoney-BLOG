@@ -4,6 +4,7 @@
   "description": "A blog powered by vuepress, designed for myself.",
   "scripts": {
     "dev": "vuepress dev src",
+    "serve": "yarn dev",
     "build": "vuepress build src"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/acgotaku/IceHoney-BLOG#readme",
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.2",
     "vuepress": "^1.4.0"
   }
 }
