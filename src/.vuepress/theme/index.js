@@ -30,6 +30,12 @@ module.exports = {
       }
     ],
     [
+      '@vuepress/search',
+      {
+        searchMaxSuggestions: 10
+      }
+    ],
+    [
       'vuepress-plugin-typescript',
       {
         tsLoaderOptions: {
