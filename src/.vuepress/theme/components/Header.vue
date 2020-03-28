@@ -21,13 +21,20 @@
     </header>
   </section>
 </template>
-
-<script>
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
 import SearchBox from '@SearchBox';
 
-export default {
-  components: { SearchBox }
-};
+@Component({
+  components: {
+    SearchBox
+  }
+})
+export default class Header extends Vue {
+  mounted() {
+    console.log(this);
+  }
+}
 </script>
 
 <style lang="stylus">
