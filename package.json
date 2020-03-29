@@ -24,6 +24,7 @@
     "vue": "^2.6.11",
     "vue-property-decorator": "^8.4.1",
     "vuepress": "^1.4.0",
-    "vuepress-plugin-typescript": "^0.2.0"
+    "vuepress-plugin-typescript": "^0.2.0",
+    "vuepress-types": "^0.9.0"
   }
 }
