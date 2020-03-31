@@ -73,20 +73,13 @@ export default class Header extends Vue {}
       .home-link {
         display: flex;
         align-items: center;
+        text-decoration: none;
+        color: $headerColor;
       }
 
       .profile {
-        width: 2.25rem;
+        width: 3rem;
         margin-right: 1rem;
-      }
-    }
-
-    a {
-      text-decoration: none;
-      color: $headerColor;
-
-      &:hover {
-        color: $headerColor;
       }
     }
   }
@@ -134,98 +127,6 @@ export default class Header extends Vue {}
         top: 2.5rem;
         right: 0;
       }
-    }
-  }
-}
-
-// border-bottom 5px solid lighten(#3eaf7c, 50%)
-// .header-inner {
-// display: flex;
-// line-height: 40px;
-// height: 40px;
-
-// .title {
-// /* flex 0 0 200px */
-// font-size: 30px;
-// margin: 0;
-// letter-spacing: 2px;
-// display: block;
-// text-transform: uppercase;
-
-// a {
-// color: $darkTextColor;
-// font-weight: bold;
-// font-family: PT Serif, Serif;
-// text-decoration: none;
-// }
-// }
-
-// .header-right-wrap {
-// flex: 1;
-// display: flex;
-// justify-content: flex-end;
-// align-items: center;
-
-// .nav {
-// flex: 0 0 auto;
-// display: flex;
-// margin: 0;
-
-// .nav-item {
-// margin-left: 20px;
-
-// a {
-// font-family: PT Serif, Serif;
-// font-size: 20px;
-// // color lighten(#3eaf7c, 30%)
-// text-decoration: none;
-// transition: color 0.3s;
-// }
-// }
-// }
-
-// .search-box {
-// font-family: PT Serif, Serif;
-// margin-left: 20px;
-
-// input {
-// border-radius: 5px;
-// transition: all 0.5s;
-// border: 1px solid #cecece;
-
-// &:hover {
-// border: 1px solid $accentColor;
-// box-shadow: 0 0 5px $accentColor;
-// }
-// }
-
-// .suggestions {
-// border: 1px solid $darkBorderColor;
-// top: 40px;
-// right: 0;
-
-// a {
-// color: $darkTextColor;
-// text-decoration: none;
-
-// &.focused {
-// color: $accentColor;
-// }
-// }
-// }
-// }
-// }
-// }
-@media (max-width: $MQMobile) {
-  #header {
-    display: none;
-  }
-
-  .header-wrapper {
-    flex-direction: column;
-
-    .header-right-wrap {
-      display: none;
     }
   }
 }

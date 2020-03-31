@@ -44,14 +44,14 @@ export default class NavLink extends Vue {
     }
     return this.normalizedlink === '/';
   }
-  isExternal() {
-    return isExternal;
+  isExternal(path: string) {
+    return isExternal(path);
   }
-  isMailto() {
-    return isMailto;
+  isMailto(path: string) {
+    return isMailto(path);
   }
-  isTel() {
-    return isTel;
+  isTel(path: string) {
+    return isTel(path);
   }
 }
 </script>
@@ -62,7 +62,7 @@ export default class NavLink extends Vue {
 }
 
 .nav-link {
-  &:hover, &.router-link-active {
+  &.router-link-active {
     color: $accentColor;
   }
 }
