@@ -26,5 +26,8 @@
     "vuepress": "^1.4.0",
     "vuepress-plugin-typescript": "^0.2.0",
     "vuepress-types": "^0.9.0"
+  },
+  "dependencies": {
+    "vue-feather-icons": "^5.0.0"
   }
 }

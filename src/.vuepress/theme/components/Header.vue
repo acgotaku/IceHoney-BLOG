@@ -49,16 +49,9 @@ export default class Header extends Vue {}
   width: 100%;
   height: $headerHeight;
   padding: 0 1.5rem;
-  box-sizing: border-box;
   background-color: $headerBgColor;
   color: $headerColor;
   border-bottom: 1px solid $borderColor;
-
-  ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
 
   &-inner {
     display: flex;
@@ -115,6 +108,7 @@ export default class Header extends Vue {}
       input {
         border-radius: 0.25rem;
         border: 1px solid $borderColor;
+        width: 12rem;
 
         &:hover, &:focus {
           border: 1px solid $accentColor;
