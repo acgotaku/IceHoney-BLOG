@@ -9,8 +9,9 @@ module.exports = {
             dirname: 'posts',
             path: '/',
             itemPermalink: '/posts/:year/:month/:day/:slug',
+            title: 'Home',
             pagination: {
-              lengthPerPage: 2
+              lengthPerPage: 3
             }
           }
         ],
@@ -20,7 +21,7 @@ module.exports = {
             keys: ['tag', 'tags'],
             path: '/tags/',
             layout: 'Tag',
-            frontmatter: { title: 'Hello Tag' },
+            frontmatter: { title: 'Tags' },
             scopeLayout: 'Layout',
             pagination: {
               lengthPerPage: 3
