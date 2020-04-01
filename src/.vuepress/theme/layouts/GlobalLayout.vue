@@ -1,5 +1,5 @@
 <template>
-  <div id="global-layout">
+  <div class="global-layout">
     <Header />
     <DefaultGlobalLayout />
     <Footer />
@@ -19,3 +19,11 @@ export default {
   }
 };
 </script>
+<style lang="stylus">
+@import '~@app/style/config';
+
+.global-layout {
+  position: relative;
+  height: 100%;
+}
+</style>
