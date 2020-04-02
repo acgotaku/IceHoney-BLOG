@@ -23,7 +23,8 @@ export default {
 @import '~@app/style/config';
 
 .global-layout {
-  position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 </style>

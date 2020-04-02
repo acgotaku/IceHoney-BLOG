@@ -74,11 +74,11 @@ export default class Footer extends Vue {
 @import '~@app/style/config';
 
 .footer {
-  position: absolute;
+  margin-top: auto;
   background-color: $footerBgColor;
   width: 100%;
-  bottom: 0;
   display: flex;
+  flex: none;
   height: $footerHeight;
   align-items: center;
   justify-content: space-between;

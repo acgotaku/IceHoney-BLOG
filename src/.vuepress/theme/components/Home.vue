@@ -1,22 +1,26 @@
 <template>
-  <section class="content">
-    <ul class="default-layout">
-      <li v-for="page in $pagination.pages" class="content-item">
+  <main class="container">
+    <section
+      itemscope="itemscope"
+      itemtype="http://schema.org/Blog"
+      class="content"
+    >
+      <article class="content-article" v-for="page in $pagination.pages">
         <router-link class="page-link" :to="page.path">
           {{ page.title }}
         </router-link>
         <Content :pageKey="page.key" />
-      </li>
-    </ul>
-    <div id="pagination">
-      <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink">
-        Prev
-      </router-link>
-      <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink">
-        Next
-      </router-link>
-    </div>
-  </section>
+      </article>
+      <div class="pagination">
+        <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink">
+          Prev
+        </router-link>
+        <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink">
+          Next
+        </router-link>
+      </div>
+    </section>
+  </main>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
@@ -28,17 +32,13 @@ export default class Home extends Vue {}
 @import '~@app/style/config';
 
 .content {
-  padding-bottom: $footerHeight;
+  max-width: 75rem;
+  margin: 2rem auto;
 
-  &-item {
+  &-article {
     border-radius: 0.5rem;
     background-color: #fff;
     margin: 2rem 0;
   }
-}
-
-.default-layout {
-  max-width: 75rem;
-  margin: 2rem auto;
 }
 </style>
