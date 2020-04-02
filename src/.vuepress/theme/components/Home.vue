@@ -12,12 +12,24 @@
         <Content :pageKey="page.key" />
       </article>
       <div class="pagination">
-        <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink">
-          Prev
-        </router-link>
-        <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink">
-          Next
-        </router-link>
+        <div class="pagination-left">
+          <router-link
+            v-if="$pagination.hasPrev"
+            :to="$pagination.prevLink"
+            class="pagination-prev"
+          >
+            Prev
+          </router-link>
+        </div>
+        <div class="pagination-right">
+          <router-link
+            v-if="$pagination.hasNext"
+            :to="$pagination.nextLink"
+            class="pagination-next"
+          >
+            Next
+          </router-link>
+        </div>
       </div>
     </section>
   </main>
@@ -39,6 +51,33 @@ export default class Home extends Vue {}
     border-radius: 0.5rem;
     background-color: #fff;
     margin: 2rem 0;
+  }
+}
+
+.pagination {
+  display: flex;
+
+  &-left, &-right {
+    width: 50%;
+  }
+
+  &-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-prev, &-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    border: 1px solid $borderColor;
+    border-radius: 0.25rem;
+    color: $textColor;
+    background: $buttonBgColor;
   }
 }
 </style>
