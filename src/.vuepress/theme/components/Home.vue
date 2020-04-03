@@ -6,9 +6,11 @@
       class="content"
     >
       <article class="content-article" v-for="page in $pagination.pages">
-        <router-link class="page-link" :to="page.path">
-          {{ page.title }}
-        </router-link>
+        <h1 class="article-title">
+          <router-link :to="page.path">
+            {{ page.title }}
+          </router-link>
+        </h1>
         <Content :pageKey="page.key" />
       </article>
       <div class="pagination">
@@ -54,6 +56,12 @@ export default class Home extends Vue {}
   }
 }
 
+.article {
+  &-title {
+    color: $textColor;
+  }
+}
+
 .pagination {
   display: flex;
 
@@ -71,7 +79,7 @@ export default class Home extends Vue {}
     justify-content: center;
     align-items: center;
     width: 8rem;
-    height: 2rem;
+    height: 2.5rem;
     text-decoration: none;
     font-size: 0.875rem;
     border: 1px solid $borderColor;
