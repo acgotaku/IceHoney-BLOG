@@ -60,6 +60,7 @@ export default class Home extends Vue {}
 .article {
   &-title {
     color: var(--main);
+    text-align: center;
   }
 }
 
