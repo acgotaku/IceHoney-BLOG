@@ -1,6 +1,9 @@
 module.exports = {
   title: 'IceHoney',
   description: 'IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~',
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     profile: '/profile.png',
     nav: [
