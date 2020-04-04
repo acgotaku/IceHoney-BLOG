@@ -43,20 +43,22 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class Home extends Vue {}
 </script>
 <style lang="stylus">
+@import '~@theme/styles/mixin';
+
 .content {
   max-width: 75rem;
   margin: 2rem auto;
 
   &-article {
     border-radius: 0.5rem;
-    background-color: #fff;
+    background-color: var(--article);
     margin: 2rem 0;
   }
 }
 
 .article {
   &-title {
-    color: $textColor;
+    color: var(--main);
   }
 }
 
@@ -73,17 +75,15 @@ export default class Home extends Vue {}
   }
 
   &-prev, &-next {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    mx-flex-center();
     width: 8rem;
     height: 2.5rem;
     text-decoration: none;
     font-size: 0.875rem;
-    border: 1px solid $borderColor;
+    border: 1px solid var(--border);
     border-radius: 0.25rem;
-    color: $textColor;
-    background: $buttonBgColor;
+    color: var(--main);
+    background: var(--button);
   }
 }
 </style>
