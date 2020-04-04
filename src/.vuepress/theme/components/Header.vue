@@ -43,12 +43,13 @@ export default class Header extends Vue {}
 </script>
 
 <style lang="stylus">
+@import '~@theme/styles/mixin';
+
 .header {
   width: 100%;
   height: $headerHeight;
   padding: 0 1.5rem;
   background-color: var(--header);
-  color: var(--main);
   border-bottom: 1px solid var(--border);
 
   &-inner {
@@ -62,8 +63,7 @@ export default class Header extends Vue {}
       text-transform: uppercase;
 
       .home-link {
-        display: flex;
-        align-items: center;
+        mx-flex-center();
         text-decoration: none;
         color: var(--main);
       }

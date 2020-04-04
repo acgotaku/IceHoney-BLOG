@@ -50,6 +50,7 @@ export default class Home extends Vue {}
   margin: 2rem auto;
 
   &-article {
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     background-color: var(--article);
     margin: 2rem 0;
@@ -78,7 +79,6 @@ export default class Home extends Vue {}
     mx-flex-center();
     width: 8rem;
     height: 2.5rem;
-    text-decoration: none;
     font-size: 0.875rem;
     border: 1px solid var(--border);
     border-radius: 0.25rem;
