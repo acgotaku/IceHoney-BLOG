@@ -58,12 +58,12 @@ export default class NavLink extends Vue {
 
 <style lang="stylus">
 .nav-link {
-  color: $darkTextColor;
+  color: var(--secondary);
 }
 
 .nav-link {
   &.router-link-active {
-    color: $accentColor;
+    color: var(--accent);
   }
 }
 </style>

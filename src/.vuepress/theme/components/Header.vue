@@ -49,9 +49,9 @@ export default class Header extends Vue {}
   width: 100%;
   height: $headerHeight;
   padding: 0 1.5rem;
-  background-color: $headerBgColor;
-  color: $headerColor;
-  border-bottom: 1px solid $borderColor;
+  background-color: var(--header);
+  color: var(--main);
+  border-bottom: 1px solid var(--border);
 
   &-inner {
     display: flex;
@@ -67,7 +67,7 @@ export default class Header extends Vue {}
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: $headerColor;
+        color: var(--main);
       }
 
       .profile {
@@ -93,10 +93,10 @@ export default class Header extends Vue {}
           display: inline-block;
           font-size: 1.25rem;
           text-decoration: none;
-          border-bottom: 2px solid $headerBgColor;
+          border-bottom: 2px solid var(--header);
 
           &:hover, &:active {
-            border-bottom: 2px solid $accentColor;
+            border-bottom: 2px solid var(--accent);
           }
         }
       }
@@ -107,19 +107,28 @@ export default class Header extends Vue {}
 
       input {
         border-radius: 0.25rem;
-        border: 1px solid $borderColor;
+        border: 1px solid var(--border);
         width: 12rem;
 
         &:hover, &:focus {
-          border: 1px solid $accentColor;
-          box-shadow: 0 0 0.25rem $accentColor;
+          border: 1px solid var(--accent);
+          box-shadow: 0 0 0.25rem var(--accent);
         }
       }
 
       .suggestions {
-        border: 1px solid $borderColor;
+        border: 1px solid var(--border);
         top: 2.5rem;
-        right: 0;
+        left: 0;
+
+        a {
+          color: var(--secondary);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--accent);
+          }
+        }
       }
     }
   }
