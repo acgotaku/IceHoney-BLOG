@@ -71,11 +71,9 @@ export default class Footer extends Vue {
 }
 </script>
 <style lang="stylus">
-@import '~@app/style/config';
-
 .footer {
   margin-top: auto;
-  background-color: $footerBgColor;
+  background-color: var(--accent);
   width: 100%;
   display: flex;
   flex: none;
@@ -83,32 +81,20 @@ export default class Footer extends Vue {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
-  border-top: 1px solid $borderColor;
 
   .contact {
     display: flex;
 
     &-item {
       margin: 0 0.5rem;
-
-      .nav-link {
-        color: $footerColor;
-
-        &:hover {
-          color: $footerHoverColor;
-        }
-      }
     }
   }
 
-  .copyright {
-    .nav-link {
-      color: $footerColor;
-      text-decoration: none;
+  .nav-link {
+    color: var(--tertiary);
 
-      &:hover {
-        color: $footerHoverColor;
-      }
+    &:hover {
+      color: var(--main);
     }
   }
 }

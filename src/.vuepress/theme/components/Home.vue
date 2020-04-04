@@ -43,8 +43,6 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class Home extends Vue {}
 </script>
 <style lang="stylus">
-@import '~@app/style/config';
-
 .content {
   max-width: 75rem;
   margin: 2rem auto;

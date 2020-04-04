@@ -43,8 +43,6 @@ export default class Header extends Vue {}
 </script>
 
 <style lang="stylus">
-@import '~@app/style/config';
-
 .header {
   width: 100%;
   height: $headerHeight;
@@ -90,9 +88,7 @@ export default class Header extends Vue {}
         margin-left: 2rem;
 
         a {
-          display: inline-block;
           font-size: 1.25rem;
-          text-decoration: none;
           border-bottom: 2px solid var(--header);
 
           &:hover, &:active {

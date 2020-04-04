@@ -57,11 +57,16 @@ export default class NavLink extends Vue {
 </script>
 
 <style lang="stylus">
-.nav-link {
-  color: var(--secondary);
-}
+@import '~@theme/styles/mixin';
 
 .nav-link {
+  mx-flex-center();
+  color: var(--secondary);
+
+  &:hover {
+    color: var(--accent);
+  }
+
   &.router-link-active {
     color: var(--accent);
   }
