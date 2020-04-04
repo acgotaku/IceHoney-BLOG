@@ -4,6 +4,7 @@
 @require './sw-popup.styl';
 @require './mode.styl';
 @require './mixin.styl';
+@require './font.styl';
 
 html, body {
   padding: 0;
@@ -12,27 +13,22 @@ html, body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Open Sans', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  color: $textColor;
+  font-weight: 400;
+  color: var(--main);
   background-color: var(--bg);
 }
 
-*, *:before, *:after {
+*, :after, :before {
   box-sizing: border-box;
 }
 
 {$contentClass}:not(.custom) {
   a:hover {
     text-decoration: underline;
-  }
-
-  p.demo {
-    padding: 1rem 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
   }
 
   img {
@@ -50,7 +46,6 @@ body {
 }
 
 a {
-  font-weight: 500;
   color: var(--accent);
   text-decoration: none;
 
@@ -59,23 +54,10 @@ a {
   }
 }
 
-p a code {
-  font-weight: 400;
-  color: $accentColor;
-}
-
-kbd {
-  background: #eee;
-  border: solid 0.15rem #ddd;
-  border-bottom: solid 0.25rem #ddd;
-  border-radius: 0.15rem;
-  padding: 0 0.15em;
-}
-
 blockquote {
   font-size: 0.9rem;
-  color: darken($accentColor, 50%);
-  border-left: 3px solid $accentColor;
+  color: var(--main);
+  border-left: 0.25rem solid var(--accent);
   margin: 0.5rem 0;
   padding: 0.25rem 0 0.25rem 1rem;
 
@@ -97,13 +79,6 @@ strong {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.25;
-  font-family: PT Serif, Serif;
-
-  {$contentClass}:not(.custom) > & {
-    margin-top: 'calc(0.5rem - %s)' % $headerHeight;
-    padding-top: 'calc(%s + 1rem)' % $headerHeight;
-    margin-bottom: 0;
-  }
 
   &:hover .header-anchor {
     opacity: 1;
@@ -117,7 +92,7 @@ h1 {
 h2 {
   font-size: 1.65rem;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 1px solid var(--border);
 }
 
 h3 {
@@ -147,27 +122,7 @@ p, ul, ol {
 
 hr {
   border: 0;
-  border-top: 1px solid $borderColor;
-}
-
-table {
-  border-collapse: collapse;
-  margin: 1rem 0;
-  display: block;
-  overflow-x: auto;
-}
-
-tr {
-  border-top: 1px solid #dfe2e5;
-
-  &:nth-child(2n) {
-    background-color: #f6f8fa;
-  }
-}
-
-th, td {
-  border: 1px solid #dfe2e5;
-  padding: 0.6em 1em;
+  border-top: 1px solid var(--border);
 }
 
 #app {

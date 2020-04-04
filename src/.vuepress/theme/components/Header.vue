@@ -63,6 +63,7 @@ export default class Header extends Vue {}
       text-transform: uppercase;
 
       .home-link {
+        font-weight: 600;
         mx-flex-center();
         text-decoration: none;
         color: var(--main);
