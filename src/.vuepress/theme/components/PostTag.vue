@@ -1,7 +1,5 @@
 <template>
-  <li class="post-tag">
-    <router-link :to="'/tags/' + tag"> {{ tag }} </router-link>
-  </li>
+  <router-link :to="'/tags/' + tag" class="post-tag"> {{ tag }} </router-link>
 </template>
 
 <script lang="ts">
@@ -13,4 +11,8 @@ export default class PostTag extends Vue {
 }
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+.post-tag {
+  margin-right: 0.5rem;
+}
+</style>

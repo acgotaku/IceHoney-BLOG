@@ -27,8 +27,12 @@ body {
 }
 
 {$contentClass}:not(.custom) {
-  a:hover {
-    text-decoration: underline;
+  a {
+    color: var(--accent);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   img {
@@ -46,7 +50,7 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--main);
   text-decoration: none;
 
   &:hover {

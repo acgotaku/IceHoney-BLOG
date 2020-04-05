@@ -11,6 +11,7 @@
             {{ page.title }}
           </router-link>
         </h1>
+        <PostMeta :tags="page.frontmatter.tags" :date="page.frontmatter.date" />
         <Content :pageKey="page.key" />
       </article>
       <div class="pagination">
@@ -38,9 +39,19 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import PostMeta from './PostMeta.vue';
 
-@Component
-export default class Home extends Vue {}
+@Component({
+  components: {
+    PostMeta
+  }
+})
+export default class Home extends Vue {
+  mounted() {
+    // @ts-ignore
+    console.log(this.$pagination.pages);
+  }
+}
 </script>
 <style lang="stylus">
 @import '~@theme/styles/mixin';

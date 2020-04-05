@@ -1,14 +1,15 @@
 <template>
   <div class="post-meta">
     <div v-if="date" class="post-meta-date">
-      <ClockIcon />
+      <CalendarIcon />
       <time pubdate itemprop="datePublished" :datetime="date">
         {{ date }}
       </time>
     </div>
-    <ul v-if="tags" class="post-meta-tags" itemprop="keywords">
+    <div v-if="tags" class="post-meta-tags" itemprop="keywords">
+      <TagIcon />
       <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" />
-    </ul>
+    </div>
   </div>
 </template>
 <script  lang="ts">
@@ -17,7 +18,13 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import { CalendarIcon, TagIcon } from 'vue-feather-icons';
 import PostTag from './PostTag.vue';
 
-@Component
+@Component({
+  components: {
+    PostTag,
+    CalendarIcon,
+    TagIcon
+  }
+})
 export default class PostMeta extends Vue {
   @Prop() readonly date!: string;
   @Prop() readonly tags!: Array<string>;
@@ -28,34 +35,27 @@ export default class PostMeta extends Vue {
   }
 }
 </script>
-
-
 <style lang="stylus">
-.post-meta {
-  &-tags {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 20px 0;
+@import '~@theme/styles/mixin';
 
-    > li {
-      margin-bottom: 10px;
-    }
+.post-meta {
+  display: flex;
+
+  &-date {
+    mx-flex-left();
+    font-size: 0.75rem;
+    margin-right: 1rem;
   }
 
-  > div {
-    display: inline-flex;
-    line-height: 12px;
-    font-size: 12px;
-    margin-right: 20px;
+  &-tags {
+    mx-flex-left();
   }
 
   svg {
-    margin-right: 5px;
-    width: 14px;
-    height: 14px;
+    font-size: 0;
+    margin-right: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 }
 </style>
