@@ -11,7 +11,7 @@ module.exports = {
             itemPermalink: '/posts/:year-:month-:day-:slug',
             title: 'Home',
             pagination: {
-              lengthPerPage: 2
+              lengthPerPage: 3
             }
           }
         ],
