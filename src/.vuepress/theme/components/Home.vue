@@ -46,12 +46,7 @@ import PostMeta from './PostMeta.vue';
     PostMeta
   }
 })
-export default class Home extends Vue {
-  mounted() {
-    // @ts-ignore
-    console.log(this.$pagination.pages);
-  }
-}
+export default class Home extends Vue {}
 </script>
 <style lang="stylus">
 @import '~@theme/styles/mixin';
