@@ -24,7 +24,7 @@ module.exports = {
             frontmatter: { title: 'Tags' },
             scopeLayout: 'Layout',
             pagination: {
-              lengthPerPage: 3
+              lengthPerPage: 2
             }
           }
         ]

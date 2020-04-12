@@ -3,7 +3,7 @@ title: 使用WebAssembly编译C++到JS
 date: 2019-04-28 20:51
 comments: true
 tags:
-  - webassembly
+  - WebAssembly
 ---
 
 实际项目开发中遇到了一些已经使用 C++实现的功能，需要在新的 Web 客户端使用。由于主要是数学和算法的计算，没有平台依赖性。所以需要一个成本最低的移植方式，显然 WebAssembly 是一个非常好的方式。现在官方的编译工具是[emscripten](https://github.com/emscripten-core/emscripten)
