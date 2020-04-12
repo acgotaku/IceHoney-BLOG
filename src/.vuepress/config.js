@@ -2,6 +2,11 @@ module.exports = {
   title: 'IceHoney',
   description: 'IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~',
   dest: 'dist',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#8191f1' }]
+  ],
   markdown: {
     lineNumbers: true
   },
