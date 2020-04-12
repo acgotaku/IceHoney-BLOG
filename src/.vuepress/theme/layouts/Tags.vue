@@ -18,12 +18,7 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
-export default class Tags extends Vue {
-  mounted() {
-    // @ts-ignore
-    console.log(this.$tag);
-  }
-}
+export default class Tags extends Vue {}
 </script>
 <style lang="stylus">
 @import '~@theme/styles/mixin';
