@@ -5,7 +5,7 @@
       itemtype="http://schema.org/Blog"
       class="content"
     >
-      <article class="content-article" v-for="page in $pagination.pages">
+      <article class="article" v-for="page in $pagination.pages">
         <h1 class="article-title">
           <router-link :to="page.path">
             {{ page.title }}
@@ -50,25 +50,6 @@ export default class Home extends Vue {}
 </script>
 <style lang="stylus">
 @import '~@theme/styles/mixin';
-
-.content {
-  max-width: 75rem;
-  margin: 2rem auto;
-
-  &-article {
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    background-color: var(--article);
-    margin: 2rem 0;
-  }
-}
-
-.article {
-  &-title {
-    color: var(--main);
-    text-align: center;
-  }
-}
 
 .pagination {
   display: flex;

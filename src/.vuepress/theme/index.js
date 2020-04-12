@@ -20,7 +20,7 @@ module.exports = {
             id: 'tag',
             keys: ['tag', 'tags'],
             path: '/tags/',
-            layout: 'Tag',
+            layout: 'Tags',
             frontmatter: { title: 'Tags' },
             scopeLayout: 'Layout',
             pagination: {

@@ -26,6 +26,23 @@ body {
   box-sizing: border-box;
 }
 
+.content {
+  max-width: 75rem;
+  margin: 2rem auto;
+}
+
+.article {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--article);
+  margin: 2rem 0;
+
+  &-title {
+    color: var(--main);
+    text-align: center;
+  }
+}
+
 {$contentClass}:not(.custom) {
   a {
     color: var(--accent);
