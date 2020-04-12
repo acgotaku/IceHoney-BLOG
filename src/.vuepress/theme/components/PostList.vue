@@ -65,14 +65,7 @@ export default class PostList extends Vue {}
   }
 
   &-prev, &-next {
-    mx-flex-center();
-    width: 8rem;
-    height: 2.5rem;
-    font-size: 0.875rem;
-    border: 1px solid var(--border);
-    border-radius: 0.25rem;
-    color: var(--main);
-    background: var(--button);
+    mx-button();
   }
 }
 </style>
