@@ -5,6 +5,7 @@
       itemtype="http://schema.org/Blog"
       class="content"
     >
+      <slot></slot>
       <article class="article" v-for="page in $pagination.pages">
         <h1 class="article-title">
           <router-link :to="page.path">
@@ -46,7 +47,7 @@ import PostMeta from './PostMeta.vue';
     PostMeta
   }
 })
-export default class Home extends Vue {}
+export default class PostList extends Vue {}
 </script>
 <style lang="stylus">
 @import '~@theme/styles/mixin';

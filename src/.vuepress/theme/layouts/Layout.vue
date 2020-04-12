@@ -1,13 +1,13 @@
 <template>
-  <Home />
+  <PostList />
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Home from '@theme/components/Home.vue';
+import PostList from '@theme/components/PostList.vue';
 
 @Component({
   components: {
-    Home
+    PostList
   }
 })
 export default class Layout extends Vue {}

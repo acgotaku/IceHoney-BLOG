@@ -22,9 +22,9 @@ module.exports = {
             path: '/tags/',
             layout: 'Tags',
             frontmatter: { title: 'Tags' },
-            scopeLayout: 'Layout',
+            scopeLayout: 'Tag',
             pagination: {
-              lengthPerPage: 2
+              lengthPerPage: 3
             }
           }
         ]

@@ -14,5 +14,9 @@ export default class PostTag extends Vue {
 <style lang="stylus">
 .post-tag {
   margin-right: 0.5rem;
+
+  &.router-link-active {
+    color: var(--accent);
+  }
 }
 </style>
