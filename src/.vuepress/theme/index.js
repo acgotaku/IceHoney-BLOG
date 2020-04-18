@@ -30,8 +30,7 @@ module.exports = {
         ],
         comment: {
           service: 'disqus',
-          shortname: 'icehoneyblog',
-          url: 'https://blog.icehoney.me/'
+          shortname: 'icehoneyblog'
         }
       }
     ],
