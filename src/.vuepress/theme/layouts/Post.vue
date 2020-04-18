@@ -10,8 +10,8 @@
           {{ $frontmatter.title }}
         </h1>
         <PostMeta :tags="$frontmatter.tags" :date="$frontmatter.date" />
-        <Content class="article-content" />
-        <Comment />
+        <Content />
+        <Comment v-if="$frontmatter.comments" class="article-comment" />
       </article>
     </section>
   </main>
@@ -32,9 +32,8 @@ export default class Post extends Vue {}
 </script>
 
 <style lang="stylus">
-.article-content {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
+.article-comment {
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 </style>
