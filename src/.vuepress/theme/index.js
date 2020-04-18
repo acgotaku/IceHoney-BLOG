@@ -27,7 +27,12 @@ module.exports = {
               lengthPerPage: 3
             }
           }
-        ]
+        ],
+        comment: {
+          service: 'disqus',
+          shortname: 'icehoneyblog',
+          url: 'https://blog.icehoney.me/'
+        }
       }
     ],
     [
