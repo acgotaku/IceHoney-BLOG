@@ -28,6 +28,9 @@ module.exports = {
             }
           }
         ],
+        sitemap: {
+          hostname: 'https://blog.icehoney.me/'
+        },
         comment: {
           service: 'disqus',
           shortname: 'icehoneyblog'
