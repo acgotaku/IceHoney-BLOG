@@ -32,7 +32,7 @@ git clone https://${USER_NAME}:${USER_TOKEN}@github.com/{username}/{repo}
 
 netr 文件用于存储网站的认证信息，一般位置在`~/.netrc`。格式是：
 
-```text
+```
 machine github.com
 login username
 password xxxxxxx

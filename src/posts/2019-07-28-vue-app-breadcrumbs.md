@@ -231,7 +231,7 @@ mounted() {
 
 当我们加载 `userDashboard` 并切换到 `userSettings` 页面的时候，组件执行生命周期执行顺序是。
 
-```text
+```
 beforeCreate userDashboard
 created userDashboard
 beforMount userDashboard
