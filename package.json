@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vuepress dev src",
     "serve": "yarn dev",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "push": "gh-pages -d dist",
+    "deploy": "yarn build && yarn push"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.2",
     "@vuepress/plugin-search": "^1.4.0",
+    "gh-pages": "^2.2.0",
     "typescript": "^3.8.3",
     "vue": "^2.6.11",
     "vue-property-decorator": "^8.4.1",
