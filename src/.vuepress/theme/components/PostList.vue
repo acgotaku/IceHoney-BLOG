@@ -54,6 +54,7 @@ export default class PostList extends Vue {}
 
 .pagination {
   display: flex;
+  margin: 1rem 0;
 
   &-left, &-right {
     width: 50%;

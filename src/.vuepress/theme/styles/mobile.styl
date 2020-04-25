@@ -1,18 +1,22 @@
-@require './config'
-
-// narrow desktop / iPad
-// @media (max-width: $MQNarrow)
-
-// wide mobile
-@media (max-width: $MQMobile)
-  {$contentClass}:not(.custom) > h1:first-child
-    padding-top 2rem
+@require './config';
 
 // narrow mobile
-@media (max-width: $MQMobileNarrow)
-  h1
-    font-size 1.9rem
-  {$contentClass}
-    div[class*="language-"]
-      margin 0.85rem -1.5rem
-      border-radius 0
+@media (max-width: $MQMobile) {
+  .content {
+    padding: 0 0.5rem;
+  }
+
+  .article {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  h1 {
+    margin: 1rem;
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

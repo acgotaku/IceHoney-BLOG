@@ -56,6 +56,9 @@ export default class Header extends Vue {}
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
     z-index: 1000;
 
     .title {
