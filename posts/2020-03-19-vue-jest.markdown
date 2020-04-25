@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'vue下使用jest进行单元测试'
+title: "vue下使用jest进行单元测试"
 date: 2020-03-19 21:56
 comments: true
 tags: frontend vue
