@@ -46,17 +46,17 @@ export default class Header extends Vue {}
 @import '~@theme/styles/mixin';
 
 .header {
-  width: 100%;
-  height: $headerHeight;
-  padding: 0 1.5rem;
-  background-color: var(--header);
-  border-bottom: 1px solid var(--border);
+  min-height: $headerHeight;
 
   &-inner {
-    display: flex;
     height: $headerHeight;
+    background-color: var(--header);
+    border-bottom: 1px solid var(--border);
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1.5rem;
+    z-index: 1000;
 
     .title {
       font-size: 2rem;
@@ -100,17 +100,8 @@ export default class Header extends Vue {}
     }
 
     .search-box {
-      margin-left: 2rem;
-
       input {
-        border-radius: 0.25rem;
-        border: 1px solid var(--border);
         width: 12rem;
-
-        &:hover, &:focus {
-          border: 1px solid var(--accent);
-          box-shadow: 0 0 0.25rem var(--accent);
-        }
       }
 
       .suggestions {
@@ -128,6 +119,12 @@ export default class Header extends Vue {}
         }
       }
     }
+  }
+}
+
+@media (max-width: $MQMobile) {
+  .header {
+    display: none;
   }
 }
 </style>

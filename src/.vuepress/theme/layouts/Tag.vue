@@ -17,3 +17,8 @@ import PostList from '@theme/components/PostList.vue';
 export default class Tag extends Vue {}
 </script>
 
+<style lang="stylus">
+.tags-header {
+  text-align: center;
+}
+</style>
