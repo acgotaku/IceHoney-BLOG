@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue中如何设计面包屑 | IceHoney</title>
+    <meta name="description" content="IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#8191f1">
+    
+    <link rel="preload" href="/assets/css/0.styles.7226fc76.css" as="style"><link rel="preload" href="/assets/js/app.e236eeb0.js" as="script"><link rel="preload" href="/assets/js/22.a2c81cfd.js" as="script"><link rel="preload" href="/assets/js/1.ca40303b.js" as="script"><link rel="prefetch" href="/assets/js/10.db9d5038.js"><link rel="prefetch" href="/assets/js/11.96f96a3a.js"><link rel="prefetch" href="/assets/js/12.c1c754e8.js"><link rel="prefetch" href="/assets/js/13.59f6f9bf.js"><link rel="prefetch" href="/assets/js/14.7fea171b.js"><link rel="prefetch" href="/assets/js/15.c680acb9.js"><link rel="prefetch" href="/assets/js/16.0720d79f.js"><link rel="prefetch" href="/assets/js/17.8321426e.js"><link rel="prefetch" href="/assets/js/18.0895ed7f.js"><link rel="prefetch" href="/assets/js/19.d65fde9b.js"><link rel="prefetch" href="/assets/js/20.0788834d.js"><link rel="prefetch" href="/assets/js/21.4ff9c3fa.js"><link rel="prefetch" href="/assets/js/23.8a439d83.js"><link rel="prefetch" href="/assets/js/24.b3c9389b.js"><link rel="prefetch" href="/assets/js/25.0ba7b550.js"><link rel="prefetch" href="/assets/js/26.e60045e8.js"><link rel="prefetch" href="/assets/js/27.2344c87a.js"><link rel="prefetch" href="/assets/js/28.1a3bda45.js"><link rel="prefetch" href="/assets/js/29.7f00dbae.js"><link rel="prefetch" href="/assets/js/3.e94a0727.js"><link rel="prefetch" href="/assets/js/30.05c74d38.js"><link rel="prefetch" href="/assets/js/31.b7c04a4c.js"><link rel="prefetch" href="/assets/js/4.703d76d7.js"><link rel="prefetch" href="/assets/js/5.91e05469.js"><link rel="prefetch" href="/assets/js/6.d68dfcc6.js"><link rel="prefetch" href="/assets/js/7.5839080f.js"><link rel="prefetch" href="/assets/js/8.9af49ee5.js"><link rel="prefetch" href="/assets/js/9.417a0b3d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7226fc76.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="global-layout"><header class="header"><div class="header-inner"><div class="title"><a href="/" class="nav-link home-link"><img src="/profile.png" alt="IceHoney" class="profile"> <span>IceHoney </span></a></div> <div class="header-right-wrap"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <ul class="nav"><li class="nav-item"><a href="/" class="nav-link">Home</a></li><li class="nav-item"><a href="/tags/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/friends/" class="nav-link">Friends</a></li><li class="nav-item"><a href="/about/" class="nav-link">About</a></li></ul></div></div></header> <div class="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">IceHoney </a> <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-header-icon feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">Home</a></li><li class="mobile-nav-item"><a href="/tags/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/friends/" class="nav-link">Friends</a></li><li class="mobile-nav-item"><a href="/about/" class="nav-link">About</a></li></ul></div></div></div> <div class="content-wrapper"><main class="container"><section class="content"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="article"><h1 class="article-title">
+        Vue中如何设计面包屑
+      </h1> <div class="post-meta"><div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <time pubdate itemprop="datePublished" datetime="2019-07-28 23:21">
+      2019-07-28 23:21
+    </time></div> <div itemprop="keywords" class="post-meta-tags"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg> <a href="/tags/vue" class="post-tag"> vue </a></div></div> <div class="content__default"><p>最近做的项目层级结构比较深，需要使用面包屑来定位用户所在的位置，方便用户跳转层级。所以就遇到 web app 如何设计面包屑问题。</p> <h2 id="根据路由匹配设置面包屑"><a href="#根据路由匹配设置面包屑" class="header-anchor">#</a> 根据路由匹配设置面包屑</h2> <p>当路由是下面这种情况的时候：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/users'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'users-index'</span><span class="token punctuation">,</span>
+    meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+      text<span class="token operator">:</span> <span class="token string">'Users'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    children<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">'settings'</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">'user-setting'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>我们可以使用<code>$route.matched</code>属性来生成面包屑。示例代码如下：</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>route in $route.matched<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">:to</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{name: route.name}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      {{ route.meta.text }}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这种方法只适用于解决静态面包屑，当我们需要处理例如路径是<code>users/1/settings</code>这种情况，显然路由匹配就不是最佳选择了。并且路由层级的加深也并不意味着页面嵌套的加深。
+当资源层级很深的时候，我们需要做很多空的父节点来处理。</p> <h2 id="每个页面设置面包屑"><a href="#每个页面设置面包屑" class="header-anchor">#</a> 每个页面设置面包屑</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">let</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/users/userId(\\d+)'</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> userLayout
+    children<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">'settings'</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">'user-setting'</span>，
+        component<span class="token operator">:</span> userSettings
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">'user-dashboard'</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>当 URL 路径是<code>users/1/settings</code>的时候，我们期望的面包屑应该是<code>Users &gt; Lee &gt; Settings</code>。但是我们要怎么达到这个效果呢，特别是姓名信息我们还需要异步从服务器获取。</p> <p>解决办法是使用<code>Vuex</code>来存储面包屑的信息。有使用数组来存储面包屑的方案，但是需要注意面包屑加入的顺序问题。为了更灵活的控制面包屑，我选择了使用链表的方式来存储面包屑。</p> <h3 id="定义数据结构"><a href="#定义数据结构" class="header-anchor">#</a> 定义数据结构</h3> <p>下面来看看面包屑的结构。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">interface</span> <span class="token class-name">BreadCrumb</span> <span class="token punctuation">{</span>
+  key<span class="token operator">:</span> symbol<span class="token punctuation">;</span>
+  text<span class="token operator">?</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+  to<span class="token operator">?</span><span class="token operator">:</span> Route<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">BreadCrumbItem</span> <span class="token punctuation">{</span>
+  prev<span class="token operator">:</span> BreadCrumbList<span class="token punctuation">;</span>
+  breadCrumb<span class="token operator">:</span> BreadCrumb<span class="token punctuation">;</span>
+  next<span class="token operator">:</span> BreadCrumbList<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+type BreadCrumbList <span class="token operator">=</span> BreadCrumbItem <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>使用双向链表可以更方便的查询节点，每个节点主要存储三个信息，key 主要用来标识这个节点的唯一性，所以是<code>Symbol</code>类型，text 是当前节点展示的文本，to 是配合 vue-router 跳转到其他页面。
+prev 和 next 当然就是指向上一个节点或者下一个节点啦。</p> <h3 id="定义-state-和-mutation"><a href="#定义-state-和-mutation" class="header-anchor">#</a> 定义 state 和 mutation</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  breadCrumbList<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  breadCrumbTail<span class="token operator">:</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>state 里存储的分别是面包屑的头指针和尾指针。这样方便使用。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">set</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> breadCrumbItem<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>breadCrumbList <span class="token operator">=</span> breadCrumbItem<span class="token punctuation">;</span>
+    state<span class="token punctuation">.</span>breadCrumbTail <span class="token operator">=</span> state<span class="token punctuation">.</span>breadCrumbList<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> breadCrumbItem</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>state<span class="token punctuation">.</span>breadCrumbTail<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>breadCrumbTail<span class="token punctuation">.</span>next <span class="token operator">=</span> breadCrumbItem<span class="token punctuation">;</span>
+      breadCrumbItem<span class="token punctuation">.</span>prev <span class="token operator">=</span> state<span class="token punctuation">.</span>breadCrumbTail<span class="token punctuation">;</span>
+      state<span class="token punctuation">.</span>breadCrumbTail <span class="token operator">=</span> breadCrumbItem<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">replace</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> breadCrumbItem</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> point <span class="token operator">=</span> state<span class="token punctuation">.</span>breadCrumbList<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>point<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>point<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">.</span>key <span class="token operator">===</span> breadCrumbItem<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        point<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">.</span>text <span class="token operator">=</span> breadCrumbItem<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">.</span>text<span class="token punctuation">;</span>
+        point<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">.</span>to <span class="token operator">=</span> breadCrumbItem<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">.</span>to<span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        point <span class="token operator">=</span> point<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">remove</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> breadCrumbItem</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> point <span class="token operator">=</span> state<span class="token punctuation">.</span>breadCrumbTail<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>point<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>point<span class="token punctuation">.</span>breadCrumb <span class="token operator">===</span> breadCrumbItem<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> before <span class="token operator">=</span> point<span class="token punctuation">.</span>prev<span class="token punctuation">;</span>
+        <span class="token keyword">let</span> after <span class="token operator">=</span> point<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>before<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          before<span class="token punctuation">.</span>next <span class="token operator">=</span> after<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          state<span class="token punctuation">.</span>breadCrumbList <span class="token operator">=</span> after<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>after<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          after<span class="token punctuation">.</span>prev <span class="token operator">=</span> before<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          point<span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        point <span class="token operator">=</span> point<span class="token punctuation">.</span>prev<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">empty</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> breadCrumbItem</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>breadCrumbList <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    state<span class="token punctuation">.</span>breadCrumbTail <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div><p>面包屑提供的方法有，set, add, replace, remove, empty。 功能都顾名思义。</p> <h3 id="每个组件设置面包屑"><a href="#每个组件设置面包屑" class="header-anchor">#</a> 每个组件设置面包屑</h3> <p>根据上面的路由设计，我们需要在<code>userLayout</code>组件里面完成<code>Users &gt; Lee</code>前两级面包屑的填充。然后在<code>userSettings</code>组件里完成最后一级面包屑的填充。
+由于第二级面包屑需要异步请求数据去填充，所以我们需要先事先添加一个空面包屑，之后再 replace。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// userLayout</span>
+
+<span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> breadCrumbIndex <span class="token operator">=</span> <span class="token punctuation">{</span>
+    prev<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    breadCrumb<span class="token operator">:</span> <span class="token punctuation">{</span>
+      key<span class="token operator">:</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'users'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      text<span class="token operator">:</span> <span class="token string">'Users'</span><span class="token punctuation">,</span>
+      to<span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'user-index'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    next<span class="token operator">:</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> breadCrumbItem <span class="token operator">=</span> <span class="token punctuation">{</span>
+    prev<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    breadCrumb<span class="token operator">:</span> <span class="token punctuation">{</span>
+      key<span class="token operator">:</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'users'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    next<span class="token operator">:</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'set'</span><span class="token punctuation">,</span> breadCrumbIndex<span class="token punctuation">)</span>
+  store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'add'</span><span class="token punctuation">,</span> breadCrumbItem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/api/user/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>userId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'replace'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token operator">...</span>breadCrumbItem<span class="token punctuation">,</span>
+      breadCrumb<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>breadCrumbItem<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">,</span>
+        text<span class="token operator">:</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+        to<span class="token operator">:</span> <span class="token punctuation">{</span>
+          name<span class="token operator">:</span> <span class="token string">'user-dashboard'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$once</span><span class="token punctuation">(</span><span class="token string">'hook:beforeDestroy'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'remove'</span><span class="token punctuation">,</span> breadCrumbIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'remove'</span><span class="token punctuation">,</span> breadCrumbItem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// userSettings</span>
+
+<span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> breadCrumbItem <span class="token operator">=</span> <span class="token punctuation">{</span>
+    prev<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    breadCrumb<span class="token operator">:</span> <span class="token punctuation">{</span>
+      key<span class="token operator">:</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'users'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">'Settings'</span><span class="token punctuation">,</span>
+      to<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    next<span class="token operator">:</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'add'</span><span class="token punctuation">,</span> breadCrumbItem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$once</span><span class="token punctuation">(</span><span class="token string">'hook:beforeDestroy'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'remove'</span><span class="token punctuation">,</span> breadCrumbItem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div><h3 id="组件切换生命周期的执行顺序"><a href="#组件切换生命周期的执行顺序" class="header-anchor">#</a> 组件切换生命周期的执行顺序</h3> <p>当我们加载 <code>userDashboard</code> 并切换到 <code>userSettings</code> 页面的时候，组件执行生命周期执行顺序是。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>beforeCreate userDashboard
+created userDashboard
+beforMount userDashboard
+mounted userDashboard  // userDashboard show
+beforeCreate userSettings // route to userSettings
+created userSettings
+beforMount userSettings
+beforeDestory userDashboard
+destroyed userDashboard
+mounted userSettings
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>我们发现组件在<code>beforeDestory</code>后面之前的是<code>mounted</code>。所以如果把添加面包屑的代码放在<code>beforeMount</code>里的时候，其实是先添加面包屑再删除之前的面包屑的。不过好在我们用的是链表，所以顺序不影响面包屑的生成。</p> <h3 id="生成面包屑"><a href="#生成面包屑" class="header-anchor">#</a> 生成面包屑</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">breadCrumb</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> breadcrumb <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> point <span class="token operator">=</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>breadCrumbList<span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>point <span class="token operator">&amp;&amp;</span> point<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    breadcrumb<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>point<span class="token punctuation">.</span>breadCrumb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    point <span class="token operator">=</span> point<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> breadcrumb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>把面包屑的链表转换成数组，然后使用 vue 的<code>v-for</code>来渲染就可以了。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>面包屑的这两种实现方式我都有尝试过，个人感觉针对动态面包屑第二种方式比较优雅。如果你有更好的实现方式，欢迎讨论。</p> <p>参考：</p> <p><a href="https://mauricius.dev/handling-breadcrumbs-with-vuex-in-a-vuejs-single-page-application/" target="_blank" rel="noopener noreferrer">Handling breadcrumbs with VueX in a VueJS Single Page Application<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <!----></article></section></main></div> <footer class="footer"><div class="footer-left"><ul class="contact"><li class="contact-item"><a href="https://github.com/acgotaku" target="_blank" rel="noopener noreferrer" class="nav-link external"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          
+        </a></li><li class="contact-item"><a href="https://twitter.com/acgotaku311" target="_blank" rel="noopener noreferrer" class="nav-link external"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right"><ul class="copyright"><li class="copyright-item"><a href="https://github.com/acgotaku/IceHoney-BLOG" target="_blank" rel="noopener noreferrer" class="nav-link external">2013 - 2020 © Ice Honey</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e236eeb0.js" defer></script><script src="/assets/js/22.a2c81cfd.js" defer></script><script src="/assets/js/1.ca40303b.js" defer></script>
+  </body>
+</html>
