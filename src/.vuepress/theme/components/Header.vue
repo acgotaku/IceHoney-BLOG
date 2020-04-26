@@ -87,6 +87,7 @@ export default class Header extends Vue {}
     .nav {
       display: flex;
       margin: 0;
+      list-style: none;
 
       .nav-item {
         margin-left: 2rem;
