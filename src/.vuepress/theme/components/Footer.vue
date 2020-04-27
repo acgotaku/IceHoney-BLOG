@@ -85,6 +85,8 @@ export default class Footer extends Vue {
   .contact {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 
     &-item {
       margin: 0 0.5rem;
@@ -101,6 +103,8 @@ export default class Footer extends Vue {
 
   .copyright {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 }
 </style>

@@ -87,6 +87,7 @@ export default class Header extends Vue {}
     .nav {
       display: flex;
       margin: 0;
+      padding: 0;
       list-style: none;
 
       .nav-item {

@@ -78,6 +78,12 @@ export default class MobileHeader extends Vue {
   }
 }
 
+.mobile-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .mobile-nav-item {
   padding: 1rem 1.5rem;
 
