@@ -2,8 +2,6 @@
 title: About Me
 date: 2020-04-18 15:47
 comments: true
-tags:
-  - notes
 ---
 
 这里是雪月秋水的自我简介页面。
