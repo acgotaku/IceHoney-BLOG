@@ -32,7 +32,7 @@ export default class Tags extends Vue {}
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    padding: 0 1rem;
+    padding: 1rem 0;
     list-style: none;
   }
 
