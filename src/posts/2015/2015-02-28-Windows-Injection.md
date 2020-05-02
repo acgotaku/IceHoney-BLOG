@@ -42,7 +42,7 @@ Win 系统也提供了开辟内存空间的[VirtualAllocEx](<https://msdn.micros
 
 代码示例：
 
-```c++
+```cpp
 hProcess = OpenProcess(PROCESS_CREATE_THREAD
 		| PROCESS_QUERY_INFORMATION
 		| PROCESS_VM_OPERATION

@@ -20,7 +20,7 @@ tags:
 观看视频遇到经典的镜头当然得录下来做成 GIF~
 首先需要安装 `imagemagick` 这个软件包才行
 
-```basg
+```bash
 mplayer -vo png -ss 00:08:28 -frames 200 123.mp4
 mogrify -resize 848x480 *.png
 convert -delay 4  *.png ry.gif

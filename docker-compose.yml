@@ -1,0 +1,10 @@
+version: '3'
+services:
+  blog:
+    build: .
+    image: 'blog'
+    command: yarn dev
+    volumes:
+      - '${WORKSPACE_DIR-.}:/blog/current'
+    ports:
+      - '8080:8080'
