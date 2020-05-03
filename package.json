@@ -21,6 +21,7 @@
   "homepage": "https://github.com/acgotaku/IceHoney-BLOG#readme",
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-google-analytics": "^1.4.1",
     "@vuepress/plugin-search": "^1.4.0",
     "gh-pages": "^2.2.0",
     "typescript": "^3.8.3",

@@ -10,6 +10,14 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-37774652-3'
+      }
+    ]
+  ],
   themeConfig: {
     profile: '/profile.png',
     nav: [
