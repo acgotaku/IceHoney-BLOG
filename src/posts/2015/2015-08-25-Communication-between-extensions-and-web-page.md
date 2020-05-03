@@ -4,7 +4,7 @@ date: 2015-8-25 19:54
 comments: true
 archives: 2015
 tags:
-	- chrome
+  - chrome
 ---
 
 由于 WEB 页面本身受到浏览器的安全策略限制,而且 Content Scripts 和页面本身并不共享环境变量.我们很多时候都是
@@ -24,7 +24,7 @@ tags:
 
 ```json
 "externally_connectable": {
-	"matches": ["*://*.example.com/*"]
+  "matches": ["*://*.example.com/*"]
 }
 ```
 

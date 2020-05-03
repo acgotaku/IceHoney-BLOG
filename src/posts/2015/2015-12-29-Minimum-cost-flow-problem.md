@@ -4,7 +4,7 @@ date: 2015-12-29 11:15
 comments: true
 archives: 2015
 tags:
-	- algorithm
+  - algorithm
 ---
 
 最近老师布置个作业,很没有头绪,于是各种咨询,大家的解决方案是使用最小费用最大流模型来求解,于是我便花了 3 天时间来理解这个算法.

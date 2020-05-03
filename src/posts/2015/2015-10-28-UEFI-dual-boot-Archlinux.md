@@ -4,7 +4,7 @@ date: 2015-10-28 23:32
 comments: true
 archives: 2015
 tags:
-	- linux
+  - linux
 ---
 
 实验室给配备了一台高性能的台式机,但是 UEFI 本身关不掉.而且有些操作还是离不开 Windows,于是便折腾 Win10 和 Archlinux 的双启动.
@@ -83,12 +83,12 @@ grub-mkstandalone -d /usr/lib/grub/x86_64-efi/ -O x86_64-efi --modules="part_gpt
 
 ```
 menuentry "Archlinux-x86_64.iso" --class iso {
-	set isofile="/archlinux-2013.04.01-dual.iso"
-	search -s -f -n /archlinux-2013.04.01-dual.iso
-	probe --set=DB7B-2C3D -u $root
-	loopback loop /archlinux-2013.04.01-dual.iso
-	linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D  img_loop=$isofile earlymodules=loop
-	initrd (loop)/arch/boot/x86_64/archiso.img
+  set isofile="/archlinux-2013.04.01-dual.iso"
+  search -s -f -n /archlinux-2013.04.01-dual.iso
+  probe --set=DB7B-2C3D -u $root
+  loopback loop /archlinux-2013.04.01-dual.iso
+  linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D  img_loop=$isofile earlymodules=loop
+  initrd (loop)/arch/boot/x86_64/archiso.img
 }
 ```
 
@@ -115,12 +115,12 @@ menuentry "Archlinux-x86_64.iso" --class iso {
 
 ```
 menuentry "Microsoft Windows 10" {
-		insmod part_gpt
-		insmod fat
-		insmod search_fs_uuid
-		insmod chain
-		search --fs-uuid --set=root $hints_string $fs_uuid
-		chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+    insmod part_gpt
+    insmod fat
+    insmod search_fs_uuid
+    insmod chain
+    search --fs-uuid --set=root $hints_string $fs_uuid
+    chainloader /EFI/Microsoft/Boot/bootmgfw.efi
 }
 ```
 

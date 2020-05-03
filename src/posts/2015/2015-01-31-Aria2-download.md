@@ -4,7 +4,7 @@ date: 2015-1-31 09:41
 comments: true
 archives: 2015
 tags:
-	- notes
+  - notes
 ---
 
 虽然我已经开发了两款专门为 Aria2 用的下载插件,但是我发现还是有同学不会用 Aria2c 这么好的东西呢~

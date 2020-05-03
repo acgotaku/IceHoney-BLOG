@@ -29,169 +29,169 @@ Office 是 Linux 永远的痛...微软的 Office 市场霸主地位是根本无�
 <fontconfig>
 <!-- created by WenQuanYi FcDesigner v0.5 -->
 <match>
-	<test name="family"><string>Arial</string></test>
-	<edit name="family" mode="prepend" binding="strong">
-		<string>文泉驿微米黑</string>
-			<!-- Please install 文泉驿微米黑 first -->
-		<string>文泉驿等宽微米黑</string>
-		<string>DejaVu Sans</string>
-		<string>DejaVu Sans</string>
-		<string>WenQuanYi Micro Hei</string>
-			<!-- Please install WenQuanYi Micro Hei first -->
-		<string>WenQuanYi Zen Hei</string>
-		<string>Liberation Sans</string>
-		<string>Droid Sans</string>
-		<string>WenQuanYi Bitmap Song</string>
-			<!-- Please install WenQuanYi Bitmap Song first -->
-		<string>Cantarell</string>
-			<!-- Please install Cantarell first -->
-		<string>DejaVu Sans Condensed</string>
-		<string>DejaVu Sans Light</string>
-		<string>DejaVu Sans Mono</string>
-		<string>DejaVu Serif</string>
-		<string>DejaVu Serif Condensed</string>
-		<string>方正书宋_GBK</string>
-		<string>方正仿宋_GBK</string>
-		<string>方正姚体_GBK</string>
-		<string>方正宋体S-超大字符集</string>
-		<string>方正宋体S-超大字符集(SIP)</string>
-			<!-- Please install 方正宋体S-超大字符集(SIP) first -->
-		<string>方正小标宋_GBK</string>
-		<string>方正楷体_GBK</string>
-		<string>方正细黑一_GBK</string>
-		<string>方正行楷_GBK</string>
-		<string>方正超粗黑_GBK</string>
-		<string>方正隶书_GBK</string>
-		<string>方正魏碑_GBK</string>
-		<string>方正黑体_GBK</string>
-	</edit>
+  <test name="family"><string>Arial</string></test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>文泉驿微米黑</string>
+      <!-- Please install 文泉驿微米黑 first -->
+    <string>文泉驿等宽微米黑</string>
+    <string>DejaVu Sans</string>
+    <string>DejaVu Sans</string>
+    <string>WenQuanYi Micro Hei</string>
+      <!-- Please install WenQuanYi Micro Hei first -->
+    <string>WenQuanYi Zen Hei</string>
+    <string>Liberation Sans</string>
+    <string>Droid Sans</string>
+    <string>WenQuanYi Bitmap Song</string>
+      <!-- Please install WenQuanYi Bitmap Song first -->
+    <string>Cantarell</string>
+      <!-- Please install Cantarell first -->
+    <string>DejaVu Sans Condensed</string>
+    <string>DejaVu Sans Light</string>
+    <string>DejaVu Sans Mono</string>
+    <string>DejaVu Serif</string>
+    <string>DejaVu Serif Condensed</string>
+    <string>方正书宋_GBK</string>
+    <string>方正仿宋_GBK</string>
+    <string>方正姚体_GBK</string>
+    <string>方正宋体S-超大字符集</string>
+    <string>方正宋体S-超大字符集(SIP)</string>
+      <!-- Please install 方正宋体S-超大字符集(SIP) first -->
+    <string>方正小标宋_GBK</string>
+    <string>方正楷体_GBK</string>
+    <string>方正细黑一_GBK</string>
+    <string>方正行楷_GBK</string>
+    <string>方正超粗黑_GBK</string>
+    <string>方正隶书_GBK</string>
+    <string>方正魏碑_GBK</string>
+    <string>方正黑体_GBK</string>
+  </edit>
 </match>
 <match>
-	<test name="family"><string>sans-serif</string></test>
-	<edit name="family" mode="prepend" binding="strong">
-		<string>文泉驿微米黑</string>
-			<!-- Please install 文泉驿微米黑 first -->
-		<string>文泉驿等宽微米黑</string>
-		<string>DejaVu Sans</string>
-		<string>DejaVu Sans</string>
-		<string>WenQuanYi Micro Hei</string>
-			<!-- Please install WenQuanYi Micro Hei first -->
-		<string>WenQuanYi Zen Hei</string>
-		<string>Liberation Sans</string>
-		<string>Droid Sans</string>
-		<string>WenQuanYi Bitmap Song</string>
-			<!-- Please install WenQuanYi Bitmap Song first -->
-		<string>Cantarell</string>
-			<!-- Please install Cantarell first -->
-		<string>DejaVu Sans Condensed</string>
-		<string>DejaVu Sans Light</string>
-		<string>DejaVu Sans Mono</string>
-		<string>DejaVu Serif</string>
-		<string>DejaVu Serif Condensed</string>
-		<string>方正书宋_GBK</string>
-		<string>方正仿宋_GBK</string>
-		<string>方正姚体_GBK</string>
-		<string>方正宋体S-超大字符集</string>
-		<string>方正宋体S-超大字符集(SIP)</string>
-			<!-- Please install 方正宋体S-超大字符集(SIP) first -->
-		<string>方正小标宋_GBK</string>
-		<string>方正楷体_GBK</string>
-		<string>方正细黑一_GBK</string>
-		<string>方正行楷_GBK</string>
-		<string>方正超粗黑_GBK</string>
-		<string>方正隶书_GBK</string>
-		<string>方正魏碑_GBK</string>
-		<string>方正黑体_GBK</string>
-	</edit>
+  <test name="family"><string>sans-serif</string></test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>文泉驿微米黑</string>
+      <!-- Please install 文泉驿微米黑 first -->
+    <string>文泉驿等宽微米黑</string>
+    <string>DejaVu Sans</string>
+    <string>DejaVu Sans</string>
+    <string>WenQuanYi Micro Hei</string>
+      <!-- Please install WenQuanYi Micro Hei first -->
+    <string>WenQuanYi Zen Hei</string>
+    <string>Liberation Sans</string>
+    <string>Droid Sans</string>
+    <string>WenQuanYi Bitmap Song</string>
+      <!-- Please install WenQuanYi Bitmap Song first -->
+    <string>Cantarell</string>
+      <!-- Please install Cantarell first -->
+    <string>DejaVu Sans Condensed</string>
+    <string>DejaVu Sans Light</string>
+    <string>DejaVu Sans Mono</string>
+    <string>DejaVu Serif</string>
+    <string>DejaVu Serif Condensed</string>
+    <string>方正书宋_GBK</string>
+    <string>方正仿宋_GBK</string>
+    <string>方正姚体_GBK</string>
+    <string>方正宋体S-超大字符集</string>
+    <string>方正宋体S-超大字符集(SIP)</string>
+      <!-- Please install 方正宋体S-超大字符集(SIP) first -->
+    <string>方正小标宋_GBK</string>
+    <string>方正楷体_GBK</string>
+    <string>方正细黑一_GBK</string>
+    <string>方正行楷_GBK</string>
+    <string>方正超粗黑_GBK</string>
+    <string>方正隶书_GBK</string>
+    <string>方正魏碑_GBK</string>
+    <string>方正黑体_GBK</string>
+  </edit>
 </match>
 <match>
-	<test name="family"><string>serif</string></test>
-	<edit name="family" mode="prepend" binding="strong">
-		<string>文泉驿微米黑</string>
-			<!-- Please install 文泉驿微米黑 first -->
-		<string>文泉驿等宽微米黑</string>
-		<string>DejaVu Sans</string>
-		<string>DejaVu Serif</string>
-		<string>WenQuanYi Bitmap Song</string>
-			<!-- Please install WenQuanYi Bitmap Song first -->
-		<string>AR PL UMing CN</string>
-			<!-- Please install AR PL UMing CN first -->
-		<string>AR PL SungtiL GB</string>
-			<!-- Please install AR PL SungtiL GB first -->
-		<string>WenQuanYi Zen Hei Sharp</string>
-			<!-- Please install WenQuanYi Zen Hei Sharp first -->
-		<string>AR PL UMing TW</string>
-			<!-- Please install AR PL UMing TW first -->
-		<string>Liberation Serif</string>
-			<!-- Please install Liberation Serif first -->
-		<string>Bitstream Charter</string>
-			<!-- Please install Bitstream Charter first -->
-		<string>Droid Serif</string>
-			<!-- Please install Droid Serif first -->
-		<string>Cantarell</string>
-			<!-- Please install Cantarell first -->
-		<string>DejaVu Sans Condensed</string>
-		<string>DejaVu Sans Light</string>
-		<string>DejaVu Sans Mono</string>
-		<string>DejaVu Serif</string>
-		<string>DejaVu Serif Condensed</string>
-		<string>方正书宋_GBK</string>
-		<string>方正仿宋_GBK</string>
-		<string>方正姚体_GBK</string>
-		<string>方正宋体S-超大字符集</string>
-		<string>方正宋体S-超大字符集(SIP)</string>
-			<!-- Please install 方正宋体S-超大字符集(SIP) first -->
-		<string>方正小标宋_GBK</string>
-		<string>方正楷体_GBK</string>
-		<string>方正细黑一_GBK</string>
-		<string>方正行楷_GBK</string>
-		<string>方正超粗黑_GBK</string>
-		<string>方正隶书_GBK</string>
-		<string>方正魏碑_GBK</string>
-		<string>方正黑体_GBK</string>
-	</edit>
+  <test name="family"><string>serif</string></test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>文泉驿微米黑</string>
+      <!-- Please install 文泉驿微米黑 first -->
+    <string>文泉驿等宽微米黑</string>
+    <string>DejaVu Sans</string>
+    <string>DejaVu Serif</string>
+    <string>WenQuanYi Bitmap Song</string>
+      <!-- Please install WenQuanYi Bitmap Song first -->
+    <string>AR PL UMing CN</string>
+      <!-- Please install AR PL UMing CN first -->
+    <string>AR PL SungtiL GB</string>
+      <!-- Please install AR PL SungtiL GB first -->
+    <string>WenQuanYi Zen Hei Sharp</string>
+      <!-- Please install WenQuanYi Zen Hei Sharp first -->
+    <string>AR PL UMing TW</string>
+      <!-- Please install AR PL UMing TW first -->
+    <string>Liberation Serif</string>
+      <!-- Please install Liberation Serif first -->
+    <string>Bitstream Charter</string>
+      <!-- Please install Bitstream Charter first -->
+    <string>Droid Serif</string>
+      <!-- Please install Droid Serif first -->
+    <string>Cantarell</string>
+      <!-- Please install Cantarell first -->
+    <string>DejaVu Sans Condensed</string>
+    <string>DejaVu Sans Light</string>
+    <string>DejaVu Sans Mono</string>
+    <string>DejaVu Serif</string>
+    <string>DejaVu Serif Condensed</string>
+    <string>方正书宋_GBK</string>
+    <string>方正仿宋_GBK</string>
+    <string>方正姚体_GBK</string>
+    <string>方正宋体S-超大字符集</string>
+    <string>方正宋体S-超大字符集(SIP)</string>
+      <!-- Please install 方正宋体S-超大字符集(SIP) first -->
+    <string>方正小标宋_GBK</string>
+    <string>方正楷体_GBK</string>
+    <string>方正细黑一_GBK</string>
+    <string>方正行楷_GBK</string>
+    <string>方正超粗黑_GBK</string>
+    <string>方正隶书_GBK</string>
+    <string>方正魏碑_GBK</string>
+    <string>方正黑体_GBK</string>
+  </edit>
 </match>
 <match>
-	<test name="family"><string>monospace</string></test>
-	<edit name="family" mode="prepend" binding="strong">
-		<string>文泉驿微米黑</string>
-			<!-- Please install 文泉驿微米黑 first -->
-		<string>文泉驿等宽微米黑</string>
-		<string>DejaVu Sans</string>
-		<string>WenQuanYi Zen Hei Mono</string>
-			<!-- Please install WenQuanYi Zen Hei Mono first -->
-		<string>WenQuanYi Micro Hei Mono</string>
-		<string>DejaVu Sans Mono</string>
-		<string>Droid Sans Mono</string>
-			<!-- Please install Droid Sans Mono first -->
-		<string>WenQuanYi Zen Hei Sharp</string>
-			<!-- Please install WenQuanYi Zen Hei Sharp first -->
-		<string>Liberation Sans Mono</string>
-			<!-- Please install Liberation Sans Mono first -->
-		<string>AR PL UMing TW</string>
-			<!-- Please install AR PL UMing TW first -->
-		<string>Cantarell</string>
-			<!-- Please install Cantarell first -->
-		<string>DejaVu Sans Condensed</string>
-		<string>DejaVu Sans Light</string>
-		<string>DejaVu Sans Mono</string>
-		<string>DejaVu Serif</string>
-		<string>DejaVu Serif Condensed</string>
-		<string>方正书宋_GBK</string>
-		<string>方正仿宋_GBK</string>
-		<string>方正姚体_GBK</string>
-		<string>方正宋体S-超大字符集</string>
-		<string>方正宋体S-超大字符集(SIP)</string>
-			<!-- Please install 方正宋体S-超大字符集(SIP) first -->
-		<string>方正小标宋_GBK</string>
-		<string>方正楷体_GBK</string>
-		<string>方正细黑一_GBK</string>
-		<string>方正行楷_GBK</string>
-		<string>方正超粗黑_GBK</string>
-		<string>方正隶书_GBK</string>
-		<string>方正魏碑_GBK</string>
-		<string>方正黑体_GBK</string>
-	</edit>
+  <test name="family"><string>monospace</string></test>
+  <edit name="family" mode="prepend" binding="strong">
+    <string>文泉驿微米黑</string>
+      <!-- Please install 文泉驿微米黑 first -->
+    <string>文泉驿等宽微米黑</string>
+    <string>DejaVu Sans</string>
+    <string>WenQuanYi Zen Hei Mono</string>
+      <!-- Please install WenQuanYi Zen Hei Mono first -->
+    <string>WenQuanYi Micro Hei Mono</string>
+    <string>DejaVu Sans Mono</string>
+    <string>Droid Sans Mono</string>
+      <!-- Please install Droid Sans Mono first -->
+    <string>WenQuanYi Zen Hei Sharp</string>
+      <!-- Please install WenQuanYi Zen Hei Sharp first -->
+    <string>Liberation Sans Mono</string>
+      <!-- Please install Liberation Sans Mono first -->
+    <string>AR PL UMing TW</string>
+      <!-- Please install AR PL UMing TW first -->
+    <string>Cantarell</string>
+      <!-- Please install Cantarell first -->
+    <string>DejaVu Sans Condensed</string>
+    <string>DejaVu Sans Light</string>
+    <string>DejaVu Sans Mono</string>
+    <string>DejaVu Serif</string>
+    <string>DejaVu Serif Condensed</string>
+    <string>方正书宋_GBK</string>
+    <string>方正仿宋_GBK</string>
+    <string>方正姚体_GBK</string>
+    <string>方正宋体S-超大字符集</string>
+    <string>方正宋体S-超大字符集(SIP)</string>
+      <!-- Please install 方正宋体S-超大字符集(SIP) first -->
+    <string>方正小标宋_GBK</string>
+    <string>方正楷体_GBK</string>
+    <string>方正细黑一_GBK</string>
+    <string>方正行楷_GBK</string>
+    <string>方正超粗黑_GBK</string>
+    <string>方正隶书_GBK</string>
+    <string>方正魏碑_GBK</string>
+    <string>方正黑体_GBK</string>
+  </edit>
 </match>
 </fontconfig>
 ```

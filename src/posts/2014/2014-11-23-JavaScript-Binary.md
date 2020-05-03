@@ -5,7 +5,7 @@ date: 2014-11-23 14:30
 comments: true
 archives: 2014
 tags:
-	- js
+  - js
 ---
 
 最近在开发扩展的时候遇到需要获取 MP3 数据并且直接交给其它接口处理的问题,但是使用 JQuery 的 AJAX 进行

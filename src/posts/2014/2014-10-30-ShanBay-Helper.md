@@ -4,7 +4,7 @@ date: 2014-10-30 18:30
 comments: true
 archives: 2014
 tags:
-	- notes
+  - notes
 ---
 
 最近受菊苣[binux](https://plus.google.com/u/0/+RoyBinux/)的要求,希望能开发一款扇贝网的[单词助手](https://chrome.google.com/webstore/detail/shanbayhelper/mbekldhkbpihlaogjpclihoobhoakcic),可以标记任意页面上已经背过的单词.项目源码在[Github](https://github.com/acgotaku/ShanBayHelper).

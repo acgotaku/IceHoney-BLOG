@@ -4,7 +4,7 @@ date: 2014-09-30 12:30
 comments: true
 archives: 2014
 tags:
-	- endian
+  - endian
 ---
 
 计算机字节序这个问题,最近被老师反复提到.我也在本科阶段折腾交叉编译的时候遇到过.并且这个问题貌似也是面试的时候一个常见问题,所以还是写下来比较好.
@@ -32,14 +32,14 @@ tags:
 #include <stdio.h>
 int main()
 {
-		unsigned int x = 0x12345678;
-		char *p = (char *)&x;
-		int i;
-		for (i = 0; i < sizeof(x); i++){
-				printf("%.2x ", *p++);
-		}
-		printf("\n");
-		return 0;
+    unsigned int x = 0x12345678;
+    char *p = (char *)&x;
+    int i;
+    for (i = 0; i < sizeof(x); i++){
+        printf("%.2x ", *p++);
+    }
+    printf("\n");
+    return 0;
 }
 ```
 

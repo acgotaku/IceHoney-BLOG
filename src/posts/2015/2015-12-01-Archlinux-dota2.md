@@ -4,7 +4,7 @@ date: 2015-12-01 21:58
 comments: true
 archives: 2015
 tags:
-	- linux
+  - linux
 ---
 
 V 社的 steam 平台在 Linux 下出了这么多年还是没解决输入法的问题.本身官方也就只支持 Ubuntu,所以在其它发行版也就难免会有各种各样的问题.容我慢慢道来

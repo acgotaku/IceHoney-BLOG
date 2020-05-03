@@ -50,25 +50,25 @@ vim 000-default
 ```apacheconf
 <VirtualHost *:80>
 ServerAdmin acgotaku311@email.me
-		ServerName _default_
+    ServerName _default_
 DocumentRoot /var/www/default
 <Directory />
-	Options FollowSymLinks
-	AllowOverride None
+  Options FollowSymLinks
+  AllowOverride None
 </Directory>
 <Directory /var/www/default>
-	Options Indexes FollowSymLinks MultiViews
-	AllowOverride None
-	Order allow,deny
-	allow from all
+  Options Indexes FollowSymLinks MultiViews
+  AllowOverride None
+  Order allow,deny
+  allow from all
 </Directory>
 
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 <Directory "/usr/lib/cgi-bin">
-	AllowOverride None
-	Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-	Order allow,deny
-	Allow from all
+  AllowOverride None
+  Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+  Order allow,deny
+  Allow from all
 </Directory>
 
 ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -81,11 +81,11 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 Alias /doc/ "/usr/share/doc/"
 <Directory "/usr/share/doc/">
-		Options Indexes MultiViews FollowSymLinks
-		AllowOverride None
-		Order deny,allow
-		Deny from all
-		Allow from 127.0.0.0/255.0.0.0 ::1/128
+    Options Indexes MultiViews FollowSymLinks
+    AllowOverride None
+    Order deny,allow
+    Deny from all
+    Allow from 127.0.0.0/255.0.0.0 ::1/128
 </Directory>
 
 </VirtualHost>
@@ -103,25 +103,25 @@ Directory 子节点是对具体目录进行配置 我们主要是对网站根目
 <IfModule mod_ssl.c>
 <VirtualHost *:443>
 ServerAdmin acgotaku311@email.me
-		ServerName  _default_
+    ServerName  _default_
 DocumentRoot /var/www/default
 <Directory />
-	Options FollowSymLinks
-	AllowOverride None
+  Options FollowSymLinks
+  AllowOverride None
 </Directory>
 <Directory /var/www/default>
-	Options Indexes FollowSymLinks MultiViews
-	AllowOverride All
-	Order allow,deny
-	allow from all
+  Options Indexes FollowSymLinks MultiViews
+  AllowOverride All
+  Order allow,deny
+  allow from all
 </Directory>
 
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 <Directory "/usr/lib/cgi-bin">
-	AllowOverride None
-	Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-	Order allow,deny
-	Allow from all
+  AllowOverride None
+  Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+  Order allow,deny
+  Allow from all
 </Directory>
 
 ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -134,11 +134,11 @@ CustomLog ${APACHE_LOG_DIR}/ssl_access.log combined
 
 Alias /doc/ "/usr/share/doc/"
 <Directory "/usr/share/doc/">
-	Options Indexes MultiViews FollowSymLinks
-	AllowOverride None
-	Order deny,allow
-	Deny from all
-	Allow from 127.0.0.0/255.0.0.0 ::1/128
+  Options Indexes MultiViews FollowSymLinks
+  AllowOverride None
+  Order deny,allow
+  Deny from all
+  Allow from 127.0.0.0/255.0.0.0 ::1/128
 </Directory>
 
 #   SSL Engine Switch:
@@ -150,10 +150,10 @@ SSLCertificateKeyFile /etc/apache2/ssl/ssl.key
 
 
 <FilesMatch "\.(cgi|shtml|phtml|php)$">
-	SSLOptions +StdEnvVars
+  SSLOptions +StdEnvVars
 </FilesMatch>
 <Directory /usr/lib/cgi-bin>
-	SSLOptions +StdEnvVars
+  SSLOptions +StdEnvVars
 </Directory>
 
 BrowserMatch "MSIE [17-9]" ssl-unclean-shutdown

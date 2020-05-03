@@ -4,7 +4,7 @@ date: 2015-4-20 19:54
 comments: true
 archives: 2015
 tags:
-	- js
+  - js
 ---
 
 ## 同源策略基本介绍
@@ -59,28 +59,28 @@ if (parent) {
 
 ```js
 set_down_url:function(){
-		var self=this;
-		DownBridge={};
-			$('<iframe>').attr('src', 'http://web.api.115.com/bridge_2.0.html?namespace=DownBridge&api=jQuery').css({
-				width: 0,
-				height: 0,
-				border: 0,
-				padding: 0,
-				margin: 0,
-				position: 'absolute',
-				top: '-99999px'
-			}).one('load',function(){
-				window.DownBridge.getFileUrl=function(pickcode,callback){
-				this.jQuery.get('http://web.api.115.com/files/download?pickcode=' + pickcode, function (data) {
-									callback(data);
-								}, 'json');
-				};
-				window.DownBridge.getFileList=function(cate_id,callback){
-				this.jQuery.get('http://web.api.115.com/files?aid=1&limit=1000&show_dir=1&cid=' + cate_id, function (data) {
-									callback(data);
-								}, 'json');
-				};
-			}).appendTo('html');
+    var self=this;
+    DownBridge={};
+      $('<iframe>').attr('src', 'http://web.api.115.com/bridge_2.0.html?namespace=DownBridge&api=jQuery').css({
+        width: 0,
+        height: 0,
+        border: 0,
+        padding: 0,
+        margin: 0,
+        position: 'absolute',
+        top: '-99999px'
+      }).one('load',function(){
+        window.DownBridge.getFileUrl=function(pickcode,callback){
+        this.jQuery.get('http://web.api.115.com/files/download?pickcode=' + pickcode, function (data) {
+                  callback(data);
+                }, 'json');
+        };
+        window.DownBridge.getFileList=function(cate_id,callback){
+        this.jQuery.get('http://web.api.115.com/files?aid=1&limit=1000&show_dir=1&cid=' + cate_id, function (data) {
+                  callback(data);
+                }, 'json');
+        };
+      }).appendTo('html');
 }
 ```
 

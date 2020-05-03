@@ -4,7 +4,7 @@ date: 2014-06-05 09:22
 comments: true
 archives: 2014
 tags:
-	- linux
+  - linux
 ---
 
 最近又有瞎折腾装 Arch....发现显卡驱动的安装和设置都不是问题...
@@ -20,11 +20,11 @@ tags:
 [acgotaku@Archlinux ~]$ aplay -l
 **** List of PLAYBACK Hardware Devices ****
 card 0: HDMI [HDA Intel HDMI], device 3: HDMI 0 [HDMI 0]
-	Subdevices: 1/1
-	Subdevice #0: subdevice #0
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
 card 1: PCH [HDA Intel PCH], device 0: ALC3220 Analog [ALC3220 Analog]
-	Subdevices: 1/1
-	Subdevice #0: subdevice #0
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
 ```
 
 第一个一般为默认的声卡输出设备,显然 HDMI 输出是不对的,导致声音无法正常播放,我们应该把默认声卡切换为

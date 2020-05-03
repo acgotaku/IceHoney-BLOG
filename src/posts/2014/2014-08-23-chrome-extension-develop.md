@@ -4,7 +4,7 @@ date: 2014-08-23 16:01
 comments: true
 archives: 2014
 tags:
-	- chrome
+  - chrome
 ---
 
 最近写了两个 chrome 扩展.看了不少 chrome 扩展开发的文档.觉得还是写点东西比较好.
@@ -94,12 +94,12 @@ script.appendChild(document.createTextNode('(' + baidu + ')();'));
 ```js
 var css = function() {
   /*
-	input{
-	border: 1px solid #C6C6C6;
-	box-shadow: 0 0 3px #C6C6C6;
-	-webkit-box-shadow: 0 0 3px #C6C6C6;
-	}
-	*/
+  input{
+  border: 1px solid #C6C6C6;
+  box-shadow: 0 0 3px #C6C6C6;
+  -webkit-box-shadow: 0 0 3px #C6C6C6;
+  }
+  */
 }
   .toString()
   .slice(15, -4);

@@ -4,7 +4,7 @@ date: 2014-07-21 17:39
 comments: true
 archives: 2014
 tags:
-	- linux
+  - linux
 ---
 
 经常有时候喜欢删除文件...但是之后又后悔删除... Linux 下 rm 之后是没有回收站的.  

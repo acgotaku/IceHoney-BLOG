@@ -4,7 +4,7 @@ date: 2016-05-05 10:43
 comments: true
 archives: 2016
 tags:
-	- WebGL
+  - WebGL
 ---
 
 来到日本导师的研究方向是计算机图形学，由于我比较擅长 Web 开发，便选择了 WebGL 进行图形渲染的研究课题。学习了大半年，也该写点东西介绍下自己对 WebGL 的理解，如有错误，欢迎批评指正。
@@ -47,7 +47,7 @@ WebGL 只支持绘制基本图元，复杂的图形也是有基本图元组合�
   uniform   mat4 mvpMatrix;
 
   void main(void){
-  		gl_Position = mvpMatrix * vec4(position, 1.0);
+      gl_Position = mvpMatrix * vec4(position, 1.0);
   }
 </script>
 ```
@@ -60,9 +60,9 @@ WebGL 只支持绘制基本图元，复杂的图形也是有基本图元组合�
 
 ```js
 <script id="fs" type="x-shader/x-fragment">
-		void main(void){
-				gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
-		}
+    void main(void){
+        gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+    }
 </script>
 ```
 

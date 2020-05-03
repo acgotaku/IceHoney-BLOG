@@ -4,7 +4,7 @@ date: 2015-7-28 19:54
 comments: true
 archives: 2015
 tags:
-	- notes
+  - notes
 ---
 
 安卓 5.0 的卡刷包系统基本上都是在一个 dat 文件里面的。但是对于很多国内 ROM，要不就是植入了很多流氓软件，

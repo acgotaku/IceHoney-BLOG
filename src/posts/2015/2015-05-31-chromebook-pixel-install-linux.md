@@ -4,7 +4,7 @@ date: 2015-4-20 19:54
 comments: true
 archives: 2015
 tags:
-	- chrome
+  - chrome
 ---
 
 同学最近淘了一台二手 Chromebook Pixel (2013)，这款笔记本最大的诱惑就是 12.85 寸但是配备了一块 2560 x 1700 分辨率的触摸屏。上网的体验不要太爽啊，在体验了一小时的 Chrome OS 之后，便感叹就只有一个浏览器而已啊！于是开始折腾如何安装 Linux，毕竟这款笔记本

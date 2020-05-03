@@ -38,10 +38,10 @@ GRUB2 的配置文件就是 boot/grub/grub.cfg 文件 ##从 Archlinux-x86_64 启
 
 ```
 menuentry "Archlinux-x86_64.iso" --class iso {
-	set isofile="/archlinux-2013.04.01-dual.iso"
-	loopback loop (hd0,1)$isofile
-	linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D img_loop=$isofile earlymodules=loop
-	initrd (loop)/arch/boot/x86_64/archiso.img
+  set isofile="/archlinux-2013.04.01-dual.iso"
+  loopback loop (hd0,1)$isofile
+  linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D img_loop=$isofile earlymodules=loop
+  initrd (loop)/arch/boot/x86_64/archiso.img
 }
 ```
 
@@ -56,12 +56,12 @@ U 盘的固有属性,一般不会发生变化(除非你格式化 U 盘),所以�
 
 ```
 menuentry "Archlinux-x86_64.iso" --class iso {
-	set isofile="/archlinux-2013.04.01-dual.iso"
-	search -s -f -n /archlinux-2013.04.01-dual.iso
-	probe --set=DB7B-2C3D -u $root
-	loopback loop /archlinux-2013.04.01-dual.iso
-	linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D  img_loop=$isofile earlymodules=loop
-	initrd (loop)/arch/boot/x86_64/archiso.img
+  set isofile="/archlinux-2013.04.01-dual.iso"
+  search -s -f -n /archlinux-2013.04.01-dual.iso
+  probe --set=DB7B-2C3D -u $root
+  loopback loop /archlinux-2013.04.01-dual.iso
+  linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D  img_loop=$isofile earlymodules=loop
+  initrd (loop)/arch/boot/x86_64/archiso.img
 }
 ```
 
@@ -71,10 +71,10 @@ menuentry "Archlinux-x86_64.iso" --class iso {
 
 ```
 menuentry "Archlinux-i686.iso" --class iso {
-	set isofile="/archlinux-2013.04.01-dual.iso"
-	loopback loop (hd0,1)$isofile
-	linux (loop)/arch/boot/i686/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D img_loop=$isofile earlymodules=loop
-	initrd (loop)/arch/boot/i686/archiso.img
+  set isofile="/archlinux-2013.04.01-dual.iso"
+  loopback loop (hd0,1)$isofile
+  linux (loop)/arch/boot/i686/vmlinuz archisolabel=ARCH_201304 img_dev=/dev/disk/by-uuid/DB7B-2C3D img_loop=$isofile earlymodules=loop
+  initrd (loop)/arch/boot/i686/archiso.img
 }
 ```
 

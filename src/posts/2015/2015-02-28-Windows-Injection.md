@@ -4,7 +4,7 @@ date: 2015-2-28 15:53
 comments: true
 archives: 2015
 tags:
-	- notes
+  - notes
 ---
 
 上学期学了有关 Windows 程序底层方面的知识，学习到病毒的基本工作原理。好记性不如烂笔头，学完之余还是写点东西出来吧～
@@ -45,30 +45,30 @@ Win 系统也提供了开辟内存空间的[VirtualAllocEx](<https://msdn.micros
 
 ```cpp
 hProcess = OpenProcess(PROCESS_CREATE_THREAD
-		| PROCESS_QUERY_INFORMATION
-		| PROCESS_VM_OPERATION
-		| PROCESS_VM_WRITE
-		| PROCESS_VM_READ,
-		FALSE, PID);
+    | PROCESS_QUERY_INFORMATION
+    | PROCESS_VM_OPERATION
+    | PROCESS_VM_WRITE
+    | PROCESS_VM_READ,
+    FALSE, PID);
 
 if (hProcess == NULL) {
-		printf("failed.\n");
-		return -1;
+    printf("failed.\n");
+    return -1;
 }
 printf("ok.\n");
 
 printf("[I]: Allocating remote memory with size of 0x%08x ......",
-		dwSizeOfCode);
+    dwSizeOfCode);
 
 pCodeRemote = (PBYTE) VirtualAllocEx(hProcess,
-				0,
-				dwSizeOfCode,
-				MEM_COMMIT,
-				PAGE_EXECUTE_READWRITE);
+        0,
+        dwSizeOfCode,
+        MEM_COMMIT,
+        PAGE_EXECUTE_READWRITE);
 if (pCodeRemote == NULL) {
-		printf("failed.\n");
-		CloseHandle(hProcess);
-		return -1;
+    printf("failed.\n");
+    CloseHandle(hProcess);
+    return -1;
 }
 printf("ok at 0x%08x.\n", pCodeRemote);
 
@@ -76,29 +76,29 @@ do_link_before_inj(pCodeRemote);
 
 printf("[I]: Writing code ......");
 if (WriteProcessMemory(hProcess,
-				pCodeRemote,
-				pCode,
-				dwSizeOfCode,
-				&dwNumBytesXferred) == 0) {
-		printf("failed.\n");
-		VirtualFreeEx(hProcess, pCodeRemote,
-						dwSizeOfCode, MEM_RELEASE);
-		CloseHandle(hProcess);
-		return -1;
+        pCodeRemote,
+        pCode,
+        dwSizeOfCode,
+        &dwNumBytesXferred) == 0) {
+    printf("failed.\n");
+    VirtualFreeEx(hProcess, pCodeRemote,
+            dwSizeOfCode, MEM_RELEASE);
+    CloseHandle(hProcess);
+    return -1;
 };
 printf("ok (%d bytes were written).\n", dwNumBytesXferred);
 
 printf("[I]: Creating a remote thread ......");
 hThread = CreateRemoteThread(hProcess, NULL, 0,
-				(LPTHREAD_START_ROUTINE) pCodeRemote,
-				pCodeRemote, 0 , &dwThreadId);
+        (LPTHREAD_START_ROUTINE) pCodeRemote,
+        pCodeRemote, 0 , &dwThreadId);
 if (hThread == 0) {
-		printf("failed.\n");
-		if ( pCodeRemote != 0 )
-				VirtualFreeEx(hProcess, pCodeRemote, 0, MEM_RELEASE);
-		if ( hThread != 0 )
-				CloseHandle(hThread);
-		return -1;
+    printf("failed.\n");
+    if ( pCodeRemote != 0 )
+        VirtualFreeEx(hProcess, pCodeRemote, 0, MEM_RELEASE);
+    if ( hThread != 0 )
+        CloseHandle(hThread);
+    return -1;
 }
 printf("ok.\n");
 
