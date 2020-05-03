@@ -2,6 +2,7 @@
 title: Linux下恢复误删除的文件
 date: 2014-07-21 17:39
 comments: true
+archives: 2014
 tags:
 	- linux
 ---

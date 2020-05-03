@@ -3,6 +3,7 @@ layout: post
 title: JavaScript处理二进制数据
 date: 2014-11-23 14:30
 comments: true
+archives: 2014
 tags:
 	- js
 ---

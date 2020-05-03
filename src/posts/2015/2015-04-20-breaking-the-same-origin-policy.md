@@ -2,6 +2,7 @@
 title: 突破同源策略限制的方法
 date: 2015-4-20 19:54
 comments: true
+archives: 2015
 tags:
 	- js
 ---

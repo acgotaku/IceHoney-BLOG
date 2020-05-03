@@ -14,8 +14,7 @@ module.exports = {
     profile: '/profile.png',
     nav: [
       { text: 'Home', link: '/' },
-      // TODO add Archives
-      // { text: 'Archives', link: '/archives/' },
+      { text: 'Archives', link: '/archives/' },
       { text: 'Tags', link: '/tags/' },
       { text: 'Friends', link: '/friends/' },
       { text: 'About', link: '/about/' }

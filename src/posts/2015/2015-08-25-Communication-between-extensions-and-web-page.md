@@ -2,6 +2,7 @@
 title: Chrome扩展和Web Page 进行通讯
 date: 2015-8-25 19:54
 comments: true
+archives: 2015
 tags:
 	- chrome
 ---

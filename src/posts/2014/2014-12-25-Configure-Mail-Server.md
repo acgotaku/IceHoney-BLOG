@@ -2,6 +2,7 @@
 title: 使用Postfix,Dovecot和Mysql配置邮件服务器
 date: 2014-12-25 15:41
 comments: true
+archives: 2014
 tags:
 	- notes
 ---

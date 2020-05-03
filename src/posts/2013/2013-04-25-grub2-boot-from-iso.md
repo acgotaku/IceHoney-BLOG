@@ -2,6 +2,7 @@
 title: 使用GRUB2引导ISO镜像
 date: 2013-04-25 21:17
 comments: true
+archives: 2013
 tags:
   - linux
   - grub2

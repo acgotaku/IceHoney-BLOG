@@ -2,6 +2,7 @@
 title: 程序员修炼之道
 date: 2014-02-05 17:18
 comments: true
+archives: 2014
 tags:
   - programming
 ---

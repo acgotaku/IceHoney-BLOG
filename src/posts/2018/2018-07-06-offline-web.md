@@ -2,6 +2,7 @@
 title: Web离线的解决方案
 date: 2018-07-06 23:25
 comments: true
+archives: 2018
 tags:
   - web
   - offline

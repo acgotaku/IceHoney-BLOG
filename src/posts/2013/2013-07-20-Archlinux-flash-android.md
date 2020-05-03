@@ -2,6 +2,7 @@
 title: Archlinux下Galaxy Nexus刷机并root
 date: 2013-07-20 14:12
 comments: true
+archives: 2013
 tags:
   - linux
   - android

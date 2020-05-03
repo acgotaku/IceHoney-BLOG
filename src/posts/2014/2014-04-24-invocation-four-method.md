@@ -2,6 +2,7 @@
 title: JavaScript函数调用的四种方式
 date: 2014-04-24 15:28
 comments: true
+archives: 2014
 tags:
   - js
   - function

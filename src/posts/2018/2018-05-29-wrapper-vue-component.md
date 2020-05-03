@@ -2,6 +2,7 @@
 title: 如何封装第三方vue组件
 date: 2018-05-29 23:19
 comments: true
+archives: 2018
 tags:
   - js
   - vue

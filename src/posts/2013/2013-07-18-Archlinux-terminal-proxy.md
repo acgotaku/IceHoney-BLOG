@@ -2,6 +2,7 @@
 title: Archlinux下终端进行代理的解决方案
 date: 2013-07-18 22:05
 comments: true
+archives: 2013
 tags:
   - linux
   - proxy

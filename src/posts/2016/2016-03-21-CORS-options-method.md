@@ -2,6 +2,7 @@
 title: 关于JavaScript跨域请求的相关知识
 date: 2016-03-21 14:33
 comments: true
+archives: 2016
 tags:
 	- js
 ---

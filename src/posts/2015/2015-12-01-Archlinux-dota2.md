@@ -2,6 +2,7 @@
 title: 解决Dota2在Archlinux下的各种疑难杂症
 date: 2015-12-01 21:58
 comments: true
+archives: 2015
 tags:
 	- linux
 ---

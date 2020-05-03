@@ -2,6 +2,7 @@
 title: JavaScript中的数据类型
 date: 2018-01-16 22:44
 comments: true
+archives: 2018
 tags:
   - js
 ---
@@ -54,7 +55,7 @@ ES6 之前的 polyfill 是：
 
 ```js
 if (!Number.isNaN) {
-  Number.isNaN = function(n) {
+  Number.isNaN = function (n) {
     return typeof n === 'number' && window.isNaN(n);
   };
 }

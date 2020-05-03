@@ -2,6 +2,7 @@
 title: WebGL渲染的知识介绍
 date: 2016-05-05 10:43
 comments: true
+archives: 2016
 tags:
 	- WebGL
 ---

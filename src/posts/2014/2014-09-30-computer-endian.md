@@ -2,6 +2,7 @@
 title: 计算机中的字节序问题
 date: 2014-09-30 12:30
 comments: true
+archives: 2014
 tags:
 	- endian
 ---

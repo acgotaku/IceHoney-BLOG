@@ -3,6 +3,7 @@ layout: post
 title: 'Archlinux折腾笔记'
 date: 2014-04-20 19:52
 comments: true
+archives: 2014
 tags:
   - notes
   - linux

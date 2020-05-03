@@ -2,6 +2,7 @@
 title: Archlinux和Win 10 在 UEFI下 双启动
 date: 2015-10-28 23:32
 comments: true
+archives: 2015
 tags:
 	- linux
 ---

@@ -2,6 +2,7 @@
 title: 伪随机的种子问题
 date: 2018-08-01 22:07
 comments: true
+archives: 2018
 tags:
   - random
   - seed

@@ -2,6 +2,7 @@
 title: 前端中的e2e测试
 date: 2019-04-06 12:12
 comments: true
+archives: 2019
 tags:
   - e2e
   - test

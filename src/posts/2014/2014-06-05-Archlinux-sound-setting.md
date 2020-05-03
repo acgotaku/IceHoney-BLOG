@@ -2,6 +2,7 @@
 title: Archlinux下声卡的设置与折腾
 date: 2014-06-05 09:22
 comments: true
+archives: 2014
 tags:
 	- linux
 ---

@@ -2,6 +2,7 @@
 title: JavaScript函数中的闭包
 date: 2014-04-30 16:18
 comments: true
+archives: 2014
 tags:
   - js
   - closure

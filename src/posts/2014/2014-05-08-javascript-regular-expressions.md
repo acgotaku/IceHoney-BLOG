@@ -3,6 +3,7 @@ layout: post
 title: 'JavaScript中一个经典的正则例子'
 date: 2014-05-08 09:44
 comments: true
+archives: 2014
 tags:
   - js
   - regular

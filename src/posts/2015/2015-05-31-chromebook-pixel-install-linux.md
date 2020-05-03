@@ -2,6 +2,7 @@
 title: Chromebook Pixel (2013) 安装Linux的方法
 date: 2015-4-20 19:54
 comments: true
+archives: 2015
 tags:
 	- chrome
 ---

@@ -2,6 +2,7 @@
 title: Github如何省略每次输入验证信息
 date: 2019-06-23 20:21
 comments: true
+archives: 2019
 tags:
   - Github
 ---

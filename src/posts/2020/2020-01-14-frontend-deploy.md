@@ -2,6 +2,7 @@
 title: 前端部署之CDN的那些事情
 date: 2020-01-14 22:59
 comments: true
+archives: 2020
 tags:
   - frontend
 ---

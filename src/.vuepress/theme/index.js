@@ -20,12 +20,20 @@ module.exports = {
             id: 'tag',
             keys: ['tag', 'tags'],
             path: '/tags/',
-            layout: 'Tags',
             frontmatter: { title: 'Tags' },
+            layout: 'Tags',
             scopeLayout: 'Tag',
             pagination: {
               lengthPerPage: 3
             }
+          },
+          {
+            id: 'archive',
+            keys: ['archives'],
+            path: '/archives/',
+            frontmatter: { title: 'Archives' },
+            layout: 'Archives',
+            scopeLayout: 'Archive'
           }
         ],
         sitemap: {

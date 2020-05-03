@@ -2,6 +2,7 @@
 title: Archlinux下安装过wps之后字体发虚的问题
 date: 2013-07-04 12:39
 comments: true
+archives: 2013
 tags:
   - linux
   - wps

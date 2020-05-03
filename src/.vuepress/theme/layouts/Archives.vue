@@ -1,12 +1,12 @@
 <template>
   <main class="container">
     <section class="content">
-      <h1 class="tags-header">Tags</h1>
-      <ul class="tags-list">
-        <li v-for="tag in $tag.list" class="tags-item">
-          <router-link class="tags-link" :to="tag.path">
-            <span class="tags-name"> {{ tag.name }}</span>
-            <span class="tags-count">{{ tag.pages.length }}</span>
+      <h1 class="archives-header">Archives</h1>
+      <ul class="archives-list">
+        <li v-for="archive in $archive.list.reverse()" class="archives-item">
+          <router-link class="archives-link" :to="archive.path">
+            <span class="archives-name"> {{ archive.name }}</span>
+            <span class="archives-count">{{ archive.pages.length }}</span>
           </router-link>
         </li>
       </ul>
@@ -18,12 +18,12 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
-export default class Tags extends Vue {}
+export default class Archives extends Vue {}
 </script>
 <style lang="stylus">
 @import '~@theme/styles/mixin';
 
-.tags {
+.archives {
   &-header {
     text-align: center;
   }
@@ -42,14 +42,21 @@ export default class Tags extends Vue {}
   }
 
   &-link {
+    position: relative;
     padding: 1rem;
-    display: flex;
+    mx-flex-center();
     width: 100%;
     height: 100%;
-    justify-content: space-between;
+  }
+
+  &-name {
+    font-size: 3rem;
   }
 
   &-count {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
     width: 1.5rem;
     height: 1.5rem;
     text-align: center;

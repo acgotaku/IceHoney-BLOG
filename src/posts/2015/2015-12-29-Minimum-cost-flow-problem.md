@@ -2,6 +2,7 @@
 title: 使用最小费用最大流模型解决酒店管理收益最大化问题
 date: 2015-12-29 11:15
 comments: true
+archives: 2015
 tags:
 	- algorithm
 ---

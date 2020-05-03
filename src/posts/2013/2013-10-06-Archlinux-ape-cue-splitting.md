@@ -2,6 +2,7 @@
 title: Archlinux下有关无损音乐的折腾
 date: 2013-10-06 23:29
 comments: true
+archives: 2013
 tags:
   - linux
   - music

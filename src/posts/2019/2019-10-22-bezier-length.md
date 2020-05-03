@@ -2,6 +2,7 @@
 title: 计算贝塞尔曲线的长度
 date: 2019-10-22 22:28
 comments: true
+archives: 2019
 tags:
   - bezier
 ---

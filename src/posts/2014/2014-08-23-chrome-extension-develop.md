@@ -2,6 +2,7 @@
 title: chrome扩展开发经验记录
 date: 2014-08-23 16:01
 comments: true
+archives: 2014
 tags:
 	- chrome
 ---
@@ -91,14 +92,17 @@ script.appendChild(document.createTextNode('(' + baidu + ')();'));
 有时候修改 DOM 的话肯定需要更改样式啊,这时候用内联样式必然太没效率,不能重用.就需要添加 CSS.
 
 ```js
-var css = function() {/*
+var css = function() {
+  /*
 	input{
 	border: 1px solid #C6C6C6;
 	box-shadow: 0 0 3px #C6C6C6;
 	-webkit-box-shadow: 0 0 3px #C6C6C6;
 	}
 	*/
-}.toString().slice(15, -4);
+}
+  .toString()
+  .slice(15, -4);
 var style = document.createElement('style');
 style.setAttribute('type', 'text/css');
 style.textContent = css;

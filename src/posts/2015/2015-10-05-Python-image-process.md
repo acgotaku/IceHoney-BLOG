@@ -2,6 +2,7 @@
 title: 使用Python实现Histogram_equalization算法
 date: 2015-10-05 23:54
 comments: true
+archives: 2015
 tags:
 	- python
 ---

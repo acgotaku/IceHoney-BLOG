@@ -2,6 +2,7 @@
 title: Vue表单组件如何自动化输入
 date: 2020-04-23 22:43
 comments: true
+archives: 2020
 tags:
   - frontend
   - vue
