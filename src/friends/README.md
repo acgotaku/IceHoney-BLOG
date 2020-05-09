@@ -17,3 +17,4 @@ comments: true
 <FriendLink link="https://kiorisyshen.github.io/" name="Kio's Spot" />
 <FriendLink link="https://lxy2222.github.io/" name="lxy2222" />
 <FriendLink link="https://brilliant.run/" name="Brilliant" />
+<FriendLink link="https://nya.io/" name="Nyasoft" />
