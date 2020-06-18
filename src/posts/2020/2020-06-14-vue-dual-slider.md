@@ -26,7 +26,12 @@ HTML 本身只提供了单滑块，要想实现双 Slider，只能两个叠加�
 
 当然，我们左边的滑块不能滑过右边的滑块，这是基本常识。这里就需要监听`input` 事件，当超出范围的时候，强制把值重置回合法值就可以了。
 
-实现效果请看[codepen](https://codepen.io/acgotaku/pen/LYGZQva)
+## 实现效果
+
+<iframe height="325" style="width: 100%;" scrolling="no" title="Slider" src="https://codepen.io/acgotaku/embed/preview/LYGZQva?height=325&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/acgotaku/pen/LYGZQva'>Slider</a> by 雪月秋水
+  (<a href='https://codepen.io/acgotaku'>@acgotaku</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ## 总结
 
