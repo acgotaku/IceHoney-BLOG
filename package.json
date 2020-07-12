@@ -23,7 +23,7 @@
     "@vuepress/plugin-search": "^1.5.2",
     "typescript": "^3.9.6",
     "vue": "^2.6.11",
-    "vue-property-decorator": "^8.4.2",
+    "vue-property-decorator": "^8.5.1",
     "vuepress": "^1.5.2",
     "vuepress-plugin-typescript": "^0.3.0",
     "vuepress-types": "^0.9.3"
