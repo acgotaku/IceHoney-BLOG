@@ -29,6 +29,6 @@
     "vuepress-types": "^0.9.3"
   },
   "dependencies": {
-    "vue-feather-icons": "^5.0.0"
+    "vue-feather-icons": "^5.1.0"
   }
 }
