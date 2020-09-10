@@ -26,7 +26,7 @@
     "vue-property-decorator": "^8.5.1",
     "vuepress": "^1.5.3",
     "vuepress-plugin-typescript": "^0.3.0",
-    "vuepress-types": "^0.9.3"
+    "vuepress-types": "^0.9.4"
   },
   "dependencies": {
     "vue-feather-icons": "^5.1.0"
