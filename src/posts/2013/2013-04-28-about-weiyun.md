@@ -16,11 +16,7 @@ tags:
 看着就想吐... 于是换了一个思路,F12 开启 chromium 的调试工具,在 Network 面板下查看网页到底和服务器发生了哪些交互
 chromium 的开发工具非常明确的红色的标注了发生 POST 请求的链接.一眼就看到了.
 [测试用下载链接](http://www.weiyun.com/web/outlink.html?Q69+qVhF33RXX+jAvhRil4kmLW5GIZRW8Zd13MWsUyvzpcDLunyFPxcqaLdUNtq5FfLp9Oj65Xr2XxTn298qsOWHWHqVdGuP7q1xMT4Do/y34dP00q4H7gpr94udJr/d2H23l0QGIKteptOEY1bTYLwkc+BRRdYEFvNb36XnUMBrS8pMf8RqoLJiAPrbXgYeBFvAwJu13QPHiQOe2lxS2i+V7/UDRpJr2qz8FqnOTHSQhaNXD+8s7uZIyaWH8INMc1Ls9Ay1XOc=)
-在这个页面载入的时候可以很清楚的看到
-
-![POST请求](https://lh4.googleusercontent.com/-ucFWlUgjt48/UX3Na09k-EI/AAAAAAAATTs/0EQyyTSdvlU/s2560/2013-04-29-093107_1365x566_scrot.png)
-
-网页对<http://web.cgi.weiyun.com/wy_web.fcg>这个网址进行 POST 请求,提交的表单是个 json 对象
+在这个页面载入的时候可以很清楚的看到网页对<http://web.cgi.weiyun.com/wy_web.fcg>这个网址进行 POST 请求,提交的表单是个 json 对象
 
 ```json
 {
@@ -76,8 +72,6 @@ function getAntiCSRFToken(objConfig) {
 
 接下来看返回回来的 json 对象
 
-![POST返回的JSON对象](https://lh3.googleusercontent.com/-k4YDmt1pE5U/UX3Qm4FtssI/AAAAAAAATUY/yYOPPMky_CU/s2560/2013-04-29-094459_1363x571_scrot.png)
-
 ```json
 {
   "rsp_body": {
@@ -121,10 +115,7 @@ function getAntiCSRFToken(objConfig) {
 ```
 
 这就是根据 JSON 拼接出来的下载链接
-接下来的问题就是 cookies 跨越问题了,点击页面上的下载按钮可以发现,页面与服务器又发生了交互
-
-![](https://lh4.googleusercontent.com/-0p2qXxU_V2U/UX3SepoENOI/AAAAAAAATU0/6fgUOyaR6FI/s2560/2013-04-29-095256_1363x569_scrot.png)
-
+接下来的问题就是 cookies 跨越问题了,点击页面上的下载按钮可以发现,页面与服务器又发生了交互.
 页面向<http://web.weiyun.qq.com/php/downloadCheck.php>提交了 downloadn=FTN5K&downloadv=8eb5b2ee 这个正是 cookies 的键值对,后面的 callback 是 JQUery 回调的参数,无视就可以了,关键是服务器返回的 Respose Headers
 
 ```

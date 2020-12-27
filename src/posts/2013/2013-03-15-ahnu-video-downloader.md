@@ -8,7 +8,6 @@ tags:
 ---
 
 安师大的校园视频网是个资源不错但软件坑爹的东西.
-![](https://lh3.googleusercontent.com/-8m9hCWpOjEk/UULOiWI1sfI/AAAAAAAARRM/6TX2hxCIyoc/s880/2013-03-15-153121_958x562_scrot.png)
 当然这个服务不是安师大自己研发的,是由沈阳光音网视科技有限公司开发的,应该是学校出钱购买的吧.不过那个坑爹的客户端只给在线观看不给下载,
 网页也是完美的兼容 IE6,Javascript 里面也调用了好多微软自己的 ActiveX 控件,所以只能用学校提供的自带的那个客户端浏览和观看视频.
 
@@ -25,6 +24,3 @@ User-Agent: Novasoft NetPlayer/4.0 进行屏蔽非官方客户端,知道原因�
 软件官网: [www.icehoney.me](http://www.icehoney.me)
 
 百度云盘下载:[Download](http://pan.baidu.com/share/link?shareid=457833&uk=3021310168)
-
-软件截图:
-![安师大校园视频下载器](https://lh6.googleusercontent.com/-QVAKv93NcMw/UUGvJAWkPVI/AAAAAAAAROo/y7ewKu1pdFE/s679/1.png)
