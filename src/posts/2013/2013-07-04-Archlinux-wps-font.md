@@ -10,9 +10,7 @@ tags:
 
 Office 是 Linux 永远的痛...微软的 Office 市场霸主地位是根本无法撼动的... 但是微软那家伙很讨厌 Linux 和开源... Office 产品目前也只有 Windows 和 Mac 据说微软要出 Linux 版本的 Office...但是不知道猴年马月啊 (望天
 
-之所以字体发虚是因为安装 WPS 之后的方正字体使得 Sans 和 Sans-Serif 字体的中文部分默认指向了方正宋体.所以导致个这个问题的发生...效果如下图:
-![](https://lh6.googleusercontent.com/-7Tsrxwsjy4I/UdQBngbd6EI/AAAAAAAAXV0/JaT9lIzSLY8/w633-h410-no/2013-07-03-184858_633x410_scrot.png)
-
+之所以字体发虚是因为安装 WPS 之后的方正字体使得 Sans 和 Sans-Serif 字体的中文部分默认指向了方正宋体.所以导致个这个问题的发生...
 左边是微米黑,右边是装过 WPS 之后映射的宋体字.... 明显右边太难看了有木有!!! 解决方案是自己编写 fonts.conf 设置字体的优先级...  
 文泉驿提供了一个在线配置生成[工具](http://wenq.org/cloud/fcdesigner_local.html)
 这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.

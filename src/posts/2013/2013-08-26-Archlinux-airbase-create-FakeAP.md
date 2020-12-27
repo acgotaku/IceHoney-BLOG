@@ -23,8 +23,8 @@ dhcpd
 ## 然后启动虚拟 AP
 
 ```bash
-airmon-ng start wlp5s0 #启动无线网卡的monitor模式 wlp5s0是我网卡的设备名 这时候会看到输出 monitor mode enabled on mon0 mon0便是虚拟出来的一个网卡设备
-airbase-ng -e FreeWifi  -v mon0 & 在mon0设备上创建Fake AP -e选项是设置SSID名字 -v是启动DEBUG模式 最后是设备名字,想进行后台运行请按Ctrl+D
+airmon-ng start wlp5s0 # 启动无线网卡的monitor模式 wlp5s0是我网卡的设备名 这时候会看到输出 monitor mode enabled on mon0 mon0便是虚拟出来的一个网卡设备
+airbase-ng -e FreeWifi  -v mon0 & # 在mon0设备上创建Fake AP -e选项是设置SSID名字 -v是启动DEBUG模式 最后是设备名字,想进行后台运行请按Ctrl+D
 ```
 
 ## 激活 tap insterface 并添加路由表

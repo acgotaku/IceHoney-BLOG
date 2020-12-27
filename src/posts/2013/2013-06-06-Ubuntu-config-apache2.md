@@ -91,13 +91,12 @@ Alias /doc/ "/usr/share/doc/"
 </VirtualHost>
 ```
 
-第一行指定的是服务使用的端口
-第二行 ServerAdmin 写的是服务器管理员的邮箱
-第三行 ServerName 写的是服务器的名字 _default_ 代表默认使用这个即服务器名字找不到对应的配置文件时时候此配置文件
-第四行 DocumentRoot 写的是网站的根目录,即输入网址映射到服务器具体的哪个站点
-Directory 子节点是对具体目录进行配置 我们主要是对网站根目录进行权限的配置
-其中主要说明的是 AllowOverride 选项 AllowOverride 控制那些被放置在.htaccess 文件中的指令
-其余的配置基本不需要关心. vim 000-default-ssl
+第一行指定的是服务使用的端口. 第二行 ServerAdmin 写的是服务器管理员的邮箱.
+第三行 `ServerName` 写的是服务器的名字 `_default_` 代表默认使用这个, 即服务器名字找不到对应的配置文件的时候使用此配置文件.
+第四行 `DocumentRoot` 写的是网站的根目录,即输入网址映射到服务器具体的哪个站点.
+`Directory` 子节点是对具体目录进行配置 我们主要是对网站根目录进行权限的配置.
+其中主要说明的是 `AllowOverride` 选项 `AllowOverride` 控制那些被放置在 `.htaccess` 文件中的指令.
+其余的配置基本不需要关心, `vim 000-default-ssl`
 
 ```apacheconf
 <IfModule mod_ssl.c>
@@ -162,7 +161,7 @@ BrowserMatch "MSIE [17-9]" ssl-unclean-shutdown
 </IfModule>
 ```
 
-SSL 模块就是多了一个证书的设置 其余的基本不变.
+SSL 模块就是多了一个证书的设置, 其余的基本不变.
 
 其它站点基本就是拷贝默认的配置文件修改 ServerName 和 DocumentRoot 即可.
 
@@ -190,6 +189,4 @@ openssl x509 -req -days 365 -in ssl.csr -signkey ssl.key -out ssl.crt
 
 这里 365 是证书有效期 推荐 3650 哈哈。这个大家随意。最后使用到的文件是 key 和 crt 文件。
 
-这里生成的证书是不受信任的...我们可以在[StartSSL(http://www.startssl.com/)上申请免费的证书.不过免费时间是一年,并且只能对根域名和一个子域名生效.不过一年后可以重新
-注册,所以可以永远对根域名和一个子域名设置受信任的 SSl 证书.
-相关的申请教程在此[点我](http://www.deepvps.com/apply-startssl-ssl-certificate.html)
+这里生成的证书是不受信任的...我们可以在[Let's Encrypt](https://letsencrypt.org/)上申请免费的证书.
