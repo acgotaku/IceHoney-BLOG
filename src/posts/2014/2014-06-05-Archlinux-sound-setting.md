@@ -38,8 +38,9 @@ defaults.ctl.card 1
 
 上面的数据可以从声卡设备输出中找到,这样就切换到 card 1 的 device 0 设备了.不过切换之后可能发现还是没有
 声音,因为 alsa 默认是静音的需要手动解除才行. 这就需要去官方源安装 `alsamixer` 工具. [alsa-utils](https://www.archlinux.org/packages/?name=alsa-utils)
-我自己安装的 alsamixer 使用界面是:  
-![](https://lh5.googleusercontent.com/USgp7oXGwtvkM4al9fsXQWEqcOJuidxhQlQedsUJiSo=w811-h496-no)
+我自己安装的 alsamixer 使用界面是:
+
+![](~@assets/alsamixer.png)
 
 默认 Master 竖条下方显示的不是 00 而是 MM,表示是静音的,按下 m 键解除静音.
 

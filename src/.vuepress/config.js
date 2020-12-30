@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: 'IceHoney',
   description: 'IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~',
@@ -45,5 +47,14 @@ module.exports = {
         }
       ]
     }
+  },
+  configureWebpack: (config, isServer) => {
+    return {
+      resolve: {
+        alias: {
+          '@assets': path.resolve(__dirname, 'assets')
+        }
+      }
+    };
   }
 };
