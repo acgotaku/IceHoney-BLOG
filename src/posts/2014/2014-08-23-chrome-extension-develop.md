@@ -19,20 +19,21 @@ Event Pages 的 JS 可以使用 chrome 的所有 API.
 
 ## Content Scripts
 
-Content Scripts 是运行在网页上的.manifest 上进行网址匹配.当是目标网址的时候就加载这个 JS.
+Content Scripts 是运行在网页上的. manifest 上进行网址匹配.当是目标网址的时候就加载这个 JS.
 Content Scripts 可以获取到匹配网址的 DOM,并进行修改.Content Scripts 也可以使用 chrome 的 API,但是只能使用比较有限的 API.
 
 [官方文档](https://developer.chrome.com/extensions/content_scripts)
 
 ## Message Passing
 
-这个是 chrome 的通讯机制,是非常重要的一个知识点.开发扩展的 content scripts 几乎都是需要和 background pages 进行通讯的.因为 content scripts 可以直接操作 DOM,background pages 可以使用所有的 chromeAPI.所以这俩 JS 肯定要互通有无.接下来重点讲解 chrome 的通讯机制.
+这个是 chrome 的通讯机制,是非常重要的一个知识点.开发扩展的 content scripts 几乎都是需要和 background pages 进行通讯的.
+因为 content scripts 可以直接操作 DOM,background pages 可以使用所有的 chromeAPI.所以这俩 JS 肯定要互通有无.接下来重点讲解 chrome 的通讯机制.
 
 [官方文档](https://developer.chrome.com/extensions/messaging)
 
 ### Simple one-time requests
 
-官方文档有例子.但是我要说的是这个 Simple requests 真的太 Simple
+官方文档有例子.但是我要说的是这个 Simple requests 真的太 Simple.
 content js 使用 sendMessage,就立即回调获取 response.
 如果 background page 稍微进行处理下占用点时间就会导致 response 的函数根本无法执行的情况.
 推测可能是没接收到数据就直接 pass 了.所以稍微复杂点需要处理数据的通讯操作千万不能用这个.
