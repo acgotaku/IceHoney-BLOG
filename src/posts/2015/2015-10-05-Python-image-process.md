@@ -28,6 +28,6 @@ tags:
 
 根据 wiki 的例子,我用 Py 实现了这个算法,效果还算不错吧.尽可能的少引用类库,不过 opencv 已经有现成实现好的 API 了.但是只支持 Py2,而我用的 Py3.
 库的引用只使用了[PIL](http://www.pythonware.com/products/pil/) 和 [numpy](http://www.numpy.org/).前者用来读取图像的二进制数据,
-后来用来进行数值的累加计算.源码发布在 [Github](https://gist.github.com/acgotaku/9c3b060d6e1de8751581)
+后者用来进行数值的累加计算.源码发布在 [Github](https://gist.github.com/acgotaku/9c3b060d6e1de8751581)
 
 计算机图形学对我来说完全是未知的领域,希望有经验的同学可以不吝指正.

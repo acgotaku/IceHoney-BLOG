@@ -17,7 +17,7 @@ tags:
 ## 抽象数据模型
 
 因为题目要求是球最大收益,而流模型是最小费用,所以我们把收益取相反数即可.关键是建立容量和权值,因为房间的数量是 5,所以限制源点和汇点的容量是 5,权值是 0.然后中间设置 8 个点,产生 7 条边,每条边代表每天的流,权值为 0,容量为无穷大.这里我们不能简单的连接点来设置订单的边,因为有相同的起始日期和结束日期的订单.这样会造成冲突,如何解决冲突呢? 我们可以在订单的边上再加一个顶点来进行区分.模型图如下所示:
-![model](https://raw.githubusercontent.com/acgotaku/USTC-Coding/master/hotel/model.png)
+![model](~@assets/model.png)
 顶点 11 和顶点 16 是重复边的订单,对应的是第一个订单和第 6 个订单.源码和输入数据可以在文章末尾看到.
 
 ## 查找增广路径
@@ -30,11 +30,11 @@ tags:
 
 ## 第一次查找增广路径
 
-![model](https://raw.githubusercontent.com/acgotaku/USTC-Coding/master/hotel/hotel1.1.png)
+![hotel1_1](~@assets/hotel1_1.png)
 
-## 第一次查找增广路径
+## 第二次查找增广路径
 
-![model](https://raw.githubusercontent.com/acgotaku/USTC-Coding/master/hotel/hotel1.2.png)
+![hotel1_2](~@assets/hotel1_2.png)
 
 以此类推求出最后的结果~
 
