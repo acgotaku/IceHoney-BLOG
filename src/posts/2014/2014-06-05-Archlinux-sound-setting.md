@@ -40,7 +40,7 @@ defaults.ctl.card 1
 声音,因为 alsa 默认是静音的需要手动解除才行. 这就需要去官方源安装 `alsamixer` 工具. [alsa-utils](https://www.archlinux.org/packages/?name=alsa-utils)
 我自己安装的 alsamixer 使用界面是:
 
-![](~@assets/alsamixer.png)
+![alsamixer](~@assets/alsamixer.png)
 
 默认 Master 竖条下方显示的不是 00 而是 MM,表示是静音的,按下 m 键解除静音.
 
