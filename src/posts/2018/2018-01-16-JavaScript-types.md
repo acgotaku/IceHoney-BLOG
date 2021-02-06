@@ -50,12 +50,12 @@ window.isNaN(b); // true
 NaN === NaN; // false
 ```
 
-很显然"foo"不是 NaN，但显然它也不是数字。这个 BUG 也存在很久了，在 ES6 时代，我们可以使用 Number.isNaN 来解决。
+很显然"foo"不是 NaN，但显然它也不是数字。这个 BUG 也存在很久了，在 ES6 时代，我们可以使用 `Number.isNaN` 来解决。
 ES6 之前的 polyfill 是：
 
 ```js
 if (!Number.isNaN) {
-  Number.isNaN = function (n) {
+  Number.isNaN = function(n) {
     return typeof n === 'number' && window.isNaN(n);
   };
 }
