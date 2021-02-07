@@ -16,7 +16,7 @@ tags:
 
 ## 后端开发
 
-现在采用的开发技术框架是 Ruby on Rails。不得不吐嘈一句，Ruby on Rails 在日本真是压倒性的流行。Ruby on Rails 还是 MVC 架构，原生支持 RESTful API。但我觉得下一代的接口标准应该是 facebook 推出的[GraphQL](https://github.com/facebook/graphql)，不过先阶段 RESTful API 也足够了。
+现在采用的开发技术框架是 Ruby on Rails。不得不吐嘈一句，Ruby on Rails 在日本真是压倒性的流行。Ruby on Rails 还是 MVC 架构，原生支持 RESTful API。但我觉得下一代的接口标准应该是 facebook 推出的[GraphQL](https://github.com/facebook/graphql)，不过现阶段 RESTful API 也足够了。
 
 ### Models
 

@@ -12,7 +12,7 @@ tags:
 
 ## 解决 v-model 绑定
 
-这次封装的就是 element 的前端 vue 框架，因为框架本身对 IOS 兼容性不好，所以需要二次封装。封装的是一个 select 组件。所以需要数据的双向绑定，官方教程也已经解释了。
+这次封装的就是 element 的前端 vue 框架，因为框架本身对 iOS 兼容性不好，所以需要二次封装。封装的是一个 select 组件。所以需要数据的双向绑定，官方教程也已经解释了。
 [v-model](https://vuejs.org/v2/guide/components-custom-events.html#Customizing-Component-v-model) 本质上就是绑定一个值和监听相应的事件。
 这次本质是封装的一个 input 元素，所以我们需要手动绑定 value 和监听事件。
 

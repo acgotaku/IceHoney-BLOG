@@ -8,12 +8,12 @@ tags:
   - offline
 ---
 
-最近的工作是做嵌入在 IOS 程序内部的页面，其中有一个需求就是需要满足在离线的情况下显示页面。当然，现在主流的离线方式是使用 Service Worker 来完成离线需求。
-但是 IOS 内置的 WKWebView 并不支持最新的 Service Worker（取决于 IOS 版本）最新版本已经支持，所以不得不想办法来解决。
+最近的工作是做嵌入在 iOS 程序内部的页面，其中有一个需求就是需要满足在离线的情况下显示页面。当然，现在主流的离线方式是使用 Service Worker 来完成离线需求。
+但是 iOS 内置的 WKWebView 并不支持最新的 Service Worker（取决于 iOS 版本）最新版本已经支持，所以不得不想办法来解决。
 
 ## Application Cache
 
-AppCache 是一个过时的技术，但是在 IOS 下勉强还能用。不过 Chrome 对这种过时的技术支持不是很好，单个缓存文件最大只支持 5MB。而且还有请求的 BUG:[Accept header on GET request for appcache manifest](https://bugs.chromium.org/p/chromium/issues/detail?id=140445)。触发 AppCache 是在 html 标签中添加 manifest 属性。
+AppCache 是一个过时的技术，但是在 iOS 下勉强还能用。不过 Chrome 对这种过时的技术支持不是很好，单个缓存文件最大只支持 5MB。而且还有请求的 BUG:[Accept header on GET request for appcache manifest](https://bugs.chromium.org/p/chromium/issues/detail?id=140445)。触发 AppCache 是在 html 标签中添加 manifest 属性。
 
 ```html
 <html manifest="manifest.appcache">
