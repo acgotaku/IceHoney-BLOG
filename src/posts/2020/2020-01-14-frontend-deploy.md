@@ -25,7 +25,7 @@ tags:
 <use xlink:href="https://static.icehoney.me/icon.svg#china" />
 ```
 
-如果引用 CDN 的 SVG 浏览器会报错，解决方案是使用`svg-inline-loader`，手动在文档里面注入 SVG 文件。`document.body.insertAdjacentHTML` 方法可以注入 inline 的 SVG。
+如果引用 CDN 的 SVG 浏览器会报错，解决方案是使用`svg-inline-loader`，手动在 HTML 里面注入 SVG 文件。`document.body.insertAdjacentHTML` 方法可以注入 inline 的 SVG。
 
 ## Workbox 配置
 

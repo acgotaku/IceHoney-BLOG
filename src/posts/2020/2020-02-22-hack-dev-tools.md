@@ -13,9 +13,7 @@ tags:
 
 现在网站的基本对策是禁用用户右键选项菜单来避免查看源代码。首先，源代码肯定是能查看到的。采取的措施也只不过是掩耳盗铃而已。解决对策也有很多，我随便说几个。
 
-第一，针对 Chrome 浏览器，我们可以直接在地址栏里输入 `view-source:https://www.google.com/` 这种方式来查看源代码。第二，我们可以使用其他工具，例如`curl`, `wget`来直接下载源代码。
-
-这种是很初级的防范对策。
+第一，针对 Chrome 浏览器，我们可以直接在地址栏里输入 `view-source:https://www.google.com/` 这种方式来查看源代码。第二，我们可以使用其他工具，例如`curl`, `wget`来直接下载源代码。这种是很初级的防范对策。
 
 ## 防止审查元素
 
@@ -36,7 +34,7 @@ console.log(el);
 要破解这个的话，只能在页面执行之前注入代码修改 Image 函数的使用：
 
 ```js
-window.Image = function () {};
+window.Image = function() {};
 Object.defineProperty(window, 'Image', { writable: false });
 ```
 

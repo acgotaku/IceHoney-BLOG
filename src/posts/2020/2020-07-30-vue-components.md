@@ -58,7 +58,7 @@ provide: function () {
 然后在子组件中使用`inject`:
 
 ```js
-inject: ['select']
+inject: ['select'];
 ```
 
 这样子组件就可以访问父组件了，使用`provide`的好处是不用担心复合组件中的再封装问题，Vue 会自动向上查找。
@@ -80,9 +80,9 @@ data: function () {
 子组件通过`inject`可以访问父组件，所以：
 
 ```js
-  created() {
-    this.select.options.push(this);
-  }
+created() {
+  this.select.options.push(this);
+}
 ```
 
 在创建组件的时候同时传入父组件的`data`字段中。
