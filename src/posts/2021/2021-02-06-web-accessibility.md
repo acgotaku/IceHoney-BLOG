@@ -26,7 +26,7 @@ const focusableElementsString =
 
 ## tabindex
 
-对于 `button` 和 `a` 元素，当然是可以 `focus`的，但是针对类似 `div` 这样的元素，如何让它可以 `focus` 呢？ 答案是添加 `tabindex` 属性。
+对于 `button` 和 `a` 元素，当然是可以 `focus` 的，但是针对类似 `div` 这样的元素，如何让它可以 `focus` 呢？ 答案是添加 `tabindex` 属性。
 
 ```html
 <custom-button tabindex="0">Press Tab to Focus Me!</custom-button>
@@ -45,7 +45,7 @@ const focusableElementsString =
 
 ## Modals and keyboard traps
 
-网页开发中经常会出现弹窗，在有弹窗的情况下我们是不能选中背景中的元素的，所以我们需要手动处理 `Tab` 键保证只有 `Modal`里的元素可以被 `focus`。并且在关闭 `Modal` 的时候 `focus` 回原来的元素。
+网页开发中经常会出现弹窗，在有弹窗的情况下我们是不能选中背景中的元素的，所以我们需要手动处理 `Tab` 键保证只有 `Modal` 里的元素可以被 `focus`。并且在关闭 `Modal` 的时候 `focus` 回原来的元素。
 
 ## Semantics and ARIA
 

@@ -33,7 +33,7 @@ tags:
 
 ## 优化 JavaScript 下载和执行
 
-我们可以通过使用 `async` 或者 `async` 来优化 JavaScript 的下载和执行，两个关键字的具体作用看下图：
+我们可以通过使用 `async` 或者 `defer` 来优化 JavaScript 的下载和执行，两个关键字的具体作用看下图：
 
 ![js async defer](~@assets/js_async_defer.png)
 
