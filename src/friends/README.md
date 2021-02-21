@@ -9,7 +9,7 @@ comments: true
 链接不分先后。
 
 <FriendLink link="https://blog.phoenixlzx.com/" name="Phoenix's island" />
-<FriendLink link="https://blog.kele14.me/" name="Kele's Blog" />
+<FriendLink link="https://blog.kele14.com/" name="Kele's Blog" />
 <FriendLink link="https://blog.cee.moe/" name="Perfect Freeze!" />
 <FriendLink link="https://ikely.me/" name="Dedication" />
 <FriendLink link="https://blog.exiahan.com/" name="ExiaHan's Blog" />
