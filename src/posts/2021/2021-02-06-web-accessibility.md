@@ -12,11 +12,59 @@ tags:
 ## focus
 
 focus 状态对于网页易读性非常重要，foucs 决定了键盘事件的去向。但是我们在项目开发的时候经常会给 `button` 添加鼠标的 `hover` 状态，却忘记了添加 `focus` 状态。添加 `hover` 状态的 CSS 时，记得同时添加 `focus` 状态的 CSS。同时，浏览器会有默认的 `focus` 样式， Chrome 下是使用 `outline` 属性添加高亮的蓝色边框，记得不要轻易覆盖这个属性为 `none`。
-但是并不是所有的 HTML 元素都是可以 `focus` 的，下面是可以 `focus`的元素列表。
+但是并不是所有的 HTML 元素都是可以 `focus` 的，下面是查找可以 `focus` 的元素的方法。
 
-```js
-const focusableElementsString =
-  'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+```ts
+const candidateSelectors = [
+  'input:not([disabled])',
+  'select:not([disabled])',
+  'textarea:not([disabled])',
+  'a[href]',
+  'area[href]',
+  'button:not([disabled])',
+  '[tabindex="0"]',
+  'audio[controls]',
+  'video[controls]',
+  '[contenteditable]:not([contenteditable="false"])',
+  'details>summary'
+];
+const candidateSelector = candidateSelectors.join(',');
+
+type Option = {
+  shouldIgnoreVisibility: boolean;
+};
+const defaultOption: Option = {
+  shouldIgnoreVisibility: false
+};
+
+function isDisplayNone(node: Element | null): boolean {
+  if (!node) {
+    return false;
+  }
+  if (getComputedStyle(node).display === 'none') return true;
+  return isDisplayNone(node.parentElement);
+}
+
+function isHidden(node: Element) {
+  if (getComputedStyle(node).visibility === 'hidden') return true;
+  if (isDisplayNone(node)) return true;
+
+  return false;
+}
+
+export function tabbable(el: HTMLElement, option?: Partial<Option>) {
+  const mergedOption = {
+    ...defaultOption,
+    ...option
+  };
+  const candidates = Array.from(
+    el.querySelectorAll<HTMLElement>(candidateSelector)
+  );
+  if (mergedOption.shouldIgnoreVisibility) {
+    return candidates;
+  }
+  return candidates.filter(candidate => !isHidden(candidate));
+}
 ```
 
 ## DOM Order
