@@ -118,3 +118,5 @@ export function tabbable(el: HTMLElement, option?: Partial<Option>) {
 [Modals and keyboard traps sample code](https://github.com/udacity/ud891/tree/gh-pages/lesson2-focus/07-modals-and-keyboard-traps/solution)
 
 [Accessibility](https://developers.google.com/web/fundamentals/accessibility)
+
+[WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1/)
