@@ -1,0 +1,24 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: vuepress
+    versions:
+    - 1.8.1
+    - 1.8.2
+  - dependency-name: "@vuepress/plugin-search"
+    versions:
+    - 1.8.1
+    - 1.8.2
+  - dependency-name: typescript
+    versions:
+    - 4.1.4
+    - 4.1.5
+  - dependency-name: "@vuepress/plugin-google-analytics"
+    versions:
+    - 1.8.1
