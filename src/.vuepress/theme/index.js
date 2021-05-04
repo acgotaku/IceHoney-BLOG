@@ -42,6 +42,12 @@ module.exports = {
         comment: {
           service: 'disqus',
           shortname: 'icehoneyblog'
+        },
+        feed: {
+          canonical_base: 'https://blog.icehoney.me/',
+          posts_directories: ['/posts/'],
+          count: Number.MAX_SAFE_INTEGER,
+          sort: entries => entries.reverse()
         }
       }
     ],
