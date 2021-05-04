@@ -22,6 +22,11 @@
           >
             <NavLink :link="item.link">{{ item.text }}</NavLink>
           </li>
+          <li class="nav-item">
+            <a href="/rss.xml" class="nav-link" target="_blank">
+              <RssIcon />
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -32,11 +37,14 @@ import { Component, Vue } from 'vue-property-decorator';
 // @ts-ignore searchBox inject webpack
 import SearchBox from '@SearchBox';
 import NavLink from './NavLink.vue';
+// @ts-ignore no types
+import { RssIcon } from 'vue-feather-icons';
 
 @Component({
   components: {
     SearchBox,
-    NavLink
+    NavLink,
+    RssIcon
   }
 })
 export default class Header extends Vue {}
