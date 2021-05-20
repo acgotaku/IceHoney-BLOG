@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Wed, 19 May 2021 13:13:15 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 May 2021 10:59:22 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,13 +23,18 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[Django使用CKEditor的相关经验]]></title>
+            <link>https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/</link>
+            <guid>https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/</guid>
+            <pubDate>Wed, 19 May 2021 22:06:00 GMT</pubDate>
+            <description><![CDATA[from ckeditor.fields import RichTextUploadingField]]></description>
+        </item>
+        <item>
             <title><![CDATA[使用Service Worker的 Web Push 功能]]></title>
             <link>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</link>
             <guid>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</guid>
             <pubDate>Sun, 25 Apr 2021 12:27:00 GMT</pubDate>
-            <description><![CDATA[if (subscription === null) {
-        return registration.pushManager.subscribe({
-          userVisibleOnly: true,
+            <description><![CDATA[userVisibleOnly: true,
           applicationServerKey: this.vapidPublicKey
         });
       } else {

@@ -20,10 +20,17 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
+            "url": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
+            "title": "Django使用CKEditor的相关经验",
+            "summary": "from ckeditor.fields import RichTextUploadingField",
+            "date_modified": "2021-05-19T22:06:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "url": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "title": "使用Service Worker的 Web Push 功能",
-            "summary": "if (subscription === null) {\n        return registration.pushManager.subscribe({\n          userVisibleOnly: true,\n          applicationServerKey: this.vapidPublicKey\n        });\n      } else {\n        return subscription;\n      }\n    });\n  })\n  .then(subscription => {\n    this.subJSON = subscription.toJSON();\n  });\n`",
+            "summary": "userVisibleOnly: true,\n          applicationServerKey: this.vapidPublicKey\n        });\n      } else {\n        return subscription;\n      }\n    });\n  })\n  .then(subscription => {\n    this.subJSON = subscription.toJSON();\n  });\n`",
             "date_modified": "2021-04-25T12:27:00.000Z"
         },
         {
