@@ -20,11 +20,11 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
-            "id": "https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/",
-            "url": "https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/",
-            "title": "前端开发如何防止逆向以及对策",
-            "summary": "`",
-            "date_modified": "2020-02-22T18:03:00.000Z"
+            "id": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
+            "url": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
+            "title": "ELK收集Docker项目的日志",
+            "summary": "$ docker-compose restart logstash\n`",
+            "date_modified": "2021-06-14T11:21:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
@@ -136,6 +136,13 @@
             "title": "Vue下使用jest进行单元测试",
             "summary": "}\n`",
             "date_modified": "2020-03-19T21:56:00.000Z"
+        },
+        {
+            "id": "https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/",
+            "url": "https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/",
+            "title": "前端开发如何防止逆向以及对策",
+            "summary": "`",
+            "date_modified": "2020-02-22T18:03:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2020-01-14-frontend-deploy/",

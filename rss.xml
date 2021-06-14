@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Wed, 26 May 2021 11:24:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Jun 2021 03:18:27 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,11 +23,12 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
-            <title><![CDATA[前端开发如何防止逆向以及对策]]></title>
-            <link>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</link>
-            <guid>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</guid>
-            <pubDate>Sat, 22 Feb 2020 18:03:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <title><![CDATA[ELK收集Docker项目的日志]]></title>
+            <link>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</link>
+            <guid>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</guid>
+            <pubDate>Mon, 14 Jun 2021 11:21:00 GMT</pubDate>
+            <description><![CDATA[$ docker-compose restart logstash
+`]]></description>
         </item>
         <item>
             <title><![CDATA[Django使用CKEditor的相关经验]]></title>
@@ -167,6 +168,13 @@ input.vue.$emit('input', 'Hello world');
             <pubDate>Thu, 19 Mar 2020 21:56:00 GMT</pubDate>
             <description><![CDATA[}
 `]]></description>
+        </item>
+        <item>
+            <title><![CDATA[前端开发如何防止逆向以及对策]]></title>
+            <link>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</link>
+            <guid>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</guid>
+            <pubDate>Sat, 22 Feb 2020 18:03:00 GMT</pubDate>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[前端部署之CDN的那些事情]]></title>
