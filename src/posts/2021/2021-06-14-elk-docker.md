@@ -76,3 +76,5 @@ nmap -sU 0.0.0.0
 ## 参考
 
 [https://ibm-cloud-architecture.github.io/b2m-nodejs/logging/](https://ibm-cloud-architecture.github.io/b2m-nodejs/logging/)
+
+[Using Free Let’s Encrypt SSL/TLS Certificates with NGINX](https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/)
