@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Wed, 25 Aug 2021 11:14:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Sep 2021 13:06:49 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,28 +23,41 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[如何瘦身docker镜像]]></title>
+            <link>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</link>
+            <guid>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</guid>
+            <pubDate>Thu, 09 Sep 2021 21:44:00 GMT</pubDate>
+            <description><![CDATA[WORKDIR /app
+COPY . /app
+ENV NODE_ENV production
+RUN yarn build && yarn express:build
+`]]></description>
+        </item>
+        <item>
             <title><![CDATA[如何检测用户启动广告屏蔽插件]]></title>
             <link>https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/</link>
             <guid>https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/</guid>
             <pubDate>Sun, 25 Jul 2021 14:32:00 GMT</pubDate>
-            <description><![CDATA[})
-  }
-`]]></description>
+            <description><![CDATA[广告屏蔽插件的原理基本有三种，第一是有列表黑名单，出现在列表黑名单的资源都会直接被中断网络请求，例如无法加载图片，JavaScript 文件等等。第二是关键字匹配，如果资源文件里面有 ad 之类的相关广告关键字，那这个资源也会被中断请求。第三个是 DOM 检测，针对已经渲染好的 HTML 文件，通过 class 属性来检测是否有相关的广告关键字。如果符合结果，就删除相应的元素。]]></description>
         </item>
         <item>
             <title><![CDATA[ELK收集Docker项目的日志]]></title>
             <link>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</link>
             <guid>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</guid>
             <pubDate>Mon, 14 Jun 2021 11:21:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <description><![CDATA[我只是通过 nmap 命令来检测 5000 端口是否开放，并不知道是否正常运行。]]></description>
         </item>
         <item>
             <title><![CDATA[Django使用CKEditor的相关经验]]></title>
             <link>https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/</link>
             <guid>https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/</guid>
             <pubDate>Wed, 19 May 2021 22:06:00 GMT</pubDate>
-            <description><![CDATA[class Post(models.Model):
-    content = RichTextUploadingField()
+            <description><![CDATA[class CKEditorField(RichTextUploadingField):
+    def fromdbvalue(self, value, expression, connection):
+        if value:
+            return update_image(value)
+        else:
+            return value
 `]]></description>
         </item>
         <item>
@@ -52,16 +65,11 @@
             <link>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</link>
             <guid>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</guid>
             <pubDate>Sun, 25 Apr 2021 12:27:00 GMT</pubDate>
-            <description><![CDATA[applicationServerKey: this.vapidPublicKey
-        });
-      } else {
-        return subscription;
-      }
-    });
-  })
-  .then(subscription => {
-    this.subJSON = subscription.toJSON();
-  });
+            <description><![CDATA["keys": {
+    "auth": "MCeQnXlaz4A-CBuALNPbcQ",
+    "p256dh": "BL4am0lzx005spT_UBbMagfWb93Cfgh8XtkCtP7y697dODFnO0wCVVI783BsiHePRTl-mrpoHolJ0gKTYR1T4SQ"
+  }
+}
 `]]></description>
         </item>
         <item>
@@ -69,9 +77,12 @@
             <link>https://blog.icehoney.me/posts/2021-03-06-vue-code-style/</link>
             <guid>https://blog.icehoney.me/posts/2021-03-06-vue-code-style/</guid>
             <pubDate>Sat, 06 Mar 2021 12:02:00 GMT</pubDate>
-            <description><![CDATA[@select="selectDate"
-        />
-]]></description>
+            <description><![CDATA[@Prop({ default: false, type: Boolean }) readonly clearable!: boolean;
+  @Prop({ default: '' }) readonly placeholder!: string;
+  /**
+   State映射区域，定义顺序是： State Getter Action Mutation
+   */
+  @Info.State notifications!: Array;]]></description>
         </item>
         <item>
             <title><![CDATA[数据库查询的N+1问题]]></title>

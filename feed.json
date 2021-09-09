@@ -20,38 +20,45 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
+            "url": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
+            "title": "如何瘦身docker镜像",
+            "summary": "WORKDIR /app\nCOPY . /app\nENV NODE_ENV production\nRUN yarn build && yarn express:build\n`",
+            "date_modified": "2021-09-09T21:44:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/",
             "url": "https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/",
             "title": "如何检测用户启动广告屏蔽插件",
-            "summary": "})\n  }\n`",
+            "summary": "广告屏蔽插件的原理基本有三种，第一是有列表黑名单，出现在列表黑名单的资源都会直接被中断网络请求，例如无法加载图片，JavaScript 文件等等。第二是关键字匹配，如果资源文件里面有 ad 之类的相关广告关键字，那这个资源也会被中断请求。第三个是 DOM 检测，针对已经渲染好的 HTML 文件，通过 class 属性来检测是否有相关的广告关键字。如果符合结果，就删除相应的元素。",
             "date_modified": "2021-07-25T14:32:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
             "url": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
             "title": "ELK收集Docker项目的日志",
-            "summary": "`",
+            "summary": "我只是通过 nmap 命令来检测 5000 端口是否开放，并不知道是否正常运行。",
             "date_modified": "2021-06-14T11:21:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
             "url": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
             "title": "Django使用CKEditor的相关经验",
-            "summary": "class Post(models.Model):\n    content = RichTextUploadingField()\n`",
+            "summary": "class CKEditorField(RichTextUploadingField):\n    def fromdbvalue(self, value, expression, connection):\n        if value:\n            return update_image(value)\n        else:\n            return value\n`",
             "date_modified": "2021-05-19T22:06:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "url": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "title": "使用Service Worker的 Web Push 功能",
-            "summary": "applicationServerKey: this.vapidPublicKey\n        });\n      } else {\n        return subscription;\n      }\n    });\n  })\n  .then(subscription => {\n    this.subJSON = subscription.toJSON();\n  });\n`",
+            "summary": "\"keys\": {\n    \"auth\": \"MCeQnXlaz4A-CBuALNPbcQ\",\n    \"p256dh\": \"BL4am0lzx005spT_UBbMagfWb93Cfgh8XtkCtP7y697dODFnO0wCVVI783BsiHePRTl-mrpoHolJ0gKTYR1T4SQ\"\n  }\n}\n`",
             "date_modified": "2021-04-25T12:27:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-03-06-vue-code-style/",
             "url": "https://blog.icehoney.me/posts/2021-03-06-vue-code-style/",
             "title": "Vue代码风格",
-            "summary": "@select=\"selectDate\"\n        />\n",
+            "summary": "@Prop({ default: false, type: Boolean }) readonly clearable!: boolean;\n  @Prop({ default: '' }) readonly placeholder!: string;\n  /**\n   State映射区域，定义顺序是： State Getter Action Mutation\n   */\n  @Info.State notifications!: Array;",
             "date_modified": "2021-03-06T12:02:00.000Z"
         },
         {

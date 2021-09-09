@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2021-08-25T11:14:35.318Z</updated>
+    <updated>2021-09-09T13:06:49.155Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
@@ -24,14 +24,24 @@
         <summary type="html"><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[如何瘦身docker镜像]]></title>
+        <id>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</id>
+        <link href="https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/">
+        </link>
+        <updated>2021-09-09T21:44:00.000Z</updated>
+        <summary type="html"><![CDATA[WORKDIR /app
+COPY . /app
+ENV NODE_ENV production
+RUN yarn build && yarn express:build
+`]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[如何检测用户启动广告屏蔽插件]]></title>
         <id>https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/</id>
         <link href="https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/">
         </link>
         <updated>2021-07-25T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[})
-  }
-`]]></summary>
+        <summary type="html"><![CDATA[广告屏蔽插件的原理基本有三种，第一是有列表黑名单，出现在列表黑名单的资源都会直接被中断网络请求，例如无法加载图片，JavaScript 文件等等。第二是关键字匹配，如果资源文件里面有 ad 之类的相关广告关键字，那这个资源也会被中断请求。第三个是 DOM 检测，针对已经渲染好的 HTML 文件，通过 class 属性来检测是否有相关的广告关键字。如果符合结果，就删除相应的元素。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[ELK收集Docker项目的日志]]></title>
@@ -39,7 +49,7 @@
         <link href="https://blog.icehoney.me/posts/2021-06-14-elk-docker/">
         </link>
         <updated>2021-06-14T11:21:00.000Z</updated>
-        <summary type="html"><![CDATA[`]]></summary>
+        <summary type="html"><![CDATA[我只是通过 nmap 命令来检测 5000 端口是否开放，并不知道是否正常运行。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Django使用CKEditor的相关经验]]></title>
@@ -47,8 +57,12 @@
         <link href="https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/">
         </link>
         <updated>2021-05-19T22:06:00.000Z</updated>
-        <summary type="html"><![CDATA[class Post(models.Model):
-    content = RichTextUploadingField()
+        <summary type="html"><![CDATA[class CKEditorField(RichTextUploadingField):
+    def fromdbvalue(self, value, expression, connection):
+        if value:
+            return update_image(value)
+        else:
+            return value
 `]]></summary>
     </entry>
     <entry>
@@ -57,16 +71,11 @@
         <link href="https://blog.icehoney.me/posts/2021-04-25-service-worker-push/">
         </link>
         <updated>2021-04-25T12:27:00.000Z</updated>
-        <summary type="html"><![CDATA[applicationServerKey: this.vapidPublicKey
-        });
-      } else {
-        return subscription;
-      }
-    });
-  })
-  .then(subscription => {
-    this.subJSON = subscription.toJSON();
-  });
+        <summary type="html"><![CDATA["keys": {
+    "auth": "MCeQnXlaz4A-CBuALNPbcQ",
+    "p256dh": "BL4am0lzx005spT_UBbMagfWb93Cfgh8XtkCtP7y697dODFnO0wCVVI783BsiHePRTl-mrpoHolJ0gKTYR1T4SQ"
+  }
+}
 `]]></summary>
     </entry>
     <entry>
@@ -75,9 +84,12 @@
         <link href="https://blog.icehoney.me/posts/2021-03-06-vue-code-style/">
         </link>
         <updated>2021-03-06T12:02:00.000Z</updated>
-        <summary type="html"><![CDATA[@select="selectDate"
-        />
-]]></summary>
+        <summary type="html"><![CDATA[@Prop({ default: false, type: Boolean }) readonly clearable!: boolean;
+  @Prop({ default: '' }) readonly placeholder!: string;
+  /**
+   State映射区域，定义顺序是： State Getter Action Mutation
+   */
+  @Info.State notifications!: Array;]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[数据库查询的N+1问题]]></title>
