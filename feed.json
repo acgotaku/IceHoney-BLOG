@@ -20,10 +20,17 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2021-10-02-js-color/",
+            "url": "https://blog.icehoney.me/posts/2021-10-02-js-color/",
+            "title": "JS 关于颜色的相关处理",
+            "summary": "this.rgbColor = this.stringToRGB(color);\n    } else if (this.isHSLColor(color)) {\n      this.rgbColor = this.HSLToRGB(color);\n    } else {\n      this.rgbColor = color;\n    }\n  }",
+            "date_modified": "2021-10-02T10:26:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
             "url": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
             "title": "如何瘦身docker镜像",
-            "summary": "WORKDIR /app\nCOPY . /app\nENV NODE_ENV production\nRUN yarn build && yarn express:build\n`",
+            "summary": "`",
             "date_modified": "2021-09-09T21:44:00.000Z"
         },
         {

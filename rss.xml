@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Thu, 09 Sep 2021 13:06:49 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Oct 2021 03:06:37 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,15 +23,24 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[JS 关于颜色的相关处理]]></title>
+            <link>https://blog.icehoney.me/posts/2021-10-02-js-color/</link>
+            <guid>https://blog.icehoney.me/posts/2021-10-02-js-color/</guid>
+            <pubDate>Sat, 02 Oct 2021 10:26:00 GMT</pubDate>
+            <description><![CDATA[this.rgbColor = this.stringToRGB(color);
+    } else if (this.isHSLColor(color)) {
+      this.rgbColor = this.HSLToRGB(color);
+    } else {
+      this.rgbColor = color;
+    }
+  }]]></description>
+        </item>
+        <item>
             <title><![CDATA[如何瘦身docker镜像]]></title>
             <link>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</link>
             <guid>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</guid>
             <pubDate>Thu, 09 Sep 2021 21:44:00 GMT</pubDate>
-            <description><![CDATA[WORKDIR /app
-COPY . /app
-ENV NODE_ENV production
-RUN yarn build && yarn express:build
-`]]></description>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[如何检测用户启动广告屏蔽插件]]></title>
