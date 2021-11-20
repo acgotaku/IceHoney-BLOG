@@ -20,52 +20,58 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/",
+            "url": "https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/",
+            "title": "CSS如何处理固定Header哈希标记跳转的问题",
+            "date_modified": "2021-11-20T21:21:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2021-10-02-js-color/",
             "url": "https://blog.icehoney.me/posts/2021-10-02-js-color/",
             "title": "JS 关于颜色的相关处理",
-            "summary": "this.rgbColor = this.stringToRGB(color);\n    } else if (this.isHSLColor(color)) {\n      this.rgbColor = this.HSLToRGB(color);\n    } else {\n      this.rgbColor = color;\n    }\n  }",
+            "summary": "项目开发中，需要根据网站设定的主题色来动态更改网站的所有配色，例如文字颜色，鼠标 hover 状态的按钮颜色，这就涉及到对颜色的相关处理，接下来我们就讲解下如何处理。",
             "date_modified": "2021-10-02T10:26:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
             "url": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
             "title": "如何瘦身docker镜像",
-            "summary": "`",
+            "summary": "首先我们需要使用 docker 完成网站源代码的编译，并且还要自己使用 expressjs 搭建服务器。让网站可以运行，docker 跑起来之后只用负责端口转发即可。",
             "date_modified": "2021-09-09T21:44:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/",
             "url": "https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/",
             "title": "如何检测用户启动广告屏蔽插件",
-            "summary": "广告屏蔽插件的原理基本有三种，第一是有列表黑名单，出现在列表黑名单的资源都会直接被中断网络请求，例如无法加载图片，JavaScript 文件等等。第二是关键字匹配，如果资源文件里面有 ad 之类的相关广告关键字，那这个资源也会被中断请求。第三个是 DOM 检测，针对已经渲染好的 HTML 文件，通过 class 属性来检测是否有相关的广告关键字。如果符合结果，就删除相应的元素。",
+            "summary": "function isDisplayNone(node: Element | null): boolean {\n  if (!node) {\n    return false;\n  }\n  if (getComputedStyle(node).display === 'none') return true;\n  return isDisplayNone(node.parentElement);\n}",
             "date_modified": "2021-07-25T14:32:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
             "url": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
             "title": "ELK收集Docker项目的日志",
-            "summary": "我只是通过 nmap 命令来检测 5000 端口是否开放，并不知道是否正常运行。",
+            "summary": "`",
             "date_modified": "2021-06-14T11:21:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
             "url": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
             "title": "Django使用CKEditor的相关经验",
-            "summary": "class CKEditorField(RichTextUploadingField):\n    def fromdbvalue(self, value, expression, connection):\n        if value:\n            return update_image(value)\n        else:\n            return value\n`",
+            "summary": "default_acl = 'private'\n`",
             "date_modified": "2021-05-19T22:06:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "url": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "title": "使用Service Worker的 Web Push 功能",
-            "summary": "\"keys\": {\n    \"auth\": \"MCeQnXlaz4A-CBuALNPbcQ\",\n    \"p256dh\": \"BL4am0lzx005spT_UBbMagfWb93Cfgh8XtkCtP7y697dODFnO0wCVVI783BsiHePRTl-mrpoHolJ0gKTYR1T4SQ\"\n  }\n}\n`",
+            "summary": "function generateVAPIDKeys() {\n  const vapidKeys = webpush.generateVAPIDKeys();",
             "date_modified": "2021-04-25T12:27:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-03-06-vue-code-style/",
             "url": "https://blog.icehoney.me/posts/2021-03-06-vue-code-style/",
             "title": "Vue代码风格",
-            "summary": "@Prop({ default: false, type: Boolean }) readonly clearable!: boolean;\n  @Prop({ default: '' }) readonly placeholder!: string;\n  /**\n   State映射区域，定义顺序是： State Getter Action Mutation\n   */\n  @Info.State notifications!: Array;",
+            "summary": "@on-blur=\"updateDate\"\n        >\n",
             "date_modified": "2021-03-06T12:02:00.000Z"
         },
         {
@@ -638,30 +644,29 @@
             "date_modified": "2013-06-06T21:41:00.000Z"
         },
         {
-            "id": "https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/",
-            "url": "https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/",
-            "title": "使用GRUB2引导ISO镜像",
-            "summary": "这时候就发挥 GRUB2 的作用了,根据不同的选项可以加载不同的操作系统,甚至可以加载 ISO 镜像.我此次折腾 GRUB2 就是为了免去每次安装系统的时候都去使用 DD\n刻录镜像的麻烦.然后写下来记录自己的一点成果.\n下面就来讲解下如何使用 GRUB2 去引导 ISO 镜像",
-            "date_modified": "2013-04-25T21:17:00.000Z"
-        },
-        {
-            "id": "https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/",
-            "url": "https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/",
-            "title": "安徽师范大学校园视频下载器2.0版本发布",
-            "summary": "User-Agent: Novasoft NetPlayer/4.0 进行屏蔽非官方客户端,知道原因事情就很简单了,伪造 UA 嘛,之前下载器是调用迅雷下载的,现在在里面内置了下载功能.",
-            "date_modified": "2013-03-15T15:30:00.000Z"
-        },
-        {
             "id": "https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/",
             "url": "https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/",
             "title": "关于CSS解决高度自适应和宽度自适应的问题",
             "date_modified": "2013-03-10T19:09:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/",
+            "url": "https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/",
+            "title": "使用GRUB2引导ISO镜像",
+            "summary": "首先来说下什么是 GRUB,熟悉 Linux 的同学都应该知道的说.它是一个多重操作系统启动管理器。用来引导不同系统，如 windows，linux。\nGRUB2 就是 GRUB 的下一个版本.首先说下 GRUB 的作用吧,当你按下电脑上的电源按钮的时候,这时候电脑会开始加载 BIOS,BIOS 首先检查计算机硬件\n能否满足运行的基本条件,这叫做\"硬件自检\"（Power-On Self-Test）.自检完成之后,BIOS 就会把系统控制权转交给下一阶段的启动程序,一般情况下\n都会是硬盘,由硬盘启动时，BIOS 通常是转向第一块硬盘的第一个扇区，即主引导记录(MBR).",
+            "date_modified": "2013-04-25T21:17:00.000Z"
+        },
+        {
+            "id": "https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/",
+            "url": "https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/",
+            "title": "安徽师范大学校园视频下载器2.0版本发布",
+            "summary": "视频资源和视频的 ID,然后通过一步步的研究直接找到了资源的下载地址.详细的原理请看我 github 上公开的VideoSeach\n里面的 Function.cs 记录了具体解析过程.",
+            "date_modified": "2013-03-15T15:30:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2013-02-07-start-blog/",
             "url": "https://blog.icehoney.me/posts/2013-02-07-start-blog/",
             "title": "个人博客的建立",
-            "summary": "好吧,我建立个人博客的想法其实已经差不多有一年了吧.一直没去实现...主要原因还是自己太懒...一开始想用 WordPress 搭建一个....其实我也搭建了\n但是由于一直找不到好看的主题就坑在那一年多了...后来还想用 Octopress 来搭建...又由于自己当时的系统是 Win 而放弃了,现在我把自己的系统换成\nArch 并且在学习 Python,于是又开坑了...",
             "date_modified": "2013-02-07T22:07:00.000Z"
         }
     ]

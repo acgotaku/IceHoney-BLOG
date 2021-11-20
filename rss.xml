@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Sat, 02 Oct 2021 03:06:37 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Nov 2021 12:56:15 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,50 +23,51 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[CSS如何处理固定Header哈希标记跳转的问题]]></title>
+            <link>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</link>
+            <guid>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</guid>
+            <pubDate>Sat, 20 Nov 2021 21:21:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[JS 关于颜色的相关处理]]></title>
             <link>https://blog.icehoney.me/posts/2021-10-02-js-color/</link>
             <guid>https://blog.icehoney.me/posts/2021-10-02-js-color/</guid>
             <pubDate>Sat, 02 Oct 2021 10:26:00 GMT</pubDate>
-            <description><![CDATA[this.rgbColor = this.stringToRGB(color);
-    } else if (this.isHSLColor(color)) {
-      this.rgbColor = this.HSLToRGB(color);
-    } else {
-      this.rgbColor = color;
-    }
-  }]]></description>
+            <description><![CDATA[项目开发中，需要根据网站设定的主题色来动态更改网站的所有配色，例如文字颜色，鼠标 hover 状态的按钮颜色，这就涉及到对颜色的相关处理，接下来我们就讲解下如何处理。]]></description>
         </item>
         <item>
             <title><![CDATA[如何瘦身docker镜像]]></title>
             <link>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</link>
             <guid>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</guid>
             <pubDate>Thu, 09 Sep 2021 21:44:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <description><![CDATA[首先我们需要使用 docker 完成网站源代码的编译，并且还要自己使用 expressjs 搭建服务器。让网站可以运行，docker 跑起来之后只用负责端口转发即可。]]></description>
         </item>
         <item>
             <title><![CDATA[如何检测用户启动广告屏蔽插件]]></title>
             <link>https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/</link>
             <guid>https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/</guid>
             <pubDate>Sun, 25 Jul 2021 14:32:00 GMT</pubDate>
-            <description><![CDATA[广告屏蔽插件的原理基本有三种，第一是有列表黑名单，出现在列表黑名单的资源都会直接被中断网络请求，例如无法加载图片，JavaScript 文件等等。第二是关键字匹配，如果资源文件里面有 ad 之类的相关广告关键字，那这个资源也会被中断请求。第三个是 DOM 检测，针对已经渲染好的 HTML 文件，通过 class 属性来检测是否有相关的广告关键字。如果符合结果，就删除相应的元素。]]></description>
+            <description><![CDATA[function isDisplayNone(node: Element | null): boolean {
+  if (!node) {
+    return false;
+  }
+  if (getComputedStyle(node).display === 'none') return true;
+  return isDisplayNone(node.parentElement);
+}]]></description>
         </item>
         <item>
             <title><![CDATA[ELK收集Docker项目的日志]]></title>
             <link>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</link>
             <guid>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</guid>
             <pubDate>Mon, 14 Jun 2021 11:21:00 GMT</pubDate>
-            <description><![CDATA[我只是通过 nmap 命令来检测 5000 端口是否开放，并不知道是否正常运行。]]></description>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[Django使用CKEditor的相关经验]]></title>
             <link>https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/</link>
             <guid>https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/</guid>
             <pubDate>Wed, 19 May 2021 22:06:00 GMT</pubDate>
-            <description><![CDATA[class CKEditorField(RichTextUploadingField):
-    def fromdbvalue(self, value, expression, connection):
-        if value:
-            return update_image(value)
-        else:
-            return value
+            <description><![CDATA[default_acl = 'private'
 `]]></description>
         </item>
         <item>
@@ -74,24 +75,17 @@
             <link>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</link>
             <guid>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</guid>
             <pubDate>Sun, 25 Apr 2021 12:27:00 GMT</pubDate>
-            <description><![CDATA["keys": {
-    "auth": "MCeQnXlaz4A-CBuALNPbcQ",
-    "p256dh": "BL4am0lzx005spT_UBbMagfWb93Cfgh8XtkCtP7y697dODFnO0wCVVI783BsiHePRTl-mrpoHolJ0gKTYR1T4SQ"
-  }
-}
-`]]></description>
+            <description><![CDATA[function generateVAPIDKeys() {
+  const vapidKeys = webpush.generateVAPIDKeys();]]></description>
         </item>
         <item>
             <title><![CDATA[Vue代码风格]]></title>
             <link>https://blog.icehoney.me/posts/2021-03-06-vue-code-style/</link>
             <guid>https://blog.icehoney.me/posts/2021-03-06-vue-code-style/</guid>
             <pubDate>Sat, 06 Mar 2021 12:02:00 GMT</pubDate>
-            <description><![CDATA[@Prop({ default: false, type: Boolean }) readonly clearable!: boolean;
-  @Prop({ default: '' }) readonly placeholder!: string;
-  /**
-   State映射区域，定义顺序是： State Getter Action Mutation
-   */
-  @Info.State notifications!: Array;]]></description>
+            <description><![CDATA[@on-blur="updateDate"
+        >
+]]></description>
         </item>
         <item>
             <title><![CDATA[数据库查询的N+1问题]]></title>
@@ -740,35 +734,34 @@ for i in *.mp3; do echo "y"| mp3tagiconv "${i}" ;done
 `]]></description>
         </item>
         <item>
-            <title><![CDATA[使用GRUB2引导ISO镜像]]></title>
-            <link>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</link>
-            <guid>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</guid>
-            <pubDate>Thu, 25 Apr 2013 21:17:00 GMT</pubDate>
-            <description><![CDATA[这时候就发挥 GRUB2 的作用了,根据不同的选项可以加载不同的操作系统,甚至可以加载 ISO 镜像.我此次折腾 GRUB2 就是为了免去每次安装系统的时候都去使用 DD
-刻录镜像的麻烦.然后写下来记录自己的一点成果.
-下面就来讲解下如何使用 GRUB2 去引导 ISO 镜像]]></description>
-        </item>
-        <item>
-            <title><![CDATA[安徽师范大学校园视频下载器2.0版本发布]]></title>
-            <link>https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/</link>
-            <guid>https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/</guid>
-            <pubDate>Fri, 15 Mar 2013 15:30:00 GMT</pubDate>
-            <description><![CDATA[User-Agent: Novasoft NetPlayer/4.0 进行屏蔽非官方客户端,知道原因事情就很简单了,伪造 UA 嘛,之前下载器是调用迅雷下载的,现在在里面内置了下载功能.]]></description>
-        </item>
-        <item>
             <title><![CDATA[关于CSS解决高度自适应和宽度自适应的问题]]></title>
             <link>https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/</link>
             <guid>https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/</guid>
             <pubDate>Sun, 10 Mar 2013 19:09:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[使用GRUB2引导ISO镜像]]></title>
+            <link>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</link>
+            <guid>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</guid>
+            <pubDate>Thu, 25 Apr 2013 21:17:00 GMT</pubDate>
+            <description><![CDATA[首先来说下什么是 GRUB,熟悉 Linux 的同学都应该知道的说.它是一个多重操作系统启动管理器。用来引导不同系统，如 windows，linux。
+GRUB2 就是 GRUB 的下一个版本.首先说下 GRUB 的作用吧,当你按下电脑上的电源按钮的时候,这时候电脑会开始加载 BIOS,BIOS 首先检查计算机硬件
+能否满足运行的基本条件,这叫做"硬件自检"（Power-On Self-Test）.自检完成之后,BIOS 就会把系统控制权转交给下一阶段的启动程序,一般情况下
+都会是硬盘,由硬盘启动时，BIOS 通常是转向第一块硬盘的第一个扇区，即主引导记录(MBR).]]></description>
+        </item>
+        <item>
+            <title><![CDATA[安徽师范大学校园视频下载器2.0版本发布]]></title>
+            <link>https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/</link>
+            <guid>https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/</guid>
+            <pubDate>Fri, 15 Mar 2013 15:30:00 GMT</pubDate>
+            <description><![CDATA[视频资源和视频的 ID,然后通过一步步的研究直接找到了资源的下载地址.详细的原理请看我 github 上公开的VideoSeach
+里面的 Function.cs 记录了具体解析过程.]]></description>
+        </item>
+        <item>
             <title><![CDATA[个人博客的建立]]></title>
             <link>https://blog.icehoney.me/posts/2013-02-07-start-blog/</link>
             <guid>https://blog.icehoney.me/posts/2013-02-07-start-blog/</guid>
             <pubDate>Thu, 07 Feb 2013 22:07:00 GMT</pubDate>
-            <description><![CDATA[好吧,我建立个人博客的想法其实已经差不多有一年了吧.一直没去实现...主要原因还是自己太懒...一开始想用 WordPress 搭建一个....其实我也搭建了
-但是由于一直找不到好看的主题就坑在那一年多了...后来还想用 Octopress 来搭建...又由于自己当时的系统是 Win 而放弃了,现在我把自己的系统换成
-Arch 并且在学习 Python,于是又开坑了...]]></description>
         </item>
     </channel>
 </rss>
