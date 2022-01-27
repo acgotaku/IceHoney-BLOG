@@ -20,10 +20,17 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2022-01-27-react-tabs/",
+            "url": "https://blog.icehoney.me/posts/2022-01-27-react-tabs/",
+            "title": "React 实现 Tabs 组件",
+            "summary": "setActiveTab(firstChild.props.name);\n    }\n  }, [children]);",
+            "date_modified": "2022-01-27T20:16:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/",
             "url": "https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/",
             "title": "代理Sentry的请求",
-            "summary": "'X-Forwarded-For': req.ip\n      }\n    };\n    const request = https.request(options);\n    request.write(envelope);\n    request.end();\n  }\n  res.json({});\n});\n`",
+            "summary": "request.write(envelope);\n    request.end();\n  }\n  res.json({});\n});\n`",
             "date_modified": "2021-12-30T22:21:00.000Z"
         },
         {
