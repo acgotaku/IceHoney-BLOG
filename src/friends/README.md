@@ -18,3 +18,4 @@ comments: true
 <FriendLink link="https://lxy2222.github.io/" name="lxy2222" />
 <FriendLink link="https://brilliant.run/" name="Brilliant" />
 <FriendLink link="https://nya.io/" name="Nyasoft" />
+<FriendLink link="https://u.sb/" name="烧饼博客" />
