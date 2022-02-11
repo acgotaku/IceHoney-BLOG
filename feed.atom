@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2022-02-03T12:29:03.390Z</updated>
+    <updated>2022-02-11T05:59:43.354Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
@@ -24,14 +24,52 @@
         <summary type="html"><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[GIthub 存储大文件]]></title>
+        <id>https://blog.icehoney.me/posts/2022-02-10-github-lfs/</id>
+        <link href="https://blog.icehoney.me/posts/2022-02-10-github-lfs/">
+        </link>
+        <updated>2022-02-10T23:16:00.000Z</updated>
+        <summary type="html"><![CDATA[! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
+`]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[React 实现 Tabs 组件]]></title>
         <id>https://blog.icehoney.me/posts/2022-01-27-react-tabs/</id>
         <link href="https://blog.icehoney.me/posts/2022-01-27-react-tabs/">
         </link>
         <updated>2022-01-27T20:16:00.000Z</updated>
-        <summary type="html"><![CDATA[setActiveTab(firstChild.props.name);
-    }
-  }, [children]);]]></summary>
+        <summary type="html"><![CDATA[
+        {React.Children.map(children, child => {
+          if (React.isValidElement(child)) {
+            const { name, label, disabled } = child.props;
+            return (
+               setActiveTab(name)}
+              >
+                {label}
+
+            );
+          } else {
+            return null;
+          }
+        })}
+
+        {React.Children.map(children, child => {
+          if (React.isValidElement(child)) {
+            const { name, children } = child.props;
+            if (name === activeTab) {
+              return children;
+            } else {
+              return null;
+            }
+          } else {
+            return null;
+          }
+        })}
+
+  );
+};
+`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[代理Sentry的请求]]></title>
@@ -39,12 +77,6 @@
         <link href="https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/">
         </link>
         <updated>2021-12-30T22:21:00.000Z</updated>
-        <summary type="html"><![CDATA[request.write(envelope);
-    request.end();
-  }
-  res.json({});
-});
-`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[CSS如何处理固定Header哈希标记跳转的问题]]></title>
@@ -52,6 +84,7 @@
         <link href="https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/">
         </link>
         <updated>2021-11-20T21:21:00.000Z</updated>
+        <summary type="html"><![CDATA[有些前端网站一直都有固定的 Header 显示导航，如果我们文档内部有使用 ID 和#符号来帮助跳转到文档某个位置的话，就会被 Header 遮挡住，那我们怎么处理才能让跳转内容正好显示在 Header 下方呢？答案很简单就是让带有 ID 的这个元素占据的空间包含 Header 的高度。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[JS 关于颜色的相关处理]]></title>
@@ -59,7 +92,7 @@
         <link href="https://blog.icehoney.me/posts/2021-10-02-js-color/">
         </link>
         <updated>2021-10-02T10:26:00.000Z</updated>
-        <summary type="html"><![CDATA[项目开发中，需要根据网站设定的主题色来动态更改网站的所有配色，例如文字颜色，鼠标 hover 状态的按钮颜色，这就涉及到对颜色的相关处理，接下来我们就讲解下如何处理。]]></summary>
+        <summary type="html"><![CDATA[W3C 提供了官方的说明，把 RGB 格式的颜色转换成 YIQ 格式，然后通过 brightness 数值来进行判断。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[如何瘦身docker镜像]]></title>
@@ -67,7 +100,7 @@
         <link href="https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/">
         </link>
         <updated>2021-09-09T21:44:00.000Z</updated>
-        <summary type="html"><![CDATA[首先我们需要使用 docker 完成网站源代码的编译，并且还要自己使用 expressjs 搭建服务器。让网站可以运行，docker 跑起来之后只用负责端口转发即可。]]></summary>
+        <summary type="html"><![CDATA[答案是Use multi-stage builds]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[如何检测用户启动广告屏蔽插件]]></title>
@@ -75,13 +108,7 @@
         <link href="https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/">
         </link>
         <updated>2021-07-25T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[function isDisplayNone(node: Element | null): boolean {
-  if (!node) {
-    return false;
-  }
-  if (getComputedStyle(node).display === 'none') return true;
-  return isDisplayNone(node.parentElement);
-}]]></summary>
+        <summary type="html"><![CDATA[}]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[ELK收集Docker项目的日志]]></title>
