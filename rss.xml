@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Fri, 11 Feb 2022 05:59:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Feb 2022 14:24:20 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -303,6 +303,13 @@ input.vue.$emit('input', 'Hello world');
             <pubDate>Sun, 23 Jun 2019 20:21:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[前端开发地图应用的调研]]></title>
+            <link>https://blog.icehoney.me/posts/2018-11-27-js-map/</link>
+            <guid>https://blog.icehoney.me/posts/2018-11-27-js-map/</guid>
+            <pubDate>Tue, 27 Nov 2018 21:20:00 GMT</pubDate>
+            <description><![CDATA[我司的产品终于发布了新版本，所以忙碌的开发暂时告一段落。最近在做下一期的规划，然后就是要做前端网站来满足用户的需求。由于我们的产品是和地图强相关的，所以也对地图做了很多调研。]]></description>
+        </item>
+        <item>
             <title><![CDATA[使用WebAssembly编译C++到JS]]></title>
             <link>https://blog.icehoney.me/posts/2019-04-28-webassmebly/</link>
             <guid>https://blog.icehoney.me/posts/2019-04-28-webassmebly/</guid>
@@ -333,18 +340,12 @@ input.vue.$emit('input', 'Hello world');
             <description><![CDATA[最近在做后端的开发，需要一些二进制数据保存在服务器云端。团队决定调查 AWS 的 S3 服务是否满足需求，所以就做了一些调查工作。不过也遇到很多坑的地方。所以记录下来，防止以后再遇到。]]></description>
         </item>
         <item>
-            <title><![CDATA[前端开发地图应用的调研]]></title>
-            <link>https://blog.icehoney.me/posts/2018-11-27-js-map/</link>
-            <guid>https://blog.icehoney.me/posts/2018-11-27-js-map/</guid>
-            <pubDate>Tue, 27 Nov 2018 21:20:00 GMT</pubDate>
-            <description><![CDATA[产品需要在国内和国外使用，费用合理，可以换地图的贴图并且能在地图上绘制各种信息。例如多边形或圆形还有贝塞尔曲线。]]></description>
-        </item>
-        <item>
             <title><![CDATA[后端开发的技术总结]]></title>
             <link>https://blog.icehoney.me/posts/2018-10-15-backend-development/</link>
             <guid>https://blog.icehoney.me/posts/2018-10-15-backend-development/</guid>
             <pubDate>Mon, 15 Oct 2018 21:20:00 GMT</pubDate>
-            <description><![CDATA[生成的 Markdown 文件，可以很方便的转换成网页便于客户端开发。例如这个工具aglio。]]></description>
+            <description><![CDATA[使用API Blueprint作为 API 规范，并使用RSpec API Blueprint来自动生成文档。
+生成的 Markdown 文件，可以很方便的转换成网页便于客户端开发。例如这个工具aglio。]]></description>
         </item>
         <item>
             <title><![CDATA[跨域请求中的cookies处理]]></title>

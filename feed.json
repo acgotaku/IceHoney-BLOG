@@ -240,6 +240,13 @@
             "date_modified": "2019-06-23T20:21:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2018-11-27-js-map/",
+            "url": "https://blog.icehoney.me/posts/2018-11-27-js-map/",
+            "title": "前端开发地图应用的调研",
+            "summary": "我司的产品终于发布了新版本，所以忙碌的开发暂时告一段落。最近在做下一期的规划，然后就是要做前端网站来满足用户的需求。由于我们的产品是和地图强相关的，所以也对地图做了很多调研。",
+            "date_modified": "2018-11-27T21:20:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2019-04-28-webassmebly/",
             "url": "https://blog.icehoney.me/posts/2019-04-28-webassmebly/",
             "title": "使用WebAssembly编译C++到JS",
@@ -267,17 +274,10 @@
             "date_modified": "2019-01-23T21:20:00.000Z"
         },
         {
-            "id": "https://blog.icehoney.me/posts/2018-11-27-js-map/",
-            "url": "https://blog.icehoney.me/posts/2018-11-27-js-map/",
-            "title": "前端开发地图应用的调研",
-            "summary": "产品需要在国内和国外使用，费用合理，可以换地图的贴图并且能在地图上绘制各种信息。例如多边形或圆形还有贝塞尔曲线。",
-            "date_modified": "2018-11-27T21:20:00.000Z"
-        },
-        {
             "id": "https://blog.icehoney.me/posts/2018-10-15-backend-development/",
             "url": "https://blog.icehoney.me/posts/2018-10-15-backend-development/",
             "title": "后端开发的技术总结",
-            "summary": "生成的 Markdown 文件，可以很方便的转换成网页便于客户端开发。例如这个工具aglio。",
+            "summary": "使用API Blueprint作为 API 规范，并使用RSpec API Blueprint来自动生成文档。\n生成的 Markdown 文件，可以很方便的转换成网页便于客户端开发。例如这个工具aglio。",
             "date_modified": "2018-10-15T21:20:00.000Z"
         },
         {
