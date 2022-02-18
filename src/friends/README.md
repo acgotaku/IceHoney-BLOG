@@ -19,3 +19,4 @@ comments: true
 <FriendLink link="https://brilliant.run/" name="Brilliant" />
 <FriendLink link="https://nya.io/" name="Nyasoft" />
 <FriendLink link="https://u.sb/" name="烧饼博客" />
+<FriendLink link="https://blog.rxliuli.com/" name="rxliuli blog" />
