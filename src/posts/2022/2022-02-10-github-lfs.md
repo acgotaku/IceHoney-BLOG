@@ -1,5 +1,5 @@
 ---
-title: GIthub 存储大文件
+title: Github 存储大文件
 date: 2022-02-10 23:16
 comments: true
 archives: 2022
