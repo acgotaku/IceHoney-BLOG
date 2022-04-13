@@ -20,86 +20,93 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2022-04-13-m1-cpp/",
+            "url": "https://blog.icehoney.me/posts/2022-04-13-m1-cpp/",
+            "title": "Mac M1系统配置C++环境",
+            "summary": "在 Mac OS 下配置 GAMES101 开发环境",
+            "date_modified": "2022-04-13T20:03:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2022-03-13-scroll-lock/",
             "url": "https://blog.icehoney.me/posts/2022-03-13-scroll-lock/",
             "title": "禁用页面滚动",
-            "summary": "恢复滚动只需要把添加到 CSS 属性删除即可。",
             "date_modified": "2022-03-13T15:11:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2022-02-10-github-lfs/",
             "url": "https://blog.icehoney.me/posts/2022-02-10-github-lfs/",
             "title": "Github 存储大文件",
-            "summary": "error: failed to push some refs to 'https://github.com/{user}/{repo}.git'\n`",
+            "summary": "最近在做项目的时候，需要上传一个超过 200MB 的数据库文件到 Github 上保存，结果 Github 提示文件过大。这才知道 Github 对单文件有 100 MB 的容量限制。",
             "date_modified": "2022-02-10T23:16:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2022-01-27-react-tabs/",
             "url": "https://blog.icehoney.me/posts/2022-01-27-react-tabs/",
             "title": "React 实现 Tabs 组件",
-            "summary": "\n        {React.Children.map(children, child => {\n          if (React.isValidElement(child)) {\n            const { name, label, disabled } = child.props;\n            return (\n               setActiveTab(name)}\n              >\n                {label}\n\n            );\n          } else {\n            return null;\n          }\n        })}\n\n        {React.Children.map(children, child => {\n          if (React.isValidElement(child)) {\n            const { name, children } = child.props;\n            if (name === activeTab) {\n              return children;\n            } else {\n              return null;\n            }\n          } else {\n            return null;\n          }\n        })}\n\n  );\n};\n`",
+            "summary": "但是 React 下复合组件如何实现，和 Vue 相比差距还是挺大的。接下来就讲述经典的 Tabs 组件如何来实现。",
             "date_modified": "2022-01-27T20:16:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/",
             "url": "https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/",
             "title": "代理Sentry的请求",
+            "summary": "添加 tunnel 选项，Sentry 就会把请求发到这个路径下，然后我们后台再处理转发。",
             "date_modified": "2021-12-30T22:21:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/",
             "url": "https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/",
             "title": "CSS如何处理固定Header哈希标记跳转的问题",
-            "summary": "有些前端网站一直都有固定的 Header 显示导航，如果我们文档内部有使用 ID 和#符号来帮助跳转到文档某个位置的话，就会被 Header 遮挡住，那我们怎么处理才能让跳转内容正好显示在 Header 下方呢？答案很简单就是让带有 ID 的这个元素占据的空间包含 Header 的高度。",
+            "summary": "h1[id] {\n  padding-top: var(--header-height);\n  margin-top: calc(var(--header-height) * -1);\n}\n`",
             "date_modified": "2021-11-20T21:21:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-10-02-js-color/",
             "url": "https://blog.icehoney.me/posts/2021-10-02-js-color/",
             "title": "JS 关于颜色的相关处理",
-            "summary": "W3C 提供了官方的说明，把 RGB 格式的颜色转换成 YIQ 格式，然后通过 brightness 数值来进行判断。",
+            "summary": "return brightness < 128;\n  }\n`",
             "date_modified": "2021-10-02T10:26:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
             "url": "https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/",
             "title": "如何瘦身docker镜像",
-            "summary": "答案是Use multi-stage builds",
+            "summary": "WORKDIR /app\nCOPY . /app\nENV NODE_ENV production\nRUN yarn build && yarn express:build\n`",
             "date_modified": "2021-09-09T21:44:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/",
             "url": "https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/",
             "title": "如何检测用户启动广告屏蔽插件",
-            "summary": "}",
+            "summary": "广告屏蔽插件的原理基本有三种，第一是有列表黑名单，出现在列表黑名单的资源都会直接被中断网络请求，例如无法加载图片，JavaScript 文件等等。第二是关键字匹配，如果资源文件里面有 ad 之类的相关广告关键字，那这个资源也会被中断请求。第三个是 DOM 检测，针对已经渲染好的 HTML 文件，通过 class 属性来检测是否有相关的广告关键字。如果符合结果，就删除相应的元素。",
             "date_modified": "2021-07-25T14:32:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
             "url": "https://blog.icehoney.me/posts/2021-06-14-elk-docker/",
             "title": "ELK收集Docker项目的日志",
-            "summary": "`",
+            "summary": "我只是通过 nmap 命令来检测 5000 端口是否开放，并不知道是否正常运行。",
             "date_modified": "2021-06-14T11:21:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
             "url": "https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/",
             "title": "Django使用CKEditor的相关经验",
-            "summary": "default_acl = 'private'\n`",
+            "summary": "class CKEditorField(RichTextUploadingField):\n    def fromdbvalue(self, value, expression, connection):\n        if value:\n            return update_image(value)\n        else:\n            return value\n`",
             "date_modified": "2021-05-19T22:06:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "url": "https://blog.icehoney.me/posts/2021-04-25-service-worker-push/",
             "title": "使用Service Worker的 Web Push 功能",
-            "summary": "function generateVAPIDKeys() {\n  const vapidKeys = webpush.generateVAPIDKeys();",
+            "summary": "\"keys\": {\n    \"auth\": \"MCeQnXlaz4A-CBuALNPbcQ\",\n    \"p256dh\": \"BL4am0lzx005spT_UBbMagfWb93Cfgh8XtkCtP7y697dODFnO0wCVVI783BsiHePRTl-mrpoHolJ0gKTYR1T4SQ\"\n  }\n}\n`",
             "date_modified": "2021-04-25T12:27:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2021-03-06-vue-code-style/",
             "url": "https://blog.icehoney.me/posts/2021-03-06-vue-code-style/",
             "title": "Vue代码风格",
-            "summary": "@on-blur=\"updateDate\"\n        >\n",
+            "summary": "@Prop({ default: false, type: Boolean }) readonly clearable!: boolean;\n  @Prop({ default: '' }) readonly placeholder!: string;\n  /**\n   State映射区域，定义顺序是： State Getter Action Mutation\n   */\n  @Info.State notifications!: Array;",
             "date_modified": "2021-03-06T12:02:00.000Z"
         },
         {

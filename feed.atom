@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2022-03-13T06:31:26.510Z</updated>
+    <updated>2022-04-13T11:38:53.899Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
@@ -24,12 +24,19 @@
         <summary type="html"><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Mac M1系统配置C++环境]]></title>
+        <id>https://blog.icehoney.me/posts/2022-04-13-m1-cpp/</id>
+        <link href="https://blog.icehoney.me/posts/2022-04-13-m1-cpp/">
+        </link>
+        <updated>2022-04-13T20:03:00.000Z</updated>
+        <summary type="html"><![CDATA[在 Mac OS 下配置 GAMES101 开发环境]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[禁用页面滚动]]></title>
         <id>https://blog.icehoney.me/posts/2022-03-13-scroll-lock/</id>
         <link href="https://blog.icehoney.me/posts/2022-03-13-scroll-lock/">
         </link>
         <updated>2022-03-13T15:11:00.000Z</updated>
-        <summary type="html"><![CDATA[恢复滚动只需要把添加到 CSS 属性删除即可。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Github 存储大文件]]></title>
@@ -37,8 +44,7 @@
         <link href="https://blog.icehoney.me/posts/2022-02-10-github-lfs/">
         </link>
         <updated>2022-02-10T23:16:00.000Z</updated>
-        <summary type="html"><![CDATA[error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
-`]]></summary>
+        <summary type="html"><![CDATA[最近在做项目的时候，需要上传一个超过 200MB 的数据库文件到 Github 上保存，结果 Github 提示文件过大。这才知道 Github 对单文件有 100 MB 的容量限制。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[React 实现 Tabs 组件]]></title>
@@ -46,37 +52,7 @@
         <link href="https://blog.icehoney.me/posts/2022-01-27-react-tabs/">
         </link>
         <updated>2022-01-27T20:16:00.000Z</updated>
-        <summary type="html"><![CDATA[
-        {React.Children.map(children, child => {
-          if (React.isValidElement(child)) {
-            const { name, label, disabled } = child.props;
-            return (
-               setActiveTab(name)}
-              >
-                {label}
-
-            );
-          } else {
-            return null;
-          }
-        })}
-
-        {React.Children.map(children, child => {
-          if (React.isValidElement(child)) {
-            const { name, children } = child.props;
-            if (name === activeTab) {
-              return children;
-            } else {
-              return null;
-            }
-          } else {
-            return null;
-          }
-        })}
-
-  );
-};
-`]]></summary>
+        <summary type="html"><![CDATA[但是 React 下复合组件如何实现，和 Vue 相比差距还是挺大的。接下来就讲述经典的 Tabs 组件如何来实现。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[代理Sentry的请求]]></title>
@@ -84,6 +60,7 @@
         <link href="https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/">
         </link>
         <updated>2021-12-30T22:21:00.000Z</updated>
+        <summary type="html"><![CDATA[添加 tunnel 选项，Sentry 就会把请求发到这个路径下，然后我们后台再处理转发。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[CSS如何处理固定Header哈希标记跳转的问题]]></title>
@@ -91,7 +68,11 @@
         <link href="https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/">
         </link>
         <updated>2021-11-20T21:21:00.000Z</updated>
-        <summary type="html"><![CDATA[有些前端网站一直都有固定的 Header 显示导航，如果我们文档内部有使用 ID 和#符号来帮助跳转到文档某个位置的话，就会被 Header 遮挡住，那我们怎么处理才能让跳转内容正好显示在 Header 下方呢？答案很简单就是让带有 ID 的这个元素占据的空间包含 Header 的高度。]]></summary>
+        <summary type="html"><![CDATA[h1[id] {
+  padding-top: var(--header-height);
+  margin-top: calc(var(--header-height) * -1);
+}
+`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[JS 关于颜色的相关处理]]></title>
@@ -99,7 +80,9 @@
         <link href="https://blog.icehoney.me/posts/2021-10-02-js-color/">
         </link>
         <updated>2021-10-02T10:26:00.000Z</updated>
-        <summary type="html"><![CDATA[W3C 提供了官方的说明，把 RGB 格式的颜色转换成 YIQ 格式，然后通过 brightness 数值来进行判断。]]></summary>
+        <summary type="html"><![CDATA[return brightness < 128;
+  }
+`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[如何瘦身docker镜像]]></title>
@@ -107,7 +90,11 @@
         <link href="https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/">
         </link>
         <updated>2021-09-09T21:44:00.000Z</updated>
-        <summary type="html"><![CDATA[答案是Use multi-stage builds]]></summary>
+        <summary type="html"><![CDATA[WORKDIR /app
+COPY . /app
+ENV NODE_ENV production
+RUN yarn build && yarn express:build
+`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[如何检测用户启动广告屏蔽插件]]></title>
@@ -115,7 +102,7 @@
         <link href="https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/">
         </link>
         <updated>2021-07-25T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[}]]></summary>
+        <summary type="html"><![CDATA[广告屏蔽插件的原理基本有三种，第一是有列表黑名单，出现在列表黑名单的资源都会直接被中断网络请求，例如无法加载图片，JavaScript 文件等等。第二是关键字匹配，如果资源文件里面有 ad 之类的相关广告关键字，那这个资源也会被中断请求。第三个是 DOM 检测，针对已经渲染好的 HTML 文件，通过 class 属性来检测是否有相关的广告关键字。如果符合结果，就删除相应的元素。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[ELK收集Docker项目的日志]]></title>
@@ -123,7 +110,7 @@
         <link href="https://blog.icehoney.me/posts/2021-06-14-elk-docker/">
         </link>
         <updated>2021-06-14T11:21:00.000Z</updated>
-        <summary type="html"><![CDATA[`]]></summary>
+        <summary type="html"><![CDATA[我只是通过 nmap 命令来检测 5000 端口是否开放，并不知道是否正常运行。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Django使用CKEditor的相关经验]]></title>
@@ -131,7 +118,12 @@
         <link href="https://blog.icehoney.me/posts/2021-05-19-django-ckeditor-s3/">
         </link>
         <updated>2021-05-19T22:06:00.000Z</updated>
-        <summary type="html"><![CDATA[default_acl = 'private'
+        <summary type="html"><![CDATA[class CKEditorField(RichTextUploadingField):
+    def fromdbvalue(self, value, expression, connection):
+        if value:
+            return update_image(value)
+        else:
+            return value
 `]]></summary>
     </entry>
     <entry>
@@ -140,8 +132,12 @@
         <link href="https://blog.icehoney.me/posts/2021-04-25-service-worker-push/">
         </link>
         <updated>2021-04-25T12:27:00.000Z</updated>
-        <summary type="html"><![CDATA[function generateVAPIDKeys() {
-  const vapidKeys = webpush.generateVAPIDKeys();]]></summary>
+        <summary type="html"><![CDATA["keys": {
+    "auth": "MCeQnXlaz4A-CBuALNPbcQ",
+    "p256dh": "BL4am0lzx005spT_UBbMagfWb93Cfgh8XtkCtP7y697dODFnO0wCVVI783BsiHePRTl-mrpoHolJ0gKTYR1T4SQ"
+  }
+}
+`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Vue代码风格]]></title>
@@ -149,9 +145,12 @@
         <link href="https://blog.icehoney.me/posts/2021-03-06-vue-code-style/">
         </link>
         <updated>2021-03-06T12:02:00.000Z</updated>
-        <summary type="html"><![CDATA[@on-blur="updateDate"
-        >
-]]></summary>
+        <summary type="html"><![CDATA[@Prop({ default: false, type: Boolean }) readonly clearable!: boolean;
+  @Prop({ default: '' }) readonly placeholder!: string;
+  /**
+   State映射区域，定义顺序是： State Getter Action Mutation
+   */
+  @Info.State notifications!: Array;]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[数据库查询的N+1问题]]></title>
