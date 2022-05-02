@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Thu, 14 Apr 2022 10:17:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 May 2022 01:00:34 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -408,26 +408,34 @@ input.vue.$emit('input', 'Hello world');
             <description><![CDATA[JavaScript 中有七种内置类型：]]></description>
         </item>
         <item>
+            <title><![CDATA[逆向JavaScript经验分享]]></title>
+            <link>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</link>
+            <guid>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</guid>
+            <pubDate>Mon, 19 Dec 2016 19:16:00 GMT</pubDate>
+            <description><![CDATA[通过一个个查找，我们找到了一个请求返回了一个 JSONP 格式的数据，这个数据里面包含了 MP4 源文件的地址。注意，很多人分析请求的时候经常喜欢找 MP4 文件的请求，这个可以算是一个切入点。但是一般网站不会把视频网址固定死的，所以找到 MP4 请求并没有什么实际意义，而是一定有一个请求去向服务器索取真实的 MP4 地址，一般这个数据都是 JSON 格式的。所以只要耐心找，一定找得到的。很多请求都只不过是资源文件，所以很容易过滤掉的。]]></description>
+            <enclosure url="https://blog.icehoney.me/~@assets/iqiyi.png">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[前端开发的技术栈]]></title>
             <link>https://blog.icehoney.me/posts/2017-11-18-frontend-development/</link>
             <guid>https://blog.icehoney.me/posts/2017-11-18-frontend-development/</guid>
             <pubDate>Sat, 18 Nov 2017 17:18:00 GMT</pubDate>
-            <description><![CDATA[现在主流的浏览器支持的 JavaScript 版本是 es5。但是众所周知，JavaScript(es5)有很多陷阱和缺点，例如this指针问题和异步处理等等。基于原型连的继承对于面向对象开发者来说也很不友好。所以推荐使用es6来书写代码。可以使用基于class的继承，和解决this指针问题。而且还能使用import进行模块化开发。虽然只是语法糖，但也提升了开发效率。]]></description>
+            <description><![CDATA[我们使用了预处理器来书写代码，并使用新版本的es6语法。但是目前浏览器并不支持直接解析这些内容。所以我们需要构建化工具来处理从 Pug 生成 HTML，从 SCSS 生成 CSS，把 es6 语法的 JavaScript 转换成 es5 语法。对于 SPA 网站推荐使用webpack，而对于普通网站的构建推荐使用Gulp。这里区别开的原因是，webpack必须指定入口文件，但是Gulp只需要指定需要处理的文件或文件夹就可以了，支持通配符匹配。对于多页面的传统网站来说非常便利。]]></description>
         </item>
         <item>
             <title><![CDATA[网站开发中的Modal问题]]></title>
             <link>https://blog.icehoney.me/posts/2017-10-21-modal-scroll/</link>
             <guid>https://blog.icehoney.me/posts/2017-10-21-modal-scroll/</guid>
             <pubDate>Sat, 21 Oct 2017 14:30:00 GMT</pubDate>
-            <description><![CDATA[第二个方案是，网页内容采用overflow: hidden来隐藏滚动条。Modal 采用position：fixed方案进行定位，但是这时候 Modal 不得不设置overflow： auto来进行滚动。
-第二个方案对于网页内容和 Modal 的位置并没有特殊的要求，比较灵活，而且不需要 JS 的介入。]]></description>
+            <description><![CDATA[在一个方案中，由于网页内容被设置成了position:fixed，滚动条自然消失。所以滚动位置回到了浏览器的最上面才对。但是有时候遇到打开Modal的时候发现 Modal 打开之后滚动条不在最上方，这时候的原因是因为我们虽然设置了 CSS 进行了变更，但是浏览器没有进行重新绘制，我们可以使用会导致浏览器重绘的 JS API 来让浏览器更新滚动条信息，使得打开的 Modal 处于浏览器的最上方。]]></description>
         </item>
         <item>
             <title><![CDATA[Github团队协作]]></title>
             <link>https://blog.icehoney.me/posts/2017-09-16-github-workflow/</link>
             <guid>https://blog.icehoney.me/posts/2017-09-16-github-workflow/</guid>
             <pubDate>Sat, 16 Sep 2017 22:30:00 GMT</pubDate>
-            <description><![CDATA[git branch -d
+            <description><![CDATA[git clean -f
 `]]></description>
         </item>
         <item>
@@ -435,8 +443,7 @@ input.vue.$emit('input', 'Hello world');
             <link>https://blog.icehoney.me/posts/2017-08-06-css-trick/</link>
             <guid>https://blog.icehoney.me/posts/2017-08-06-css-trick/</guid>
             <pubDate>Sun, 06 Aug 2017 15:30:00 GMT</pubDate>
-            <description><![CDATA[手机版 Safari 在滑动的时候如果有动画执行，会导致整个页面空白。当滑动结束的时候才会渲染。我们不得不采用给所有元素添加transform: translate3d(0,0,0)属性，
-来使 Safari 强制使用 GPU 加速。]]></description>
+            <description><![CDATA[CSS 动画尽量使用transform: translate3d(0,0,0)来实现，因为 ransform3d api 会强制开启 GPU 加速提高页面的流畅度。在公司的项目中，从使用background-position进行动画效果换成transform之后，动画流畅度得到了显著的改善。]]></description>
         </item>
         <item>
             <title><![CDATA[JavaScript对象的常见操作]]></title>
@@ -457,15 +464,6 @@ input.vue.$emit('input', 'Hello world');
             <guid>https://blog.icehoney.me/posts/2017-01-29-go/</guid>
             <pubDate>Sun, 29 Jan 2017 09:49:00 GMT</pubDate>
             <description><![CDATA[然后解压缩和配置环境变量，过程很简单。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[逆向JavaScript经验分享]]></title>
-            <link>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</link>
-            <guid>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</guid>
-            <pubDate>Mon, 19 Dec 2016 19:16:00 GMT</pubDate>
-            <description><![CDATA[通过一个个查找，我们找到了一个请求返回了一个 JSONP 格式的数据，这个数据里面包含了 MP4 源文件的地址。注意，很多人分析请求的时候经常喜欢找 MP4 文件的请求，这个可以算是一个切入点。但是一般网站不会把视频网址固定死的，所以找到 MP4 请求并没有什么实际意义，而是一定有一个请求去向服务器索取真实的 MP4 地址，一般这个数据都是 JSON 格式的。所以只要耐心找，一定找得到的。很多请求都只不过是资源文件，所以很容易过滤掉的。]]></description>
-            <enclosure url="https://blog.icehoney.me/~@assets/iqiyi.png">
-            </enclosure>
         </item>
         <item>
             <title><![CDATA[Linux高并发系统参数优化]]></title>
