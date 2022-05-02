@@ -7,19 +7,26 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#8191f1' }]
+    ['meta', { name: 'theme-color', content: '#8191f1' }],
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-XS3V4JFZ2P'
+      }
+    ],
+    [
+      'script',
+      {},
+      [
+        "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-XS3V4JFZ2P');"
+      ]
+    ]
   ],
   markdown: {
     lineNumbers: true
   },
-  plugins: [
-    [
-      '@vuepress/google-analytics',
-      {
-        ga: 'UA-37774652-3'
-      }
-    ]
-  ],
+  plugins: [],
   themeConfig: {
     profile: '/profile.png',
     nav: [
