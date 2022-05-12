@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2022-05-02T01:00:34.168Z</updated>
+    <updated>2022-05-12T10:55:17.926Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
@@ -24,12 +24,19 @@
         <summary type="html"><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[如何实现虚拟滚动条]]></title>
+        <id>https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/</id>
+        <link href="https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/">
+        </link>
+        <updated>2022-05-12T19:25:00.000Z</updated>
+        <summary type="html"><![CDATA[}, [itemData, startIndex, visibleItemCount]);]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Mac M1系统配置C++环境]]></title>
         <id>https://blog.icehoney.me/posts/2022-04-13-m1-cpp/</id>
         <link href="https://blog.icehoney.me/posts/2022-04-13-m1-cpp/">
         </link>
         <updated>2022-04-13T20:03:00.000Z</updated>
-        <summary type="html"><![CDATA[在 Mac OS 下配置 GAMES101 开发环境]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[禁用页面滚动]]></title>
@@ -37,6 +44,7 @@
         <link href="https://blog.icehoney.me/posts/2022-03-13-scroll-lock/">
         </link>
         <updated>2022-03-13T15:11:00.000Z</updated>
+        <summary type="html"><![CDATA[在设计组件的时候，例如 Modal 弹窗组件，在显示组件的时候我们不希望页面可以滚动。这时候就需要临时禁用页面的滚动功能。接下来就讲解下禁用页面滚动的方法。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Github 存储大文件]]></title>
@@ -44,7 +52,7 @@
         <link href="https://blog.icehoney.me/posts/2022-02-10-github-lfs/">
         </link>
         <updated>2022-02-10T23:16:00.000Z</updated>
-        <summary type="html"><![CDATA[最近在做项目的时候，需要上传一个超过 200MB 的数据库文件到 Github 上保存，结果 Github 提示文件过大。这才知道 Github 对单文件有 100 MB 的容量限制。]]></summary>
+        <summary type="html"><![CDATA[正常情况下，我们执行 add, commit 操作的时候都没啥问题。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[React 实现 Tabs 组件]]></title>
@@ -52,7 +60,7 @@
         <link href="https://blog.icehoney.me/posts/2022-01-27-react-tabs/">
         </link>
         <updated>2022-01-27T20:16:00.000Z</updated>
-        <summary type="html"><![CDATA[但是 React 下复合组件如何实现，和 Vue 相比差距还是挺大的。接下来就讲述经典的 Tabs 组件如何来实现。]]></summary>
+        <summary type="html"><![CDATA[Tabs 是复合组件。Tabs 组件封装逻辑和显示上部的导航栏。 TabPane 用来传递属性和展示要显示的内容。具体使用请看下面的代码：]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[代理Sentry的请求]]></title>
@@ -60,7 +68,10 @@
         <link href="https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/">
         </link>
         <updated>2021-12-30T22:21:00.000Z</updated>
-        <summary type="html"><![CDATA[添加 tunnel 选项，Sentry 就会把请求发到这个路径下，然后我们后台再处理转发。]]></summary>
+        <summary type="html"><![CDATA[dsn: 'https://examplePublicKey@o0.ingest.sentry.io/0',
+  tunnel: '/sentry'
+});
+`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[CSS如何处理固定Header哈希标记跳转的问题]]></title>
@@ -68,10 +79,7 @@
         <link href="https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/">
         </link>
         <updated>2021-11-20T21:21:00.000Z</updated>
-        <summary type="html"><![CDATA[h1[id] {
-  padding-top: var(--header-height);
-  margin-top: calc(var(--header-height) * -1);
-}
+        <summary type="html"><![CDATA[}
 `]]></summary>
     </entry>
     <entry>
@@ -453,20 +461,12 @@ input.vue.$emit('input', 'Hello world');
         <summary type="html"><![CDATA[JavaScript 中有七种内置类型：]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[逆向JavaScript经验分享]]></title>
-        <id>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</id>
-        <link href="https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/">
-        </link>
-        <updated>2016-12-19T19:16:00.000Z</updated>
-        <summary type="html"><![CDATA[通过一个个查找，我们找到了一个请求返回了一个 JSONP 格式的数据，这个数据里面包含了 MP4 源文件的地址。注意，很多人分析请求的时候经常喜欢找 MP4 文件的请求，这个可以算是一个切入点。但是一般网站不会把视频网址固定死的，所以找到 MP4 请求并没有什么实际意义，而是一定有一个请求去向服务器索取真实的 MP4 地址，一般这个数据都是 JSON 格式的。所以只要耐心找，一定找得到的。很多请求都只不过是资源文件，所以很容易过滤掉的。]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[前端开发的技术栈]]></title>
         <id>https://blog.icehoney.me/posts/2017-11-18-frontend-development/</id>
         <link href="https://blog.icehoney.me/posts/2017-11-18-frontend-development/">
         </link>
         <updated>2017-11-18T17:18:00.000Z</updated>
-        <summary type="html"><![CDATA[我们使用了预处理器来书写代码，并使用新版本的es6语法。但是目前浏览器并不支持直接解析这些内容。所以我们需要构建化工具来处理从 Pug 生成 HTML，从 SCSS 生成 CSS，把 es6 语法的 JavaScript 转换成 es5 语法。对于 SPA 网站推荐使用webpack，而对于普通网站的构建推荐使用Gulp。这里区别开的原因是，webpack必须指定入口文件，但是Gulp只需要指定需要处理的文件或文件夹就可以了，支持通配符匹配。对于多页面的传统网站来说非常便利。]]></summary>
+        <summary type="html"><![CDATA[现在主流的浏览器支持的 JavaScript 版本是 es5。但是众所周知，JavaScript(es5)有很多陷阱和缺点，例如this指针问题和异步处理等等。基于原型连的继承对于面向对象开发者来说也很不友好。所以推荐使用es6来书写代码。可以使用基于class的继承，和解决this指针问题。而且还能使用import进行模块化开发。虽然只是语法糖，但也提升了开发效率。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[网站开发中的Modal问题]]></title>
@@ -474,7 +474,8 @@ input.vue.$emit('input', 'Hello world');
         <link href="https://blog.icehoney.me/posts/2017-10-21-modal-scroll/">
         </link>
         <updated>2017-10-21T14:30:00.000Z</updated>
-        <summary type="html"><![CDATA[在一个方案中，由于网页内容被设置成了position:fixed，滚动条自然消失。所以滚动位置回到了浏览器的最上面才对。但是有时候遇到打开Modal的时候发现 Modal 打开之后滚动条不在最上方，这时候的原因是因为我们虽然设置了 CSS 进行了变更，但是浏览器没有进行重新绘制，我们可以使用会导致浏览器重绘的 JS API 来让浏览器更新滚动条信息，使得打开的 Modal 处于浏览器的最上方。]]></summary>
+        <summary type="html"><![CDATA[第二个方案是，网页内容采用overflow: hidden来隐藏滚动条。Modal 采用position：fixed方案进行定位，但是这时候 Modal 不得不设置overflow： auto来进行滚动。
+第二个方案对于网页内容和 Modal 的位置并没有特殊的要求，比较灵活，而且不需要 JS 的介入。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Github团队协作]]></title>
@@ -482,7 +483,7 @@ input.vue.$emit('input', 'Hello world');
         <link href="https://blog.icehoney.me/posts/2017-09-16-github-workflow/">
         </link>
         <updated>2017-09-16T22:30:00.000Z</updated>
-        <summary type="html"><![CDATA[git clean -f
+        <summary type="html"><![CDATA[git branch -d
 `]]></summary>
     </entry>
     <entry>
@@ -491,7 +492,8 @@ input.vue.$emit('input', 'Hello world');
         <link href="https://blog.icehoney.me/posts/2017-08-06-css-trick/">
         </link>
         <updated>2017-08-06T15:30:00.000Z</updated>
-        <summary type="html"><![CDATA[CSS 动画尽量使用transform: translate3d(0,0,0)来实现，因为 ransform3d api 会强制开启 GPU 加速提高页面的流畅度。在公司的项目中，从使用background-position进行动画效果换成transform之后，动画流畅度得到了显著的改善。]]></summary>
+        <summary type="html"><![CDATA[手机版 Safari 在滑动的时候如果有动画执行，会导致整个页面空白。当滑动结束的时候才会渲染。我们不得不采用给所有元素添加transform: translate3d(0,0,0)属性，
+来使 Safari 强制使用 GPU 加速。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[JavaScript对象的常见操作]]></title>
@@ -515,6 +517,14 @@ input.vue.$emit('input', 'Hello world');
         </link>
         <updated>2017-01-29T09:49:00.000Z</updated>
         <summary type="html"><![CDATA[然后解压缩和配置环境变量，过程很简单。]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[逆向JavaScript经验分享]]></title>
+        <id>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</id>
+        <link href="https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/">
+        </link>
+        <updated>2016-12-19T19:16:00.000Z</updated>
+        <summary type="html"><![CDATA[通过一个个查找，我们找到了一个请求返回了一个 JSONP 格式的数据，这个数据里面包含了 MP4 源文件的地址。注意，很多人分析请求的时候经常喜欢找 MP4 文件的请求，这个可以算是一个切入点。但是一般网站不会把视频网址固定死的，所以找到 MP4 请求并没有什么实际意义，而是一定有一个请求去向服务器索取真实的 MP4 地址，一般这个数据都是 JSON 格式的。所以只要耐心找，一定找得到的。很多请求都只不过是资源文件，所以很容易过滤掉的。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Linux高并发系统参数优化]]></title>
