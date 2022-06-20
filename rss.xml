@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Thu, 12 May 2022 10:55:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Jun 2022 11:30:12 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -21,6 +21,14 @@
             <guid>https://blog.icehoney.me/posts/2013-04-28-about-weiyun/</guid>
             <pubDate>Sun, 28 Apr 2013 21:31:00 GMT</pubDate>
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
+        </item>
+        <item>
+            <title><![CDATA[JS中关于深拷贝和浅拷贝]]></title>
+            <link>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</link>
+            <guid>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</guid>
+            <pubDate>Mon, 20 Jun 2022 19:37:00 GMT</pubDate>
+            <description><![CDATA[export const isRegExp = (val: unknown): val is RegExp =>
+  toTypeString(val) === '[object RegExp]';]]></description>
         </item>
         <item>
             <title><![CDATA[如何实现虚拟滚动条]]></title>

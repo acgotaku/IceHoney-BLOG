@@ -20,6 +20,13 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2022-06-20-deep-copy/",
+            "url": "https://blog.icehoney.me/posts/2022-06-20-deep-copy/",
+            "title": "JS中关于深拷贝和浅拷贝",
+            "summary": "export const isRegExp = (val: unknown): val is RegExp =>\n  toTypeString(val) === '[object RegExp]';",
+            "date_modified": "2022-06-20T19:37:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/",
             "url": "https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/",
             "title": "如何实现虚拟滚动条",
