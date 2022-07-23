@@ -20,17 +20,24 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/",
+            "url": "https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/",
+            "title": "Git 提交规范",
+            "summary": "incoming responses other than from latest request.\n`",
+            "date_modified": "2022-07-23T20:37:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2022-07-04-typescript-enum/",
             "url": "https://blog.icehoney.me/posts/2022-07-04-typescript-enum/",
             "title": "TypeScript中应该禁止使用enum",
-            "summary": "type ValuesOf = T[keyof T];\ntype HTTPRequestMethodType = ValuesOf;",
+            "summary": "function fetchJSON(url: string, method: HTTPRequestMethodType) {\n  return fetch(url, { method }).then(response => response.json());\n}\n`",
             "date_modified": "2022-07-04T20:37:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2022-06-20-deep-copy/",
             "url": "https://blog.icehoney.me/posts/2022-06-20-deep-copy/",
             "title": "JS中关于深拷贝和浅拷贝",
-            "summary": "export function deepClone(val: T): T {\n  if (!isObject(val)) {\n    return val;\n  }\n  if (Array.isArray(val)) {\n    return val.map(deepClone) as typeof val;\n  }\n  if (isDate(val)) {\n    return new Date(val) as typeof val;\n  }\n  if (isMap(val)) {\n    return new Map(val) as typeof val;\n  }\n  if (isSet(val)) {\n    return new Set(val) as typeof val;\n  }\n  if (isRegExp(val)) {\n    return new RegExp(val.source, val.flags) as typeof val;\n  }\n  return Object.keys(val).reduce((acc, key) => {\n    acc[key as keyof T] = deepClone(val[key as keyof T]);\n    return acc;\n  }, {} as T);\n}\n`",
+            "summary": "return val.map(deepClone) as typeof val;\n  }\n  if (isDate(val)) {\n    return new Date(val) as typeof val;\n  }\n  if (isMap(val)) {\n    return new Map(val) as typeof val;\n  }\n  if (isSet(val)) {\n    return new Set(val) as typeof val;\n  }\n  if (isRegExp(val)) {\n    return new RegExp(val.source, val.flags) as typeof val;\n  }\n  return Object.keys(val).reduce((acc, key) => {\n    acc[key as keyof T] = deepClone(val[key as keyof T]);\n    return acc;\n  }, {} as T);\n}\n`",
             "date_modified": "2022-06-20T19:37:00.000Z"
         },
         {
