@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Sat, 23 Jul 2022 14:26:58 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Aug 2022 06:19:14 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,12 +23,19 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[使用MobX管理React的状态]]></title>
+            <link>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</link>
+            <guid>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</guid>
+            <pubDate>Sun, 07 Aug 2022 14:43:00 GMT</pubDate>
+            <description><![CDATA[this.list = this.activeTodos;
+  };]]></description>
+        </item>
+        <item>
             <title><![CDATA[Git 提交规范]]></title>
             <link>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</link>
             <guid>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</guid>
             <pubDate>Sat, 23 Jul 2022 20:37:00 GMT</pubDate>
-            <description><![CDATA[incoming responses other than from latest request.
-`]]></description>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[TypeScript中应该禁止使用enum]]></title>

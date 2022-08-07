@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2022-07-23T14:26:58.173Z</updated>
+    <updated>2022-08-07T06:19:14.317Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
@@ -24,13 +24,21 @@
         <summary type="html"><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[使用MobX管理React的状态]]></title>
+        <id>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</id>
+        <link href="https://blog.icehoney.me/posts/2022-08-07-mobx-react/">
+        </link>
+        <updated>2022-08-07T14:43:00.000Z</updated>
+        <summary type="html"><![CDATA[this.list = this.activeTodos;
+  };]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Git 提交规范]]></title>
         <id>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</id>
         <link href="https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/">
         </link>
         <updated>2022-07-23T20:37:00.000Z</updated>
-        <summary type="html"><![CDATA[incoming responses other than from latest request.
-`]]></summary>
+        <summary type="html"><![CDATA[`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[TypeScript中应该禁止使用enum]]></title>

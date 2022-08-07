@@ -20,10 +20,17 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2022-08-07-mobx-react/",
+            "url": "https://blog.icehoney.me/posts/2022-08-07-mobx-react/",
+            "title": "使用MobX管理React的状态",
+            "summary": "this.list = this.activeTodos;\n  };",
+            "date_modified": "2022-08-07T14:43:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/",
             "url": "https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/",
             "title": "Git 提交规范",
-            "summary": "incoming responses other than from latest request.\n`",
+            "summary": "`",
             "date_modified": "2022-07-23T20:37:00.000Z"
         },
         {
