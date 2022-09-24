@@ -6,10 +6,17 @@
     "description": "IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~",
     "items": [
         {
+            "id": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
+            "url": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
+            "title": "如何编写Telegram Bot",
+            "summary": "最近在处理如何把经纬度转换成日本的 MAPCODE 的问题。在外出行的时候，经常使用的设备都是手机，如何在手机上方便的计算旅游景点的 MAPCODE 然后使用车载导航呢？\n我的想法是做一个 Telegram Bot，输入景点的 Plus Code, 然后返回 MAPCODE。",
+            "date_modified": "2022-09-24T11:07:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "url": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "title": "Archlinux下安装过wps之后字体发虚的问题",
-            "summary": "Office 是 Linux 永远的痛...微软的 Office 市场霸主地位是根本无法撼动的... 但是微软那家伙很讨厌 Linux 和开源... Office 产品目前也只有 Windows 和 Mac 据说微软要出 Linux 版本的 Office...但是不知道猴年马月啊 (望天",
+            "summary": "左边是微米黑,右边是装过 WPS 之后映射的宋体字.... 明显右边太难看了有木有!!! 解决方案是自己编写 fonts.conf 设置字体的优先级...\n文泉驿提供了一个在线配置生成工具\n这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.\n配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.\n注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
             "date_modified": "2013-07-04T12:39:00.000Z"
         },
         {
