@@ -63,7 +63,7 @@ ttypescript 支持在 build 过程中添加插件来完成很多功能，绝对�
 }
 ```
 
-首先在 `paths` 自动下，映射文件夹路径，这样就可以使用 `@/posts/index.ts` 这种格式来引用模块。当然路径映射在开发环境下需要 `ts-node` 的支持，我们在 `ts-node` 的 `require` 字段上引用我们安装的插件。最后是编译成 JS 文件的过程中添加绝对路径的支持。
+首先在 `paths` 字段下，映射文件夹路径，这样就可以使用 `@/posts/index.ts` 这种格式来引用模块。当然路径映射在开发环境下需要 `ts-node` 的支持，我们在 `ts-node` 的 `require` 字段上引用我们安装的插件。最后是编译成 JS 文件的过程中添加绝对路径的支持。
 
 ```bash
 ttsc -p tsconfig.json
