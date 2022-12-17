@@ -13,17 +13,24 @@
             "date_modified": "2022-10-29T11:47:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/",
+            "url": "https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/",
+            "title": "网页调用摄像头读取QR code",
+            "summary": "而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。",
+            "date_modified": "2022-12-17T17:29:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
             "url": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
             "title": "如何编写Telegram Bot",
-            "summary": "首先，你要去找 BotFather申请 Bot。 通过简单的对话就可以创建 Bot。使用 /start 命令可以查看所有支持的指令。",
+            "summary": "输入， /newbot 就可以创建 Bot 了，通过对话模式可以设定 Bot 的名字。然后你可以得到一个属于这个 Bot 的 token，格式类似于 577XXXXX:AAEMUXqXrgRE9R2jPcOXXXXX。\n拿到这个 token 就可以构建 Bot 了。",
             "date_modified": "2022-09-24T11:07:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "url": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "title": "Archlinux下安装过wps之后字体发虚的问题",
-            "summary": "文泉驿提供了一个在线配置生成工具\n这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.\n配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.\n注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
+            "summary": "注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
             "date_modified": "2013-07-04T12:39:00.000Z"
         },
         {
