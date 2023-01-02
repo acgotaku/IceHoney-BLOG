@@ -49,7 +49,7 @@ module.exports = {
       ],
       copyright: [
         {
-          text: '2013 - 2022 © Ice Honey',
+          text: '2013 - 2023 © Ice Honey',
           link: 'https://github.com/acgotaku/IceHoney-BLOG'
         }
       ]
