@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Mon, 02 Jan 2023 12:44:52 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Jan 2023 05:12:15 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,19 +23,19 @@
             <description><![CDATA[而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。]]></description>
         </item>
         <item>
-            <title><![CDATA[如何编写Telegram Bot]]></title>
-            <link>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</link>
-            <guid>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</guid>
-            <pubDate>Sat, 24 Sep 2022 11:07:00 GMT</pubDate>
-            <description><![CDATA[输入， /newbot 就可以创建 Bot 了，通过对话模式可以设定 Bot 的名字。然后你可以得到一个属于这个 Bot 的 token，格式类似于 577XXXXX:AAEMUXqXrgRE9R2jPcOXXXXX。
-拿到这个 token 就可以构建 Bot 了。]]></description>
+            <title><![CDATA[安卓逆向的经验记录]]></title>
+            <link>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</link>
+            <guid>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</guid>
+            <pubDate>Sat, 14 Jan 2023 13:05:00 GMT</pubDate>
+            <description><![CDATA[现在的安卓软件都会使用梆梆加固之类的软件防止别人进行逆向操作，所以第一步就是处理这个。先看到 JAVA 代码才能深入研究相关逻辑。经过同学指点，使用了一个 BlackDex 的工具。可以直接在安卓手机上进行脱壳操作。使用这个工具可以拿到 dex 文件。然后使用 jadx 输出 JAVA 代码。]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux下安装过wps之后字体发虚的问题]]></title>
             <link>https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/</link>
             <guid>https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/</guid>
             <pubDate>Thu, 04 Jul 2013 12:39:00 GMT</pubDate>
-            <description><![CDATA[注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
+            <description><![CDATA[配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.
+注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
 正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf
 这样就可以完美解决字体发虚的问题了.]]></description>
         </item>
@@ -47,12 +47,21 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[如何编写Telegram Bot]]></title>
+            <link>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</link>
+            <guid>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</guid>
+            <pubDate>Sat, 24 Sep 2022 11:07:00 GMT</pubDate>
+            <description><![CDATA['Send me a plus code'
+  );
+  ctx.reply(MapDoge Version ${process.env.npmpackageversion});
+});]]></description>
+        </item>
+        <item>
             <title><![CDATA[使用MobX管理React的状态]]></title>
             <link>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</link>
             <guid>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</guid>
             <pubDate>Sun, 07 Aug 2022 14:43:00 GMT</pubDate>
-            <description><![CDATA[this.list = this.activeTodos;
-  };]]></description>
+            <description><![CDATA[};]]></description>
         </item>
         <item>
             <title><![CDATA[Git 提交规范]]></title>
@@ -66,9 +75,7 @@
             <link>https://blog.icehoney.me/posts/2022-07-04-typescript-enum/</link>
             <guid>https://blog.icehoney.me/posts/2022-07-04-typescript-enum/</guid>
             <pubDate>Mon, 04 Jul 2022 20:37:00 GMT</pubDate>
-            <description><![CDATA[function fetchJSON(url: string, method: HTTPRequestMethodType) {
-  return fetch(url, { method }).then(response => response.json());
-}
+            <description><![CDATA[}
 `]]></description>
         </item>
         <item>

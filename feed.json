@@ -20,17 +20,17 @@
             "date_modified": "2022-12-17T17:29:00.000Z"
         },
         {
-            "id": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
-            "url": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
-            "title": "如何编写Telegram Bot",
-            "summary": "输入， /newbot 就可以创建 Bot 了，通过对话模式可以设定 Bot 的名字。然后你可以得到一个属于这个 Bot 的 token，格式类似于 577XXXXX:AAEMUXqXrgRE9R2jPcOXXXXX。\n拿到这个 token 就可以构建 Bot 了。",
-            "date_modified": "2022-09-24T11:07:00.000Z"
+            "id": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
+            "url": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
+            "title": "安卓逆向的经验记录",
+            "summary": "现在的安卓软件都会使用梆梆加固之类的软件防止别人进行逆向操作，所以第一步就是处理这个。先看到 JAVA 代码才能深入研究相关逻辑。经过同学指点，使用了一个 BlackDex 的工具。可以直接在安卓手机上进行脱壳操作。使用这个工具可以拿到 dex 文件。然后使用 jadx 输出 JAVA 代码。",
+            "date_modified": "2023-01-14T13:05:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "url": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "title": "Archlinux下安装过wps之后字体发虚的问题",
-            "summary": "注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
+            "summary": "配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.\n注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
             "date_modified": "2013-07-04T12:39:00.000Z"
         },
         {
@@ -41,10 +41,17 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
+            "url": "https://blog.icehoney.me/posts/2022-09-24-telegram-bot/",
+            "title": "如何编写Telegram Bot",
+            "summary": "'Send me a plus code'\n  );\n  ctx.reply(MapDoge Version ${process.env.npmpackageversion});\n});",
+            "date_modified": "2022-09-24T11:07:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2022-08-07-mobx-react/",
             "url": "https://blog.icehoney.me/posts/2022-08-07-mobx-react/",
             "title": "使用MobX管理React的状态",
-            "summary": "this.list = this.activeTodos;\n  };",
+            "summary": "};",
             "date_modified": "2022-08-07T14:43:00.000Z"
         },
         {
@@ -58,7 +65,7 @@
             "id": "https://blog.icehoney.me/posts/2022-07-04-typescript-enum/",
             "url": "https://blog.icehoney.me/posts/2022-07-04-typescript-enum/",
             "title": "TypeScript中应该禁止使用enum",
-            "summary": "function fetchJSON(url: string, method: HTTPRequestMethodType) {\n  return fetch(url, { method }).then(response => response.json());\n}\n`",
+            "summary": "}\n`",
             "date_modified": "2022-07-04T20:37:00.000Z"
         },
         {
