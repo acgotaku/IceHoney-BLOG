@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2023-01-14T05:12:15.455Z</updated>
+    <updated>2023-03-04T10:01:59.777Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
@@ -24,20 +24,14 @@
         <summary type="html"><![CDATA[而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[安卓逆向的经验记录]]></title>
-        <id>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</id>
-        <link href="https://blog.icehoney.me/posts/2023-01-14-android-reverse/">
-        </link>
-        <updated>2023-01-14T13:05:00.000Z</updated>
-        <summary type="html"><![CDATA[现在的安卓软件都会使用梆梆加固之类的软件防止别人进行逆向操作，所以第一步就是处理这个。先看到 JAVA 代码才能深入研究相关逻辑。经过同学指点，使用了一个 BlackDex 的工具。可以直接在安卓手机上进行脱壳操作。使用这个工具可以拿到 dex 文件。然后使用 jadx 输出 JAVA 代码。]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Archlinux下安装过wps之后字体发虚的问题]]></title>
         <id>https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/</id>
         <link href="https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/">
         </link>
         <updated>2013-07-04T12:39:00.000Z</updated>
-        <summary type="html"><![CDATA[配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.
+        <summary type="html"><![CDATA[文泉驿提供了一个在线配置生成工具
+这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.
+配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.
 注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
 正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf
 这样就可以完美解决字体发虚的问题了.]]></summary>
@@ -51,15 +45,28 @@
         <summary type="html"><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[QR code 生成的相关参数]]></title>
+        <id>https://blog.icehoney.me/posts/2023-03-03-qrcode-version/</id>
+        <link href="https://blog.icehoney.me/posts/2023-03-03-qrcode-version/">
+        </link>
+        <updated>2023-03-03T20:42:00.000Z</updated>
+        <summary type="html"><![CDATA[Information capacity and versions of QR Code]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[安卓逆向的经验记录]]></title>
+        <id>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</id>
+        <link href="https://blog.icehoney.me/posts/2023-01-14-android-reverse/">
+        </link>
+        <updated>2023-01-14T13:05:00.000Z</updated>
+        <summary type="html"><![CDATA[}]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[如何编写Telegram Bot]]></title>
         <id>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</id>
         <link href="https://blog.icehoney.me/posts/2022-09-24-telegram-bot/">
         </link>
         <updated>2022-09-24T11:07:00.000Z</updated>
-        <summary type="html"><![CDATA['Send me a plus code'
-  );
-  ctx.reply(MapDoge Version ${process.env.npmpackageversion});
-});]]></summary>
+        <summary type="html"><![CDATA[`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[使用MobX管理React的状态]]></title>
@@ -67,7 +74,7 @@
         <link href="https://blog.icehoney.me/posts/2022-08-07-mobx-react/">
         </link>
         <updated>2022-08-07T14:43:00.000Z</updated>
-        <summary type="html"><![CDATA[};]]></summary>
+        <summary type="html"><![CDATA[}]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Git 提交规范]]></title>
@@ -75,7 +82,7 @@
         <link href="https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/">
         </link>
         <updated>2022-07-23T20:37:00.000Z</updated>
-        <summary type="html"><![CDATA[`]]></summary>
+        <summary type="html"><![CDATA[良好的 commit 提交规范和代码规范同样重要。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[TypeScript中应该禁止使用enum]]></title>
@@ -83,7 +90,8 @@
         <link href="https://blog.icehoney.me/posts/2022-07-04-typescript-enum/">
         </link>
         <updated>2022-07-04T20:37:00.000Z</updated>
-        <summary type="html"><![CDATA[}
+        <summary type="html"><![CDATA[return fetch(url, { method }).then(response => response.json());
+}
 `]]></summary>
     </entry>
     <entry>
@@ -92,16 +100,7 @@
         <link href="https://blog.icehoney.me/posts/2022-06-20-deep-copy/">
         </link>
         <updated>2022-06-20T19:37:00.000Z</updated>
-        <summary type="html"><![CDATA[return val.map(deepClone) as typeof val;
-  }
-  if (isDate(val)) {
-    return new Date(val) as typeof val;
-  }
-  if (isMap(val)) {
-    return new Map(val) as typeof val;
-  }
-  if (isSet(val)) {
-    return new Set(val) as typeof val;
+        <summary type="html"><![CDATA[return new Set(val) as typeof val;
   }
   if (isRegExp(val)) {
     return new RegExp(val.source, val.flags) as typeof val;
