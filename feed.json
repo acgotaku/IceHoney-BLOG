@@ -6,31 +6,24 @@
     "description": "IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~",
     "items": [
         {
-            "id": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
-            "url": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
-            "title": "安卓逆向的经验记录",
-            "summary": "2023 年，博客也开通 10 年了。我都不敢看 10 年前自己写的东西。感觉全是黑历史，不过也记录了自己一点点的成长和心境的变化。今年也将继续写，记录自己技术上的各种折腾。",
-            "date_modified": "2023-01-14T13:05:00.000Z"
-        },
-        {
             "id": "https://blog.icehoney.me/posts/2022-10-29-typescript-backend/",
             "url": "https://blog.icehoney.me/posts/2022-10-29-typescript-backend/",
             "title": "如何使用TypeScript进行后端开发",
-            "summary": "前端有 HMR 技术可以实在自动热加载。后端实现这个功能其实也很简单。 首先需要按照 nodemon 和 ts-node。\n我们使用 pnpm 进行包管理。",
+            "summary": "我们经常使用 TypeScript 进行开发，webpack 会自动帮我们编译成浏览器可以执行的 JS 文件。相关的开发工具也很完善，但是进行后端开发的资料就比较少了，我们来讲解下如何使用 TypeScript 进行后端开发。",
             "date_modified": "2022-10-29T11:47:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/",
             "url": "https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/",
             "title": "网页调用摄像头读取QR code",
-            "summary": "首先安装相关依赖：",
+            "summary": "而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。",
             "date_modified": "2022-12-17T17:29:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "url": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "title": "Archlinux下安装过wps之后字体发虚的问题",
-            "summary": "这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.\n配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.\n注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
+            "summary": "文泉驿提供了一个在线配置生成工具\n这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.\n配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.\n注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
             "date_modified": "2013-07-04T12:39:00.000Z"
         },
         {
@@ -44,8 +37,15 @@
             "id": "https://blog.icehoney.me/posts/2023-04-16-draggable-list/",
             "url": "https://blog.icehoney.me/posts/2023-04-16-draggable-list/",
             "title": "拖拽排序列表",
-            "summary": "event.dataTransfer.effectAllowed = 'move';\n    dragItem.current = index;\n    copyData.current = deepClone(sortedData);\n    recordRect();\n    onDragStart?.();\n  },\n  [sortedData, recordRect, onDragStart]\n);\nconst dragEnterHandler = useCallback(\n  (index: number) => {\n    if (dragItem.current !== index && dragOverItem.current !== index) {\n      dragOverItem.current = index;\n      const newData = deepClone(copyData.current);\n      const dragData = newData[dragItem.current];\n      newData.splice(dragItem.current, 1);\n      newData.splice(dragOverItem.current, 0, dragData);\n      setSortedData(newData);\n      onDragEnter?.();\n    }\n  },\n  [onDragEnter]\n);\nconst dragEndHandler = useCallback(() => {\n  updateData?.(sortedData);\n  onDragEnd?.();\n}, [sortedData, updateData, onDragEnd]);\n`",
+            "summary": "event.dataTransfer.effectAllowed = 'move';\n    // set dataTransfer enable mobile drag\n    event.dataTransfer.setData('text/plain', index.toString());\n    dragItem.current = index;\n    copyData.current = deepClone(sortedData);\n    recordRect();\n    onDragStart?.();\n  },\n  [sortedData, recordRect, onDragStart]\n);\nconst dragEnterHandler = useCallback(\n  (index: number) => {\n    if (dragItem.current !== index && dragOverItem.current !== index) {\n      dragOverItem.current = index;\n      const newData = deepClone(copyData.current);\n      const dragData = newData[dragItem.current];\n      newData.splice(dragItem.current, 1);\n      newData.splice(dragOverItem.current, 0, dragData);\n      setSortedData(newData);\n      onDragEnter?.();\n    }\n  },\n  [onDragEnter]\n);\nconst dragEndHandler = useCallback(() => {\n  updateData?.(sortedData);\n  onDragEnd?.();\n}, [sortedData, updateData, onDragEnd]);\n`",
             "date_modified": "2023-04-16T12:31:00.000Z"
+        },
+        {
+            "id": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
+            "url": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
+            "title": "安卓逆向的经验记录",
+            "summary": "}",
+            "date_modified": "2023-01-14T13:05:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2023-03-03-qrcode-version/",
@@ -722,23 +722,23 @@
             "date_modified": "2013-10-06T23:29:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/",
+            "url": "https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/",
+            "title": "Archlinux下Galaxy Nexus刷机并root",
+            "summary": "注：如果提示是否清除 recovery flash，请选 No，否则下次推送时无法进行 OTA 更新.安装完成后依次返回.这个步骤不会影响 OTA 更新,并且 OTA 更新之后会自动解决 ROOT 的问题,无需再次 ROOT.",
+            "date_modified": "2013-07-20T14:12:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2013-08-26-archlinux-airbase-create-fakeap/",
             "url": "https://blog.icehoney.me/posts/2013-08-26-archlinux-airbase-create-fakeap/",
             "title": "Archlinux下使用airbase和dhcpd建立虚拟AP",
             "date_modified": "2013-08-26T21:29:00.000Z"
         },
         {
-            "id": "https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/",
-            "url": "https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/",
-            "title": "Archlinux下Galaxy Nexus刷机并root",
-            "summary": "安卓本来就是 Linux 衍生的,所以必然可以用 Linux 系统进行刷机,而且效果比 Win 还要好.不需要安装驱动,只需要安装 adb 和 fastboot 即可.",
-            "date_modified": "2013-07-20T14:12:00.000Z"
-        },
-        {
             "id": "https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/",
             "url": "https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/",
             "title": "Archlinux下终端进行代理的解决方案",
-            "summary": "软件来源各种各样,有的是 Google code 上的,有的是 GitHub 上的,有的就是 sourceforge 上的了.\n但是在中国的大环境下不能保证上面网站的正常访问 QAQ Google 的话有 hosts 的情况下基本上是\n把 http 修改成 https 就可以下载了,其余两个就只能代理进行下载软件并安装了.",
+            "summary": "Linux 下软件安装基本都是在终端下进行的....\n虽说安装软件基本上选对源就没有无法安装的,但是 Archlinux 下的 yaourt 安装就是社区打包的软件了.\n软件来源各种各样,有的是 Google code 上的,有的是 GitHub 上的,有的就是 sourceforge 上的了.\n但是在中国的大环境下不能保证上面网站的正常访问 QAQ Google 的话有 hosts 的情况下基本上是\n把 http 修改成 https 就可以下载了,其余两个就只能代理进行下载软件并安装了.",
             "date_modified": "2013-07-18T22:05:00.000Z"
         },
         {
