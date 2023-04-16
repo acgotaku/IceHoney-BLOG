@@ -40,6 +40,8 @@ dropEffect 有四种，默认的是 `copy` 我们需要改成 `move` 才符合�
 const dragStartHandler = useCallback(
   (event: React.DragEvent<HTMLElement>, index: number) => {
     event.dataTransfer.effectAllowed = 'move';
+    // set dataTransfer enable mobile drag
+    event.dataTransfer.setData('text/plain', index.toString());
     dragItem.current = index;
     copyData.current = deepClone(sortedData);
     recordRect();
@@ -135,3 +137,5 @@ useEffect(() => {
 [simple-drag-drop-sort-list](https://github.com/acgotaku/simple-drag-drop-sort-list)
 
 [FLIP Your Animations](https://aerotwist.com/blog/flip-your-animations/)
+
+[Using the HTML5 Drag and Drop API](https://web.dev/drag-and-drop/)
