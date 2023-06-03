@@ -4,7 +4,7 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Sun, 16 Apr 2023 13:35:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Jun 2023 04:21:27 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
@@ -23,13 +23,18 @@
             <description><![CDATA[而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。]]></description>
         </item>
         <item>
+            <title><![CDATA[安卓逆向的经验记录]]></title>
+            <link>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</link>
+            <guid>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</guid>
+            <pubDate>Sat, 14 Jan 2023 13:05:00 GMT</pubDate>
+            <description><![CDATA[现在的安卓软件都会使用梆梆加固之类的软件防止别人进行逆向操作，所以第一步就是处理这个。先看到 JAVA 代码才能深入研究相关逻辑。经过同学指点，使用了一个 BlackDex 的工具。可以直接在安卓手机上进行脱壳操作。使用这个工具可以拿到 dex 文件。然后使用 jadx 输出 JAVA 代码。]]></description>
+        </item>
+        <item>
             <title><![CDATA[Archlinux下安装过wps之后字体发虚的问题]]></title>
             <link>https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/</link>
             <guid>https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/</guid>
             <pubDate>Thu, 04 Jul 2013 12:39:00 GMT</pubDate>
-            <description><![CDATA[文泉驿提供了一个在线配置生成工具
-这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.
-配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.
+            <description><![CDATA[配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.
 注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
 正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf
 这样就可以完美解决字体发虚的问题了.]]></description>
@@ -42,15 +47,25 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[无限滚动加载列表]]></title>
+            <link>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</link>
+            <guid>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</guid>
+            <pubDate>Sat, 03 Jun 2023 12:55:00 GMT</pubDate>
+            <description><![CDATA[observerRef.current.observe(loaderRef.current);
+        }
+      } else {
+        setCompleted(true);
+        updateCompleted?.(true);
+      }
+    });
+  }, [inView, updateCompleted]);]]></description>
+        </item>
+        <item>
             <title><![CDATA[拖拽排序列表]]></title>
             <link>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</link>
             <guid>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</guid>
             <pubDate>Sun, 16 Apr 2023 12:31:00 GMT</pubDate>
-            <description><![CDATA[event.dataTransfer.effectAllowed = 'move';
-    // set dataTransfer enable mobile drag
-    event.dataTransfer.setData('text/plain', index.toString());
-    dragItem.current = index;
-    copyData.current = deepClone(sortedData);
+            <description><![CDATA[copyData.current = deepClone(sortedData);
     recordRect();
     onDragStart?.();
   },
@@ -75,13 +90,6 @@ const dragEndHandler = useCallback(() => {
   onDragEnd?.();
 }, [sortedData, updateData, onDragEnd]);
 `]]></description>
-        </item>
-        <item>
-            <title><![CDATA[安卓逆向的经验记录]]></title>
-            <link>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</link>
-            <guid>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</guid>
-            <pubDate>Sat, 14 Jan 2023 13:05:00 GMT</pubDate>
-            <description><![CDATA[}]]></description>
         </item>
         <item>
             <title><![CDATA[QR code 生成的相关参数]]></title>
@@ -858,26 +866,24 @@ for i in *.mp3; do echo "y"| mp3tagiconv "${i}" ;done
 因为 mp3tagiconv 这个工具每次更新标签都会提示 yes or no ,所以我就修改了下执行方式,使得批量自动化修改.flac 格式的音乐不存在 TAG 编码问题.]]></description>
         </item>
         <item>
-            <title><![CDATA[Archlinux下Galaxy Nexus刷机并root]]></title>
-            <link>https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/</link>
-            <guid>https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/</guid>
-            <pubDate>Sat, 20 Jul 2013 14:12:00 GMT</pubDate>
-            <description><![CDATA[注：如果提示是否清除 recovery flash，请选 No，否则下次推送时无法进行 OTA 更新.安装完成后依次返回.这个步骤不会影响 OTA 更新,并且 OTA 更新之后会自动解决 ROOT 的问题,无需再次 ROOT.]]></description>
-        </item>
-        <item>
             <title><![CDATA[Archlinux下使用airbase和dhcpd建立虚拟AP]]></title>
             <link>https://blog.icehoney.me/posts/2013-08-26-archlinux-airbase-create-fakeap/</link>
             <guid>https://blog.icehoney.me/posts/2013-08-26-archlinux-airbase-create-fakeap/</guid>
             <pubDate>Mon, 26 Aug 2013 21:29:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Archlinux下Galaxy Nexus刷机并root]]></title>
+            <link>https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/</link>
+            <guid>https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/</guid>
+            <pubDate>Sat, 20 Jul 2013 14:12:00 GMT</pubDate>
+            <description><![CDATA[安卓本来就是 Linux 衍生的,所以必然可以用 Linux 系统进行刷机,而且效果比 Win 还要好.不需要安装驱动,只需要安装 adb 和 fastboot 即可.]]></description>
+        </item>
+        <item>
             <title><![CDATA[Archlinux下终端进行代理的解决方案]]></title>
             <link>https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/</link>
             <guid>https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/</guid>
             <pubDate>Thu, 18 Jul 2013 22:05:00 GMT</pubDate>
-            <description><![CDATA[Linux 下软件安装基本都是在终端下进行的....
-虽说安装软件基本上选对源就没有无法安装的,但是 Archlinux 下的 yaourt 安装就是社区打包的软件了.
-软件来源各种各样,有的是 Google code 上的,有的是 GitHub 上的,有的就是 sourceforge 上的了.
+            <description><![CDATA[软件来源各种各样,有的是 Google code 上的,有的是 GitHub 上的,有的就是 sourceforge 上的了.
 但是在中国的大环境下不能保证上面网站的正常访问 QAQ Google 的话有 hosts 的情况下基本上是
 把 http 修改成 https 就可以下载了,其余两个就只能代理进行下载软件并安装了.]]></description>
         </item>
