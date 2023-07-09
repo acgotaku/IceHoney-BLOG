@@ -6,7 +6,7 @@ comments: true
 archives: 2014
 tags:
   - js
-  - regular
+  - regex
 ---
 
 学习知识的最好方法就是看例子.(个人观点) 因为书上总是会把概念和公式讲的晦涩难懂,才显得作者高大上.所以我总是喜欢
