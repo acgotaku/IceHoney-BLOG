@@ -6,31 +6,31 @@
     "description": "IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~",
     "items": [
         {
-            "id": "https://blog.icehoney.me/posts/2022-10-29-typescript-backend/",
-            "url": "https://blog.icehoney.me/posts/2022-10-29-typescript-backend/",
-            "title": "如何使用TypeScript进行后端开发",
-            "summary": "我们经常使用 TypeScript 进行开发，webpack 会自动帮我们编译成浏览器可以执行的 JS 文件。相关的开发工具也很完善，但是进行后端开发的资料就比较少了，我们来讲解下如何使用 TypeScript 进行后端开发。",
-            "date_modified": "2022-10-29T11:47:00.000Z"
-        },
-        {
             "id": "https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/",
             "url": "https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/",
             "title": "网页调用摄像头读取QR code",
-            "summary": "而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。",
+            "summary": "2022 年也要结束了，博客不能停更。最近项目中有读取 QR 码的需求，于是便调研了下如何实现这个功能，顺便写篇博客记录下。",
             "date_modified": "2022-12-17T17:29:00.000Z"
+        },
+        {
+            "id": "https://blog.icehoney.me/posts/2022-10-29-typescript-backend/",
+            "url": "https://blog.icehoney.me/posts/2022-10-29-typescript-backend/",
+            "title": "如何使用TypeScript进行后端开发",
+            "summary": "前端有 HMR 技术可以实在自动热加载。后端实现这个功能其实也很简单。 首先需要按照 nodemon 和 ts-node。\n我们使用 pnpm 进行包管理。",
+            "date_modified": "2022-10-29T11:47:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
             "url": "https://blog.icehoney.me/posts/2023-01-14-android-reverse/",
             "title": "安卓逆向的经验记录",
-            "summary": "现在的安卓软件都会使用梆梆加固之类的软件防止别人进行逆向操作，所以第一步就是处理这个。先看到 JAVA 代码才能深入研究相关逻辑。经过同学指点，使用了一个 BlackDex 的工具。可以直接在安卓手机上进行脱壳操作。使用这个工具可以拿到 dex 文件。然后使用 jadx 输出 JAVA 代码。",
+            "summary": "jadx -d distfold ./cookiexxx.dex\n`",
             "date_modified": "2023-01-14T13:05:00.000Z"
         },
         {
             "id": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "url": "https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/",
             "title": "Archlinux下安装过wps之后字体发虚的问题",
-            "summary": "配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.\n注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
+            "summary": "注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.\n正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf\n这样就可以完美解决字体发虚的问题了.",
             "date_modified": "2013-07-04T12:39:00.000Z"
         },
         {
@@ -41,10 +41,17 @@
             "date_modified": "2013-04-28T21:31:00.000Z"
         },
         {
+            "id": "https://blog.icehoney.me/posts/2023-07-09-credit-regex/",
+            "url": "https://blog.icehoney.me/posts/2023-07-09-credit-regex/",
+            "title": "正则表达式匹配信用卡",
+            "summary": "Payment card number",
+            "date_modified": "2023-07-09T13:41:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2023-06-03-scroll-loader/",
             "url": "https://blog.icehoney.me/posts/2023-06-03-scroll-loader/",
             "title": "无限滚动加载列表",
-            "summary": "observerRef.current.observe(loaderRef.current);\n        }\n      } else {\n        setCompleted(true);\n        updateCompleted?.(true);\n      }\n    });\n  }, [inView, updateCompleted]);",
+            "summary": "setCompleted(true);\n        updateCompleted?.(true);\n      }\n    });\n  }, [inView, updateCompleted]);",
             "date_modified": "2023-06-03T12:55:00.000Z"
         },
         {

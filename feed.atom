@@ -2,26 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2023-06-03T04:21:27.163Z</updated>
+    <updated>2023-07-09T08:07:49.100Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
     <subtitle>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</subtitle>
-    <entry>
-        <title type="html"><![CDATA[如何使用TypeScript进行后端开发]]></title>
-        <id>https://blog.icehoney.me/posts/2022-10-29-typescript-backend/</id>
-        <link href="https://blog.icehoney.me/posts/2022-10-29-typescript-backend/">
-        </link>
-        <updated>2022-10-29T11:47:00.000Z</updated>
-        <summary type="html"><![CDATA[我们经常使用 TypeScript 进行开发，webpack 会自动帮我们编译成浏览器可以执行的 JS 文件。相关的开发工具也很完善，但是进行后端开发的资料就比较少了，我们来讲解下如何使用 TypeScript 进行后端开发。]]></summary>
-    </entry>
     <entry>
         <title type="html"><![CDATA[网页调用摄像头读取QR code]]></title>
         <id>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</id>
         <link href="https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/">
         </link>
         <updated>2022-12-17T17:29:00.000Z</updated>
-        <summary type="html"><![CDATA[而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。]]></summary>
+        <summary type="html"><![CDATA[2022 年也要结束了，博客不能停更。最近项目中有读取 QR 码的需求，于是便调研了下如何实现这个功能，顺便写篇博客记录下。]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何使用TypeScript进行后端开发]]></title>
+        <id>https://blog.icehoney.me/posts/2022-10-29-typescript-backend/</id>
+        <link href="https://blog.icehoney.me/posts/2022-10-29-typescript-backend/">
+        </link>
+        <updated>2022-10-29T11:47:00.000Z</updated>
+        <summary type="html"><![CDATA[前端有 HMR 技术可以实在自动热加载。后端实现这个功能其实也很简单。 首先需要按照 nodemon 和 ts-node。
+我们使用 pnpm 进行包管理。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[安卓逆向的经验记录]]></title>
@@ -29,7 +30,8 @@
         <link href="https://blog.icehoney.me/posts/2023-01-14-android-reverse/">
         </link>
         <updated>2023-01-14T13:05:00.000Z</updated>
-        <summary type="html"><![CDATA[现在的安卓软件都会使用梆梆加固之类的软件防止别人进行逆向操作，所以第一步就是处理这个。先看到 JAVA 代码才能深入研究相关逻辑。经过同学指点，使用了一个 BlackDex 的工具。可以直接在安卓手机上进行脱壳操作。使用这个工具可以拿到 dex 文件。然后使用 jadx 输出 JAVA 代码。]]></summary>
+        <summary type="html"><![CDATA[jadx -d distfold ./cookiexxx.dex
+`]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Archlinux下安装过wps之后字体发虚的问题]]></title>
@@ -37,8 +39,7 @@
         <link href="https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/">
         </link>
         <updated>2013-07-04T12:39:00.000Z</updated>
-        <summary type="html"><![CDATA[配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.
-注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
+        <summary type="html"><![CDATA[注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
 正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf
 这样就可以完美解决字体发虚的问题了.]]></summary>
     </entry>
@@ -51,15 +52,20 @@
         <summary type="html"><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[正则表达式匹配信用卡]]></title>
+        <id>https://blog.icehoney.me/posts/2023-07-09-credit-regex/</id>
+        <link href="https://blog.icehoney.me/posts/2023-07-09-credit-regex/">
+        </link>
+        <updated>2023-07-09T13:41:00.000Z</updated>
+        <summary type="html"><![CDATA[Payment card number]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[无限滚动加载列表]]></title>
         <id>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</id>
         <link href="https://blog.icehoney.me/posts/2023-06-03-scroll-loader/">
         </link>
         <updated>2023-06-03T12:55:00.000Z</updated>
-        <summary type="html"><![CDATA[observerRef.current.observe(loaderRef.current);
-        }
-      } else {
-        setCompleted(true);
+        <summary type="html"><![CDATA[setCompleted(true);
         updateCompleted?.(true);
       }
     });
