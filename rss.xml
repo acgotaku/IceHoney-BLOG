@@ -4,39 +4,33 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Sun, 09 Jul 2023 08:07:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Oct 2023 04:46:48 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
-        <item>
-            <title><![CDATA[网页调用摄像头读取QR code]]></title>
-            <link>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</link>
-            <guid>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</guid>
-            <pubDate>Sat, 17 Dec 2022 17:29:00 GMT</pubDate>
-            <description><![CDATA[2022 年也要结束了，博客不能停更。最近项目中有读取 QR 码的需求，于是便调研了下如何实现这个功能，顺便写篇博客记录下。]]></description>
-        </item>
         <item>
             <title><![CDATA[如何使用TypeScript进行后端开发]]></title>
             <link>https://blog.icehoney.me/posts/2022-10-29-typescript-backend/</link>
             <guid>https://blog.icehoney.me/posts/2022-10-29-typescript-backend/</guid>
             <pubDate>Sat, 29 Oct 2022 11:47:00 GMT</pubDate>
-            <description><![CDATA[前端有 HMR 技术可以实在自动热加载。后端实现这个功能其实也很简单。 首先需要按照 nodemon 和 ts-node。
-我们使用 pnpm 进行包管理。]]></description>
+            <description><![CDATA[我们经常使用 TypeScript 进行开发，webpack 会自动帮我们编译成浏览器可以执行的 JS 文件。相关的开发工具也很完善，但是进行后端开发的资料就比较少了，我们来讲解下如何使用 TypeScript 进行后端开发。]]></description>
         </item>
         <item>
-            <title><![CDATA[安卓逆向的经验记录]]></title>
-            <link>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</link>
-            <guid>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</guid>
-            <pubDate>Sat, 14 Jan 2023 13:05:00 GMT</pubDate>
-            <description><![CDATA[jadx -d distfold ./cookiexxx.dex
-`]]></description>
+            <title><![CDATA[网页调用摄像头读取QR code]]></title>
+            <link>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</link>
+            <guid>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</guid>
+            <pubDate>Sat, 17 Dec 2022 17:29:00 GMT</pubDate>
+            <description><![CDATA[而且有一个致命的 BUG 就是在开启摄像头之后无法关闭。必须重新刷新页面才行，这是不能接受的。]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux下安装过wps之后字体发虚的问题]]></title>
             <link>https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/</link>
             <guid>https://blog.icehoney.me/posts/2013-07-04-archlinux-wps-font/</guid>
             <pubDate>Thu, 04 Jul 2013 12:39:00 GMT</pubDate>
-            <description><![CDATA[注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
+            <description><![CDATA[文泉驿提供了一个在线配置生成工具
+这个网页有部分 JS 资源被墙了,所以需要科学上网才能正常使用,需要注意.
+配置完成之后点上面的“生成[create]”按钮,将结果复制保存到~/.fonts.conf 就能覆盖系统的字体选择顺序.
+注意上面的方法在 Archlinux 下会出现警告错误提示是过时的使用方法.
 正确的解决办法是把配置文件写在 /etc/fonts/conf.avail/50-user.conf
 这样就可以完美解决字体发虚的问题了.]]></description>
         </item>
@@ -48,101 +42,88 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[MacOS下编译C++文件]]></title>
+            <link>https://blog.icehoney.me/posts/2023-10-09-macos-build-cpp/</link>
+            <guid>https://blog.icehoney.me/posts/2023-10-09-macos-build-cpp/</guid>
+            <pubDate>Mon, 09 Oct 2023 12:10:00 GMT</pubDate>
+            <description><![CDATA[`]]></description>
+        </item>
+        <item>
             <title><![CDATA[正则表达式匹配信用卡]]></title>
             <link>https://blog.icehoney.me/posts/2023-07-09-credit-regex/</link>
             <guid>https://blog.icehoney.me/posts/2023-07-09-credit-regex/</guid>
             <pubDate>Sun, 09 Jul 2023 13:41:00 GMT</pubDate>
-            <description><![CDATA[Payment card number]]></description>
-        </item>
-        <item>
-            <title><![CDATA[无限滚动加载列表]]></title>
-            <link>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</link>
-            <guid>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</guid>
-            <pubDate>Sat, 03 Jun 2023 12:55:00 GMT</pubDate>
-            <description><![CDATA[setCompleted(true);
-        updateCompleted?.(true);
-      }
-    });
-  }, [inView, updateCompleted]);]]></description>
         </item>
         <item>
             <title><![CDATA[拖拽排序列表]]></title>
             <link>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</link>
             <guid>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</guid>
             <pubDate>Sun, 16 Apr 2023 12:31:00 GMT</pubDate>
-            <description><![CDATA[copyData.current = deepClone(sortedData);
-    recordRect();
-    onDragStart?.();
-  },
-  [sortedData, recordRect, onDragStart]
-);
-const dragEnterHandler = useCallback(
-  (index: number) => {
-    if (dragItem.current !== index && dragOverItem.current !== index) {
-      dragOverItem.current = index;
-      const newData = deepClone(copyData.current);
-      const dragData = newData[dragItem.current];
-      newData.splice(dragItem.current, 1);
-      newData.splice(dragOverItem.current, 0, dragData);
-      setSortedData(newData);
-      onDragEnter?.();
-    }
-  },
-  [onDragEnter]
-);
-const dragEndHandler = useCallback(() => {
-  updateData?.(sortedData);
-  onDragEnd?.();
-}, [sortedData, updateData, onDragEnd]);
-`]]></description>
+            <description><![CDATA[拖拽排序是一个很常见的功能，在浏览器不支持原生拖拽功能的时代，人们只能使用鼠标的点击事件来模拟拖拽效果，手动控制拖拽元素的位置来进行移动操作。随着原生拖拽 API 的支持，在实现这个功能的时候就可以更简单一点了。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[无限滚动加载列表]]></title>
+            <link>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</link>
+            <guid>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</guid>
+            <pubDate>Sat, 03 Jun 2023 12:55:00 GMT</pubDate>
+            <description><![CDATA[如果检测组件进入可视范围，我们可以使用 IntersectionObserver API，来监听元素进入可视范围。我们使用 React 实现一个组件，当这个组件进入可视范围的时候，会触发一个回调函数，这个回调函数会去加载下一页的数据。]]></description>
         </item>
         <item>
             <title><![CDATA[QR code 生成的相关参数]]></title>
             <link>https://blog.icehoney.me/posts/2023-03-03-qrcode-version/</link>
             <guid>https://blog.icehoney.me/posts/2023-03-03-qrcode-version/</guid>
             <pubDate>Fri, 03 Mar 2023 20:42:00 GMT</pubDate>
+            <description><![CDATA[QR 码具有纠错功能，保证二维码在丢失一定数据的情况下还是可以读取。纠错有四个级别分别是：]]></description>
             <enclosure url="https://upload.wikimedia.org/wikipedia/commons/c/c8/QR_Code_Mask_Patterns.svg">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[安卓逆向的经验记录]]></title>
+            <link>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</link>
+            <guid>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</guid>
+            <pubDate>Sat, 14 Jan 2023 13:05:00 GMT</pubDate>
+            <description><![CDATA[jadx -d distfold ./cookiexxx.dex
+`]]></description>
         </item>
         <item>
             <title><![CDATA[如何编写Telegram Bot]]></title>
             <link>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</link>
             <guid>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</guid>
             <pubDate>Sat, 24 Sep 2022 11:07:00 GMT</pubDate>
-            <description><![CDATA[最近在处理如何把经纬度转换成日本的 MAPCODE 的问题。在外出行的时候，经常使用的设备都是手机，如何在手机上方便的计算旅游景点的 MAPCODE 然后使用车载导航呢？
-我的想法是做一个 Telegram Bot，输入景点的 Plus Code, 然后返回 MAPCODE。]]></description>
+            <description><![CDATA[import { Telegraf } from 'telegraf';]]></description>
         </item>
         <item>
             <title><![CDATA[使用MobX管理React的状态]]></title>
             <link>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</link>
             <guid>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</guid>
             <pubDate>Sun, 07 Aug 2022 14:43:00 GMT</pubDate>
-            <description><![CDATA[个人感觉 Mobx 用起来更简洁，所以本文着重介绍 Mobx。]]></description>
+            <description><![CDATA[);
+  };]]></description>
         </item>
         <item>
             <title><![CDATA[Git 提交规范]]></title>
             <link>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</link>
             <guid>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</guid>
             <pubDate>Sat, 23 Jul 2022 20:37:00 GMT</pubDate>
-            <description><![CDATA[[optional body]]]></description>
+            <description><![CDATA[description 是 commit 目的的简短描述，不超过 50 个字符。最好以动词开头，首字母小写，末尾不加句号(.)]]></description>
         </item>
         <item>
             <title><![CDATA[TypeScript中应该禁止使用enum]]></title>
             <link>https://blog.icehoney.me/posts/2022-07-04-typescript-enum/</link>
             <guid>https://blog.icehoney.me/posts/2022-07-04-typescript-enum/</guid>
             <pubDate>Mon, 04 Jul 2022 20:37:00 GMT</pubDate>
-            <description><![CDATA[function fetchJSON(url: string, method: HTTPRequestMethod) {
-  return fetch(url, { method }).then(response => response.json());
-}
-`]]></description>
+            <description><![CDATA[const HTTPRequestMethod = {
+  GET: 'GET',
+  POST: 'POST'
+} as const;]]></description>
         </item>
         <item>
             <title><![CDATA[JS中关于深拷贝和浅拷贝]]></title>
             <link>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</link>
             <guid>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</guid>
             <pubDate>Mon, 20 Jun 2022 19:37:00 GMT</pubDate>
-            <description><![CDATA[return obj !== null && typeof obj === 'object';
-};]]></description>
+            <description><![CDATA[export const isRegExp = (val: unknown): val is RegExp =>
+  toTypeString(val) === '[object RegExp]';]]></description>
         </item>
         <item>
             <title><![CDATA[如何实现虚拟滚动条]]></title>
@@ -179,22 +160,21 @@ const dragEndHandler = useCallback(() => {
             <description><![CDATA[Tabs 是复合组件。Tabs 组件封装逻辑和显示上部的导航栏。 TabPane 用来传递属性和展示要显示的内容。具体使用请看下面的代码：]]></description>
         </item>
         <item>
-            <title><![CDATA[代理Sentry的请求]]></title>
-            <link>https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/</link>
-            <guid>https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/</guid>
-            <pubDate>Thu, 30 Dec 2021 22:21:00 GMT</pubDate>
-            <description><![CDATA[dsn: 'https://examplePublicKey@o0.ingest.sentry.io/0',
-  tunnel: '/sentry'
-});
-`]]></description>
-        </item>
-        <item>
             <title><![CDATA[CSS如何处理固定Header哈希标记跳转的问题]]></title>
             <link>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</link>
             <guid>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</guid>
             <pubDate>Sat, 20 Nov 2021 21:21:00 GMT</pubDate>
-            <description><![CDATA[}
+            <description><![CDATA[padding-top: var(--header-height);
+  margin-top: calc(var(--header-height) * -1);
+}
 `]]></description>
+        </item>
+        <item>
+            <title><![CDATA[代理Sentry的请求]]></title>
+            <link>https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/</link>
+            <guid>https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/</guid>
+            <pubDate>Thu, 30 Dec 2021 22:21:00 GMT</pubDate>
+            <description><![CDATA[app.set('trust proxy', true);]]></description>
         </item>
         <item>
             <title><![CDATA[JS 关于颜色的相关处理]]></title>
@@ -494,6 +474,15 @@ input.vue.$emit('input', 'Hello world');
             <description><![CDATA[puts @rand.rand(10..150)]]></description>
         </item>
         <item>
+            <title><![CDATA[如何封装第三方vue组件]]></title>
+            <link>https://blog.icehoney.me/posts/2018-05-29-wrapper-vue-component/</link>
+            <guid>https://blog.icehoney.me/posts/2018-05-29-wrapper-vue-component/</guid>
+            <pubDate>Tue, 29 May 2018 23:19:00 GMT</pubDate>
+            <description><![CDATA[
+
+`]]></description>
+        </item>
+        <item>
             <title><![CDATA[Web离线的解决方案]]></title>
             <link>https://blog.icehoney.me/posts/2018-07-06-offline-web/</link>
             <guid>https://blog.icehoney.me/posts/2018-07-06-offline-web/</guid>
@@ -501,31 +490,26 @@ input.vue.$emit('input', 'Hello world');
             <description><![CDATA[这里要补充的一点是，针对 https 的 Application Cache 是无法完成跨域请求的，所以请慎重。]]></description>
         </item>
         <item>
-            <title><![CDATA[如何封装第三方vue组件]]></title>
-            <link>https://blog.icehoney.me/posts/2018-05-29-wrapper-vue-component/</link>
-            <guid>https://blog.icehoney.me/posts/2018-05-29-wrapper-vue-component/</guid>
-            <pubDate>Tue, 29 May 2018 23:19:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[JavaScript开发中的性能优化]]></title>
             <link>https://blog.icehoney.me/posts/2018-04-25-javascript-performance/</link>
             <guid>https://blog.icehoney.me/posts/2018-04-25-javascript-performance/</guid>
             <pubDate>Wed, 25 Apr 2018 23:22:00 GMT</pubDate>
-            <description><![CDATA[最近工作比较清闲，5 月又换了一个工作环境。总结下最近看的有关 JavaScript 性能的知识，并记下来供未来的自己参考。希望自己能不忘初心，继续成长！]]></description>
+            <description><![CDATA[// Prevent multiple rAF callbacks.
+  if (scheduledAnimationFrame) return;]]></description>
         </item>
         <item>
             <title><![CDATA[使用letsencrypt为自己的网站加密]]></title>
             <link>https://blog.icehoney.me/posts/2018-04-08-website-https/</link>
             <guid>https://blog.icehoney.me/posts/2018-04-08-website-https/</guid>
             <pubDate>Sun, 08 Apr 2018 20:51:00 GMT</pubDate>
-            <description><![CDATA[浏览器的证书签名的步骤实在是很麻烦，所以有位热心的学生做了一个自动化脚本，可以自动生成脚本并且可以和其他脚本一起使用。达到一键签名证书。]]></description>
+            <description><![CDATA[这样就会对主域名和所有二级域名生效。]]></description>
         </item>
         <item>
             <title><![CDATA[浏览器的渲染性能]]></title>
             <link>https://blog.icehoney.me/posts/2018-02-13-rendering-performance/</link>
             <guid>https://blog.icehoney.me/posts/2018-02-13-rendering-performance/</guid>
             <pubDate>Tue, 13 Feb 2018 20:44:00 GMT</pubDate>
-            <description><![CDATA[浏览器的渲染主要是分为 5 个步骤，我们需要了解这些知识才能编写性能更好的代码。]]></description>
+            <description><![CDATA[目前既不要绘制也不要布局的属性只有transform属性和opacity属性。所以在实现 CSS 动画的时候，优先使用这两个属性。]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/frame-full.jpg">
             </enclosure>
         </item>
@@ -534,29 +518,32 @@ input.vue.$emit('input', 'Hello world');
             <link>https://blog.icehoney.me/posts/2018-01-16-javascript-types/</link>
             <guid>https://blog.icehoney.me/posts/2018-01-16-javascript-types/</guid>
             <pubDate>Tue, 16 Jan 2018 22:44:00 GMT</pubDate>
-            <description><![CDATA[JavaScript 中有七种内置类型：]]></description>
+            <description><![CDATA[var a;
+a; // undefined
+b; // ReferenceError: b is not defined
+typeof a; // "undefined"
+typeof b; // "undefined"
+`]]></description>
         </item>
         <item>
             <title><![CDATA[前端开发的技术栈]]></title>
             <link>https://blog.icehoney.me/posts/2017-11-18-frontend-development/</link>
             <guid>https://blog.icehoney.me/posts/2017-11-18-frontend-development/</guid>
             <pubDate>Sat, 18 Nov 2017 17:18:00 GMT</pubDate>
-            <description><![CDATA[现在主流的浏览器支持的 JavaScript 版本是 es5。但是众所周知，JavaScript(es5)有很多陷阱和缺点，例如this指针问题和异步处理等等。基于原型连的继承对于面向对象开发者来说也很不友好。所以推荐使用es6来书写代码。可以使用基于class的继承，和解决this指针问题。而且还能使用import进行模块化开发。虽然只是语法糖，但也提升了开发效率。]]></description>
         </item>
         <item>
             <title><![CDATA[网站开发中的Modal问题]]></title>
             <link>https://blog.icehoney.me/posts/2017-10-21-modal-scroll/</link>
             <guid>https://blog.icehoney.me/posts/2017-10-21-modal-scroll/</guid>
             <pubDate>Sat, 21 Oct 2017 14:30:00 GMT</pubDate>
-            <description><![CDATA[第二个方案是，网页内容采用overflow: hidden来隐藏滚动条。Modal 采用position：fixed方案进行定位，但是这时候 Modal 不得不设置overflow： auto来进行滚动。
-第二个方案对于网页内容和 Modal 的位置并没有特殊的要求，比较灵活，而且不需要 JS 的介入。]]></description>
+            <description><![CDATA[最近在开发的网站基本上全是使用弹出的对话框（Modal）来进行 UI 交互的，所以对于 Modal 的处理也算积攒了一点经验。便想写下来供自己以后参考和学习。说实话，在目前响应式布局的主流开发方式下，Modal 非常不适合作为一个良好的交互方式。因为对于手机触屏用户非常不友好。当然，我开发的这个网站也没有考虑手机用户。当前的主流方式还是采用 SPA，JS 软路由切换页面来交互才是正解。]]></description>
         </item>
         <item>
             <title><![CDATA[Github团队协作]]></title>
             <link>https://blog.icehoney.me/posts/2017-09-16-github-workflow/</link>
             <guid>https://blog.icehoney.me/posts/2017-09-16-github-workflow/</guid>
             <pubDate>Sat, 16 Sep 2017 22:30:00 GMT</pubDate>
-            <description><![CDATA[git branch -d
+            <description><![CDATA[git checkout dev
 `]]></description>
         </item>
         <item>
@@ -564,35 +551,36 @@ input.vue.$emit('input', 'Hello world');
             <link>https://blog.icehoney.me/posts/2017-08-06-css-trick/</link>
             <guid>https://blog.icehoney.me/posts/2017-08-06-css-trick/</guid>
             <pubDate>Sun, 06 Aug 2017 15:30:00 GMT</pubDate>
-            <description><![CDATA[手机版 Safari 在滑动的时候如果有动画执行，会导致整个页面空白。当滑动结束的时候才会渲染。我们不得不采用给所有元素添加transform: translate3d(0,0,0)属性，
-来使 Safari 强制使用 GPU 加速。]]></description>
+            <description><![CDATA[这里有个重点概念是堆叠上下文，那么元素是如何形成堆叠上下文呢？]]></description>
         </item>
         <item>
             <title><![CDATA[JavaScript对象的常见操作]]></title>
             <link>https://blog.icehoney.me/posts/2017-06-18-javascript-object/</link>
             <guid>https://blog.icehoney.me/posts/2017-06-18-javascript-object/</guid>
             <pubDate>Sun, 18 Jun 2017 22:13:00 GMT</pubDate>
+            <description><![CDATA[针对数组，现在已经不推荐用 for 循环来进行处理了，请使用数组的map, filter，reduce来处理数组的操作。相信这三个方法足以满足需求。]]></description>
         </item>
         <item>
             <title><![CDATA[CSS笔记和杂谈]]></title>
             <link>https://blog.icehoney.me/posts/2017-05-07-css/</link>
             <guid>https://blog.icehoney.me/posts/2017-05-07-css/</guid>
             <pubDate>Sun, 07 May 2017 21:49:00 GMT</pubDate>
-            <description><![CDATA[这应该是最长的一次博客断更吧。。。因为年后辞职加上来日本工作的原因。导致很长时间都没有更新自己的博客了。很是惭愧，本来定的目标就是每月一篇很简单的任务。但居然空档了这么长时间，这就是正所谓的生于忧患死于安乐吧。找到了工作就松懈了，所以今天又重新捡起来继续写。公司的新人课题是做一个简单的 CMS 网站，也算重新复习了一下网页制作吧，因为一直在写 JS 的项目，基本的 HTML 和 CSS 的设计都有点生疏了。。。]]></description>
+            <description><![CDATA[
+`]]></description>
         </item>
         <item>
             <title><![CDATA[Golang语言学习分享]]></title>
             <link>https://blog.icehoney.me/posts/2017-01-29-go/</link>
             <guid>https://blog.icehoney.me/posts/2017-01-29-go/</guid>
             <pubDate>Sun, 29 Jan 2017 09:49:00 GMT</pubDate>
-            <description><![CDATA[然后解压缩和配置环境变量，过程很简单。]]></description>
+            <description><![CDATA[在开发程序的过程中，为了操作方便，我们会定义各种各样的结构体来表示数据。很多情况下，结构体需要进行网络通讯，这时候我们就不得不序列化结构体进行网络发送。就像前端开发中把 JSON 对象转换成字符串发送出去一样。但是序列化却是一个很耗时的过程，处理不当就会成为系统的瓶颈所在。所以我列举出了几种序列化方案，推荐大家使用。我最后选择的是gencode。]]></description>
         </item>
         <item>
             <title><![CDATA[逆向JavaScript经验分享]]></title>
             <link>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</link>
             <guid>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</guid>
             <pubDate>Mon, 19 Dec 2016 19:16:00 GMT</pubDate>
-            <description><![CDATA[通过一个个查找，我们找到了一个请求返回了一个 JSONP 格式的数据，这个数据里面包含了 MP4 源文件的地址。注意，很多人分析请求的时候经常喜欢找 MP4 文件的请求，这个可以算是一个切入点。但是一般网站不会把视频网址固定死的，所以找到 MP4 请求并没有什么实际意义，而是一定有一个请求去向服务器索取真实的 MP4 地址，一般这个数据都是 JSON 格式的。所以只要耐心找，一定找得到的。很多请求都只不过是资源文件，所以很容易过滤掉的。]]></description>
+            <description><![CDATA[我们没有必要每个参数都自己用 JS 实现一遍，因为人家已经实现好了，我们只要调用就好。这个请求的关键是getTmtsVf函数。这个函数对请求进行了哈希，添加了一个 vf 参数，所以我对参数进行了任何的修改都会导致请求非法。无论怎么实现的 JS，有些参数只能通过全局变量来共享，所以对于那些参数，我们可以直接使用。例如爱奇艺有个全局的Q变量，通过这个变量可以获得很多需要的参数。]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/iqiyi.png">
             </enclosure>
         </item>
@@ -601,27 +589,27 @@ input.vue.$emit('input', 'Hello world');
             <link>https://blog.icehoney.me/posts/2016-11-27-linux-tune-guide/</link>
             <guid>https://blog.icehoney.me/posts/2016-11-27-linux-tune-guide/</guid>
             <pubDate>Sun, 27 Nov 2016 18:16:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[使用Latex书写论文]]></title>
             <link>https://blog.icehoney.me/posts/2016-09-20-latex/</link>
             <guid>https://blog.icehoney.me/posts/2016-09-20-latex/</guid>
             <pubDate>Tue, 20 Sep 2016 20:16:00 GMT</pubDate>
-            <description><![CDATA[网上有很多 Latex 的学习资料，不过我们也没必要详细学习，在此介绍一个简单的学习资料。一份不太简短的 LATEX 介绍基本上看完这个文档就可以大致明白如何利用 Latex 书写论文。]]></description>
+            <description><![CDATA[最近忙着写论文，博客都快要长草了。。。但是我还是要坚持写下去！因为早就知道写论文排版会很麻烦，所以就选择了使用 Latex 来写论文。看到后期同学们在 Word 上一句一句的调整格式，我只能说学会了 Latex 真是磨刀不误砍柴工，后期真是太省心了，接下来就向大家介绍下如何使用 Latex 写论文，免除排版之忧。]]></description>
         </item>
         <item>
             <title><![CDATA[模块化JavaScript开发]]></title>
             <link>https://blog.icehoney.me/posts/2016-06-30-webpack/</link>
             <guid>https://blog.icehoney.me/posts/2016-06-30-webpack/</guid>
             <pubDate>Thu, 30 Jun 2016 16:43:00 GMT</pubDate>
+            <description><![CDATA[以前开发 Web 项目，全部是服务器来渲染页面，从数据库读入数据，浏览器只负责解释页面，这种情况下不考虑交互性，其实完全不用写任何 JS 代码。但是缺点也很大，处理全部交给服务器，服务器压力大。而且每次都是刷新加载，所以用户体验也不是很好。]]></description>
         </item>
         <item>
             <title><![CDATA[WebGL渲染的知识介绍]]></title>
             <link>https://blog.icehoney.me/posts/2016-05-05-webgl-render/</link>
             <guid>https://blog.icehoney.me/posts/2016-05-05-webgl-render/</guid>
             <pubDate>Thu, 05 May 2016 10:43:00 GMT</pubDate>
-            <description><![CDATA[来到日本导师的研究方向是计算机图形学，由于我比较擅长 Web 开发，便选择了 WebGL 进行图形渲染的研究课题。学习了大半年，也该写点东西介绍下自己对 WebGL 的理解，如有错误，欢迎批评指正。]]></description>
+            <description><![CDATA[JavaScript 主要负责整个渲染流程的控制和 GPU 与 CPU 之间的数据交互，繁重的坐标变换计算全部交给 GPU 来处理。]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/webgl_graphics_pipeline.jpg">
             </enclosure>
         </item>
@@ -630,15 +618,14 @@ input.vue.$emit('input', 'Hello world');
             <link>https://blog.icehoney.me/posts/2016-03-21-cors-options-method/</link>
             <guid>https://blog.icehoney.me/posts/2016-03-21-cors-options-method/</guid>
             <pubDate>Mon, 21 Mar 2016 14:33:00 GMT</pubDate>
-            <description><![CDATA[跨域请求指得是发起请求的资源所在域不同于该请求所指向资源所在的域的 HTTP 请求.最常见的就是跨域载入图片,我们可以看到很多网站主站和网站所使用的图片
-是不同的域名的.这样做的好处是请求图片的时候不会发送主站的 Cookies,因为不同域名嘛.而且还可以减少主站的服务器压力.但载入图片使用的是 GET 方法,比较简单.]]></description>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[使用最小费用最大流模型解决酒店管理收益最大化问题]]></title>
             <link>https://blog.icehoney.me/posts/2015-12-29-minimum-cost-flow-problem/</link>
             <guid>https://blog.icehoney.me/posts/2015-12-29-minimum-cost-flow-problem/</guid>
             <pubDate>Tue, 29 Dec 2015 11:15:00 GMT</pubDate>
-            <description><![CDATA[顶点 11 和顶点 16 是重复边的订单,对应的是第一个订单和第 6 个订单.源码和输入数据可以在文章末尾看到.]]></description>
+            <description><![CDATA[这里我们使用Ford–Fulkerson算法来计算每次的增广路径.]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/model.png">
             </enclosure>
         </item>
@@ -647,8 +634,7 @@ input.vue.$emit('input', 'Hello world');
             <link>https://blog.icehoney.me/posts/2015-12-01-archlinux-dota2/</link>
             <guid>https://blog.icehoney.me/posts/2015-12-01-archlinux-dota2/</guid>
             <pubDate>Tue, 01 Dec 2015 21:58:00 GMT</pubDate>
-            <description><![CDATA[~/.steam/steam/ubuntu1232/steam-runtime/amd64/usr/lib/x8664-linux-gnu/
-`]]></description>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux和Win 10 在 UEFI下 双启动]]></title>
