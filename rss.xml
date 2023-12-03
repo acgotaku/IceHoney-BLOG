@@ -4,16 +4,16 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Sat, 11 Nov 2023 11:20:49 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Dec 2023 01:34:33 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://blog.icehoney.me/feed.atom" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[拖拽排序列表]]></title>
-            <link>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</link>
-            <guid>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</guid>
-            <pubDate>Sun, 16 Apr 2023 12:31:00 GMT</pubDate>
-            <description><![CDATA[拖拽排序是一个很常见的功能，在浏览器不支持原生拖拽功能的时代，人们只能使用鼠标的点击事件来模拟拖拽效果，手动控制拖拽元素的位置来进行移动操作。随着原生拖拽 API 的支持，在实现这个功能的时候就可以更简单一点了。]]></description>
+            <title><![CDATA[网页调用摄像头读取QR code]]></title>
+            <link>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</link>
+            <guid>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</guid>
+            <pubDate>Sat, 17 Dec 2022 17:29:00 GMT</pubDate>
+            <description><![CDATA[2022 年也要结束了，博客不能停更。最近项目中有读取 QR 码的需求，于是便调研了下如何实现这个功能，顺便写篇博客记录下。]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux下安装过wps之后字体发虚的问题]]></title>
@@ -37,13 +37,86 @@
             <description><![CDATA[在这个页面载入的时候可以很清楚的看到网页对这个网址进行 POST 请求,提交的表单是个 json 对象]]></description>
         </item>
         <item>
+            <title><![CDATA[嵌套表格如何实现边框合并]]></title>
+            <link>https://blog.icehoney.me/posts/2023-12-03-css-nested-table/</link>
+            <guid>https://blog.icehoney.me/posts/2023-12-03-css-nested-table/</guid>
+            <pubDate>Sun, 03 Dec 2023 10:20:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[MacOS下苹果手机刷机]]></title>
+            <link>https://blog.icehoney.me/posts/2023-11-11-flash-ios/</link>
+            <guid>https://blog.icehoney.me/posts/2023-11-11-flash-ios/</guid>
+            <pubDate>Sat, 11 Nov 2023 20:03:00 GMT</pubDate>
+            <description><![CDATA[苹果手机在大版本升级之后也会变得卡卡的，可以通过下载官方的固件包来刷机，这样可以让手机变得更流畅。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[安卓逆向的经验记录]]></title>
+            <link>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</link>
+            <guid>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</guid>
+            <pubDate>Sat, 14 Jan 2023 13:05:00 GMT</pubDate>
+            <description><![CDATA[首先自己知道了一个安卓电视盒子可以看全球的电视频道，我就想着干嘛要买人家的硬件，随便找个安卓手机不也可以使用么？于是找到了电视盒子上的软件，发现人家是有校验的。不是自家硬件初始化都无法通过。
+于是我就好奇这个硬件校验是怎么做的，带着这个好奇心，开始了安卓逆向的征程。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[MacOS下编译C++文件]]></title>
+            <link>https://blog.icehoney.me/posts/2023-10-09-macos-build-cpp/</link>
+            <guid>https://blog.icehoney.me/posts/2023-10-09-macos-build-cpp/</guid>
+            <pubDate>Mon, 09 Oct 2023 12:10:00 GMT</pubDate>
+            <description><![CDATA[brew install imagemagick
+brew install zbar
+`]]></description>
+        </item>
+        <item>
+            <title><![CDATA[正则表达式匹配信用卡]]></title>
+            <link>https://blog.icehoney.me/posts/2023-07-09-credit-regex/</link>
+            <guid>https://blog.icehoney.me/posts/2023-07-09-credit-regex/</guid>
+            <pubDate>Sun, 09 Jul 2023 13:41:00 GMT</pubDate>
+            <description><![CDATA[const regex = new RegExp('^(5[1-5]\\d{0,2}|22[2-9]\\d{1}|2[3-7]\\d{2})\\d{12}');
+`]]></description>
+        </item>
+        <item>
+            <title><![CDATA[无限滚动加载列表]]></title>
+            <link>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</link>
+            <guid>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</guid>
+            <pubDate>Sat, 03 Jun 2023 12:55:00 GMT</pubDate>
+            <description><![CDATA[const cursorRef = useRef('');
+  const [completed, setCompleted] = useState(false);]]></description>
+        </item>
+        <item>
+            <title><![CDATA[拖拽排序列表]]></title>
+            <link>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</link>
+            <guid>https://blog.icehoney.me/posts/2023-04-16-draggable-list/</guid>
+            <pubDate>Sun, 16 Apr 2023 12:31:00 GMT</pubDate>
+            <description><![CDATA[}, []);
+const dropHandler = useCallback((event: React.DragEvent) => {
+  event.stopPropagation();
+  event.preventDefault();
+  return false;
+}, []);
+`]]></description>
+        </item>
+        <item>
+            <title><![CDATA[QR code 生成的相关参数]]></title>
+            <link>https://blog.icehoney.me/posts/2023-03-03-qrcode-version/</link>
+            <guid>https://blog.icehoney.me/posts/2023-03-03-qrcode-version/</guid>
+            <pubDate>Fri, 03 Mar 2023 20:42:00 GMT</pubDate>
+            <description><![CDATA[同时因为手动指定 version 也会因为 version 版本太低导致无法生成合法的二维码的情况。使用的时候需要注意。我本身有修改一个版本可以传入底层参数，可以看一下参考链接。]]></description>
+            <enclosure url="https://upload.wikimedia.org/wikipedia/commons/c/c8/QR_Code_Mask_Patterns.svg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[使用MobX管理React的状态]]></title>
+            <link>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</link>
+            <guid>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</guid>
+            <pubDate>Sun, 07 Aug 2022 14:43:00 GMT</pubDate>
+            <description><![CDATA[};]]></description>
+        </item>
+        <item>
             <title><![CDATA[如何使用TypeScript进行后端开发]]></title>
             <link>https://blog.icehoney.me/posts/2022-10-29-typescript-backend/</link>
             <guid>https://blog.icehoney.me/posts/2022-10-29-typescript-backend/</guid>
             <pubDate>Sat, 29 Oct 2022 11:47:00 GMT</pubDate>
-            <description><![CDATA["module": "commonjs",
-    "moduleResolution": "Node",
-    "outDir": "dist",
+            <description><![CDATA["outDir": "dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
@@ -61,91 +134,54 @@
 `]]></description>
         </item>
         <item>
-            <title><![CDATA[MacOS下苹果手机刷机]]></title>
-            <link>https://blog.icehoney.me/posts/2023-11-11-flash-ios/</link>
-            <guid>https://blog.icehoney.me/posts/2023-11-11-flash-ios/</guid>
-            <pubDate>Sat, 11 Nov 2023 20:03:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[MacOS下编译C++文件]]></title>
-            <link>https://blog.icehoney.me/posts/2023-10-09-macos-build-cpp/</link>
-            <guid>https://blog.icehoney.me/posts/2023-10-09-macos-build-cpp/</guid>
-            <pubDate>Mon, 09 Oct 2023 12:10:00 GMT</pubDate>
-            <description><![CDATA[scan_image.cpp]]></description>
-        </item>
-        <item>
-            <title><![CDATA[网页调用摄像头读取QR code]]></title>
-            <link>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</link>
-            <guid>https://blog.icehoney.me/posts/2022-12-17-web-qr-reader/</guid>
-            <pubDate>Sat, 17 Dec 2022 17:29:00 GMT</pubDate>
-            <description><![CDATA[首先安装相关依赖：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[无限滚动加载列表]]></title>
-            <link>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</link>
-            <guid>https://blog.icehoney.me/posts/2023-06-03-scroll-loader/</guid>
-            <pubDate>Sat, 03 Jun 2023 12:55:00 GMT</pubDate>
-            <description><![CDATA[inView,
-  updateCompleted
-}) => {
-  const loaderRef = useRef(null);
-  const observerRef = useRef(null);
-  const cursorRef = useRef('');
-  const [completed, setCompleted] = useState(false);]]></description>
-        </item>
-        <item>
-            <title><![CDATA[正则表达式匹配信用卡]]></title>
-            <link>https://blog.icehoney.me/posts/2023-07-09-credit-regex/</link>
-            <guid>https://blog.icehoney.me/posts/2023-07-09-credit-regex/</guid>
-            <pubDate>Sun, 09 Jul 2023 13:41:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <title><![CDATA[Git 提交规范]]></title>
+            <link>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</link>
+            <guid>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</guid>
+            <pubDate>Sat, 23 Jul 2022 20:37:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[如何编写Telegram Bot]]></title>
             <link>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</link>
             <guid>https://blog.icehoney.me/posts/2022-09-24-telegram-bot/</guid>
             <pubDate>Sat, 24 Sep 2022 11:07:00 GMT</pubDate>
-            <description><![CDATA[import { Telegraf } from 'telegraf';]]></description>
-        </item>
-        <item>
-            <title><![CDATA[QR code 生成的相关参数]]></title>
-            <link>https://blog.icehoney.me/posts/2023-03-03-qrcode-version/</link>
-            <guid>https://blog.icehoney.me/posts/2023-03-03-qrcode-version/</guid>
-            <pubDate>Fri, 03 Mar 2023 20:42:00 GMT</pubDate>
-            <description><![CDATA[选择 mask 的方案有相关的标准可以自行查询，本质目标是让生成的图片尽量黑白相间，避免同一颜色的色块大量出现，方便扫描器读取数据。]]></description>
-            <enclosure url="https://upload.wikimedia.org/wikipedia/commons/c/c8/QR_Code_Mask_Patterns.svg">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[安卓逆向的经验记录]]></title>
-            <link>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</link>
-            <guid>https://blog.icehoney.me/posts/2023-01-14-android-reverse/</guid>
-            <pubDate>Sat, 14 Jan 2023 13:05:00 GMT</pubDate>
-            <description><![CDATA[为什么这么分析呢，因为服务器端需要进行解密，那必须要把需要的参数都告诉服务端才能把密文解密回明文。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[使用MobX管理React的状态]]></title>
-            <link>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</link>
-            <guid>https://blog.icehoney.me/posts/2022-08-07-mobx-react/</guid>
-            <pubDate>Sun, 07 Aug 2022 14:43:00 GMT</pubDate>
-            <description><![CDATA[};]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Git 提交规范]]></title>
-            <link>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</link>
-            <guid>https://blog.icehoney.me/posts/2022-07-23-git-commit-lint/</guid>
-            <pubDate>Sat, 23 Jul 2022 20:37:00 GMT</pubDate>
-            <description><![CDATA[incoming responses other than from latest request.
-`]]></description>
+            <description><![CDATA[最近在处理如何把经纬度转换成日本的 MAPCODE 的问题。在外出行的时候，经常使用的设备都是手机，如何在手机上方便的计算旅游景点的 MAPCODE 然后使用车载导航呢？
+我的想法是做一个 Telegram Bot，输入景点的 Plus Code, 然后返回 MAPCODE。]]></description>
         </item>
         <item>
             <title><![CDATA[TypeScript中应该禁止使用enum]]></title>
             <link>https://blog.icehoney.me/posts/2022-07-04-typescript-enum/</link>
             <guid>https://blog.icehoney.me/posts/2022-07-04-typescript-enum/</guid>
             <pubDate>Mon, 04 Jul 2022 20:37:00 GMT</pubDate>
-            <description><![CDATA[function fetchJSON(url: string, method: HTTPRequestMethodType) {
-  return fetch(url, { method }).then(response => response.json());
-}
+            <description><![CDATA[我们来封装一个常见的 fetch 函数，使用 enum 定义的代码如下。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[JS中关于深拷贝和浅拷贝]]></title>
+            <link>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</link>
+            <guid>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</guid>
+            <pubDate>Mon, 20 Jun 2022 19:37:00 GMT</pubDate>
+            <description><![CDATA[const myDeepCopy = JSON.parse(JSON.stringify(myOriginal));
+`]]></description>
+        </item>
+        <item>
+            <title><![CDATA[如何实现虚拟滚动条]]></title>
+            <link>https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/</link>
+            <guid>https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/</guid>
+            <pubDate>Thu, 12 May 2022 19:25:00 GMT</pubDate>
+            <description><![CDATA[细节请参考下面的代码：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Mac M1系统配置C++环境]]></title>
+            <link>https://blog.icehoney.me/posts/2022-04-13-m1-cpp/</link>
+            <guid>https://blog.icehoney.me/posts/2022-04-13-m1-cpp/</guid>
+            <pubDate>Wed, 13 Apr 2022 20:03:00 GMT</pubDate>
+            <description><![CDATA[homebrew 官网有描述M1的安装路径更改到 /opt/homebrew 了。所以我们需要指定头文件路径，这里我们指定到 /opt/homebrew/include。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[CSS如何处理固定Header哈希标记跳转的问题]]></title>
+            <link>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</link>
+            <guid>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</guid>
+            <pubDate>Sat, 20 Nov 2021 21:21:00 GMT</pubDate>
+            <description><![CDATA[}
 `]]></description>
         </item>
         <item>
@@ -153,95 +189,77 @@
             <link>https://blog.icehoney.me/posts/2022-03-13-scroll-lock/</link>
             <guid>https://blog.icehoney.me/posts/2022-03-13-scroll-lock/</guid>
             <pubDate>Sun, 13 Mar 2022 15:11:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[JS中关于深拷贝和浅拷贝]]></title>
-            <link>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</link>
-            <guid>https://blog.icehoney.me/posts/2022-06-20-deep-copy/</guid>
-            <pubDate>Mon, 20 Jun 2022 19:37:00 GMT</pubDate>
-            <description><![CDATA[JS 有基本数据类型和复合数据类型，基本数据类型包括 null，undefined，boolean，number，string，symbol。针对这些数据类型都是值拷贝。复合数据类型包括 object，以及衍生的内置数据类型，Array, Map, Set 等等。默认对复合数据类型的赋值操作都是引用拷贝，就是浅拷贝。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[如何实现虚拟滚动条]]></title>
-            <link>https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/</link>
-            <guid>https://blog.icehoney.me/posts/2022-05-12-virtual-scroll/</guid>
-            <pubDate>Thu, 12 May 2022 19:25:00 GMT</pubDate>
-            <description><![CDATA[虚拟滚动的原理是显示的容器高度固定，我们只渲染用户看到的选项。但是选项容器的高度还是设置成所有选项的高度，这样滚动条效果保持一样，不过实际渲染的DOM数量却大大减少。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Github 存储大文件]]></title>
-            <link>https://blog.icehoney.me/posts/2022-02-10-github-lfs/</link>
-            <guid>https://blog.icehoney.me/posts/2022-02-10-github-lfs/</guid>
-            <pubDate>Thu, 10 Feb 2022 23:16:00 GMT</pubDate>
-            <description><![CDATA[Counting objects: 100% (21/21), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (17/17), done.
-Writing objects: 100% (17/17), 153.95 MiB | 13.82 MiB/s, done.
-Total 17 (delta 4), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
-remote: error: Trace:
-remote: error: See http://git.io/iEPt8g for more information.
-remote: error: File xxx.db is 259.50 MB; this exceeds GitHub's file size limit of 100.00 MB
-remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-To https://github.com/acgotaku/switch.git
- ! [remote rejected] master -> master (pre-receive hook declined)
-error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
+            <description><![CDATA[}
+  document.body.style.setProperty('overflow', 'hidden');
+}
 `]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Mac M1系统配置C++环境]]></title>
-            <link>https://blog.icehoney.me/posts/2022-04-13-m1-cpp/</link>
-            <guid>https://blog.icehoney.me/posts/2022-04-13-m1-cpp/</guid>
-            <pubDate>Wed, 13 Apr 2022 20:03:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[React 实现 Tabs 组件]]></title>
             <link>https://blog.icehoney.me/posts/2022-01-27-react-tabs/</link>
             <guid>https://blog.icehoney.me/posts/2022-01-27-react-tabs/</guid>
             <pubDate>Thu, 27 Jan 2022 20:16:00 GMT</pubDate>
-            <description><![CDATA[基于 Vue 框架来实现各种 UI 组件之前有讲过，并且讲述了复合组件如何传递数据。一种方式是使用 Provide / inject， 另外一种是传统的 props 和 $emit()。
-但是 React 下复合组件如何实现，和 Vue 相比差距还是挺大的。接下来就讲述经典的 Tabs 组件如何来实现。]]></description>
+            <description><![CDATA[}]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Github 存储大文件]]></title>
+            <link>https://blog.icehoney.me/posts/2022-02-10-github-lfs/</link>
+            <guid>https://blog.icehoney.me/posts/2022-02-10-github-lfs/</guid>
+            <pubDate>Thu, 10 Feb 2022 23:16:00 GMT</pubDate>
+            <description><![CDATA[remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To https://github.com/acgotaku/switch.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
+`]]></description>
         </item>
         <item>
             <title><![CDATA[代理Sentry的请求]]></title>
             <link>https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/</link>
             <guid>https://blog.icehoney.me/posts/2021-12-30-sentry-proxy/</guid>
             <pubDate>Thu, 30 Dec 2021 22:21:00 GMT</pubDate>
-            <description><![CDATA[添加 tunnel 选项，Sentry 就会把请求发到这个路径下，然后我们后台再处理转发。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[CSS如何处理固定Header哈希标记跳转的问题]]></title>
-            <link>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</link>
-            <guid>https://blog.icehoney.me/posts/2021-11-20-css-fixed-header/</guid>
-            <pubDate>Sat, 20 Nov 2021 21:21:00 GMT</pubDate>
-            <description><![CDATA[h1[id] {
-  padding-top: var(--header-height);
-  margin-top: calc(var(--header-height) * -1);
-}
+            <description><![CDATA[request.end();
+  }
+  res.json({});
+});
 `]]></description>
-        </item>
-        <item>
-            <title><![CDATA[如何瘦身docker镜像]]></title>
-            <link>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</link>
-            <guid>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</guid>
-            <pubDate>Thu, 09 Sep 2021 21:44:00 GMT</pubDate>
-            <description><![CDATA[首先我们需要安装依赖并编译网站，dockerfile 内容如下：]]></description>
         </item>
         <item>
             <title><![CDATA[JS 关于颜色的相关处理]]></title>
             <link>https://blog.icehoney.me/posts/2021-10-02-js-color/</link>
             <guid>https://blog.icehoney.me/posts/2021-10-02-js-color/</guid>
             <pubDate>Sat, 02 Oct 2021 10:26:00 GMT</pubDate>
-            <description><![CDATA[return brightness < 128;
+            <description><![CDATA[return this.RGBToHex(this.rgbColor);
   }
-`]]></description>
+  get hslColor() {
+    return this.RGBToHSL(this.rgbColor);
+  }]]></description>
         </item>
         <item>
             <title><![CDATA[如何检测用户启动广告屏蔽插件]]></title>
             <link>https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/</link>
             <guid>https://blog.icehoney.me/posts/2021-07-25-detect-ad-blocker/</guid>
             <pubDate>Sun, 25 Jul 2021 14:32:00 GMT</pubDate>
-            <description><![CDATA[if (isDisplayNone(node)) return true;]]></description>
+        </item>
+        <item>
+            <title><![CDATA[如何瘦身docker镜像]]></title>
+            <link>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</link>
+            <guid>https://blog.icehoney.me/posts/2021-09-09-slim-docker-image/</guid>
+            <pubDate>Thu, 09 Sep 2021 21:44:00 GMT</pubDate>
+            <description><![CDATA[容器化部署已经成为现在的主流，打包 docker 镜像已经是现代前端开发的必修课了。最近正好在做新项目的时候处理过相关事情，所以记录一下。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ELK收集Docker项目的日志]]></title>
+            <link>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</link>
+            <guid>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</guid>
+            <pubDate>Mon, 14 Jun 2021 11:21:00 GMT</pubDate>
+            <description><![CDATA[既然我们使用 docker 进行部署，那我们当然也要使用 docker 部署 ELK。docker-elk 是一个配置好的项目，我们可以基于这个项目迅速搭建起一个 ELK 项目。说实话， ELK 项目非常消耗内存，所以至少保证机器有 4GB 内存，否则可能会宕机。搭建好 ELK 之后，记得按照教程重新设置密码。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用Service Worker的 Web Push 功能]]></title>
+            <link>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</link>
+            <guid>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</guid>
+            <pubDate>Sun, 25 Apr 2021 12:27:00 GMT</pubDate>
+            <description><![CDATA[后端使用web-push可以更方便的生成公钥和私钥。代码如下：]]></description>
         </item>
         <item>
             <title><![CDATA[Django使用CKEditor的相关经验]]></title>
@@ -252,45 +270,23 @@ error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
 `]]></description>
         </item>
         <item>
-            <title><![CDATA[ELK收集Docker项目的日志]]></title>
-            <link>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</link>
-            <guid>https://blog.icehoney.me/posts/2021-06-14-elk-docker/</guid>
-            <pubDate>Mon, 14 Jun 2021 11:21:00 GMT</pubDate>
-            <description><![CDATA[input {
-	beats {
-		port => 5044
-	}]]></description>
-        </item>
-        <item>
-            <title><![CDATA[使用Service Worker的 Web Push 功能]]></title>
-            <link>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</link>
-            <guid>https://blog.icehoney.me/posts/2021-04-25-service-worker-push/</guid>
-            <pubDate>Sun, 25 Apr 2021 12:27:00 GMT</pubDate>
-            <description><![CDATA[.then(registration => {
-    return registration.pushManager.getSubscription().then(subscription => {
-      if (subscription === null) {
-        return registration.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey: this.vapidPublicKey
-        });
-      } else {
-        return subscription;
-      }
-    });
-  })
-  .then(subscription => {
-    this.subJSON = subscription.toJSON();
-  });
-`]]></description>
-        </item>
-        <item>
             <title><![CDATA[Vue代码风格]]></title>
             <link>https://blog.icehoney.me/posts/2021-03-06-vue-code-style/</link>
             <guid>https://blog.icehoney.me/posts/2021-03-06-vue-code-style/</guid>
             <pubDate>Sat, 06 Mar 2021 12:02:00 GMT</pubDate>
-            <description><![CDATA[@select="selectDate"
-        />
+            <description><![CDATA[name="date"
+              class="date-picker-icon"
+              :class="{ 'o-disabled': disabled, 'o-show': visible }"
+            />
 ]]></description>
+        </item>
+        <item>
+            <title><![CDATA[提高网页的易读性]]></title>
+            <link>https://blog.icehoney.me/posts/2021-02-06-web-accessibility/</link>
+            <guid>https://blog.icehoney.me/posts/2021-02-06-web-accessibility/</guid>
+            <pubDate>Sat, 06 Feb 2021 11:04:00 GMT</pubDate>
+            <description><![CDATA[return false;
+}]]></description>
         </item>
         <item>
             <title><![CDATA[数据库查询的N+1问题]]></title>
@@ -299,168 +295,131 @@ error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
             <pubDate>Sat, 20 Feb 2021 13:44:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[提高网页的易读性]]></title>
-            <link>https://blog.icehoney.me/posts/2021-02-06-web-accessibility/</link>
-            <guid>https://blog.icehoney.me/posts/2021-02-06-web-accessibility/</guid>
-            <pubDate>Sat, 06 Feb 2021 11:04:00 GMT</pubDate>
-            <description><![CDATA[正常人可以通过鼠标和键盘来操作浏览器，使用滚轮来滚动网页，使用鼠标左键和右键来执行操作，使用键盘输入内容。但是对于残疾人来说可能就不是这样的了，如果一个人身体行动不便只能通过键盘敲击来操作电脑，无法使用鼠标的情况下，如果网页不支持键盘 Tab 键来切换各种点击按钮，那就会给残疾人的使用带来困难。如果视力不好的人只能借助屏幕阅读器来查看网页，如果按钮或者图片没有合适的标签信息，那就无法通过屏幕阅读器来听到这个按钮或者图片的含义。我们不仅要考虑正常人如何查看网页，也需要顾及到特殊人群的需求，这样才能让每个人都享受到互联网带来的便利。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[React的TypeScript写法]]></title>
-            <link>https://blog.icehoney.me/posts/2020-05-22-react-typescript/</link>
-            <guid>https://blog.icehoney.me/posts/2020-05-22-react-typescript/</guid>
-            <pubDate>Fri, 22 May 2020 22:43:00 GMT</pubDate>
-            <description><![CDATA[import React, { ReactNode } from 'react';]]></description>
-        </item>
-        <item>
             <title><![CDATA[JavaScript的加载优化]]></title>
             <link>https://blog.icehoney.me/posts/2021-01-23-javascript-performance/</link>
             <guid>https://blog.icehoney.me/posts/2021-01-23-javascript-performance/</guid>
             <pubDate>Sat, 23 Jan 2021 16:11:00 GMT</pubDate>
-            <description><![CDATA[服务器开启 GZIP 来减少传输的文件大小。]]></description>
+            <description><![CDATA[前端开发中，JavaScript 变得越来越重要，页面载入中，JavaScript 占的比重也更高。不同与别的静态资源，例如图片和 SVG 图标。浏览器在解析 JavaScript 时花的时间要多得多。所以优化 JavaScript 也就变得非常重要。]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/js_async_defer.png">
             </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[vue实现datepicker组件]]></title>
-            <link>https://blog.icehoney.me/posts/2020-11-30-vue-datepicker/</link>
-            <guid>https://blog.icehoney.me/posts/2020-11-30-vue-datepicker/</guid>
-            <pubDate>Mon, 30 Nov 2020 14:07:00 GMT</pubDate>
-            <description><![CDATA[function getFirstDayOfMonth(date: Date) {
-  const temp = new Date(date.getTime());
-  temp.setDate(1);
-  return temp.getDay();
-}
-`]]></description>
         </item>
         <item>
             <title><![CDATA[前端开发中的加载性能优化]]></title>
             <link>https://blog.icehoney.me/posts/2020-12-20-loading-performance/</link>
             <guid>https://blog.icehoney.me/posts/2020-12-20-loading-performance/</guid>
             <pubDate>Sun, 20 Dec 2020 10:48:00 GMT</pubDate>
-            <description><![CDATA[可以使用 webpack 的SplitChunksPlugin， 分割 JS 文件，只打包首次载入需要的 JS 文件来减少网络请求。
-我们也可以使用Tree Shaking来引入需要的 JS 库，避免不使用的代码被打包进来。]]></description>
+            <description><![CDATA[现代化浏览器都支持 GZIP 进行压缩，并且服务器端 NGINX 也可以很方便的配置使用 GZIP 压缩请求的资源文件。]]></description>
         </item>
         <item>
-            <title><![CDATA[简单多边形的判定]]></title>
-            <link>https://blog.icehoney.me/posts/2020-08-09-simple-polygon/</link>
-            <guid>https://blog.icehoney.me/posts/2020-08-09-simple-polygon/</guid>
-            <pubDate>Sun, 09 Aug 2020 14:50:00 GMT</pubDate>
-            <description><![CDATA[if (
-    samePoint(l1.start, l2.start) ||
-    samePoint(l1.start, l2.end) ||
-    samePoint(l1.end, l2.start) ||
-    samePoint(l1.end, l2.end)
-  ) {
-    return false;
-  }
-  return (
-    signedArea(l1.start, l2.start, l2.end) !==
-      signedArea(l1.end, l2.start, l2.end) &&
-    signedArea(l1.start, l1.end, l2.start) !==
-      signedArea(l1.start, l1.end, l2.end)
-  );
-}]]></description>
+            <title><![CDATA[vue实现datepicker组件]]></title>
+            <link>https://blog.icehoney.me/posts/2020-11-30-vue-datepicker/</link>
+            <guid>https://blog.icehoney.me/posts/2020-11-30-vue-datepicker/</guid>
+            <pubDate>Mon, 30 Nov 2020 14:07:00 GMT</pubDate>
+            <description><![CDATA[}
+`]]></description>
         </item>
         <item>
             <title><![CDATA[前端中debounce和throttle函数说明]]></title>
             <link>https://blog.icehoney.me/posts/2020-10-17-debounce-and-throttle/</link>
             <guid>https://blog.icehoney.me/posts/2020-10-17-debounce-and-throttle/</guid>
             <pubDate>Sat, 17 Oct 2020 20:52:00 GMT</pubDate>
+            <description><![CDATA[function throttle(fn: Function, time: number): Function {
+  let inThrottle: boolean;]]></description>
         </item>
         <item>
-            <title><![CDATA[Vue中组件的设计]]></title>
-            <link>https://blog.icehoney.me/posts/2020-07-30-vue-components/</link>
-            <guid>https://blog.icehoney.me/posts/2020-07-30-vue-components/</guid>
-            <pubDate>Thu, 30 Jul 2020 22:08:00 GMT</pubDate>
-            <description><![CDATA[Vue 中组件设计经常遇到复合组件的问题，例如下拉菜单，下拉菜单中我们不仅要实现select元素的功能，还要实现option元素的功能，这样才是一个完整的下拉菜单组件。]]></description>
+            <title><![CDATA[React的TypeScript写法]]></title>
+            <link>https://blog.icehoney.me/posts/2020-05-22-react-typescript/</link>
+            <guid>https://blog.icehoney.me/posts/2020-05-22-react-typescript/</guid>
+            <pubDate>Fri, 22 May 2020 22:43:00 GMT</pubDate>
+            <description><![CDATA[static defaultProps = {
+    disabled: false
+  };]]></description>
         </item>
         <item>
             <title><![CDATA[在浏览器上显示TIF图像]]></title>
             <link>https://blog.icehoney.me/posts/2020-09-10-show-tif-in-web/</link>
             <guid>https://blog.icehoney.me/posts/2020-09-10-show-tif-in-web/</guid>
             <pubDate>Thu, 10 Sep 2020 20:57:00 GMT</pubDate>
-            <description><![CDATA[图像处理是一个很复杂的事情，如果别人有实现就别自己造轮子了。这里我推荐UTIF.js，这位作者实现了网页版图片编辑器。所以质量上还是很高的。]]></description>
+            <description><![CDATA[const rgba = UTIF.toRGBA8(ifds[0]);
+        const widh = ifds[0].width;
+        const height = ifds[0].height;
+        const canvas = document.createElement("canvas");
+        canvas.width = widh;
+        canvas.height = height;
+        this.width = widh;
+        this.height = height;
+        const ctx = canvas.getContext("2d");
+        const imgData = new ImageData(
+          new Uint8ClampedArray(rgba.buffer),
+          widh,
+          height
+        );
+        ctx?.putImageData(imgData, 0, 0);
+        canvas.toBlob(blob => {
+          this.imgData = URL.createObjectURL(blob);
+        });
+      });
+  }
+`]]></description>
+        </item>
+        <item>
+            <title><![CDATA[简单多边形的判定]]></title>
+            <link>https://blog.icehoney.me/posts/2020-08-09-simple-polygon/</link>
+            <guid>https://blog.icehoney.me/posts/2020-08-09-simple-polygon/</guid>
+            <pubDate>Sun, 09 Aug 2020 14:50:00 GMT</pubDate>
+            <description><![CDATA[signedArea(l1.start, l1.end, l2.end)
+  );
+}]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Vue中组件的设计]]></title>
+            <link>https://blog.icehoney.me/posts/2020-07-30-vue-components/</link>
+            <guid>https://blog.icehoney.me/posts/2020-07-30-vue-components/</guid>
+            <pubDate>Thu, 30 Jul 2020 22:08:00 GMT</pubDate>
+            <description><![CDATA[灵活的设计组件才能在实际开发中更方便的使用，一些第三方组件开发的时候没有考虑到二次封装的可能性，直接通过$parent和$children进行数据的更新。导致可用性大大降低。]]></description>
         </item>
         <item>
             <title><![CDATA[Vue实现双Slider]]></title>
             <link>https://blog.icehoney.me/posts/2020-06-14-vue-dual-slider/</link>
             <guid>https://blog.icehoney.me/posts/2020-06-14-vue-dual-slider/</guid>
             <pubDate>Sun, 14 Jun 2020 21:31:00 GMT</pubDate>
-            <description><![CDATA[目前针对 Range 元素的样式定制化还没有纳入 Web 标准，所以在处理起来稍微花点功夫。首先，我们需要修改默认的滑块样式。使用的 CSS 选择器是-webkit-slider-thumb。由于未纳入标准，需要使用浏览器前缀才行。这里我们可以借助 postcss-input-range 插件来完成这项工作。]]></description>
         </item>
         <item>
             <title><![CDATA[Vue表单组件如何自动化输入]]></title>
             <link>https://blog.icehoney.me/posts/2020-04-23-vue-hack-form/</link>
             <guid>https://blog.icehoney.me/posts/2020-04-23-vue-hack-form/</guid>
             <pubDate>Thu, 23 Apr 2020 22:43:00 GMT</pubDate>
-            <description><![CDATA[接下来，我们讲下如何选中元素并调用$emit，例子是 Vue 官网的搜索框]]></description>
+            <description><![CDATA[使用 Vue 的数据双向绑定功能可以很方便的完成表单的数据收集和提交，再也不用自己手动监听事件和收集数据了。但同时自动化输入也变得复杂起来。]]></description>
         </item>
         <item>
             <title><![CDATA[Vue下使用jest进行单元测试]]></title>
             <link>https://blog.icehoney.me/posts/2020-03-19-vue-jest/</link>
             <guid>https://blog.icehoney.me/posts/2020-03-19-vue-jest/</guid>
             <pubDate>Thu, 19 Mar 2020 21:56:00 GMT</pubDate>
-            <description><![CDATA[moduleNameMapper: {
-    '^!svg-inline-loader!@(.*)$': require.resolve('jest-transform-stub')
-}
-`]]></description>
-        </item>
-        <item>
-            <title><![CDATA[亚马逊S3服务简单介绍]]></title>
-            <link>https://blog.icehoney.me/posts/2019-01-23-aws-s3/</link>
-            <guid>https://blog.icehoney.me/posts/2019-01-23-aws-s3/</guid>
-            <pubDate>Wed, 23 Jan 2019 21:20:00 GMT</pubDate>
-            <description><![CDATA[Policy 的 Conditions 数组里面可以添加["starts-with", "$x-amz-meta-md5checksum", ""]。最后一个参数为空字符串代表可以上传任何数值。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[前端开发如何防止逆向以及对策]]></title>
-            <link>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</link>
-            <guid>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</guid>
-            <pubDate>Sat, 22 Feb 2020 18:03:00 GMT</pubDate>
+            <description><![CDATA[vue-cli 已经提供现成的插件，我们可以很方便的进行集成。官方文档也有讲述如何 debug。在使用 jest 之前，我们需要知道 jest 的测试代码不是像前端代码一样运行在浏览器环境，而是使用 node 运行，并且浏览器的 DOM 环境使用jsdom来模拟，所以在集成测试的时候需要解决不少问题。]]></description>
         </item>
         <item>
             <title><![CDATA[前端部署之CDN的那些事情]]></title>
             <link>https://blog.icehoney.me/posts/2020-01-14-frontend-deploy/</link>
             <guid>https://blog.icehoney.me/posts/2020-01-14-frontend-deploy/</guid>
             <pubDate>Tue, 14 Jan 2020 22:59:00 GMT</pubDate>
-            <description><![CDATA[现在的前端开发主流是 PWA，简而言之就是像 App 一样使用。基于 PWA 技术可以离线访问，并且可以添加程序到菜单里。离线技术使用的是比较成熟的 Service Workers。但是配合 CDN 就有很多不得不注意的事情。]]></description>
+            <description><![CDATA[现在前端的开发针对很多小图标，都是采用 SVG 的方式来引用。其中 SVG symbol 特别好用，可以在页面里嵌入一个 inline 的 SVG，然后在其他对方使用``标签来引用。但是对于放在 CDN 上的 SVG 文件，不能直接使用下面的形式：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[前端开发如何防止逆向以及对策]]></title>
+            <link>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</link>
+            <guid>https://blog.icehoney.me/posts/2020-02-22-hack-dev-tools/</guid>
+            <pubDate>Sat, 22 Feb 2020 18:03:00 GMT</pubDate>
+            <description><![CDATA[console.log(el);
+
+`]]></description>
         </item>
         <item>
             <title><![CDATA[iOS12下Safari浏览器的BUG]]></title>
             <link>https://blog.icehoney.me/posts/2019-12-10-ios-safari-bug/</link>
             <guid>https://blog.icehoney.me/posts/2019-12-10-ios-safari-bug/</guid>
             <pubDate>Tue, 10 Dec 2019 22:39:00 GMT</pubDate>
-            <description><![CDATA[当我们遇到一个特殊需求，有两个绝对定位的 DIV(position:absolute)。如果指定了z-index必然会有上下的层级关系，值大的在上面，值小的在下面。但是我们需要上面的 DIV 不接受任何的事件，由下层的 DIV 捕获事件并处理。这时候可以使用一个神奇的 CSSpointer-events: none;来解决。只要给上层 DIV 指定了这个 CSS 属性，上层 DIV 就不会接收任何事件，相对的下层就可以收到所有事件的响应。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[使用Docker运行node项目]]></title>
-            <link>https://blog.icehoney.me/posts/2019-09-23-node-docker/</link>
-            <guid>https://blog.icehoney.me/posts/2019-09-23-node-docker/</guid>
-            <pubDate>Mon, 23 Sep 2019 22:43:00 GMT</pubDate>
-            <description><![CDATA[首先我们需要声明版本号version，不同的 Docker 版本对 docker-compose 的版本支持也不一样，可以参考官方的文档进行对照。
-然后声明services，service 下的每一个声明都是一个 Docker 的实例。下面介绍一个实际例子：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[计算贝塞尔曲线的长度]]></title>
-            <link>https://blog.icehoney.me/posts/2019-10-22-bezier-length/</link>
-            <guid>https://blog.icehoney.me/posts/2019-10-22-bezier-length/</guid>
-            <pubDate>Tue, 22 Oct 2019 22:28:00 GMT</pubDate>
-            <description><![CDATA[并且有详细的解释：Arc length]]></description>
-        </item>
-        <item>
-            <title><![CDATA[求经纬度两点距离]]></title>
-            <link>https://blog.icehoney.me/posts/2019-09-11-distance-latlng/</link>
-            <guid>https://blog.icehoney.me/posts/2019-09-11-distance-latlng/</guid>
-            <pubDate>Wed, 11 Sep 2019 22:43:00 GMT</pubDate>
-            <description><![CDATA[笛卡尔坐标系（Cartesian coordinate system）也称直角坐标系，是我们高中时学过的坐标系。我们可以通过经纬度和地球半径来计算出直接坐标系的 X,Y,Z。然后通过直角坐标系中求两点距离公式，计算出两点距离，不过这个距离是直线距离。如果两点距离很远的情况下，可以看作是我们穿过地球的直线距离。可以借助 Cesium 的Cartesian3库方便的完成笛卡尔坐标系的转换和距离计算。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Vue中如何设计面包屑]]></title>
-            <link>https://blog.icehoney.me/posts/2019-07-28-vue-app-breadcrumbs/</link>
-            <guid>https://blog.icehoney.me/posts/2019-07-28-vue-app-breadcrumbs/</guid>
-            <pubDate>Sun, 28 Jul 2019 23:21:00 GMT</pubDate>
-            <description><![CDATA[下面来看看面包屑的结构。]]></description>
+            <description><![CDATA[这样就可以激活输入的键盘了，不过要注意的是只有touchstart可以触发，测试发现touchend并不能触发。]]></description>
         </item>
         <item>
             <title><![CDATA[Github如何省略每次输入验证信息]]></title>
@@ -469,21 +428,75 @@ error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
             <pubDate>Sun, 23 Jun 2019 20:21:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[使用WebAssembly编译C++到JS]]></title>
-            <link>https://blog.icehoney.me/posts/2019-04-28-webassmebly/</link>
-            <guid>https://blog.icehoney.me/posts/2019-04-28-webassmebly/</guid>
-            <pubDate>Sun, 28 Apr 2019 20:51:00 GMT</pubDate>
-            <description><![CDATA[官方的 demo 是使用 src 的方式来引入，并且暴露成 Module 的全局变量。但是现代化的 Web 项目都是使用 webpack 打包，并且自动化引入的。所以我们也不想为了 WebAssembly 搞特殊。接下来就讲述如何配置来引入。首先，使用 emscripten 输出 mjs 文件，这样才可以作为模块被导入。具体的编译参数可以参照emcc。
-首先，wasm 格式并不能被 webpack 正确识别，我们需要添加 loader]]></description>
+            <title><![CDATA[计算贝塞尔曲线的长度]]></title>
+            <link>https://blog.icehoney.me/posts/2019-10-22-bezier-length/</link>
+            <guid>https://blog.icehoney.me/posts/2019-10-22-bezier-length/</guid>
+            <pubDate>Tue, 22 Oct 2019 22:28:00 GMT</pubDate>
+            <description><![CDATA[贝塞尔曲线是工业上经常用的一种曲线，经常用用来汽车的外观设计。贝塞尔曲线根据控制点的不同可以分为：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用Docker运行node项目]]></title>
+            <link>https://blog.icehoney.me/posts/2019-09-23-node-docker/</link>
+            <guid>https://blog.icehoney.me/posts/2019-09-23-node-docker/</guid>
+            <pubDate>Mon, 23 Sep 2019 22:43:00 GMT</pubDate>
+            <description><![CDATA[很多情况下，一个 Docker 是满足不了需求的，有时候还要使用 MySQL 数据库，有时候还要使用 redis。这时候就需要使用 docker-compose 来管理多个 Docker。docker-compose 的使用也很简单，只要在项目根目录下建立一个docker-compose.yml文件即可。关于 YAML 的学习，可以参考Learn YAML in five minutes!。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[求经纬度两点距离]]></title>
+            <link>https://blog.icehoney.me/posts/2019-09-11-distance-latlng/</link>
+            <guid>https://blog.icehoney.me/posts/2019-09-11-distance-latlng/</guid>
+            <pubDate>Wed, 11 Sep 2019 22:43:00 GMT</pubDate>
+            <description><![CDATA[世界大地测量系统是三维描述地球的位置信息，对于导航或者显示来说很不方便。所以在平面上使用麦卡托投影（Mercator projection），可以把三维平铺到二维。但是注意，麦卡托投影会使面积发生变形。所以投影出来的坐标是不能直接用来计算距离的。维度越高，变形就越大。所以需要计算比例因子来纠正。但对于两个坐标纬度相差比较大的情况下，计算就更复杂了。所以不推荐使用麦卡托投影来计算距离。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Vue中如何设计面包屑]]></title>
+            <link>https://blog.icehoney.me/posts/2019-07-28-vue-app-breadcrumbs/</link>
+            <guid>https://blog.icehoney.me/posts/2019-07-28-vue-app-breadcrumbs/</guid>
+            <pubDate>Sun, 28 Jul 2019 23:21:00 GMT</pubDate>
+            <description><![CDATA[component: userSettings
+      },
+      {
+        path: '',
+        name: 'user-dashboard'
+      }
+      // ...
+    ]
+  }
+]
+`]]></description>
         </item>
         <item>
             <title><![CDATA[前端中的e2e测试]]></title>
             <link>https://blog.icehoney.me/posts/2019-04-06-javascript-e2e-test/</link>
             <guid>https://blog.icehoney.me/posts/2019-04-06-javascript-e2e-test/</guid>
             <pubDate>Sat, 06 Apr 2019 12:12:00 GMT</pubDate>
-            <description><![CDATA[customassertionspath: ["tests/e2e/custom-assertions"],
+            <description><![CDATA[module.exports = {
+      output_folder: "tests/e2e/reports",
+      customassertionspath: ["tests/e2e/custom-assertions"],
       globals_path: "globalsModule.js",
       src_folders: ["tests/e2e/specs/web"]]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用WebAssembly编译C++到JS]]></title>
+            <link>https://blog.icehoney.me/posts/2019-04-28-webassmebly/</link>
+            <guid>https://blog.icehoney.me/posts/2019-04-28-webassmebly/</guid>
+            <pubDate>Sun, 28 Apr 2019 20:51:00 GMT</pubDate>
+            <description><![CDATA[const module = lib({
+  locateFile(path) {
+    if (path.endsWith('.wasm')) {
+      return libWasm;
+    }
+    return path;
+  }
+});
+`]]></description>
+        </item>
+        <item>
+            <title><![CDATA[亚马逊S3服务简单介绍]]></title>
+            <link>https://blog.icehoney.me/posts/2019-01-23-aws-s3/</link>
+            <guid>https://blog.icehoney.me/posts/2019-01-23-aws-s3/</guid>
+            <pubDate>Wed, 23 Jan 2019 21:20:00 GMT</pubDate>
+            <description><![CDATA[我们使用getSignedUrl API 来生成下载链接，下载链接也是根据自己的 AccessId 和 AccessKey 生成链接的凭证，也没有和 AWS 服务器直接进行交互。当请求文件的时候，AWS 再计算凭证是否有效。所以后端无需和 AWS 交互就可以返回客户端有效的 AWS 下载链接。针对需要返回实际文件的 API 接口，可以采用返回 302 的跳转链接来完成需求。示例代码如下：]]></description>
         </item>
         <item>
             <title><![CDATA[localStorage互斥锁的使用]]></title>
@@ -492,137 +505,133 @@ error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
             <pubDate>Thu, 28 Feb 2019 20:20:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[后端开发的技术总结]]></title>
-            <link>https://blog.icehoney.me/posts/2018-10-15-backend-development/</link>
-            <guid>https://blog.icehoney.me/posts/2018-10-15-backend-development/</guid>
-            <pubDate>Mon, 15 Oct 2018 21:20:00 GMT</pubDate>
-            <description><![CDATA[说实话，最近前端开发的事情并不是很多。所以自己也慢慢开始做后端开发，逐渐向全沾工程师靠拢。现在的开发工作，分工分明，后端也只需要专注 API 的请求与返回就好了。]]></description>
-        </item>
-        <item>
             <title><![CDATA[前端开发地图应用的调研]]></title>
             <link>https://blog.icehoney.me/posts/2018-11-27-js-map/</link>
             <guid>https://blog.icehoney.me/posts/2018-11-27-js-map/</guid>
             <pubDate>Tue, 27 Nov 2018 21:20:00 GMT</pubDate>
-            <description><![CDATA[产品需要在国内和国外使用，费用合理，可以换地图的贴图并且能在地图上绘制各种信息。例如多边形或圆形还有贝塞尔曲线。]]></description>
+            <description><![CDATA[我司的产品终于发布了新版本，所以忙碌的开发暂时告一段落。最近在做下一期的规划，然后就是要做前端网站来满足用户的需求。由于我们的产品是和地图强相关的，所以也对地图做了很多调研。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[后端开发的技术总结]]></title>
+            <link>https://blog.icehoney.me/posts/2018-10-15-backend-development/</link>
+            <guid>https://blog.icehoney.me/posts/2018-10-15-backend-development/</guid>
+            <pubDate>Mon, 15 Oct 2018 21:20:00 GMT</pubDate>
+            <description><![CDATA[使用API Blueprint作为 API 规范，并使用RSpec API Blueprint来自动生成文档。
+生成的 Markdown 文件，可以很方便的转换成网页便于客户端开发。例如这个工具aglio。]]></description>
         </item>
         <item>
             <title><![CDATA[跨域请求中的cookies处理]]></title>
             <link>https://blog.icehoney.me/posts/2018-09-08-cors-cookie/</link>
             <guid>https://blog.icehoney.me/posts/2018-09-08-cors-cookie/</guid>
             <pubDate>Sat, 08 Sep 2018 23:07:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <description><![CDATA[我们都知道服务器设置 cookie 是通过set-cookie的 http header 来完成。浏览器会读取这个信息设置 cookie。但是对于跨与请求，默认是无效的。我们需要再添加一个 http header。]]></description>
         </item>
         <item>
             <title><![CDATA[伪随机的种子问题]]></title>
             <link>https://blog.icehoney.me/posts/2018-08-01-random-seed/</link>
             <guid>https://blog.icehoney.me/posts/2018-08-01-random-seed/</guid>
             <pubDate>Wed, 01 Aug 2018 22:07:00 GMT</pubDate>
-            <description><![CDATA[@rand = Random.new(1234)]]></description>
+            <description><![CDATA[puts @rand.rand(10..150)]]></description>
         </item>
         <item>
             <title><![CDATA[Web离线的解决方案]]></title>
             <link>https://blog.icehoney.me/posts/2018-07-06-offline-web/</link>
             <guid>https://blog.icehoney.me/posts/2018-07-06-offline-web/</guid>
             <pubDate>Fri, 06 Jul 2018 23:25:00 GMT</pubDate>
-            <description><![CDATA[
-  ...
-
-`]]></description>
+            <description><![CDATA[这里要补充的一点是，针对 https 的 Application Cache 是无法完成跨域请求的，所以请慎重。]]></description>
         </item>
         <item>
             <title><![CDATA[如何封装第三方vue组件]]></title>
             <link>https://blog.icehoney.me/posts/2018-05-29-wrapper-vue-component/</link>
             <guid>https://blog.icehoney.me/posts/2018-05-29-wrapper-vue-component/</guid>
             <pubDate>Tue, 29 May 2018 23:19:00 GMT</pubDate>
-            <description><![CDATA[父元素的属性继承可以使用v-bind="$attrs"来完成。所以完成组建的透明封装只需要加上三个指令。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[使用letsencrypt为自己的网站加密]]></title>
-            <link>https://blog.icehoney.me/posts/2018-04-08-website-https/</link>
-            <guid>https://blog.icehoney.me/posts/2018-04-08-website-https/</guid>
-            <pubDate>Sun, 08 Apr 2018 20:51:00 GMT</pubDate>
-            <description><![CDATA[sudo yum install gcc libffi-devel python-devel openssl-devel
-`]]></description>
-        </item>
-        <item>
-            <title><![CDATA[浏览器的渲染性能]]></title>
-            <link>https://blog.icehoney.me/posts/2018-02-13-rendering-performance/</link>
-            <guid>https://blog.icehoney.me/posts/2018-02-13-rendering-performance/</guid>
-            <pubDate>Tue, 13 Feb 2018 20:44:00 GMT</pubDate>
-            <description><![CDATA[如果修改了元素的布局属性，也就是改变了元素的几何属性（例如宽度，高度）。那么浏览器就必须检查所有元素，然后重新排版页面。任何受影响的部分都要重新绘制，再重新合成。]]></description>
-            <enclosure url="https://blog.icehoney.me/~@assets/frame-full.jpg">
-            </enclosure>
         </item>
         <item>
             <title><![CDATA[JavaScript开发中的性能优化]]></title>
             <link>https://blog.icehoney.me/posts/2018-04-25-javascript-performance/</link>
             <guid>https://blog.icehoney.me/posts/2018-04-25-javascript-performance/</guid>
             <pubDate>Wed, 25 Apr 2018 23:22:00 GMT</pubDate>
-            <description><![CDATA[function onScroll(evt) {
-  // Prevent multiple rAF callbacks.
-  if (scheduledAnimationFrame) return;]]></description>
+            <description><![CDATA[最近工作比较清闲，5 月又换了一个工作环境。总结下最近看的有关 JavaScript 性能的知识，并记下来供未来的自己参考。希望自己能不忘初心，继续成长！]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用letsencrypt为自己的网站加密]]></title>
+            <link>https://blog.icehoney.me/posts/2018-04-08-website-https/</link>
+            <guid>https://blog.icehoney.me/posts/2018-04-08-website-https/</guid>
+            <pubDate>Sun, 08 Apr 2018 20:51:00 GMT</pubDate>
+            <description><![CDATA[浏览器的证书签名的步骤实在是很麻烦，所以有位热心的学生做了一个自动化脚本，可以自动生成脚本并且可以和其他脚本一起使用。达到一键签名证书。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[浏览器的渲染性能]]></title>
+            <link>https://blog.icehoney.me/posts/2018-02-13-rendering-performance/</link>
+            <guid>https://blog.icehoney.me/posts/2018-02-13-rendering-performance/</guid>
+            <pubDate>Tue, 13 Feb 2018 20:44:00 GMT</pubDate>
+            <description><![CDATA[浏览器的渲染主要是分为 5 个步骤，我们需要了解这些知识才能编写性能更好的代码。]]></description>
+            <enclosure url="https://blog.icehoney.me/~@assets/frame-full.jpg">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[JavaScript中的数据类型]]></title>
             <link>https://blog.icehoney.me/posts/2018-01-16-javascript-types/</link>
             <guid>https://blog.icehoney.me/posts/2018-01-16-javascript-types/</guid>
             <pubDate>Tue, 16 Jan 2018 22:44:00 GMT</pubDate>
-            <description><![CDATA[JavaScript 中的变量是没有类型的，只有值才有。变量可以随时持有任何类型的值。]]></description>
+            <description><![CDATA[JavaScript 中有七种内置类型：]]></description>
         </item>
         <item>
             <title><![CDATA[前端开发的技术栈]]></title>
             <link>https://blog.icehoney.me/posts/2017-11-18-frontend-development/</link>
             <guid>https://blog.icehoney.me/posts/2017-11-18-frontend-development/</guid>
             <pubDate>Sat, 18 Nov 2017 17:18:00 GMT</pubDate>
-            <description><![CDATA[参考：]]></description>
+            <description><![CDATA[现在主流的浏览器支持的 JavaScript 版本是 es5。但是众所周知，JavaScript(es5)有很多陷阱和缺点，例如this指针问题和异步处理等等。基于原型连的继承对于面向对象开发者来说也很不友好。所以推荐使用es6来书写代码。可以使用基于class的继承，和解决this指针问题。而且还能使用import进行模块化开发。虽然只是语法糖，但也提升了开发效率。]]></description>
         </item>
         <item>
             <title><![CDATA[Github团队协作]]></title>
             <link>https://blog.icehoney.me/posts/2017-09-16-github-workflow/</link>
             <guid>https://blog.icehoney.me/posts/2017-09-16-github-workflow/</guid>
             <pubDate>Sat, 16 Sep 2017 22:30:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <description><![CDATA[自己的分支在上传到服务器并合并之后通常服务器会删掉这个分支，但本地还是会保留。我们需要定期删掉自己本地已经合并的分支，这里推荐使用下面的命令。]]></description>
         </item>
         <item>
             <title><![CDATA[网站开发中的Modal问题]]></title>
             <link>https://blog.icehoney.me/posts/2017-10-21-modal-scroll/</link>
             <guid>https://blog.icehoney.me/posts/2017-10-21-modal-scroll/</guid>
             <pubDate>Sat, 21 Oct 2017 14:30:00 GMT</pubDate>
-            <description><![CDATA[参考：]]></description>
+            <description><![CDATA[第二个方案是，网页内容采用overflow: hidden来隐藏滚动条。Modal 采用position：fixed方案进行定位，但是这时候 Modal 不得不设置overflow： auto来进行滚动。
+第二个方案对于网页内容和 Modal 的位置并没有特殊的要求，比较灵活，而且不需要 JS 的介入。]]></description>
         </item>
         <item>
             <title><![CDATA[CSS技巧和工作总结]]></title>
             <link>https://blog.icehoney.me/posts/2017-08-06-css-trick/</link>
             <guid>https://blog.icehoney.me/posts/2017-08-06-css-trick/</guid>
             <pubDate>Sun, 06 Aug 2017 15:30:00 GMT</pubDate>
-            <description><![CDATA[CSS 动画尽量使用transform: translate3d(0,0,0)来实现，因为 ransform3d api 会强制开启 GPU 加速提高页面的流畅度。在公司的项目中，从使用background-position进行动画效果换成transform之后，动画流畅度得到了显著的改善。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[模块化JavaScript开发]]></title>
-            <link>https://blog.icehoney.me/posts/2016-06-30-webpack/</link>
-            <guid>https://blog.icehoney.me/posts/2016-06-30-webpack/</guid>
-            <pubDate>Thu, 30 Jun 2016 16:43:00 GMT</pubDate>
+            <description><![CDATA[手机版 Safari 在滑动的时候如果有动画执行，会导致整个页面空白。当滑动结束的时候才会渲染。我们不得不采用给所有元素添加transform: translate3d(0,0,0)属性，
+来使 Safari 强制使用 GPU 加速。]]></description>
         </item>
         <item>
             <title><![CDATA[JavaScript对象的常见操作]]></title>
             <link>https://blog.icehoney.me/posts/2017-06-18-javascript-object/</link>
             <guid>https://blog.icehoney.me/posts/2017-06-18-javascript-object/</guid>
             <pubDate>Sun, 18 Jun 2017 22:13:00 GMT</pubDate>
-            <description><![CDATA[工作也算是稳定了，不过理想和现实的差距还是很大。程序员的职责是把枯燥的工作自动化，而不是去进行重复劳动。最近在写 JavaScript 程序的时候，遇到了很多对象相关的操作。所以写点东西来总结下这半个月的成长。]]></description>
         </item>
         <item>
             <title><![CDATA[CSS笔记和杂谈]]></title>
             <link>https://blog.icehoney.me/posts/2017-05-07-css/</link>
             <guid>https://blog.icehoney.me/posts/2017-05-07-css/</guid>
             <pubDate>Sun, 07 May 2017 21:49:00 GMT</pubDate>
-            <description><![CDATA[这是一个最基本的设计布局。在一行上有多列的内容，最简单的例子是导航栏。HTML 的大致结构是这样的：]]></description>
+            <description><![CDATA[这应该是最长的一次博客断更吧。。。因为年后辞职加上来日本工作的原因。导致很长时间都没有更新自己的博客了。很是惭愧，本来定的目标就是每月一篇很简单的任务。但居然空档了这么长时间，这就是正所谓的生于忧患死于安乐吧。找到了工作就松懈了，所以今天又重新捡起来继续写。公司的新人课题是做一个简单的 CMS 网站，也算重新复习了一下网页制作吧，因为一直在写 JS 的项目，基本的 HTML 和 CSS 的设计都有点生疏了。。。]]></description>
         </item>
         <item>
             <title><![CDATA[Golang语言学习分享]]></title>
             <link>https://blog.icehoney.me/posts/2017-01-29-go/</link>
             <guid>https://blog.icehoney.me/posts/2017-01-29-go/</guid>
             <pubDate>Sun, 29 Jan 2017 09:49:00 GMT</pubDate>
-            <description><![CDATA[首先，请大家阅读官方的这篇文档How to Write Go Code。这篇文章介绍了如何写一个基本的 Golang 程序和类，这里要说的是GOPATH，使用 Golang 语言必须要设置GOPATH环境变量，可以通过使用go env来查询 Golang 相关的环境变量。GOPATH下一般有三个文件夹 bin,src,pkg。src 下存放我们写的 Golang 项目，bin 下是编译好的二进制文件，pkg 文件夹下是生成的库文件。我们安装的第三方库也会存放在 src 文件夹下，记住 Golang 引用的包名的根文件夹是GOPATH的 src 文件夹，所以我们一般都要使用绝对路径来引用包避免出现错误。]]></description>
+            <description><![CDATA[然后解压缩和配置环境变量，过程很简单。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用Latex书写论文]]></title>
+            <link>https://blog.icehoney.me/posts/2016-09-20-latex/</link>
+            <guid>https://blog.icehoney.me/posts/2016-09-20-latex/</guid>
+            <pubDate>Tue, 20 Sep 2016 20:16:00 GMT</pubDate>
+            <description><![CDATA[网上有很多 Latex 的学习资料，不过我们也没必要详细学习，在此介绍一个简单的学习资料。一份不太简短的 LATEX 介绍基本上看完这个文档就可以大致明白如何利用 Latex 书写论文。]]></description>
         </item>
         <item>
             <title><![CDATA[Linux高并发系统参数优化]]></title>
@@ -636,38 +645,39 @@ error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
             <link>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</link>
             <guid>https://blog.icehoney.me/posts/2016-12-19-reverse-javascript/</guid>
             <pubDate>Mon, 19 Dec 2016 19:16:00 GMT</pubDate>
-            <description><![CDATA[这个请求总共有 17 个请求参数，真是够多的。但是我们不知道所有请求参数是否是必须的。有可能服务器只校验其中的几个参数，所以我们没有必要对每个参数都分析一遍。]]></description>
+            <description><![CDATA[从上面我们知道了，这个请求只对参数进行了校验，Request Headers并不需要。那重点就是逆向 JS 找到如何构造参数即可。]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/iqiyi.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[模块化JavaScript开发]]></title>
+            <link>https://blog.icehoney.me/posts/2016-06-30-webpack/</link>
+            <guid>https://blog.icehoney.me/posts/2016-06-30-webpack/</guid>
+            <pubDate>Thu, 30 Jun 2016 16:43:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[WebGL渲染的知识介绍]]></title>
             <link>https://blog.icehoney.me/posts/2016-05-05-webgl-render/</link>
             <guid>https://blog.icehoney.me/posts/2016-05-05-webgl-render/</guid>
             <pubDate>Thu, 05 May 2016 10:43:00 GMT</pubDate>
-            <description><![CDATA[顶点的 X,Y,Z 轴的取值范围全部是-1 到 1 之间，所以要注意变换坐标。]]></description>
+            <description><![CDATA[来到日本导师的研究方向是计算机图形学，由于我比较擅长 Web 开发，便选择了 WebGL 进行图形渲染的研究课题。学习了大半年，也该写点东西介绍下自己对 WebGL 的理解，如有错误，欢迎批评指正。]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/webgl_graphics_pipeline.jpg">
             </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[使用Latex书写论文]]></title>
-            <link>https://blog.icehoney.me/posts/2016-09-20-latex/</link>
-            <guid>https://blog.icehoney.me/posts/2016-09-20-latex/</guid>
-            <pubDate>Tue, 20 Sep 2016 20:16:00 GMT</pubDate>
-            <description><![CDATA[当然，我们也没必要一定要系统的学习，如果别人有做好现成的模板，我们直接套用就好，非常方便，中科大也有热心的小伙伴制作了模板。地址是USTC Thesis。近期抽时间的话，我会制作一个软件学院专用的论文模板。]]></description>
         </item>
         <item>
             <title><![CDATA[关于JavaScript跨域请求的相关知识]]></title>
             <link>https://blog.icehoney.me/posts/2016-03-21-cors-options-method/</link>
             <guid>https://blog.icehoney.me/posts/2016-03-21-cors-options-method/</guid>
             <pubDate>Mon, 21 Mar 2016 14:33:00 GMT</pubDate>
+            <description><![CDATA[跨域请求指得是发起请求的资源所在域不同于该请求所指向资源所在的域的 HTTP 请求.最常见的就是跨域载入图片,我们可以看到很多网站主站和网站所使用的图片
+是不同的域名的.这样做的好处是请求图片的时候不会发送主站的 Cookies,因为不同域名嘛.而且还可以减少主站的服务器压力.但载入图片使用的是 GET 方法,比较简单.]]></description>
         </item>
         <item>
             <title><![CDATA[使用最小费用最大流模型解决酒店管理收益最大化问题]]></title>
             <link>https://blog.icehoney.me/posts/2015-12-29-minimum-cost-flow-problem/</link>
             <guid>https://blog.icehoney.me/posts/2015-12-29-minimum-cost-flow-problem/</guid>
             <pubDate>Tue, 29 Dec 2015 11:15:00 GMT</pubDate>
-            <description><![CDATA[最近老师布置个作业,很没有头绪,于是各种咨询,大家的解决方案是使用最小费用最大流模型来求解,于是我便花了 3 天时间来理解这个算法.]]></description>
+            <description><![CDATA[顶点 11 和顶点 16 是重复边的订单,对应的是第一个订单和第 6 个订单.源码和输入数据可以在文章末尾看到.]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/model.png">
             </enclosure>
         </item>
@@ -676,153 +686,125 @@ error: failed to push some refs to 'https://github.com/{user}/{repo}.git'
             <link>https://blog.icehoney.me/posts/2015-12-01-archlinux-dota2/</link>
             <guid>https://blog.icehoney.me/posts/2015-12-01-archlinux-dota2/</guid>
             <pubDate>Tue, 01 Dec 2015 21:58:00 GMT</pubDate>
-            <description><![CDATA[Dota2 只能通过 Alt 和鼠标左键的配合发信号.无法像 Dota 一样可以单纯使用鼠标发信号.但是有些用户可能发现自己无法发信号.
-原因在于你使用的窗口管理器已经为 Alt 和鼠标左键绑定了事件,所以你得取消窗口管理器的事件绑定,例如 openbox 需要修改配置文件 rc.xml 找到鼠标事件并注释掉事件绑定的内容.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Chrome扩展和Web Page 进行通讯]]></title>
-            <link>https://blog.icehoney.me/posts/2015-08-25-communication-between-extensions-and-web-page/</link>
-            <guid>https://blog.icehoney.me/posts/2015-08-25-communication-between-extensions-and-web-page/</guid>
-            <pubDate>Tue, 25 Aug 2015 19:54:00 GMT</pubDate>
-            <description><![CDATA[发送消息,然后在 Content Scripts 监听 message 事件捕捉消息发送回 Background
-这种方式适合单向通讯,只从 web page 发送数据到 Background 或者 Background 发送给 web page 如果双向通讯的话就很不方便了
-因为 Content Scripts 和 web page 共享 window 会造成事件重复绑定的.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Archlinux和Win 10 在 UEFI下 双启动]]></title>
-            <link>https://blog.icehoney.me/posts/2015-10-28-uefi-dual-boot-archlinux/</link>
-            <guid>https://blog.icehoney.me/posts/2015-10-28-uefi-dual-boot-archlinux/</guid>
-            <pubDate>Wed, 28 Oct 2015 23:32:00 GMT</pubDate>
-            <description><![CDATA[假设你用 dd 刻录好之后,然后用电脑 U 盘启动,出现启动菜单 选择 Arch Linux archiso x86_64 UEFI CD 之后遇到黑屏的问题.]]></description>
+            <description><![CDATA[~/.steam/steam/ubuntu1232/steam-runtime/amd64/usr/lib/x8664-linux-gnu/
+`]]></description>
         </item>
         <item>
             <title><![CDATA[使用Python实现Histogram_equalization算法]]></title>
             <link>https://blog.icehoney.me/posts/2015-10-05-python-image-process/</link>
             <guid>https://blog.icehoney.me/posts/2015-10-05-python-image-process/</guid>
             <pubDate>Mon, 05 Oct 2015 23:54:00 GMT</pubDate>
-            <description><![CDATA[Histogram_equalization]]></description>
+            <description><![CDATA[库的引用只使用了PIL 和 numpy.前者用来读取图像的二进制数据,
+后者用来进行数值的累加计算.源码发布在 Github]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Archlinux和Win 10 在 UEFI下 双启动]]></title>
+            <link>https://blog.icehoney.me/posts/2015-10-28-uefi-dual-boot-archlinux/</link>
+            <guid>https://blog.icehoney.me/posts/2015-10-28-uefi-dual-boot-archlinux/</guid>
+            <pubDate>Wed, 28 Oct 2015 23:32:00 GMT</pubDate>
+            <description><![CDATA[`]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Chrome扩展和Web Page 进行通讯]]></title>
+            <link>https://blog.icehoney.me/posts/2015-08-25-communication-between-extensions-and-web-page/</link>
+            <guid>https://blog.icehoney.me/posts/2015-08-25-communication-between-extensions-and-web-page/</guid>
+            <pubDate>Tue, 25 Aug 2015 19:54:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Chromebook Pixel (2013) 安装Linux的方法]]></title>
             <link>https://blog.icehoney.me/posts/2015-04-20-chromebook-pixel-install-linux/</link>
             <guid>https://blog.icehoney.me/posts/2015-04-20-chromebook-pixel-install-linux/</guid>
             <pubDate>Mon, 20 Apr 2015 19:54:00 GMT</pubDate>
-            <description><![CDATA[首先你需要破解硬件写保护，按照 wiki 上的说法需要拆机和跳线，具体的操作可以查看这个wiki,拆机操作非常危险，请自己慎重考虑。]]></description>
+            <description><![CDATA[同学最近淘了一台二手 Chromebook Pixel (2013)，这款笔记本最大的诱惑就是 12.85 寸但是配备了一块 2560 x 1700 分辨率的触摸屏。上网的体验不要太爽啊，在体验了一小时的 Chrome OS 之后，便感叹就只有一个浏览器而已啊！于是开始折腾如何安装 Linux，毕竟这款笔记本本来就对 Linux 支持很好。下面开始介绍安装过程。]]></description>
         </item>
         <item>
             <title><![CDATA[突破同源策略限制的方法]]></title>
             <link>https://blog.icehoney.me/posts/2015-04-20-breaking-the-same-origin-policy/</link>
             <guid>https://blog.icehoney.me/posts/2015-04-20-breaking-the-same-origin-policy/</guid>
             <pubDate>Mon, 20 Apr 2015 19:54:00 GMT</pubDate>
-            <description><![CDATA[关键代码：]]></description>
+            <description><![CDATA[但是随着互联网的发展跨域的需求也越来越迫切，有些时候我们需要突破同源策略。下面开始介绍突破同源策略的几种方法：]]></description>
         </item>
         <item>
             <title><![CDATA[解压和打包安卓DAT文件]]></title>
             <link>https://blog.icehoney.me/posts/2015-07-28-compression-and-decompression-dat-files/</link>
             <guid>https://blog.icehoney.me/posts/2015-07-28-compression-and-decompression-dat-files/</guid>
             <pubDate>Tue, 28 Jul 2015 19:54:00 GMT</pubDate>
-            <description><![CDATA[封装仍需要使用工具 使用 rimg2sdat]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Windows下如何进行进程注入]]></title>
-            <link>https://blog.icehoney.me/posts/2015-02-28-windows-injection/</link>
-            <guid>https://blog.icehoney.me/posts/2015-02-28-windows-injection/</guid>
-            <pubDate>Sat, 28 Feb 2015 15:53:00 GMT</pubDate>
-            <description><![CDATA[然后再使用GetExitCodeThreadAPI，得到返回的结果。]]></description>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[CSS使用box-shadow和border-radius的妙用]]></title>
             <link>https://blog.icehoney.me/posts/2015-03-17-css-box-shadow-border-radius/</link>
             <guid>https://blog.icehoney.me/posts/2015-03-17-css-box-shadow-border-radius/</guid>
             <pubDate>Tue, 17 Mar 2015 15:08:00 GMT</pubDate>
+            <description><![CDATA[这样就达到我们一开始的图片效果了～]]></description>
             <enclosure url="https://blog.icehoney.me/~@assets/css_1.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Windows下如何进行进程注入]]></title>
+            <link>https://blog.icehoney.me/posts/2015-02-28-windows-injection/</link>
+            <guid>https://blog.icehoney.me/posts/2015-02-28-windows-injection/</guid>
+            <pubDate>Sat, 28 Feb 2015 15:53:00 GMT</pubDate>
+            <description><![CDATA[使用 Win 系统的WriteProcessMemoryAPI 向新开辟的内存空间写入数据。注意这里写入的是二进制数据，要考虑到各种 API 函数的寻址问题。]]></description>
         </item>
         <item>
             <title><![CDATA[使用Aria2下载百度网盘和115的资源]]></title>
             <link>https://blog.icehoney.me/posts/2015-01-31-aria2-download/</link>
             <guid>https://blog.icehoney.me/posts/2015-01-31-aria2-download/</guid>
             <pubDate>Sat, 31 Jan 2015 09:41:00 GMT</pubDate>
-            <description><![CDATA[虽然我已经开发了两款专门为 Aria2 用的下载插件,但是我发现还是有同学不会用 Aria2c 这么好的东西呢~
-于是还是写一篇文章来好好的介绍下吧~]]></description>
-        </item>
-        <item>
-            <title><![CDATA[扇贝单词助手发布]]></title>
-            <link>https://blog.icehoney.me/posts/2014-10-30-shanbay-helper/</link>
-            <guid>https://blog.icehoney.me/posts/2014-10-30-shanbay-helper/</guid>
-            <pubDate>Thu, 30 Oct 2014 18:30:00 GMT</pubDate>
-            <description><![CDATA[然后我就趁着国庆就开坑了,binux 也给了我很多参考资料.因为之前也开发过 Chrome 的扩展,所以对 Chrome 提供的 API 比较熟悉.这里就介绍下使用的相关的 JavaScript 的知识吧~]]></description>
+            <description><![CDATA[file-allocation=prealloc
+`]]></description>
         </item>
         <item>
             <title><![CDATA[使用Postfix,Dovecot和Mysql配置邮件服务器]]></title>
             <link>https://blog.icehoney.me/posts/2014-12-25-configure-mail-server/</link>
             <guid>https://blog.icehoney.me/posts/2014-12-25-configure-mail-server/</guid>
             <pubDate>Thu, 25 Dec 2014 15:41:00 GMT</pubDate>
-            <description><![CDATA[教程上设置的证书位置是:]]></description>
+            <description><![CDATA[inet_protocols = ipv4 这样就关闭 IPv6 了.即可解决问题.]]></description>
         </item>
         <item>
             <title><![CDATA[JavaScript处理二进制数据]]></title>
             <link>https://blog.icehoney.me/posts/2014-11-23-javascript-binary/</link>
             <guid>https://blog.icehoney.me/posts/2014-11-23-javascript-binary/</guid>
             <pubDate>Sun, 23 Nov 2014 14:30:00 GMT</pubDate>
-            <description><![CDATA[};
-    port.postMessage(data);
-  };
-  reader.readAsBinaryString(blob);
-};]]></description>
+            <description><![CDATA[dataView[i] = data.charCodeAt(i);
+}
+var arrayBuffer = dataView.buffer;
+`]]></description>
         </item>
         <item>
-            <title><![CDATA[计算机中的字节序问题]]></title>
-            <link>https://blog.icehoney.me/posts/2014-09-30-computer-endian/</link>
-            <guid>https://blog.icehoney.me/posts/2014-09-30-computer-endian/</guid>
-            <pubDate>Tue, 30 Sep 2014 12:30:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Linux下恢复误删除的文件]]></title>
-            <link>https://blog.icehoney.me/posts/2014-07-21-linux-undelete-files/</link>
-            <guid>https://blog.icehoney.me/posts/2014-07-21-linux-undelete-files/</guid>
-            <pubDate>Mon, 21 Jul 2014 17:39:00 GMT</pubDate>
-            <description><![CDATA[经常有时候喜欢删除文件...但是之后又后悔删除... Linux 下 rm 之后是没有回收站的.
-于是我便寻找恢复文件的相关资料.]]></description>
+            <title><![CDATA[扇贝单词助手发布]]></title>
+            <link>https://blog.icehoney.me/posts/2014-10-30-shanbay-helper/</link>
+            <guid>https://blog.icehoney.me/posts/2014-10-30-shanbay-helper/</guid>
+            <pubDate>Thu, 30 Oct 2014 18:30:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[chrome扩展开发经验记录]]></title>
             <link>https://blog.icehoney.me/posts/2014-08-23-chrome-extension-develop/</link>
             <guid>https://blog.icehoney.me/posts/2014-08-23-chrome-extension-develop/</guid>
             <pubDate>Sat, 23 Aug 2014 16:01:00 GMT</pubDate>
-            <description><![CDATA[一个扩展肯定需要长时间运行的脚本对扩展进行管理.这个脚本就属于 Background Pages 的一部分.
-不过由于 Background Pages 是一直运行的,对资源占用比较多.现在已经用 Event Pages 代替.Event Pages 是按需加载,不需要的时候不会激活运行.
-Event Pages 的 JS 可以使用 chrome 的所有 API.]]></description>
+            <description><![CDATA[最近写了两个 chrome 扩展.看了不少 chrome 扩展开发的文档.觉得还是写点东西比较好.]]></description>
         </item>
         <item>
-            <title><![CDATA[JavaScript函数中的闭包]]></title>
-            <link>https://blog.icehoney.me/posts/2014-04-30-javascript-closure/</link>
-            <guid>https://blog.icehoney.me/posts/2014-04-30-javascript-closure/</guid>
-            <pubDate>Wed, 30 Apr 2014 16:18:00 GMT</pubDate>
-            <description><![CDATA[}
-  return b;
-}
-var c = a();
-c();
-`]]></description>
+            <title><![CDATA[计算机中的字节序问题]]></title>
+            <link>https://blog.icehoney.me/posts/2014-09-30-computer-endian/</link>
+            <guid>https://blog.icehoney.me/posts/2014-09-30-computer-endian/</guid>
+            <pubDate>Tue, 30 Sep 2014 12:30:00 GMT</pubDate>
+            <description><![CDATA[字节序顾名思义就是计算机中字节的存储顺序.目前最常见的就是大端字节序和小端字节序.貌似百科里面又有一个中端字节序...(不过确实很少见)]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Linux下恢复误删除的文件]]></title>
+            <link>https://blog.icehoney.me/posts/2014-07-21-linux-undelete-files/</link>
+            <guid>https://blog.icehoney.me/posts/2014-07-21-linux-undelete-files/</guid>
+            <pubDate>Mon, 21 Jul 2014 17:39:00 GMT</pubDate>
+            <description><![CDATA[`]]></description>
         </item>
         <item>
             <title><![CDATA[百度网盘新版API]]></title>
             <link>https://blog.icehoney.me/posts/2014-07-02-baidu-pan/</link>
             <guid>https://blog.icehoney.me/posts/2014-07-02-baidu-pan/</guid>
             <pubDate>Wed, 02 Jul 2014 14:09:00 GMT</pubDate>
-            <description><![CDATA[新版 API 把每个功能全部模块化,声明某个模块的方法是使用 require 方法.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Archlinux下声卡的设置与折腾]]></title>
-            <link>https://blog.icehoney.me/posts/2014-06-05-archlinux-sound-setting/</link>
-            <guid>https://blog.icehoney.me/posts/2014-06-05-archlinux-sound-setting/</guid>
-            <pubDate>Thu, 05 Jun 2014 09:22:00 GMT</pubDate>
-            <description><![CDATA[Subdevices: 1/1
-  Subdevice #0: subdevice #0
-`]]></description>
-            <enclosure url="https://blog.icehoney.me/~@assets/alsamixer.png">
-            </enclosure>
+            <description><![CDATA[于是我便花了更多的时间找 API,但是百度那既压缩又混淆的 JS 代码真是读起来特带劲啊(我绝对不是抖 M)]]></description>
         </item>
         <item>
             <title><![CDATA[JavaScript中一个经典的正则例子]]></title>
@@ -833,16 +815,36 @@ c();
 `]]></description>
         </item>
         <item>
+            <title><![CDATA[Archlinux下声卡的设置与折腾]]></title>
+            <link>https://blog.icehoney.me/posts/2014-06-05-archlinux-sound-setting/</link>
+            <guid>https://blog.icehoney.me/posts/2014-06-05-archlinux-sound-setting/</guid>
+            <pubDate>Thu, 05 Jun 2014 09:22:00 GMT</pubDate>
+            <description><![CDATA[声音,因为 alsa 默认是静音的需要手动解除才行. 这就需要去官方源安装 alsamixer 工具. alsa-utils
+我自己安装的 alsamixer 使用界面是:]]></description>
+            <enclosure url="https://blog.icehoney.me/~@assets/alsamixer.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[JavaScript函数中的闭包]]></title>
+            <link>https://blog.icehoney.me/posts/2014-04-30-javascript-closure/</link>
+            <guid>https://blog.icehoney.me/posts/2014-04-30-javascript-closure/</guid>
+            <pubDate>Wed, 30 Apr 2014 16:18:00 GMT</pubDate>
+            <description><![CDATA[理想的方式就是使用闭包实现.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[面试笔记]]></title>
+            <link>https://blog.icehoney.me/posts/2014-04-01-interview/</link>
+            <guid>https://blog.icehoney.me/posts/2014-04-01-interview/</guid>
+            <pubDate>Tue, 01 Apr 2014 19:20:00 GMT</pubDate>
+            <description><![CDATA[第三次面试还是失败了,但是 HR 确实给我很深刻的印象,能告诉面试者不足的 HR 才是好的 HR,没有任何音讯的公司,以后我能力出众的时候你来
+挖我我也不会去的,这体现的是一个公司的态度.]]></description>
+        </item>
+        <item>
             <title><![CDATA[JavaScript函数调用的四种方式]]></title>
             <link>https://blog.icehoney.me/posts/2014-04-24-invocation-four-method/</link>
             <guid>https://blog.icehoney.me/posts/2014-04-24-invocation-four-method/</guid>
             <pubDate>Thu, 24 Apr 2014 15:28:00 GMT</pubDate>
-            <description><![CDATA[console.log(inc);
-  }
-};
-myObject.increment(); // 1
-myObject.increment(2); // 3
-`]]></description>
+            <description><![CDATA[当一个函数并非一个对象的属性时,那么它就是被当做一个函数来调用的:]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux折腾笔记]]></title>
@@ -851,127 +853,117 @@ myObject.increment(2); // 3
             <pubDate>Sun, 20 Apr 2014 19:52:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[面试笔记]]></title>
-            <link>https://blog.icehoney.me/posts/2014-04-01-interview/</link>
-            <guid>https://blog.icehoney.me/posts/2014-04-01-interview/</guid>
-            <pubDate>Tue, 01 Apr 2014 19:20:00 GMT</pubDate>
-            <description><![CDATA[三月下旬,病还没有完全康复.我便赶往上海.只因为认识的一位菊苣帮我投递了一下简历.而且据说人家对我简历印象还不错.
-现在想想,自己还真是幼稚...这句话就像你问店里员工我的菜怎么还没上,人家一定会回答:马上就好了,都已经下锅了.
-刚刚抵达上海的时候已经是晚上,这是我人生第一次去上海,有种乡下人进城里的感觉.带着梦想与希望,来到了这个地方.]]></description>
-        </item>
-        <item>
             <title><![CDATA[漫无止境的三月]]></title>
             <link>https://blog.icehoney.me/posts/2014-03-08-long-march/</link>
             <guid>https://blog.icehoney.me/posts/2014-03-08-long-march/</guid>
             <pubDate>Sat, 08 Mar 2014 12:03:00 GMT</pubDate>
-            <description><![CDATA[光看书真的很没劲,于是我又开坑了...为了练习 python,我想当后端工程师啊!IE 一天不死我写前端就不会痛快!
-新项目就这么愉快的开坑了,前端懒的设计就直接用Bootstrap了,感觉 Bootstrap 也就只能用些组件的 UI,
-布局神马的还是不符合我的胃口.项目部署的网址是:http://netkuu.icehoney.me/ 目前还是绝赞填坑中~
-前端后端全部自己一个人写,希望能把自己锻炼成 full stack developer~ 现在就差数据库练手了,好久没玩数据库了.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[GUI和CLI的使用比较]]></title>
-            <link>https://blog.icehoney.me/posts/2014-01-18-gui-vs-cli/</link>
-            <guid>https://blog.icehoney.me/posts/2014-01-18-gui-vs-cli/</guid>
-            <pubDate>Sat, 18 Jan 2014 23:06:00 GMT</pubDate>
-            <description><![CDATA[力量.同时,你也将无法组合你的各种工具,创建定制的宏工具.
-GUI 的好处是 WYSIWYG--所见即所得(what you see is what you get).缺点是 WYSIAYG--所见即全部所得(what you see is all you get).]]></description>
-        </item>
-        <item>
-            <title><![CDATA[关于程序运行效率的一点见解]]></title>
-            <link>https://blog.icehoney.me/posts/2013-10-24-program-efficiency/</link>
-            <guid>https://blog.icehoney.me/posts/2013-10-24-program-efficiency/</guid>
-            <pubDate>Thu, 24 Oct 2013 23:06:00 GMT</pubDate>
-            <description><![CDATA[杂度都是一样的,运行起来没啥区别的.当然对于现在的高速 CPU 和这个元素比较少的数组来说其实也没多大差别,但是不能
-因为这个就去忽略程序的效率问题.]]></description>
+            <description><![CDATA[三月...好漫长...整个 2 月不是过年走亲戚就是在家看 PDF,鸟哥的 Linux 私房菜,虽然自己用了一年多 Linux 桌面了,但是感觉知识还是
+不够系统,于是又去把鸟哥的 Linux 私房菜好好读一遍去了...]]></description>
         </item>
         <item>
             <title><![CDATA[程序员修炼之道]]></title>
             <link>https://blog.icehoney.me/posts/2014-02-05-the-pragmatic-programmer/</link>
             <guid>https://blog.icehoney.me/posts/2014-02-05-the-pragmatic-programmer/</guid>
             <pubDate>Wed, 05 Feb 2014 17:18:00 GMT</pubDate>
+            <description><![CDATA[大一的我确实无知,自负,浮躁,没有认真读下去.当时就沉迷于学习各种编程语言...没有审视到这本书的价值.如今我已大四,也算有了不少项目编程
+经验,写过上万行代码,对于这本书的感受就是爱不释手.这本书用非常幽默的方式简述很多朴素而真挚,简单而有效的编程哲学.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[GUI和CLI的使用比较]]></title>
+            <link>https://blog.icehoney.me/posts/2014-01-18-gui-vs-cli/</link>
+            <guid>https://blog.icehoney.me/posts/2014-01-18-gui-vs-cli/</guid>
+            <pubDate>Sat, 18 Jan 2014 23:06:00 GMT</pubDate>
+            <description><![CDATA[在 GUI 下几乎所有的任务.GUI 和 IDE 会让程序员变得更懒,更无知,各种辅助工具,例如自动补全可能让某些程序员连 asynchronous 这个单词都无法完整的拼写出来.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[关于程序运行效率的一点见解]]></title>
+            <link>https://blog.icehoney.me/posts/2013-10-24-program-efficiency/</link>
+            <guid>https://blog.icehoney.me/posts/2013-10-24-program-efficiency/</guid>
+            <pubDate>Thu, 24 Oct 2013 23:06:00 GMT</pubDate>
+            <description><![CDATA[提高.例子很简单,就是关于数组的遍历.一个二维数组,假定是 10\*10 的吧.那么遍历输出的话,大家肯定都会的,很简单.]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux下有关无损音乐的折腾]]></title>
             <link>https://blog.icehoney.me/posts/2013-10-06-archlinux-ape-cue-splitting/</link>
             <guid>https://blog.icehoney.me/posts/2013-10-06-archlinux-ape-cue-splitting/</guid>
             <pubDate>Sun, 06 Oct 2013 23:29:00 GMT</pubDate>
-            <description><![CDATA[但是,有个明显的缺陷是分轨之后的文件居然不是用歌曲名字命名的!
-而且还是我不怎么喜欢的 wav 格式...
-不过我还是在菊苣的帮助下找到了完美的解决方案~]]></description>
+            <description><![CDATA[mp3 格式的,所以需要指定用 lame 编码器进行编码.当然很多人只是想分轨,并不想转换成压缩的 mp3 格式.]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux下使用airbase和dhcpd建立虚拟AP]]></title>
             <link>https://blog.icehoney.me/posts/2013-08-26-archlinux-airbase-create-fakeap/</link>
             <guid>https://blog.icehoney.me/posts/2013-08-26-archlinux-airbase-create-fakeap/</guid>
             <pubDate>Mon, 26 Aug 2013 21:29:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <description><![CDATA[ifconfig at0 10.0.0.254 netmask 255.255.255.0
+route add -net 10.0.0.0 netmask 255.255.255.0 gw 10.0.0.254
+`]]></description>
         </item>
         <item>
             <title><![CDATA[Archlinux下Galaxy Nexus刷机并root]]></title>
             <link>https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/</link>
             <guid>https://blog.icehoney.me/posts/2013-07-20-archlinux-flash-android/</guid>
             <pubDate>Sat, 20 Jul 2013 14:12:00 GMT</pubDate>
-            <description><![CDATA[前面提供的 wiki 已经很详细的讲述如何进行ADB 的配置了]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Archlinux下终端进行代理的解决方案]]></title>
-            <link>https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/</link>
-            <guid>https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/</guid>
-            <pubDate>Thu, 18 Jul 2013 22:05:00 GMT</pubDate>
-            <description><![CDATA[注意后面有个点,容易忽略. 这个是转入的 SOCKET5 代理,指的是 SSH 的代理监听的端口号.
-配置文件里面有句话是 listen-address 127.0.0.1:8118 这个是转发出去的 HTTP 代理的端口号.
-这样写好之后, 启动服务 sudo systemctl start privoxy.service]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Sublime使用笔记以及插件推荐]]></title>
-            <link>https://blog.icehoney.me/posts/2013-07-02-sublime-text2-plugins/</link>
-            <guid>https://blog.icehoney.me/posts/2013-07-02-sublime-text2-plugins/</guid>
-            <pubDate>Tue, 02 Jul 2013 22:06:00 GMT</pubDate>
-            <description><![CDATA[`]]></description>
+            <description><![CDATA[fastboot 模式（上下音量键和开机键一起按）,可以看到一个大大的 Start 画面,这就是进入了 fastboot.或者使用命令adb reboot bootloader。此时把手机用 USB 连入电脑. 在终端里面输入 fastboot devices 如果提示 no permission 即是普通用户没有权限。这时候就需要切换到 root 用户进行执行.如果输入一串数字.则说明系统识别到了你的手机.]]></description>
         </item>
         <item>
             <title><![CDATA[Ubuntu下apache2的配置记录]]></title>
             <link>https://blog.icehoney.me/posts/2013-06-06-ubuntu-config-apache2/</link>
             <guid>https://blog.icehoney.me/posts/2013-06-06-ubuntu-config-apache2/</guid>
             <pubDate>Thu, 06 Jun 2013 21:41:00 GMT</pubDate>
-            <description><![CDATA[Order allow,deny
-  Allow from all
+            <description><![CDATA[ServerName default
+DocumentRoot /var/www/default
+
+  Options FollowSymLinks
+  AllowOverride None
+
+  Options Indexes FollowSymLinks MultiViews
+  AllowOverride None
+  Order allow,deny
+  allow from all
 ]]></description>
         </item>
         <item>
-            <title><![CDATA[使用GRUB2引导ISO镜像]]></title>
-            <link>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</link>
-            <guid>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</guid>
-            <pubDate>Thu, 25 Apr 2013 21:17:00 GMT</pubDate>
-            <description><![CDATA[的意思是 IDE 硬盘用 hd 表示,这里也可以表示 U 盘,0 表示第一块磁盘,从 0 开始计数.1 代表的是第一块分区,这里是从 1 开始计数.因为 U 盘引导的话第一块磁盘肯定是
-U 盘,所以前面的肯定是 0,后面的 1 代表的是分区,如果你的分区是从其它数字开始的就做相应修改.第四行是加载内核,也就是 ios 里面的内核所在路径,archisolabel 代表的
-是虚拟挂载的时候的卷标,注意这个一定不能和你现有的硬盘或者 U 盘的卷标重复,否则会出现错误的.img_dev 表示的是镜像所在的设备位置,这里使用 uuid 来表示,因为 uuid 是
-U 盘的固有属性,一般不会发生变化(除非你格式化 U 盘),所以保证一定能找到设备.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[关于CSS解决高度自适应和宽度自适应的问题]]></title>
-            <link>https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/</link>
-            <guid>https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/</guid>
-            <pubDate>Sun, 10 Mar 2013 19:09:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[个人博客的建立]]></title>
-            <link>https://blog.icehoney.me/posts/2013-02-07-start-blog/</link>
-            <guid>https://blog.icehoney.me/posts/2013-02-07-start-blog/</guid>
-            <pubDate>Thu, 07 Feb 2013 22:07:00 GMT</pubDate>
-            <description><![CDATA[好吧,我建立个人博客的想法其实已经差不多有一年了吧.一直没去实现...主要原因还是自己太懒...一开始想用 WordPress 搭建一个....其实我也搭建了
-但是由于一直找不到好看的主题就坑在那一年多了...后来还想用 Octopress 来搭建...又由于自己当时的系统是 Win 而放弃了,现在我把自己的系统换成
-Arch 并且在学习 Python,于是又开坑了...]]></description>
+            <title><![CDATA[Archlinux下终端进行代理的解决方案]]></title>
+            <link>https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/</link>
+            <guid>https://blog.icehoney.me/posts/2013-07-18-archlinux-terminal-proxy/</guid>
+            <pubDate>Thu, 18 Jul 2013 22:05:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[安徽师范大学校园视频下载器2.0版本发布]]></title>
             <link>https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/</link>
             <guid>https://blog.icehoney.me/posts/2013-03-15-ahnu-video-downloader/</guid>
             <pubDate>Fri, 15 Mar 2013 15:30:00 GMT</pubDate>
-            <description><![CDATA[IE 浏览器中查看,然后查看源代码进行了分析工作.原理其实很简单,就是通过解析服务器上的 XML 文件进行网页的渲染,XML 文件里面记录了服务器上所有的
-视频资源和视频的 ID,然后通过一步步的研究直接找到了资源的下载地址.详细的原理请看我 github 上公开的VideoSeach
-里面的 Function.cs 记录了具体解析过程.]]></description>
+            <description><![CDATA[安师大的校园视频网是个资源不错但软件坑爹的东西.
+当然这个服务不是安师大自己研发的,是由沈阳光音网视科技有限公司开发的,应该是学校出钱购买的吧.不过那个坑爹的客户端只给在线观看不给下载,
+网页也是完美的兼容 IE6,Javascript 里面也调用了好多微软自己的 ActiveX 控件,所以只能用学校提供的自带的那个客户端浏览和观看视频.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Sublime使用笔记以及插件推荐]]></title>
+            <link>https://blog.icehoney.me/posts/2013-07-02-sublime-text2-plugins/</link>
+            <guid>https://blog.icehoney.me/posts/2013-07-02-sublime-text2-plugins/</guid>
+            <pubDate>Tue, 02 Jul 2013 22:06:00 GMT</pubDate>
+            <description><![CDATA[虽说是收费软件,但是个人用户可以无限期的免费试用,只不过经常提示购买罢了...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用GRUB2引导ISO镜像]]></title>
+            <link>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</link>
+            <guid>https://blog.icehoney.me/posts/2013-04-25-grub2-boot-from-iso/</guid>
+            <pubDate>Thu, 25 Apr 2013 21:17:00 GMT</pubDate>
+            <description><![CDATA[都会是硬盘,由硬盘启动时，BIOS 通常是转向第一块硬盘的第一个扇区，即主引导记录(MBR).]]></description>
+        </item>
+        <item>
+            <title><![CDATA[关于CSS解决高度自适应和宽度自适应的问题]]></title>
+            <link>https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/</link>
+            <guid>https://blog.icehoney.me/posts/2013-03-10-css-adapt-width-and-height/</guid>
+            <pubDate>Sun, 10 Mar 2013 19:09:00 GMT</pubDate>
+            <description><![CDATA[但是这个方法的适用性不太好,由于我用的 Archlinux,也不好测试 IE 是否支持,估计是不可能支持的吧.
+另外一个方法是设置第一个 div 的属性为 float:left;这样第一列的 div 就脱离整个文档流,第二个 div 直接设置 margin-left: 350px; 即可.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[个人博客的建立]]></title>
+            <link>https://blog.icehoney.me/posts/2013-02-07-start-blog/</link>
+            <guid>https://blog.icehoney.me/posts/2013-02-07-start-blog/</guid>
+            <pubDate>Thu, 07 Feb 2013 22:07:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
