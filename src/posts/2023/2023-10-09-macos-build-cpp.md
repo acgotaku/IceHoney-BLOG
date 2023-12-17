@@ -1,5 +1,5 @@
 ---
-title: MacOS下编译C++文件
+title: macOS下编译C++文件
 date: 2023-10-09 12:10
 comments: true
 archives: 2023
