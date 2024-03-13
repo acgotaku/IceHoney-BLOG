@@ -44,11 +44,9 @@ Cache-Control 用来设置资源的缓存策略，常见的的值有：no-store 
 其他的都是静态资源，并且文件名包含 hash，所以我们可以设置这些资源的缓存策略为 immutable，保证这些资源不会改变，可以永久缓存。
 
 ```bash
-
 Cache-Control: no-store
 
 Cache-Control: public, max-age=604800, immutable
-
 ```
 
 ## 总结
