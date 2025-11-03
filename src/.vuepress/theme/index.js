@@ -47,7 +47,7 @@ module.exports = {
           canonical_base: 'https://blog.icehoney.me/',
           posts_directories: ['/posts/'],
           count: Number.MAX_SAFE_INTEGER,
-          sort: entries => entries.reverse()
+          sort: entries => entries.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
         }
       }
     ],
