@@ -19,7 +19,12 @@
             <NavLink :link="item.link">{{ item.text }}</NavLink>
           </li>
           <li class="nav-item">
-            <a :href="withBase('/rss.xml')" class="nav-link" target="_blank">
+            <a
+              :href="withBase('/rss.xml')"
+              class="nav-link"
+              target="_blank"
+              aria-label="RSS"
+            >
               <Icon name="rss" />
             </a>
           </li>
@@ -51,9 +56,11 @@ const { site, theme } = useData<ThemeConfig>();
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
+  gap: 1rem;
   position: fixed;
   top: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
   z-index: 1000;
 }
 .header-inner .title {
@@ -93,6 +100,14 @@ const { site, theme } = useData<ThemeConfig>();
 .header-right-wrap .nav .nav-item a:hover,
 .header-right-wrap .nav .nav-item a:active {
   border-bottom: 2px solid var(--accent);
+}
+@media (max-width: 1080px) {
+  .header-right-wrap .nav .nav-item {
+    margin-left: 1.25rem;
+  }
+  .header-right-wrap .search-box input {
+    width: 9rem;
+  }
 }
 @media (max-width: 880px) {
   .header {

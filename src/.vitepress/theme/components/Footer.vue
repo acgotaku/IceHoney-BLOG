@@ -3,7 +3,7 @@
     <div class="footer-left">
       <ul v-if="contact.length" class="contact">
         <li v-for="item in contact" :key="item.type" class="contact-item">
-          <NavLink :link="item.link">
+          <NavLink :link="item.link" :aria-label="labels[item.type]">
             <Icon :name="item.type" />
           </NavLink>
         </li>
@@ -28,6 +28,7 @@ import Icon from './Icon.vue';
 import NavLink from './NavLink.vue';
 
 const { theme } = useData<ThemeConfig>();
+const labels = { github: 'GitHub', twitter: 'Twitter' };
 
 const contact = computed(() => theme.value.footer?.contact ?? []);
 const copyright = computed(() => theme.value.footer?.copyright ?? []);

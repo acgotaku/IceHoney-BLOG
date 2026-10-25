@@ -10,6 +10,7 @@
     stroke-linecap="round"
     stroke-linejoin="round"
     :class="['feather', `feather-${name}`]"
+    aria-hidden="true"
     v-html="icons[name]"
   />
 </template>

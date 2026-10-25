@@ -1,8 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { Feed } from 'feed';
-import { defineConfigWithTheme } from 'vitepress';
-import { getExcerpt, getPosts, hostname, markdown } from './posts';
+import {
+  defineConfigWithTheme,
+  resolvePages,
+  type HeadConfig,
+  type SiteConfig
+} from 'vitepress';
+import {
+  getExcerpt,
+  getPageExcerpt,
+  getPosts,
+  hostname,
+  markdown,
+  readPost,
+  srcDir
+} from './posts';
 import type { ThemeConfig } from './theme/types';
 
 const title = 'IceHoney';
@@ -13,11 +26,43 @@ const feeds = {
   atom: { file: 'feed.atom', type: 'application/atom+xml', name: 'Atom' },
   json: { file: 'feed.json', type: 'application/json', name: 'JSON' }
 };
+const postsDir = path.join(srcDir, 'posts');
 
-const posts = getPosts();
-const postPages = new Map(
-  posts.map(post => [post.file, decodeURI(post.url).slice(1) + 'index.md'])
-);
+const isPostFile = (file: string) => /^posts\/.+\.md$/.test(file);
+
+/** Meta descriptions should stay short */
+function summarize(text: string, max = 120) {
+  return text.length > max ? text.slice(0, max) + '…' : text;
+}
+
+/**
+ * VitePress 1.6 resolves dynamic routes once, so in dev the paginated lists
+ * would keep showing old posts. Resolve them again, drop the list pages that
+ * were already compiled, and let an open list page reload (see theme/index.ts).
+ */
+async function refreshDynamicRoutes(server: {
+  config: object;
+  moduleGraph: {
+    getModuleById(id: string): any;
+    invalidateModule(mod: any): void;
+  };
+  ws: { send(type: string, data?: unknown): void };
+}) {
+  const siteConfig = (server.config as { vitepress: SiteConfig }).vitepress;
+  Object.assign(
+    siteConfig,
+    await resolvePages(
+      siteConfig.srcDir,
+      siteConfig.userConfig,
+      siteConfig.logger
+    )
+  );
+  for (const route of siteConfig.dynamicRoutes.routes) {
+    const mod = server.moduleGraph.getModuleById(route.fullPath);
+    if (mod) server.moduleGraph.invalidateModule(mod);
+  }
+  server.ws.send('icehoney:posts-changed');
+}
 
 export default defineConfigWithTheme<ThemeConfig>({
   lang: 'zh-CN',
@@ -56,18 +101,56 @@ export default defineConfigWithTheme<ThemeConfig>({
   ],
   markdown,
   sitemap: { hostname },
+  // Header height plus 1rem, same as scroll-padding-top in base.css
+  scrollOffset: 80,
   // Keep the VuePress URLs: posts/:date-:slug/, and every page as a directory
   rewrites(page) {
-    const post = postPages.get(page);
-    if (post) return post;
+    if (isPostFile(page))
+      return decodeURI(readPost(page).url).slice(1) + 'index.md';
     if (page === 'page/1.md') return 'index.md';
     if (!page.endsWith('index.md')) return page.replace(/\.md$/, '/index.md');
     return page;
   },
-  transformPageData(pageData) {
+  async transformPageData(pageData) {
     if (pageData.params?.title) {
       pageData.title = pageData.params.title;
     }
+    // Describe posts and other pages by their first paragraph
+    if (!pageData.params && !pageData.isNotFound) {
+      const text = await getPageExcerpt(
+        pageData.filePath,
+        pageData.relativePath
+      );
+      if (text) pageData.description = summarize(text);
+    }
+  },
+  transformHead({ pageData, description }) {
+    if (pageData.isNotFound) return [];
+    const url =
+      hostname +
+      encodeURI(pageData.relativePath.replace(/(^|\/)index\.md$/, '$1'));
+    const isPost = isPostFile(pageData.filePath);
+    const head: HeadConfig[] = [
+      ['link', { rel: 'canonical', href: url }],
+      [
+        'meta',
+        { property: 'og:type', content: isPost ? 'article' : 'website' }
+      ],
+      ['meta', { property: 'og:site_name', content: title }],
+      ['meta', { property: 'og:title', content: pageData.title || title }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:url', content: url }],
+      ['meta', { property: 'og:image', content: hostname + 'profile.png' }],
+      ['meta', { name: 'twitter:card', content: 'summary' }]
+    ];
+    if (isPost) {
+      const published = new Date(readPost(pageData.filePath).time);
+      head.push([
+        'meta',
+        { property: 'article:published_time', content: published.toISOString() }
+      ]);
+    }
+    return head;
   },
   themeConfig: {
     profile: '/profile.png',
@@ -89,6 +172,31 @@ export default defineConfigWithTheme<ThemeConfig>({
       ]
     }
   },
+  vite: {
+    plugins: [
+      {
+        name: 'icehoney:watch-posts',
+        apply: 'serve',
+        configureServer(server) {
+          // One save can fire several events, refresh once they settle
+          let timer: ReturnType<typeof setTimeout> | undefined;
+          const onPostChange = (file: string) => {
+            if (!file.startsWith(postsDir) || !file.endsWith('.md')) return;
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+              refreshDynamicRoutes(server).catch(err =>
+                server.config.logger.error(String(err))
+              );
+            }, 100);
+          };
+          server.watcher
+            .on('add', onPostChange)
+            .on('change', onPostChange)
+            .on('unlink', onPostChange);
+        }
+      }
+    ]
+  },
   async buildEnd({ outDir }) {
     const feed = new Feed({
       title,
@@ -102,7 +210,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         Object.entries(feeds).map(([key, { file }]) => [key, hostname + file])
       )
     });
-    for (const post of posts) {
+    for (const post of getPosts()) {
       const link = hostname + post.url.slice(1);
       feed.addItem({
         title: post.title,

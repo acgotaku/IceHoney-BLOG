@@ -3,13 +3,22 @@
     <div class="mobile-header-bar">
       <div class="mobile-header-title">
         <NavLink link="/" class="mobile-home-link">{{ site.title }} </NavLink>
-        <Icon
-          :name="isOpen ? 'x' : 'menu'"
+        <button
+          type="button"
           class="mobile-header-icon"
+          :aria-label="isOpen ? 'Close menu' : 'Open menu'"
+          :aria-expanded="isOpen"
+          aria-controls="mobile-menu"
           @click="emit('toggle-sidebar')"
-        />
+        >
+          <Icon :name="isOpen ? 'x' : 'menu'" />
+        </button>
       </div>
-      <div class="mobile-menu-wrapper" :class="{ open: isOpen }">
+      <div
+        id="mobile-menu"
+        class="mobile-menu-wrapper"
+        :class="{ open: isOpen }"
+      >
         <ul v-if="theme.nav" class="mobile-nav">
           <li
             v-for="item in theme.nav"
@@ -43,10 +52,16 @@ const { site, theme } = useData<ThemeConfig>();
   z-index: 1000;
   position: fixed;
   top: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
   background-color: var(--header);
 }
 .mobile-header-icon {
+  display: flex;
+  padding: 0;
+  color: inherit;
+  border: none;
+  background: none;
   cursor: pointer;
 }
 .mobile-header .mobile-header-title {
@@ -83,10 +98,17 @@ const { site, theme } = useData<ThemeConfig>();
 .mobile-menu-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition: 0.3s ease;
+  /* Hidden once collapsed, so its links are not reachable with Tab */
+  visibility: hidden;
+  transition:
+    max-height 0.3s ease,
+    box-shadow 0.3s ease,
+    visibility 0s 0.3s;
   background-color: var(--header);
 }
 .mobile-menu-wrapper.open {
+  visibility: visible;
+  transition-delay: 0s;
   max-height: 20rem;
   box-shadow:
     0 5px 20px rgba(0, 0, 0, 0.03),

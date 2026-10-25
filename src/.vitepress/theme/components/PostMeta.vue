@@ -1,9 +1,9 @@
 <template>
   <div class="post-meta">
-    <div v-if="date" class="post-meta-date">
+    <div v-if="formattedDate" class="post-meta-date">
       <Icon name="calendar" />
-      <time pubdate itemprop="datePublished" :datetime="date">
-        {{ date }}
+      <time itemprop="datePublished" :datetime="formattedDate">
+        {{ formattedDate }}
       </time>
     </div>
     <div v-if="resolvedTags.length" class="post-meta-tags" itemprop="keywords">
@@ -19,6 +19,16 @@ import Icon from './Icon.vue';
 import PostTag from './PostTag.vue';
 
 const props = defineProps<{ date?: string; tags?: string | string[] }>();
+
+// Some posts write dates like 2015-4-20, pad them to 2015-04-20
+const formattedDate = computed(() =>
+  props.date?.replace(
+    /^(\d{4})-(\d{1,2})-(\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?/,
+    (_, y, mo, d, h, mi) =>
+      [y, mo.padStart(2, '0'), d.padStart(2, '0')].join('-') +
+      (h ? ` ${h.padStart(2, '0')}:${mi}` : '')
+  )
+);
 
 const resolvedTags = computed(() =>
   props.tags == null

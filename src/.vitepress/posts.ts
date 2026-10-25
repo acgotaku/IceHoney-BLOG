@@ -18,7 +18,8 @@ export const pageSize = 3;
 export const markdown: MarkdownOptions = {
   lineNumbers: true,
   theme: 'github-light',
-  languageAlias: { apacheconf: 'apache' }
+  languageAlias: { apacheconf: 'apache' },
+  image: { lazyLoading: true }
 };
 
 export interface Post {
@@ -74,29 +75,33 @@ function toArray(value: unknown): string[] {
   return (Array.isArray(value) ? value : [value]).map(String);
 }
 
+/** Read one post, `file` is relative to srcDir, e.g. posts/2013/x.md */
+export function readPost(file: string): Post {
+  const { data, content } = matter(
+    fs.readFileSync(path.join(srcDir, file), 'utf8')
+  );
+  const date = String(data.date);
+  return {
+    file,
+    url: postUrl(file, date),
+    title: String(data.title),
+    date,
+    time: parseTime(date),
+    tags: toArray(data.tags),
+    archive: String(data.archives),
+    content
+  };
+}
+
 /** All posts, newest first */
 export function getPosts(): Post[] {
-  const postsDir = path.join(srcDir, 'posts');
   return fs
-    .readdirSync(postsDir, { recursive: true, encoding: 'utf8' })
-    .filter(file => file.endsWith('.md'))
-    .map(file => {
-      const { data, content } = matter(
-        fs.readFileSync(path.join(postsDir, file), 'utf8')
-      );
-      const date = String(data.date);
-      const relative = path.posix.join('posts', file.split(path.sep).join('/'));
-      return {
-        file: relative,
-        url: postUrl(relative, date),
-        title: String(data.title),
-        date,
-        time: parseTime(date),
-        tags: toArray(data.tags),
-        archive: String(data.archives),
-        content
-      };
+    .readdirSync(path.join(srcDir, 'posts'), {
+      recursive: true,
+      encoding: 'utf8'
     })
+    .filter(file => file.endsWith('.md'))
+    .map(file => readPost(path.posix.join('posts', ...file.split(path.sep))))
     .sort((a, b) => b.time - a.time);
 }
 
@@ -106,40 +111,59 @@ function getRenderer() {
   return (renderer ??= createMarkdownRenderer(srcDir, markdown, '/'));
 }
 
-function env(post: Post) {
+/** `file` is the source file and `page` the rewritten page, both relative to srcDir */
+function env(file: string, page: string) {
   return {
-    path: path.join(srcDir, post.file),
-    relativePath: post.url.slice(1) + 'index.md',
+    path: path.join(srcDir, file),
+    relativePath: page,
     cleanUrls: false
   };
 }
 
-const htmlCache = new Map<string, Promise<string>>();
+const postPage = (post: Post) => post.url.slice(1) + 'index.md';
+
+// Keyed by file, re-rendered when the content changes (dev server)
+const htmlCache = new Map<string, { content: string; html: Promise<string> }>();
 
 /** The post rendered to HTML, the same way VitePress renders its page */
 export function renderPost(post: Post) {
-  let html = htmlCache.get(post.file);
-  if (!html) {
-    html = getRenderer().then(md => md.render(post.content, env(post)));
-    htmlCache.set(post.file, html);
+  let cached = htmlCache.get(post.file);
+  if (cached?.content !== post.content) {
+    cached = {
+      content: post.content,
+      html: getRenderer().then(md =>
+        md.render(post.content, env(post.file, postPage(post)))
+      )
+    };
+    htmlCache.set(post.file, cached);
   }
-  return html;
+  return cached.html;
 }
 
 const stripTags = (html: string) => html.replace(/<[^>]*>/g, '').trim();
 
-/** Plain text of the first paragraph */
-export async function getExcerpt(post: Post) {
+async function excerpt(content: string, file: string, page: string) {
   const md = await getRenderer();
-  const tokens = md.parse(post.content, env(post));
+  const tokens = md.parse(content, env(file, page));
   const index = tokens.findIndex(token => token.type === 'paragraph_open');
   return index < 0 ? '' : stripTags(md.renderInline(tokens[index + 1].content));
+}
+
+/** Plain text of the first paragraph */
+export function getExcerpt(post: Post) {
+  return excerpt(post.content, post.file, postPage(post));
+}
+
+/** Plain text of the first paragraph of any markdown page */
+export function getPageExcerpt(file: string, page: string) {
+  const { content } = matter(fs.readFileSync(path.join(srcDir, file), 'utf8'));
+  return excerpt(content, file, page);
 }
 
 /** h2 and h3 headings with their anchor ids */
 export async function getHeaders(post: Post) {
   const md = await getRenderer();
-  const tokens = md.parse(post.content, env(post));
+  const tokens = md.parse(post.content, env(post.file, postPage(post)));
   return tokens.flatMap((token, i) =>
     token.type === 'heading_open' && ['h2', 'h3'].includes(token.tag)
       ? [

@@ -4,6 +4,9 @@ body {
   margin: 0;
   height: 100%;
 }
+html {
+  scroll-padding-top: calc(var(--header-height) + 1rem);
+}
 body {
   font-family:
     'Open Sans', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue',
@@ -44,7 +47,11 @@ body {
   color: var(--main);
   text-align: center;
 }
+.post-content {
+  overflow-wrap: break-word;
+}
 .post-content a {
+  display: inline;
   color: var(--accent);
 }
 .post-content a:hover {
