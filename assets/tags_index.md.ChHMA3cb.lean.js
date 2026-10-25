@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./chunks/framework.D1Ss-Xl7.js";const l=JSON.parse('{"title":"Tags","description":"","frontmatter":{"title":"Tags","layout":"tags"},"headers":[],"relativePath":"tags/index.md","filePath":"tags/index.md"}'),s={name:"tags/index.md"};function n(o,r,c,i,d,p){return e(),a("div")}const m=t(s,[["render",n]]);export{l as __pageData,m as default};
