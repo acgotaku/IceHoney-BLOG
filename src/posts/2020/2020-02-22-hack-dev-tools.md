@@ -34,7 +34,7 @@ console.log(el);
 要破解这个的话，只能在页面执行之前注入代码修改 Image 函数的使用：
 
 ```js
-window.Image = function() {};
+window.Image = function () {};
 Object.defineProperty(window, 'Image', { writable: false });
 ```
 

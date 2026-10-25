@@ -70,7 +70,7 @@ WebGL 只支持绘制基本图元，复杂的图形也是有基本图元组合�
 
 渲染管道可以参考这张比较形象的流程图：
 
-![WebGl Pipeline](~@assets/webgl_graphics_pipeline.jpg)
+![WebGl Pipeline](/assets/webgl_graphics_pipeline.jpg)
 
 ## texture
 

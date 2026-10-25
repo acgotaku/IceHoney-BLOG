@@ -16,7 +16,8 @@ tags:
 JavaScript 语言精粹上面有个非常棒的学习例子,每次写正则的时候都会想起它.所以还是记一下分享给大家也方面我查询啦~
 
 ```js
-var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+var parse_url =
+  /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
 var url = 'http://www.ora.com:80/goodparts?q#fragment';
 var result = parse_url.exec(url);
 var names = ['url', 'scheme', 'slash', 'host', 'port', 'path', 'query', 'hash'];

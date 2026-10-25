@@ -1,0 +1,98 @@
+.post-content code {
+  color: var(--main);
+  padding: 0.1rem 0.4rem;
+  margin: 0.1rem;
+  font-size: 0.85em;
+  background-color: var(--bg);
+  border-radius: 0.25rem;
+}
+.post-content div[class*='language-'] {
+  position: relative;
+  margin: 0.85rem 0;
+  background-color: var(--bg);
+  border-radius: 0.25rem;
+}
+.post-content div[class*='language-'] pre {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  background-color: transparent !important;
+}
+.post-content div[class*='language-'] code {
+  padding: 0;
+  margin: 0;
+  color: var(--main);
+  background-color: transparent;
+  border-radius: 0;
+}
+.post-content div[class*='language-'] .lang {
+  position: absolute;
+  z-index: 3;
+  top: 0.8em;
+  right: 1em;
+  font-size: 0.75rem;
+  color: var(--main);
+  transition: opacity 0.2s;
+}
+.post-content div[class*='language-'] button.copy {
+  position: absolute;
+  z-index: 4;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  background-color: var(--white);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.post-content div[class*='language-'] button.copy::before {
+  content: 'Copy';
+}
+.post-content div[class*='language-'] button.copy.copied::before {
+  content: 'Copied';
+}
+.post-content div[class*='language-']:hover button.copy {
+  opacity: 1;
+}
+.post-content div[class*='language-']:hover .lang {
+  opacity: 0;
+}
+.post-content div[class*='language-'].line-numbers-mode pre {
+  padding-left: 4.5rem;
+}
+.post-content div[class*='language-'].line-numbers-mode .line-numbers-wrapper {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  width: 3.5rem;
+  padding: 1.25rem 0;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--main);
+  user-select: none;
+}
+.post-content
+  div[class*='language-'].line-numbers-mode
+  .line-numbers-wrapper
+  .line-number {
+  font-size: 0.85em;
+}
+.post-content div[class*='language-'].line-numbers-mode::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 3.5rem;
+  height: 100%;
+  border-radius: 0.25rem 0 0 0.25rem;
+  border-right: 1px solid var(--border);
+  background-color: #f1f2f3;
+}

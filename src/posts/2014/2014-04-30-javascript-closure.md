@@ -48,22 +48,22 @@ c();
 理想的方式就是使用闭包实现.
 
 ```js
-Function.prototype.method = function(name, func) {
+Function.prototype.method = function (name, func) {
   this.prototype[name] = func;
   return this;
 };
 String.method(
   'deentityify',
-  (function() {
+  (function () {
     //字符实体表,它映射字符实体打名字到对应的字符.
     var entity = {
       quot: '"',
       lt: '<',
       gt: '>'
     };
-    return function() {
+    return function () {
       //查找以'&'开头和';'结束打子字符串.如果找到就替换.
-      return this.replace(/&([^&;]+);/g, function(a, b) {
+      return this.replace(/&([^&;]+);/g, function (a, b) {
         var r = entity[b];
         return typeof r === 'string' ? r : a;
       });

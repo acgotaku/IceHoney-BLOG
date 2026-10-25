@@ -16,8 +16,8 @@ Promise 是用来处理大量的异步操作,因为异步操作不能直接 retu
 
 ```js
 function get_cookie(site, name) {
-  return new Promise(function(resolve, reject) {
-    chrome.cookies.get({ url: site, name: name }, function(cookies) {
+  return new Promise(function (resolve, reject) {
+    chrome.cookies.get({ url: site, name: name }, function (cookies) {
       if (cookies) {
         var data = cookies.name + '=' + cookies.value;
         resolve(data);
@@ -37,10 +37,10 @@ var name1 = 'BDUSS';
 var site2 = 'http://pcs.baidu.com/';
 var name2 = 'pcsett';
 Promise.all([get_cookie(site1, name1), get_cookie(site2, name2)]).then(
-  function(value) {
+  function (value) {
     console.log(value);
   },
-  function() {}
+  function () {}
 );
 ```
 

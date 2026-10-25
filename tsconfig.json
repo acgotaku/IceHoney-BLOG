@@ -2,25 +2,19 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "moduleResolution": "bundler",
     "strict": true,
     "jsx": "preserve",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
+    "noEmit": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": ["vuepress-types"],
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    "skipLibCheck": true,
+    "types": ["vitepress/client", "node"],
+    "lib": ["esnext", "dom", "dom.iterable"]
   },
   "include": [
-    "src/.vuepress/**/*.ts",
-    "src/.vuepress/**/*.tsx",
-    "src/.vuepress/**/*.vue"
-  ],
-  "exclude": ["node_modules"]
+    "src/.vitepress/**/*.ts",
+    "src/.vitepress/**/*.mts",
+    "src/.vitepress/**/*.vue",
+    "src/**/*.paths.ts"
+  ]
 }

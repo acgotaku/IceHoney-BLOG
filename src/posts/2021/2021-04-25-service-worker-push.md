@@ -116,11 +116,11 @@ const options = {
 };
 webpush
   .sendNotification(pushSubscription, payload, options)
-  .then(function(result) {
+  .then(function (result) {
     console.log('success!');
     console.log(result);
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log('fail!');
     console.error(err);
   });

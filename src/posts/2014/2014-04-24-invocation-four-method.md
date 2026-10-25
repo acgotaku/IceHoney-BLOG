@@ -12,7 +12,7 @@ JavaScript 函数调用除了声明时定义的形式参数,每个函数还接�
 编程非常重要,它的值取决于调用的模式.典型的两种函数定义方式有:
 
 ```js
-var add = function(a, b) {
+var add = function (a, b) {
   return a + b;
 };
 function add(a, b) {
@@ -37,7 +37,7 @@ function add(a, b) {
 ```js
 var myObject = {
   value: 0,
-  increment: function(inc) {
+  increment: function (inc) {
     this.value += typeof inc === 'number' ? inc : 1;
     console.log(inc);
   }
@@ -62,10 +62,10 @@ var sum = add(3, 4);
 有一个很容易的解决方案:如果该方法定义一个变量并给它赋值为 this,那么内部函数就可以通过那个变量访问到 this.按照约定,我们把那个变量命名为 that:
 
 ```js
-myObject.double = function() {
+myObject.double = function () {
   //给myObject增加一个 double 方法
   var that = this;
-  var helper = function() {
+  var helper = function () {
     that.value = add(that.value, that.value);
     console.log(this);
   };
@@ -80,11 +80,11 @@ myObject.double(); //以方法的形式调用double
 
 ```js
 //创建一个名为Quo的构造器函数,它构造一个带有status属性的对象.
-var Quo = function(string) {
+var Quo = function (string) {
   this.status = string;
 };
 //给 Quo的所以实例提供一个名为 get_status 的公共方法.
-Quo.prototype.get_status = function() {
+Quo.prototype.get_status = function () {
   return this.status;
 };
 //构造一个 Quo 实例

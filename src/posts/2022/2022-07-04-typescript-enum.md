@@ -30,7 +30,7 @@ function fetchJSON(url: string, method: HTTPRequestMethod) {
 ```js
 'use strict';
 var HTTPRequestMethod;
-(function(HTTPRequestMethod) {
+(function (HTTPRequestMethod) {
   HTTPRequestMethod['GET'] = 'GET';
   HTTPRequestMethod['POST'] = 'POST';
 })(HTTPRequestMethod || (HTTPRequestMethod = {}));

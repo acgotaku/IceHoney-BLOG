@@ -36,9 +36,7 @@ let routes = [
 ```html
 <ul>
   <li v-for="route in $route.matched">
-    <router-link :to="{name: route.name}">
-      {{ route.meta.text }}
-    </router-link>
+    <router-link :to="{name: route.name}"> {{ route.meta.text }} </router-link>
   </li>
 </ul>
 ```
