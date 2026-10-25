@@ -1,5 +1,7 @@
 # IceHoney Blog
 
+A blog powered by [VitePress](https://vitepress.dev/).
+
 ## Development Environment
 
 ### Setup Requirements
@@ -19,7 +21,7 @@ $ pnpm install
 $ pnpm dev
 ```
 
-Wait a few seconds and then visit `http://localhost:8080/`.
+Then visit `http://localhost:5173/`.
 
 ## Deployment
 
@@ -31,4 +33,8 @@ We can run below command to generate build files.
 $ pnpm build
 ```
 
-The build files locate at `dist` directory.
+The build files locate at `dist` directory. To check the build locally:
+
+```
+$ pnpm preview
+```

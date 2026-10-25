@@ -55,7 +55,7 @@ ES6 之前的 polyfill 是：
 
 ```js
 if (!Number.isNaN) {
-  Number.isNaN = function(n) {
+  Number.isNaN = function (n) {
     return typeof n === 'number' && window.isNaN(n);
   };
 }

@@ -15,7 +15,7 @@ tags:
 
 ## 渲染过程
 
-![render pipeline](~@assets/frame-full.jpg)
+![render pipeline](/assets/frame-full.jpg)
 
 浏览器的渲染主要是分为 5 个步骤，我们需要了解这些知识才能编写性能更好的代码。
 
@@ -27,19 +27,19 @@ tags:
 
 ## JS / CSS > 样式 > 布局 > 绘制 > 合成
 
-![render pipeline](~@assets/frame-full.jpg)
+![render pipeline](/assets/frame-full.jpg)
 
 如果修改了元素的布局属性，也就是改变了元素的几何属性（例如宽度，高度）。那么浏览器就必须检查所有元素，然后重新排版页面。任何受影响的部分都要重新绘制，再重新合成。
 
 ## JS / CSS > 样式 > 绘制 > 合成
 
-![render pipeline no layout](~@assets/frame-no-layout.jpg)
+![render pipeline no layout](/assets/frame-no-layout.jpg)
 
 如果只修改了元素的绘制属性，例如背景图片或者文字颜色，并不会对其他元素的布局造成影响。浏览器会跳过布局，但仍然执行绘制。
 
 ## JS / CSS > 样式 > 合成
 
-![render pipeline no layout](~@assets/frame-no-layout-paint.jpg)
+![render pipeline no layout](/assets/frame-no-layout-paint.jpg)
 
 目前既不要绘制也不要布局的属性只有`transform`属性和`opacity`属性。所以在实现 CSS 动画的时候，优先使用这两个属性。
 

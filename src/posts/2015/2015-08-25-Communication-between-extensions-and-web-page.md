@@ -36,7 +36,7 @@ port.postMessage({
   method: 'rpc_data',
   data: parameter
 });
-port.onMessage.addListener(function(response) {
+port.onMessage.addListener(function (response) {
   SetMessage(response[0], response[1]);
 });
 ```

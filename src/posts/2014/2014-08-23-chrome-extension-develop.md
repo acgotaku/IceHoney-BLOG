@@ -93,7 +93,7 @@ script.appendChild(document.createTextNode('(' + baidu + ')();'));
 有时候修改 DOM 的话肯定需要更改样式啊,这时候用内联样式必然太没效率,不能重用.就需要添加 CSS.
 
 ```js
-var css = function() {
+var css = function () {
   /*
   input{
   border: 1px solid #C6C6C6;

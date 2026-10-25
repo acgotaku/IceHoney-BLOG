@@ -3,7 +3,7 @@
 node_modules
 .node_repl_history
 .npm
-webpack_bundle_analyzer.html
+src/.vitepress/cache
 /dist
 
 # local env files

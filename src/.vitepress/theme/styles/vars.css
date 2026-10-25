@@ -1,0 +1,17 @@
+:root {
+  --light-bg: rgba(0, 0, 0, 0.02);
+  --bg: rgba(0, 0, 0, 0.04);
+  --divider: rgba(0, 0, 0, 0.09);
+  --border: rgba(0, 0, 0, 0.15);
+  --disabled: rgba(0, 0, 0, 0.25);
+  --tertiary: rgba(0, 0, 0, 0.45);
+  --secondary: rgba(0, 0, 0, 0.65);
+  --main: rgba(0, 0, 0, 0.85);
+  --accent: #8191f1;
+  --white: #fff;
+  --button: #fff;
+  --header: #fff;
+  --article: #fff;
+  --header-height: 4rem;
+  --footer-height: 4rem;
+}

@@ -22,10 +22,10 @@ Base64 常用于在通常处理文本数据的场合,表示、传输、存储一
 var oReq = new XMLHttpRequest();
 oReq.open('GET', request.data, true);
 oReq.responseType = 'blob';
-oReq.onload = function(oEvent) {
+oReq.onload = function (oEvent) {
   var blob = oReq.response;
   var reader = new FileReader();
-  reader.onload = function(readerEvt) {
+  reader.onload = function (readerEvt) {
     var binaryString = readerEvt.target.result;
     // console.log(binaryString);
     var testdata = btoa(binaryString);

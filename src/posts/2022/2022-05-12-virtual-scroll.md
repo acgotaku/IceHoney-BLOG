@@ -89,7 +89,6 @@ export default memo(VirtualScroll);
 
 完整的实现请参考 [Simple UI - Select](https://github.com/acgotaku/simple-ui/blob/master/src/components/Select/VirtualRow.tsx)
 
-
 ## 总结
 
 在知道虚拟滚动条的原理之后，发现并不难实现，重点要理解几个数值的计算，才能明白为什么这样能达到预期的效果。

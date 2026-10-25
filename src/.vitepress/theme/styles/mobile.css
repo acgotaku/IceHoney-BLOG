@@ -1,0 +1,16 @@
+@media (max-width: 880px) {
+  .content {
+    padding: 0 0.5rem;
+  }
+  .article {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  h1 {
+    margin: 1rem;
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
