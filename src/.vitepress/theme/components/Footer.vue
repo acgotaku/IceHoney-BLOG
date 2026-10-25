@@ -56,10 +56,11 @@ const copyright = computed(() => theme.value.footer?.copyright ?? []);
   margin: 0 0.5rem;
 }
 .footer .nav-link {
-  color: var(--tertiary);
+  color: var(--main);
 }
 .footer .nav-link:hover {
   color: var(--main);
+  text-decoration: underline;
 }
 .footer .copyright {
   list-style: none;

@@ -8,6 +8,8 @@
   --secondary: rgba(0, 0, 0, 0.65);
   --main: rgba(0, 0, 0, 0.85);
   --accent: #8191f1;
+  /* Darker accent for text, and behind white text: 4.5:1 or more on white and --bg */
+  --accent-text: #4a61eb;
   --white: #fff;
   --button: #fff;
   --header: #fff;

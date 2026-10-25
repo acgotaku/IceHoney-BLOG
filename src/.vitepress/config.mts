@@ -20,7 +20,8 @@ import type { ThemeConfig } from './theme/types';
 
 const title = 'IceHoney';
 const description = 'IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~';
-const copyright = '2013 - 2023 © Ice Honey';
+// The end year is the build year
+const copyright = `2013 - ${new Date().getFullYear()} © Ice Honey`;
 const feeds = {
   rss: { file: 'rss.xml', type: 'application/rss+xml', name: 'RSS' },
   atom: { file: 'feed.atom', type: 'application/atom+xml', name: 'Atom' },

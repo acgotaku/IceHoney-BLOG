@@ -60,7 +60,7 @@ for (const post of posts) {
   height: 1.5rem;
   text-align: center;
   border-radius: 0.25rem;
-  background-color: var(--accent);
+  background-color: var(--accent-text);
   color: var(--white);
 }
 </style>

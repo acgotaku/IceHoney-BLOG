@@ -135,7 +135,7 @@ function go(i: number) {
   transition: border-color 0.2s ease;
 }
 .search-box input:focus {
-  border-color: var(--accent);
+  border-color: var(--accent-text);
 }
 .search-box .suggestions {
   position: absolute;
@@ -172,6 +172,6 @@ function go(i: number) {
   background-color: var(--bg);
 }
 .search-box .suggestion.focused a {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 </style>

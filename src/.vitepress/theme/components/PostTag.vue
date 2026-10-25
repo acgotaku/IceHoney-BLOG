@@ -22,6 +22,6 @@ const active = computed(() =>
   margin-right: 0.5rem;
 }
 .post-tag.active {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 </style>

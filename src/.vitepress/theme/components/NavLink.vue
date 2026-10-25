@@ -43,9 +43,9 @@ const active = computed(() => {
   color: var(--secondary);
 }
 .nav-link:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .nav-link.active {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 </style>
