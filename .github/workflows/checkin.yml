@@ -9,14 +9,19 @@ jobs:
   check-pr:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 10.x
-      uses: actions/setup-node@v1
+    - uses: actions/checkout@v4
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+
+    - name: Use Node.js
+      uses: actions/setup-node@v4
       with:
-        node-version: 10.x
+        node-version-file: .node-version
+        cache: pnpm
 
     - name: Install dependencies
-      run: yarn install
+      run: pnpm install --frozen-lockfile
 
     - name: Check build
-      run: yarn build
+      run: pnpm build
