@@ -9,8 +9,10 @@ defineProps<{ link: string; name: string }>();
 </script>
 
 <style>
-.friend-link {
+/* Must beat `.post-content a { display: inline }` in base.css */
+.post-content .friend-link {
   display: block;
+  width: fit-content;
   margin: 0.5rem 0;
 }
 </style>
