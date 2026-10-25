@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.icehoney.me/</id>
     <title>IceHoney</title>
-    <updated>2026-10-25T11:48:05.651Z</updated>
+    <updated>2026-10-25T14:10:17.356Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.icehoney.me/"/>
     <link rel="self" href="https://blog.icehoney.me/feed.atom"/>
     <subtitle>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</subtitle>
     <icon>https://blog.icehoney.me/favicon.png</icon>
-    <rights>2013 - 2023 © Ice Honey</rights>
+    <rights>2013 - 2026 © Ice Honey</rights>
     <entry>
         <title type="html"><![CDATA[如何比较版本号]]></title>
         <id>https://blog.icehoney.me/posts/2024-07-02-compare-version/</id>
