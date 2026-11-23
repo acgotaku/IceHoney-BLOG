@@ -6,6 +6,13 @@
     "description": "IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~",
     "items": [
         {
+            "id": "https://blog.icehoney.me/posts/2026-11-23-vibe-coding/",
+            "content_html": "软件开发进入了vibe coding时代，开发从农耕时代进入了工业化时代，就连写博客你打几个单词，AI都会自动帮你推测接下来要说的话。工程师失去了编程的快乐和成就感，也失去了对代码的掌控力。",
+            "url": "https://blog.icehoney.me/posts/2026-11-23-vibe-coding/",
+            "title": "vibe coding时代的软件开发",
+            "date_modified": "2026-11-23T01:16:00.000Z"
+        },
+        {
             "id": "https://blog.icehoney.me/posts/2024-07-02-compare-version/",
             "content_html": "前端代码需要运行在客户的浏览器中，但是有些版本的浏览器不支持某些特性，所以我们需要比较浏览器的版本号，然后根据版本号来决定是否使用某些特性。这里就涉及到版本号的比较问题。",
             "url": "https://blog.icehoney.me/posts/2024-07-02-compare-version/",

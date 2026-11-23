@@ -4,12 +4,19 @@
         <title>IceHoney</title>
         <link>https://blog.icehoney.me/</link>
         <description>IceHoney是雪月秋水君的博客~ 记录秋水君生活的点点滴滴~</description>
-        <lastBuildDate>Sun, 25 Oct 2026 14:10:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 02:04:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
         <copyright>2013 - 2026 © Ice Honey</copyright>
         <atom:link href="https://blog.icehoney.me/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[vibe coding时代的软件开发]]></title>
+            <link>https://blog.icehoney.me/posts/2026-11-23-vibe-coding/</link>
+            <guid isPermaLink="false">https://blog.icehoney.me/posts/2026-11-23-vibe-coding/</guid>
+            <pubDate>Mon, 23 Nov 2026 01:16:00 GMT</pubDate>
+            <description><![CDATA[软件开发进入了vibe coding时代，开发从农耕时代进入了工业化时代，就连写博客你打几个单词，AI都会自动帮你推测接下来要说的话。工程师失去了编程的快乐和成就感，也失去了对代码的掌控力。]]></description>
+        </item>
         <item>
             <title><![CDATA[如何比较版本号]]></title>
             <link>https://blog.icehoney.me/posts/2024-07-02-compare-version/</link>
